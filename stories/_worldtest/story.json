@@ -1,0 +1,353 @@
+{
+ "title": "world test",
+ "music": "none",
+ "style": {
+  "look": "aaa"
+ },
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "t",
+  "description": "t",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "town_square",
+   "dur": 1.5,
+   "title": "town_square",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "town_square",
+   "dur": 1.5,
+   "title": "town_square",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "dur": 1.5,
+   "title": "ice_world",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "sky": "nebula",
+   "time": "night"
+  },
+  {
+   "loc": "ice_world",
+   "dur": 1.5,
+   "title": "ice_world",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "sky": "nebula",
+   "time": "night"
+  },
+  {
+   "loc": "sky_island",
+   "dur": 1.5,
+   "title": "sky_island",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "sky": "day_cumulus"
+  },
+  {
+   "loc": "sky_island",
+   "dur": 1.5,
+   "title": "sky_island",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "sky": "day_cumulus"
+  },
+  {
+   "loc": "tunnel",
+   "dur": 1.5,
+   "title": "tunnel",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "sky": "none"
+  },
+  {
+   "loc": "tunnel",
+   "dur": 1.5,
+   "title": "tunnel",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "sky": "none"
+  },
+  {
+   "loc": "stone_court",
+   "dur": 1.5,
+   "title": "stone_court",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "time": "dusk"
+  },
+  {
+   "loc": "stone_court",
+   "dur": 1.5,
+   "title": "stone_court",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "time": "dusk"
+  },
+  {
+   "loc": "gold_city",
+   "dur": 1.5,
+   "title": "gold_city",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "dur": 1.5,
+   "title": "gold_city",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "ocean_world",
+   "dur": 1.5,
+   "title": "ocean_world",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "ocean_world",
+   "dur": 1.5,
+   "title": "ocean_world",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "jungle",
+   "dur": 1.5,
+   "title": "jungle",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  },
+  {
+   "loc": "jungle",
+   "dur": 1.5,
+   "title": "jungle",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     8,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      55,
+      70
+     ],
+     [
+      30,
+      55,
+      70
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ]
+  }
+ ]
+}

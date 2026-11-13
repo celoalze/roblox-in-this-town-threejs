@@ -1,0 +1,800 @@
+{
+ "title": "rig test",
+ "music": "none",
+ "cast": {
+  "milo": {
+   "hair": "rbx:376548738",
+   "shirt": "#4f8fe8",
+   "pants": "#22304f",
+   "shoes": "#f4f4f4",
+   "skin": "#eab892",
+   "details": [
+    "hood",
+    "kangaroo"
+   ]
+  },
+  "max": {
+   "hair": "rbx:376524487",
+   "shirt": "#3ecf8e",
+   "pants": "#22304f",
+   "skin": "#f5c79a",
+   "sleeves": "short",
+   "scale": 0.85
+  }
+ },
+ "publish": {
+  "title": "rig test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "trophy / idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "idle"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "trophy",
+     "hand": "milo"
+    },
+    {
+     "type": "trophy",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "trophy / cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "cheer"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "type": "trophy",
+     "hand": "milo"
+    },
+    {
+     "type": "trophy",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "trophy / walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -3,
+      0
+     ],
+     "to": [
+      1,
+      0
+     ],
+     "speed": 2
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "trophy",
+     "hand": "milo"
+    },
+    {
+     "type": "trophy",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "trophy / wave",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "wave"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "wave"
+    }
+   ],
+   "props": [
+    {
+     "type": "trophy",
+     "hand": "milo"
+    },
+    {
+     "type": "trophy",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "phone / phone",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "phone"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "phone"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    },
+    {
+     "type": "phone",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "phone / idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "idle"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    },
+    {
+     "type": "phone",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "cup / talk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "talk"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "milo"
+    },
+    {
+     "type": "cup",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "sword / point",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "point"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "type": "sword",
+     "hand": "milo"
+    },
+    {
+     "type": "sword",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "gift / idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "idle"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "gift",
+     "hand": "milo"
+    },
+    {
+     "type": "gift",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "cake / walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -3,
+      0
+     ],
+     "to": [
+      1,
+      0
+     ],
+     "speed": 2
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "milo"
+    },
+    {
+     "type": "cake",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "pizzabox / cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "cheer"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "type": "pizzabox",
+     "hand": "milo"
+    },
+    {
+     "type": "pizzabox",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "box / hold",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "hold"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "hold"
+    }
+   ],
+   "props": [
+    {
+     "type": "box",
+     "hand": "milo"
+    },
+    {
+     "type": "box",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "coin / idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "idle"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "coin",
+     "hand": "milo"
+    },
+    {
+     "type": "coin",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "book / think",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "think"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "think"
+    }
+   ],
+   "props": [
+    {
+     "type": "book",
+     "hand": "milo"
+    },
+    {
+     "type": "book",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "moneystack / idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "idle"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "moneystack",
+     "hand": "milo"
+    },
+    {
+     "type": "moneystack",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "ball / laugh",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "laugh"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "type": "ball",
+     "hand": "milo"
+    },
+    {
+     "type": "ball",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": -25,
+    "move": "static"
+   },
+   "title": "heart / hug",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "hug"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "hug"
+    }
+   ],
+   "props": [
+    {
+     "type": "heart",
+     "hand": "milo"
+    },
+    {
+     "type": "heart",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.2,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 25,
+    "move": "static"
+   },
+   "title": "lightbulb / sit",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 25,
+     "anim": "sit"
+    },
+    {
+     "id": "max",
+     "at": [
+      1.8,
+      0
+     ],
+     "face": -25,
+     "anim": "sit"
+    }
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "milo"
+    },
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true
+    }
+   ]
+  }
+ ]
+}

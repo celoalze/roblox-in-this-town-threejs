@@ -1,0 +1,4 @@
+{"duration": 2, "light": ["#ffb050", 30, 24], "emitters": [
+ {"texture": "spark", "blend": "normal", "mode": "stretch", "stretchScale": 5, "shape": {"type": "cone", "radius": 0.3, "angle": 45, "speed": [8, 20]}, "life": [0.5, 1.1], "speed": [14, 32], "size": [0.7, 1.3], "color": ["#fff2a0", "#ffb030"], "rate": 140, "duration": 1.2, "over": {"size": [[0, 1], [1, 0.15]], "color": [["#ffffff", 0, 1], ["#ffc030", 0.5, 1], ["#ff5a00", 1, 0]], "gravity": [0, -28, 0]}, "order": 1},
+ {"texture": "soft", "blend": "add", "shape": "point", "life": [0.1, 0.2], "size": [7, 9], "color": "#fff4c0", "rate": 40, "duration": 1.2, "over": {"size": [[0, 0.6], [1, 1.2]], "color": [["#fff", 0, 0.8], ["#ffb040", 1, 0]]}, "order": 2}
+]}

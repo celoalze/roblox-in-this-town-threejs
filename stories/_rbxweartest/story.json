@@ -1,0 +1,227 @@
+{
+ "title": "roblox wear test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe",
+  {
+   "c0": {
+    "like": "milo",
+    "hair": "rbx:curlyafro",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "c1": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "c2": {
+    "like": "milo",
+    "hair": "rbx:ponytail",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "c3": {
+    "like": "zoe",
+    "hair": "rbx:braids",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "c4": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "c5": {
+    "like": "zoe",
+    "hair": "rbx:middlepart",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "c6": {
+    "like": "milo",
+    "hair": "rbx:updo",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "c7": {
+    "like": "zoe",
+    "hair": "rbx:classicbrown",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "perm": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#d9b36b",
+    "wear": [
+     "rcap",
+     "aviators",
+     "dogpack",
+     "jadenecklace"
+    ]
+   }
+  },
+  {
+   "perm2": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a",
+    "wear": [
+     "cap",
+     "dogpack"
+    ]
+   }
+  }
+ ],
+ "publish": {
+  "title": "x",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "cap: curlyafro / wavy / ponytail",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c0 -2.6,0 f30 +cap",
+    "c1 0,0 f180 +cap",
+    "c2 2.6,0 f-90 +cap"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "rcap: braids / surfer / middlepart",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c3 -2.6,0 f30 +rcap",
+    "c4 0,0 f180 +rcap",
+    "c5 2.6,0 f-90 +rcap"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "redcap: updo / classicbrown / curlyafro",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c6 -2.6,0 f30 +redcap",
+    "c7 0,0 f180 +redcap",
+    "c0 2.6,0 f-90 +redcap"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "encierro: wavy / ponytail / braids",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c1 -2.6,0 f30 +encierro",
+    "c2 0,0 f180 +encierro",
+    "c3 2.6,0 f-90 +encierro"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "fedora: surfer / middlepart / updo",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c4 -2.6,0 f30 +fedora",
+    "c5 0,0 f180 +fedora",
+    "c6 2.6,0 f-90 +fedora"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "visor: classicbrown / curlyafro / wavy",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c7 -2.6,0 f30 +visor",
+    "c0 0,0 f180 +visor",
+    "c1 2.6,0 f-90 +visor"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hood: ponytail / braids / surfer",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c2 -2.6,0 f30 +hood",
+    "c3 0,0 f180 +hood",
+    "c4 2.6,0 f-90 +hood"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "aviators / shades / necklace",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c1 -2.6,0 f20 +aviators +jadenecklace",
+    "c5 0,0 f0 +shades",
+    "milo 2.6,0 f-30 +aviators +cap"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "cast wear: cap+aviators+backpack+necklace",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "perm -2.6,0 f25",
+    "perm2 0,0 f200",
+    "c2 2.6,0 f140 +dogpack"
+   ]
+  }
+ ]
+}

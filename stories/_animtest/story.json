@@ -1,0 +1,1073 @@
+{
+ "title": "anim test",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "anim test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "plaza",
+   "dur": 2.5,
+   "title": "walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.5,
+   "title": "run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "air_dance",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 air_dance"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.33,
+   "title": "break_dance",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 break_dance"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.14,
+   "title": "bubbly_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 bubbly_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.58,
+   "title": "bubbly_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 bubbly_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "bubbly_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 bubbly_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "bubbly_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 bubbly_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "bubbly_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 bubbly_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "bubbly_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 bubbly_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.35,
+   "title": "cartoony_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.58,
+   "title": "cartoony_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.04,
+   "title": "cartoony_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.37,
+   "title": "cartoony_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "cartoony_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.0,
+   "title": "cartoony_swim",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_swim"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "cartoony_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cartoony_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.93,
+   "title": "cutesy_dance",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cutesy_dance"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "dance1",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 dance1"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.15,
+   "title": "dance2",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 dance2"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.92,
+   "title": "dance3",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 dance3"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.7,
+   "title": "elder_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 elder_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "elder_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 elder_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.25,
+   "title": "elder_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 elder_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "elder_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 elder_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "elder_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 elder_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "elder_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 elder_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "fashion_modeling",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 fashion_modeling"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.07,
+   "title": "floss",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 floss"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "gun_show",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 gun_show"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.97,
+   "title": "hero_landing",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 hero_landing"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "knight_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 knight_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "knight_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 knight_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "knight_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 knight_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.37,
+   "title": "knight_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 knight_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "knight_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 knight_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "knight_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 knight_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "levitation_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 levitation_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "levitation_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 levitation_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.05,
+   "title": "levitation_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 levitation_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "levitation_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 levitation_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "levitation_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 levitation_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "levitation_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 levitation_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.99,
+   "title": "lunge",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 lunge"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.08,
+   "title": "mage_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 mage_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.58,
+   "title": "mage_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 mage_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "mage_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 mage_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.37,
+   "title": "mage_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 mage_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "mage_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 mage_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "mage_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 mage_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "monkey_dance",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 monkey_dance"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "ninja_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "ninja_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.05,
+   "title": "ninja_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "ninja_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "ninja_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "ninja_swim",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_swim"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "ninja_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 ninja_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.08,
+   "title": "pirate_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pirate_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.58,
+   "title": "pirate_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pirate_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "pirate_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pirate_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.37,
+   "title": "pirate_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pirate_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "pirate_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pirate_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "pirate_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pirate_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.54,
+   "title": "rbx_cheer",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_cheer"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "rbx_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "rbx_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "rbx_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "rbx_idle2",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_idle2"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.25,
+   "title": "rbx_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.62,
+   "title": "rbx_laugh",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_laugh"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.62,
+   "title": "rbx_point",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_point"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "rbx_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "rbx_sit",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_sit"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "rbx_sprint",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_sprint"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.0,
+   "title": "rbx_swim",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_swim"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "rbx_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "rbx_wave",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rbx_wave"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 4,
+   "title": "river_dance",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 river_dance"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "robot_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 robot_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "robot_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 robot_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.15,
+   "title": "robot_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 robot_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "robot_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 robot_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "robot_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 robot_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "robot_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 robot_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.7,
+   "title": "rocker_dance",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 rocker_dance"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.83,
+   "title": "sit_relaxed",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 sit_relaxed"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "slash",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 slash"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "stylish_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stylish_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "stylish_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stylish_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.05,
+   "title": "stylish_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stylish_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "stylish_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stylish_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "stylish_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stylish_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "stylish_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stylish_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "superhero_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "superhero_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.05,
+   "title": "superhero_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "superhero_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "superhero_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.0,
+   "title": "superhero_swim",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_swim"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "superhero_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 superhero_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "tool_hold",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 tool_hold"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.08,
+   "title": "toy_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 toy_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.58,
+   "title": "toy_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 toy_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.45,
+   "title": "toy_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 toy_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "toy_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 toy_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "toy_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 toy_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "toy_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 toy_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.29,
+   "title": "tread_water",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 tread_water"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.04,
+   "title": "yawn",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 yawn"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.1,
+   "title": "zombie_climb",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_climb"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "zombie_fall",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_fall"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.05,
+   "title": "zombie_idle",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_idle"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "zombie_jump",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_jump"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "zombie_run",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.0,
+   "title": "zombie_swim",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_swim"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.5,
+   "title": "zombie_walk",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f0 zombie_walk"
+   ]
+  }
+ ]
+}

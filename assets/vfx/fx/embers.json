@@ -1,0 +1,4 @@
+{"duration": 3.5, "count": 110, "emitters": [
+ {"countable": true, "rot": [-90, 0, 0], "texture": "spark", "blend": "add", "shape": {"type": "cone", "radius": 6, "angle": 4}, "speed": [1.8, 4], "life": [2.8, 4.2], "size": [0.45, 0.85], "color": "#ffb060", "rate": 31, "looping": true, "duration": 3.5,
+  "over": {"size": [[0, 1], [1, 0.35]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.08, 1], ["#ffffff", 1, 0]], "noise": [1.2, 1.2]}}
+]}

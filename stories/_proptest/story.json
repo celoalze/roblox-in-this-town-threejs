@@ -1,0 +1,885 @@
+{
+ "title": "model props test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe"
+ ],
+ "publish": {
+  "title": "prop test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "sword / greatsword",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +sword",
+    "zoe 1.6,0 f-20 hold +greatsword"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "arming_sword / arming_sword2",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +arming_sword",
+    "zoe 1.6,0 f-20 hold +arming_sword2"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "heater_shield / dagger",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +heater_shield",
+    "zoe 1.6,0 f-20 hold +dagger"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "spear / hand_axe",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +spear",
+    "zoe 1.6,0 f-20 hold +hand_axe"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "coin / coin_stack",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +coin",
+    "zoe 1.6,0 f-20 hold +coin_stack"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "gold_bar / nugget",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +gold_bar",
+    "zoe 1.6,0 f-20 hold +nugget"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "diamond / ruby",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +diamond",
+    "zoe 1.6,0 f-20 hold +ruby"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "emerald / sapphire",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +emerald",
+    "zoe 1.6,0 f-20 hold +sapphire"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "potion / goblet",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +potion",
+    "zoe 1.6,0 f-20 hold +goblet"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "key / shield",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +key",
+    "zoe 1.6,0 f-20 hold +shield"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "round_shield / bow",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +round_shield",
+    "zoe 1.6,0 f-20 hold +bow"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "axe / wand",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +axe",
+    "zoe 1.6,0 f-20 hold +wand"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "staff / war_hammer",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +staff",
+    "zoe 1.6,0 f-20 hold +war_hammer"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "crossbow / gem",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +crossbow",
+    "zoe 1.6,0 f-20 hold +gem"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "spellbook / scroll",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +spellbook",
+    "zoe 1.6,0 f-20 hold +scroll"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "burger / pizza",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +burger",
+    "zoe 1.6,0 f-20 hold +pizza"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hotdog / ice_cream",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +hotdog",
+    "zoe 1.6,0 f-20 hold +ice_cream"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "donut / apple",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +donut",
+    "zoe 1.6,0 f-20 hold +apple"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "cookie / banana",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +cookie",
+    "zoe 1.6,0 f-20 hold +banana"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "bread / cake",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +bread",
+    "zoe 1.6,0 f-20 hold +cake"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "cupcake / pie",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +cupcake",
+    "zoe 1.6,0 f-20 hold +pie"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "lollipop / carrot",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +lollipop",
+    "zoe 1.6,0 f-20 hold +carrot"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "watermelon / pumpkin",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +watermelon",
+    "zoe 1.6,0 f-20 hold +pumpkin"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "energy_drink / crown",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +energy_drink",
+    "zoe 1.6,0 f-20 hold +crown"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "great_helm / helmet",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +great_helm",
+    "zoe 1.6,0 f-20 hold +helmet"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "flight_helmet / skate_helmet",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +flight_helmet",
+    "zoe 1.6,0 f-20 hold +skate_helmet"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "call_headset / wizard_hat",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +call_headset",
+    "zoe 1.6,0 f-20 hold +wizard_hat"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "shovel / pickaxe",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +shovel",
+    "zoe 1.6,0 f-20 hold +pickaxe"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "wrench / hammer",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +wrench",
+    "zoe 1.6,0 f-20 hold +hammer"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "bucket / broom",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +bucket",
+    "zoe 1.6,0 f-20 hold +broom"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "torch / fishing_rod",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +torch",
+    "zoe 1.6,0 f-20 hold +fishing_rod"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "phone / phone_handset",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +phone",
+    "zoe 1.6,0 f-20 hold +phone_handset"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "mouse / school_backpack",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +mouse",
+    "zoe 1.6,0 f-20 hold +school_backpack"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "backpack / guitar",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +backpack",
+    "zoe 1.6,0 f-20 hold +guitar"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "mug / coffee",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +mug",
+    "zoe 1.6,0 f-20 hold +coffee"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "coffee_to_go / lantern",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +coffee_to_go",
+    "zoe 1.6,0 f-20 hold +lantern"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "miner_lantern / laptop",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +miner_lantern",
+    "zoe 1.6,0 f-20 hold +laptop"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "umbrella / clock",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +umbrella",
+    "zoe 1.6,0 f-20 hold +clock"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "boombox / headphones",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +boombox",
+    "zoe 1.6,0 f-20 hold +headphones"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "trumpet / soccer_ball",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +trumpet",
+    "zoe 1.6,0 f-20 hold +soccer_ball"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "pencil / book",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +pencil",
+    "zoe 1.6,0 f-20 hold +book"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "skateboard",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -1.6,0 f20 hold +skateboard"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "chest / mimic",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "chest -4,-1",
+    "mimic 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "treasure / safe",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "treasure -4,-1",
+    "safe 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "apple_tree / berry_bush",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "apple_tree -4,-1",
+    "berry_bush 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "corn / ladder",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "corn -4,-1",
+    "ladder 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "keyboard / monitor",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "keyboard -4,-1",
+    "monitor 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "desk_chair / teacher_desk",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "desk_chair -4,-1",
+    "teacher_desk 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "lectern / barrel",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "lectern -4,-1",
+    "barrel 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "crate / picnic_table",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "crate -4,-1",
+    "picnic_table 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "beehive / clothesline",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "beehive -4,-1",
+    "clothesline 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "tv / microphone",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "tv -4,-1",
+    "microphone 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "trash_can / mailbox",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "trash_can -4,-1",
+    "mailbox 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "bench / chair",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "bench -4,-1",
+    "chair 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "sofa / fridge",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "sofa -4,-1",
+    "fridge 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "bed / toilet",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "bed -4,-1",
+    "toilet 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "piano / campfire",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "piano -4,-1",
+    "campfire 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "desk / tractor",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "desk -4,-1",
+    "tractor 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "pickup / rowboat",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "pickup -4,-1",
+    "rowboat 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "mine_cart / hand_cart",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "mine_cart -4,-1",
+    "hand_cart 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "bicycle / hot_air_balloon",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "bicycle -4,-1",
+    "hot_air_balloon 4,-1"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "helicopter",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo 0,0 f0"
+   ],
+   "props": [
+    "helicopter -4,-1"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "_doc": "Ambience bed per world `set` (procedural loops from pipeline/audio.py SYN, or assets/audio/sfx). [name, volume]. Disable per story with style.worldAudio=false.",
+ "jungle": [
+  [
+   "birds",
+   0.5
+  ],
+  [
+   "jungle_hum",
+   0.4
+  ]
+ ],
+ "ocean_world": [
+  [
+   "waves",
+   0.5
+  ],
+  [
+   "underwater",
+   0.35
+  ]
+ ],
+ "gold_city": [
+  [
+   "city_hum",
+   0.35
+  ],
+  [
+   "chimes",
+   0.25
+  ]
+ ],
+ "tunnel": [
+  [
+   "cave_drip",
+   0.5
+  ],
+  [
+   "room_tone",
+   0.3
+  ]
+ ],
+ "stone_court": [
+  [
+   "wind",
+   0.35
+  ]
+ ],
+ "ice_world": [
+  [
+   "wind",
+   0.5
+  ]
+ ],
+ "sky_island": [
+  [
+   "wind",
+   0.3
+  ],
+  [
+   "birds",
+   0.2
+  ]
+ ],
+ "town_square": [
+  [
+   "city_hum",
+   0.3
+  ],
+  [
+   "birds",
+   0.25
+  ]
+ ]
+}

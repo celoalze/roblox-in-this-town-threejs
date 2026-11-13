@@ -1,0 +1,353 @@
+{
+ "title": "face2 test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe",
+  "max"
+ ],
+ "publish": {
+  "title": "face2",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "dur": 1.5,
+   "title": "gaze up",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:up",
+    "zoe 3,0 f-25 idle/happy"
+   ],
+   "loc": "plaza"
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze down",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:down",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze left",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:left",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze right",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:right",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze camera",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:camera",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze cross",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:cross",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze zoe",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:zoe",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze 0.5,-0.6",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:0.5,-0.6",
+    "zoe 3,0 f-25 idle/happy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze left shocked",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/shocked gaze:left"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "gaze cross shocked",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/shocked gaze:cross"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows raised",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/neutral brows:raised"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows angry",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/neutral brows:angry"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows worried",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/neutral brows:worried"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows flat",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/neutral brows:flat"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows one_raised_l",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/neutral brows:one_raised_l"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows one_raised_r",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/neutral brows:one_raised_r"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "brows angry + gaze",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy brows:angry gaze:down"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "pupils small",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy pupils:small gaze:camera"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "pupils big",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy pupils:big gaze:camera"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "tears on happy",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/sad tears"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "tears on sad + gaze",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/sad tears gaze:down brows:worried"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "tears@later",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/sad tears@0.7"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "scream_open",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/scream_open"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "grit",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/grit"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "tears_joy",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/tears_joy"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "bawling",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/bawling"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "terrified",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/terrified"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "side_eye",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/side_eye"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "dead_inside",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/dead_inside"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "smirk",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/smirk"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "eyeroll",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/eyeroll"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "lovestruck",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/lovestruck"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "terrified + gaze",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/terrified gaze:right"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "auto gaze 2 actors",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo -1.5,0 f20 idle/happy look:zoe",
+    "zoe 2,0 f-25 idle/surprised"
+   ]
+  },
+  {
+   "dur": 1.5,
+   "title": "auto gaze scared",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo -1.5,0 f20 idle/scared look:zoe",
+    "zoe 2,0 f-25 idle/neutral"
+   ]
+  },
+  {
+   "dur": 4,
+   "title": "blink while gazing",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/happy gaze:left"
+   ]
+  },
+  {
+   "dur": 4,
+   "title": "v2 default gaze blink",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/smirk"
+   ]
+  },
+  {
+   "dur": 2,
+   "title": "gaze action",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "neutral",
+     "gaze": "left",
+     "actions": [
+      {
+       "at": 0.8,
+       "gaze": "right"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

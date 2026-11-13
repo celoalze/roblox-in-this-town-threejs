@@ -1,0 +1,4 @@
+{"duration": 6, "emitters": [
+ {"texture": "soft", "blend": "normal", "rot": [90, 0, 0], "shape": {"type": "rectangle", "width": 44, "height": 22, "speed": [0, 0]}, "at": [0, 14, 0], "life": [4, 6], "speed": 0, "size": [0.6, 1.1], "color": "#ffffff", "rate": 80, "looping": true, "prewarm": true, "duration": 6, "over": {"color": [["#ffffff", 0, 0], ["#ffffff", 0.1, 1], ["#e8f4ff", 0.9, 1], ["#e8f4ff", 1, 0]], "noise": [0.5, 1.8], "gravity": [0, -9, 0], "drag": 0.1}, "order": 1},
+ {"texture": "soft", "blend": "normal", "rot": [90, 0, 0], "shape": {"type": "rectangle", "width": 40, "height": 14, "speed": [0, 0]}, "at": [0, 14, 4], "life": [3, 4.5], "speed": 0, "size": [1.3, 1.9], "color": "#ffffff", "rate": 4, "looping": true, "prewarm": true, "duration": 6, "over": {"color": [["#ffffff", 0, 0], ["#ffffff", 0.1, 1], ["#e8f4ff", 0.9, 1], ["#e8f4ff", 1, 0]], "noise": [0.4, 1.5], "gravity": [0, -14, 0], "drag": 0.1}, "order": 2}
+]}

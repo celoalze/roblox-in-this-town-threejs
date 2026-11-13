@@ -1,0 +1,234 @@
+{
+ "title": "motion test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe"
+ ],
+ "publish": {
+  "title": "motion test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 3,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "walk: ease in/out, turn, settle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -6,
+      0
+     ],
+     "to": [
+      5,
+      0
+     ],
+     "face": 0
+    },
+    {
+     "id": "zoe",
+     "at": [
+      6,
+      -3
+     ],
+     "face": "milo",
+     "anim": "idle"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 3,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "run + after cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      5,
+      0
+     ],
+     "to": [
+      -5,
+      0
+     ],
+     "anim": "run",
+     "after": "cheer",
+     "face": 0
+    },
+    {
+     "id": "zoe",
+     "at": [
+      6,
+      -3
+     ],
+     "face": "milo",
+     "anim": "idle"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 4,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "actions: turn, shocked, fall",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 20,
+     "anim": "idle",
+     "actions": [
+      {
+       "at": 0.8,
+       "anim": "shocked",
+       "face": 140
+      },
+      {
+       "at": 2,
+       "anim": "point",
+       "face": 20
+      },
+      {
+       "at": 3,
+       "anim": "fall"
+      }
+     ]
+    },
+    {
+     "id": "zoe",
+     "at": [
+      1.6,
+      0
+     ],
+     "face": -20,
+     "anim": "wave",
+     "actions": [
+      {
+       "at": 1,
+       "anim": "shrug"
+      },
+      {
+       "at": 2,
+       "anim": "jump"
+      },
+      {
+       "at": 3,
+       "to": [
+        4,
+        2
+       ],
+       "arc": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 4,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "layers + keyframed anims (config/anims.json)",
+   "actors": [
+    "milo -6,0 f0 walk+wave/grin to:4,1",
+    "zoe 4,-3 f-20 salute/proud"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 4,
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "nod / headshake / stomp / beg + blink on expr change",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.6,
+      0
+     ],
+     "face": 20,
+     "anim": "nod",
+     "actions": [
+      {
+       "at": 2,
+       "anim": "stomp",
+       "expr": "angry"
+      }
+     ]
+    },
+    {
+     "id": "zoe",
+     "at": [
+      1.6,
+      0
+     ],
+     "face": -20,
+     "anim": "headshake",
+     "expr": "skeptical",
+     "actions": [
+      {
+       "at": 2,
+       "anim": "beg",
+       "expr": "teary"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

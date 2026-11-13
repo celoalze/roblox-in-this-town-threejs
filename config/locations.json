@@ -1,0 +1,320 @@
+{
+ "_comment": "Location presets (checked with stories/_loctest). Use as \"loc\": \"<name>\". Story-level \"locations\" override/extend these. Actors stand near [0,0]; 1 m = 3.4 units.",
+ "home": {
+  "setOpts": {
+   "kit": "neighborhood-pathways-kit-a992cf",
+   "near": "porch-front-cottage",
+   "dz": 11
+  }
+ },
+ "mailbox": {
+  "setOpts": {
+   "kit": "neighborhood-pathways-kit-a992cf",
+   "near": "curbside-mailbox",
+   "dz": 3
+  }
+ },
+ "yard": {
+  "setOpts": {
+   "kit": "neighborhood-pathways-kit-a992cf",
+   "near": "trimmed-foundation-shrub",
+   "dz": 2
+  }
+ },
+ "bus": {
+  "setOpts": {
+   "kit": "neighborhood-pathways-kit-a992cf",
+   "near": "yellow-school-bus",
+   "dz": 8
+  }
+ },
+ "cafe": {
+  "setOpts": {
+   "kit": "modern-restaurant-cafe-01ea4c",
+   "near": "bistro-table",
+   "index": 10,
+   "dx": 1.2
+  }
+ },
+ "cafe2": {
+  "setOpts": {
+   "kit": "modern-restaurant-cafe-01ea4c",
+   "near": "bistro-table",
+   "index": 3,
+   "dx": 1.2
+  }
+ },
+ "cafe3": {
+  "setOpts": {
+   "kit": "modern-restaurant-cafe-01ea4c",
+   "near": "bistro-table",
+   "index": 20,
+   "dx": 1.2
+  }
+ },
+ "skate": {
+  "setOpts": {
+   "kit": "skatepark-0922a9",
+   "near": "skate-shop",
+   "dz": 5
+  }
+ },
+ "tokyo": {
+  "setOpts": {
+   "kit": "japanese-suburban-city-street-baa482",
+   "near": "cherry-blossom-tree",
+   "dx": 2,
+   "dz": 4
+  }
+ },
+ "farm": {
+  "setOpts": {
+   "kit": "cozy-farm-cc979f",
+   "near": "farmhouse",
+   "dz": 8
+  }
+ },
+ "lab": {
+  "setOpts": {
+   "kit": "research-lab-9b9b5d",
+   "near": "write-up-desk",
+   "dz": 2
+  }
+ },
+ "lab_robot": {
+  "setOpts": {
+   "kit": "research-lab-9b9b5d",
+   "near": "liquid-handling-robot",
+   "dx": -2,
+   "dz": 2
+  }
+ },
+ "lab_airlock": {
+  "setOpts": {
+   "kit": "research-lab-9b9b5d",
+   "near": "air-shower-airlock",
+   "dx": -2,
+   "dz": 2
+  }
+ },
+ "space": {
+  "setOpts": {
+   "kit": "space-base-kit-cf65de",
+   "near": "bldg-hab-dome",
+   "dz": 12
+  }
+ },
+ "space_tower": {
+  "setOpts": {
+   "kit": "space-base-kit-cf65de",
+   "near": "bldg-observation-tower",
+   "dz": 14
+  }
+ },
+ "space_crystal": {
+  "setOpts": {
+   "kit": "space-base-kit-cf65de",
+   "near": "prop-crystal",
+   "dz": 4
+  }
+ },
+ "space_pad": {
+  "setOpts": {
+   "kit": "space-base-kit-cf65de",
+   "near": "landing-pad",
+   "dz": 8
+  }
+ },
+ "west_saloon": {
+  "setOpts": {
+   "kit": "frontier-town-a0085b",
+   "near": "saloon-front",
+   "dz": 8
+  }
+ },
+ "west_sheriff": {
+  "setOpts": {
+   "kit": "frontier-town-a0085b",
+   "near": "sheriff-office-jail",
+   "dz": 8
+  }
+ },
+ "west_bank": {
+  "setOpts": {
+   "kit": "frontier-town-a0085b",
+   "near": "town-bank",
+   "dz": 8
+  }
+ },
+ "west_mine": {
+  "setOpts": {
+   "kit": "frontier-town-a0085b",
+   "near": "mine-headframe",
+   "dz": 8
+  }
+ },
+ "hospital": {
+  "setOpts": {
+   "kit": "hospital-kit-2ebfcb",
+   "near": "emergency-entrance-block",
+   "dz": 10
+  }
+ },
+ "ambulance": {
+  "setOpts": {
+   "kit": "hospital-kit-2ebfcb",
+   "near": "ambulance-van",
+   "dz": 4
+  }
+ },
+ "camp": {
+  "setOpts": {
+   "kit": "campground-lake-ad32b0",
+   "near": "stone-ring-campfire",
+   "dz": 3
+  }
+ },
+ "camp_cabin": {
+  "setOpts": {
+   "kit": "campground-lake-ad32b0",
+   "near": "porch-log-cabin",
+   "dz": 8
+  }
+ },
+ "camp_dock": {
+  "setOpts": {
+   "kit": "campground-lake-ad32b0",
+   "near": "lake-dock-run",
+   "dz": 1
+  }
+ },
+ "camp_tent": {
+  "setOpts": {
+   "kit": "campground-lake-ad32b0",
+   "near": "dome-tent",
+   "dz": 3
+  }
+ },
+ "site": {
+  "setOpts": {
+   "kit": "construction-site-9e40b0",
+   "near": "site-cabin",
+   "dz": 6
+  }
+ },
+ "site_crane": {
+  "setOpts": {
+   "kit": "construction-site-9e40b0",
+   "near": "cement-mixer",
+   "dz": 3
+  }
+ },
+ "site_digger": {
+  "setOpts": {
+   "kit": "construction-site-9e40b0",
+   "near": "tracked-excavator",
+   "dz": 6
+  }
+ },
+ "station": {
+  "setOpts": {
+   "kit": "countryside-railway-9b4c57",
+   "near": "signal-box",
+   "dz": 7
+  }
+ },
+ "plaza": {
+  "setOpts": {
+   "kit": "dia-de-muertos-f2f8f8",
+   "near": "plaza-kiosco",
+   "dz": 7
+  }
+ },
+ "church": {
+  "setOpts": {
+   "kit": "dia-de-muertos-f2f8f8",
+   "near": "parish-church",
+   "dz": 12
+  }
+ },
+ "office": {
+  "setOpts": {
+   "kit": "office-794453",
+   "near": "phone-booth",
+   "dz": 3
+  }
+ },
+ "street": {
+  "set": "street",
+  "time": "day"
+ },
+ "sky": {
+  "set": "skyrealm"
+ },
+ "city": {
+  "set": "city"
+ },
+ "park": {
+  "set": "park"
+ },
+ "school": {
+  "set": "school"
+ },
+ "classroom": {
+  "set": "classroom"
+ },
+ "bedroom": {
+  "set": "bedroom"
+ },
+ "livingroom": {
+  "set": "livingroom"
+ },
+ "store": {
+  "set": "store"
+ },
+ "forest": {
+  "set": "forest"
+ },
+ "dock": {
+  "set": "dock"
+ },
+ "studio": {
+  "set": "studio"
+ },
+ "town_square": {
+  "set": "town_square",
+  "time": "day"
+ },
+ "ice_world": {
+  "set": "ice_world",
+  "time": "night"
+ },
+ "sky_island": {
+  "set": "sky_island",
+  "time": "day"
+ },
+ "gold_city": {
+  "set": "gold_city",
+  "time": "day"
+ },
+ "ocean_world": {
+  "set": "ocean_world",
+  "time": "day"
+ },
+ "jungle": {
+  "set": "jungle",
+  "time": "day"
+ },
+ "tunnel": {
+  "set": "tunnel",
+  "time": "day"
+ },
+ "stone_court": {
+  "set": "stone_court",
+  "time": "dusk"
+ },
+ "seabed": {
+  "set": "seabed",
+  "time": "day"
+ }
+}

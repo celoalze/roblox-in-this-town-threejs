@@ -1,0 +1,40 @@
+{
+ "title": "face2 test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe",
+  "max"
+ ],
+ "publish": {
+  "title": "face2",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "plaza",
+   "line": "Mama mia, please eat three apples quickly.",
+   "speaker": "milo",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/smirk"
+   ]
+  },
+  {
+   "line": "Oh no, a big bee! Bob moves!",
+   "speaker": "milo",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/scream_open"
+   ]
+  }
+ ],
+ "dialogue": true
+}

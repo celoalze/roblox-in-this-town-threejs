@@ -1,0 +1,2837 @@
+{
+ "title": "The Mystery Box",
+ "genre": "aaa_story",
+ "narrator": "narrator_deep",
+ "music": "epic",
+ "format": {
+  "fps": 60
+ },
+ "style": {
+  "look": "aaa",
+  "bloom": 0.45,
+  "captionWords": 2,
+  "uppercase": false,
+  "emphColor": "#FFE14D",
+  "activeColor": "#FFE14D",
+  "captionY": 0.62
+ },
+ "cast": {
+  "ryan": {
+   "like": "milo",
+   "shirt": "#f1f1f1",
+   "details": [
+    "jacket",
+    "pocket"
+   ],
+   "jacket": "#d6312b",
+   "pants": "#2a3550",
+   "hair": "rbx:376548738",
+   "wear": [
+    "adventure_pack"
+   ]
+  },
+  "ryan_kid": {
+   "like": "milo",
+   "shirt": "#f1f1f1",
+   "details": [
+    "jacket",
+    "pocket"
+   ],
+   "jacket": "#d6312b",
+   "pants": "#2a3550",
+   "hair": "rbx:376548738",
+   "scale": 0.68
+  },
+  "father": {
+   "like": "dad",
+   "hair": "rbx:sidepart",
+   "hairColor": "#3a2a1e",
+   "shirt": "#6b7d52",
+   "pants": "#3b3b45",
+   "wear": [
+    "beard_full"
+   ]
+  },
+  "zoe": {},
+  "jay": {},
+  "trex": {},
+  "ice_giant": {},
+  "sky_beast": {
+   "like": "sky_beast",
+   "spots": "#ff9a10",
+   "glow": 1.1
+  },
+  "whale": {
+   "like": "dolphin",
+   "scale": 10,
+   "recolor": "#35557a"
+  },
+  "tent1": {
+   "like": "worm",
+   "height": 52,
+   "recolor": "#120a22",
+   "emissive": "#5a2cff",
+   "glow": 0.12,
+   "rough": 0.25
+  },
+  "tent2": {
+   "like": "worm",
+   "height": 58,
+   "recolor": "#120a22",
+   "emissive": "#5a2cff",
+   "glow": 0.12,
+   "rough": 0.25
+  },
+  "tent3": {
+   "like": "worm",
+   "height": 64,
+   "recolor": "#120a22",
+   "emissive": "#5a2cff",
+   "glow": 0.12,
+   "rough": 0.25
+  }
+ },
+ "publish": {
+  "title": "The Black Box That Stole His Dad #shorts",
+  "description": "Once a year, a giant black box falls into every town and opens a doorway to another world for exactly one hour. Five years ago, Ryan's father walked into one and never came out. Today, a new box fell. This time, Ryan is going in. A cinematic Roblox adventure with ice giants, a sky-sized monster and a birthday gift worth waiting for. Would you have gone in?",
+  "tags": [
+   "roblox",
+   "roblox story",
+   "roblox short",
+   "mystery box",
+   "portal",
+   "roblox adventure",
+   "cinematic",
+   "dad",
+   "emotional story",
+   "monster",
+   "ice world",
+   "sky island"
+  ],
+  "caption": "He waited 5 years for this birthday. Watch till the end. #roblox #shorts #story"
+ },
+ "scenes": [
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Once a year, a black box *fell* from the sky, opening a doorway to another world.",
+   "actors": [
+    "zoe -3,2 f180 /awe",
+    "jay 3,3 f180 /shocked"
+   ],
+   "shots": [
+    {
+     "at": 1.4,
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       8,
+       -50
+      ],
+      "path": [
+       [
+        18,
+        2,
+        18
+       ],
+       [
+        14,
+        3,
+        12
+       ]
+      ],
+      "lens": 85,
+      "roll": 6
+     }
+    },
+    {
+     "at": 2.3,
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       30,
+       -50
+      ],
+      "path": [
+       [
+        -26,
+        4,
+        8
+       ],
+       [
+        -24,
+        6,
+        4
+       ]
+      ],
+      "lens": 90,
+      "crash": 1,
+      "shake": 1.2
+     }
+    }
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "y": 330,
+     "drift": [
+      0,
+      -150,
+      0
+     ],
+     "floor": 0
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      0
+     ],
+     "n": 200,
+     "radius": 55,
+     "inner": 14,
+     "seed": 5,
+     "mode": "flee"
+    }
+   ],
+   "fx": [
+    {
+     "type": "slam",
+     "pos": [
+      0,
+      0,
+      -20
+     ],
+     "at": 2.3,
+     "scale": 6,
+     "seed": 4
+    },
+    {
+     "type": "shockwave_ring",
+     "pos": [
+      0,
+      0.3,
+      -50
+     ],
+     "at": 2.3,
+     "scale": 9
+    },
+    {
+     "type": "dust_cloud",
+     "pos": [
+      -30,
+      0,
+      -20
+     ],
+     "at": 2.3,
+     "scale": 3.5,
+     "seed": 2
+    },
+    {
+     "type": "dust_cloud",
+     "pos": [
+      30,
+      0,
+      -20
+     ],
+     "at": 2.3,
+     "scale": 3.5,
+     "seed": 3
+    },
+    {
+     "type": "dust_cloud",
+     "pos": [
+      0,
+      0,
+      -20
+     ],
+     "at": 2.35,
+     "scale": 3.5,
+     "seed": 5
+    },
+    {
+     "type": "smoke_plume",
+     "pos": [
+      -30,
+      0,
+      -22
+     ],
+     "at": 2.4,
+     "scale": 3.2
+    },
+    {
+     "type": "smoke_plume",
+     "pos": [
+      30,
+      0,
+      -22
+     ],
+     "at": 2.4,
+     "scale": 3.2
+    },
+    {
+     "type": "smoke_plume",
+     "pos": [
+      0,
+      0,
+      -18
+     ],
+     "at": 2.5,
+     "scale": 2.6
+    },
+    {
+     "type": "debris",
+     "pos": [
+      0,
+      1,
+      -18
+     ],
+     "at": 2.3,
+     "scale": 7
+    },
+    {
+     "type": "crack",
+     "pos": [
+      0,
+      0.05,
+      -16
+     ],
+     "at": 2.3,
+     "scale": 8
+    },
+    {
+     "type": "dustwave",
+     "pos": [
+      0,
+      0.2,
+      -50
+     ],
+     "at": 2.3,
+     "scale": 5
+    }
+   ],
+   "shakeAt": 2.3,
+   "sfx": "riser@0 boom@2.3",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     70,
+     -50
+    ],
+    "path": [
+     [
+      0,
+      1.2,
+      30
+     ],
+     [
+      0,
+      1.2,
+      28
+     ]
+    ],
+    "lens": 90
+   },
+   "emotion": "mysterious",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "jungle",
+   "sky": "none",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "One box held a jungle full of *dinosaurs*.",
+   "cam": "low trex lens90 fly",
+   "actors": [
+    "trex 0,-12 f10 roar",
+    "zoe -3,4 f160 /scared"
+   ],
+   "sfx": "whoosh@0 boom@dinosaurs",
+   "emotion": "mysterious",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35,
+   "props": [
+    {
+     "type": "scatter",
+     "model": "palm_tree",
+     "n": 34,
+     "area": [
+      -50,
+      -70,
+      50,
+      14
+     ],
+     "height": [
+      22,
+      34
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 2
+    },
+    {
+     "type": "scatter",
+     "model": "tree_fern",
+     "n": 26,
+     "area": [
+      -48,
+      -60,
+      48,
+      16
+     ],
+     "height": [
+      20,
+      32
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 3
+    },
+    {
+     "type": "scatter",
+     "model": "banana_plant",
+     "n": 22,
+     "area": [
+      -40,
+      -50,
+      40,
+      14
+     ],
+     "height": [
+      14,
+      22
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 4
+    },
+    {
+     "type": "scatter",
+     "model": "chilean_palm",
+     "n": 14,
+     "area": [
+      -90,
+      -110,
+      90,
+      -40
+     ],
+     "height": [
+      40,
+      60
+     ],
+     "seed": 5
+    },
+    {
+     "type": "scatter",
+     "model": "fern_plant",
+     "n": 90,
+     "area": [
+      -32,
+      -45,
+      32,
+      12
+     ],
+     "height": [
+      3,
+      5
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 6
+    },
+    {
+     "type": "scatter",
+     "model": "fern_bush",
+     "n": 70,
+     "area": [
+      -32,
+      -45,
+      32,
+      12
+     ],
+     "height": [
+      3,
+      5
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 7
+    },
+    {
+     "type": "scatter",
+     "model": "taro_plant",
+     "n": 40,
+     "area": [
+      -30,
+      -40,
+      30,
+      10
+     ],
+     "height": [
+      4,
+      7
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 8
+    },
+    {
+     "type": "scatter",
+     "model": "ti_plant",
+     "n": 24,
+     "area": [
+      -34,
+      -46,
+      34,
+      10
+     ],
+     "height": [
+      6,
+      9
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 9
+    },
+    {
+     "type": "scatter",
+     "model": "large_boulder",
+     "n": 8,
+     "area": [
+      -30,
+      -40,
+      30,
+      0
+     ],
+     "height": [
+      6,
+      10
+     ],
+     "avoid": [
+      [
+       0,
+       -12,
+       13
+      ],
+      [
+       -3,
+       4,
+       6
+      ]
+     ],
+     "seed": 10
+    }
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Another held a city made entirely of *gold*.",
+   "cam": "wide jay lens80 h1.2 pull",
+   "actors": [
+    "jay 0,-2 f0 cheer/starstruck"
+   ],
+   "fx": "sparkles:jay@gold",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35,
+   "bloom": 0.2,
+   "props": [
+    {
+     "type": "scatter",
+     "model": "market_stall",
+     "n": 10,
+     "area": [
+      -15,
+      -40,
+      15,
+      -10
+     ],
+     "height": [
+      10,
+      13
+     ],
+     "avoid": [
+      [
+       0,
+       2,
+       5
+      ]
+     ],
+     "seed": 3
+    },
+    {
+     "type": "scatter",
+     "model": "plaza_fountain",
+     "n": 1,
+     "area": [
+      0,
+      -20,
+      0,
+      -20
+     ],
+     "height": [
+      10,
+      10
+     ]
+    },
+    {
+     "type": "scatter",
+     "model": "gothic_statue",
+     "at": [
+      [
+       -13,
+       -14
+      ],
+      [
+       13,
+       -14
+      ],
+      [
+       -13,
+       -34
+      ],
+      [
+       13,
+       -34
+      ]
+     ],
+     "height": [
+      22,
+      26
+     ],
+     "seed": 5
+    },
+    {
+     "type": "scatter",
+     "model": "broken_column",
+     "at": [
+      [
+       -9,
+       -8
+      ],
+      [
+       9,
+       -8
+      ],
+      [
+       -16,
+       -24
+      ],
+      [
+       16,
+       -24
+      ]
+     ],
+     "height": [
+      10,
+      14
+     ],
+     "seed": 6
+    }
+   ]
+  },
+  {
+   "loc": "ocean_world",
+   "sky": "toon_ocean_islands",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Another, an endless ocean of giant *creatures*.",
+   "cam": "wide zoe lens85 h0.4 pull",
+   "actors": [
+    "zoe 0,2 f180 /awe",
+    "whale 8,-40 f200 walk"
+   ],
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35,
+   "bloom": 0.12,
+   "props": [
+    {
+     "type": "scatter",
+     "model": "staghorn_coral",
+     "n": 40,
+     "area": [
+      -26,
+      -30,
+      26,
+      18
+     ],
+     "height": [
+      3,
+      5
+     ],
+     "y": -1.3,
+     "avoid": [
+      [
+       0,
+       -2,
+       14
+      ]
+     ],
+     "seed": 2
+    },
+    {
+     "type": "scatter",
+     "model": "soft_coral",
+     "n": 36,
+     "area": [
+      -28,
+      -30,
+      28,
+      20
+     ],
+     "height": [
+      3,
+      5
+     ],
+     "y": -1.3,
+     "avoid": [
+      [
+       0,
+       -2,
+       14
+      ]
+     ],
+     "seed": 3
+    },
+    {
+     "type": "scatter",
+     "model": "table_coral",
+     "n": 30,
+     "area": [
+      -30,
+      -34,
+      30,
+      18
+     ],
+     "height": [
+      2,
+      4
+     ],
+     "y": -1.3,
+     "avoid": [
+      [
+       0,
+       -2,
+       14
+      ]
+     ],
+     "seed": 4
+    },
+    {
+     "type": "scatter",
+     "model": "reef_rock",
+     "n": 40,
+     "area": [
+      -34,
+      -40,
+      34,
+      20
+     ],
+     "height": [
+      2,
+      4
+     ],
+     "y": -1.4,
+     "avoid": [
+      [
+       0,
+       -2,
+       14
+      ]
+     ],
+     "seed": 5
+    },
+    {
+     "type": "scatter",
+     "model": "large_boulder",
+     "n": 6,
+     "area": [
+      -30,
+      -60,
+      30,
+      -30
+     ],
+     "height": [
+      10,
+      16
+     ],
+     "y": -1.2,
+     "seed": 8
+    },
+    {
+     "type": "scatter",
+     "model": "palm_tree",
+     "at": [
+      [
+       -13,
+       -12
+      ],
+      [
+       14,
+       -11
+      ],
+      [
+       -15,
+       -3
+      ],
+      [
+       16,
+       -2
+      ],
+      [
+       -10,
+       -16
+      ]
+     ],
+     "height": [
+      22,
+      30
+     ],
+     "seed": 9
+    }
+   ]
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy>storm@closed",
+   "grade": "vivid>threat@closed",
+   "weather": "clear",
+   "time": "day",
+   "line": "Every door stayed open for one hour, and anyone inside when it *closed* never returned.",
+   "actors": [
+    "zoe 0,4 f180 /horrified"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": "jungle",
+     "closeAt": "w:closed",
+     "count": 6,
+     "rate": 1
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     40,
+     -20
+    ],
+    "path": [
+     [
+      0,
+      2,
+      14
+     ],
+     [
+      0,
+      2,
+      10
+     ]
+    ],
+    "lens": 75
+   },
+   "sfx": "boom@closed dun_dun_dun@never",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "golden_hour",
+   "grade": "flashback",
+   "weather": "clear",
+   "time": "sunset",
+   "line": "Five years ago, Ryan's father stepped into a box holding a golden *paradise*.",
+   "cam": "wide group lens85 h0.5 rise",
+   "actors": [
+    "father 0,3 f180 /awe",
+    "ryan_kid 2.5,4 f180 /starstruck"
+   ],
+   "sfx": "sparkle@golden",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "golden_hour",
+   "grade": "flashback",
+   "weather": "clear",
+   "time": "sunset",
+   "line": "He promised Ryan a piece of it for his *birthday*.",
+   "cam": "medium group 20 push",
+   "actors": [
+    "father 0,0 f25 kneel/happy",
+    "ryan_kid 2.2,0 f-25 /happy gaze:camera"
+   ],
+   "fx": "sparkles:ryan_kid@birthday",
+   "sfx": "sparkle@birthday",
+   "emotion": "happy",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "sunset",
+   "line": "Then a vast *shadow* crossed the sky, and the doors slammed shut.",
+   "actors": [
+    "father 0,3 f0 /terrified gaze:up",
+    "sky_beast 0,-110 y60 f0 walk"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     40,
+     -90
+    ],
+    "path": [
+     [
+      0,
+      2,
+      18
+     ],
+     [
+      0,
+      4,
+      14
+     ]
+    ],
+    "lens": 85
+   },
+   "sfx": "dun_dun_dun@shadow",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "His father never came back, but Ryan never stopped *waiting*.",
+   "cam": "low ryan lens90 rise",
+   "actors": [
+    "ryan 0,6 f180 /sad"
+   ],
+   "transition": "fade",
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 0
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      4
+     ],
+     "n": 150,
+     "radius": 40,
+     "inner": 6,
+     "seed": 5,
+     "mode": "watch"
+    }
+   ],
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy>storm@roared",
+   "grade": "vivid>threat@roared",
+   "weather": "clear",
+   "time": "day",
+   "line": "On his birthday, the sky *roared*, and a new box crashed into the town square.",
+   "cam": "low ryan lens90 static",
+   "actors": [
+    "ryan 0,6 f0 /worried gaze:up",
+    "zoe -6,5 f160 /shocked",
+    "jay 6,5 f200 /shocked"
+   ],
+   "sfx": "riser@0",
+   "emotion": "dramatic",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "dur": 1.04,
+   "cam": "low ryan lens90 static",
+   "actors": [
+    "ryan 0,4 f180 /stunned"
+   ],
+   "shots": [
+    "@10% wide group lens85 h0.3 whip",
+    "@60% top ryan"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 3600
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      0
+     ],
+     "n": 200,
+     "radius": 55,
+     "inner": 14,
+     "seed": 9,
+     "mode": "flee"
+    }
+   ],
+   "crowd": "panic 16 from:ryan @0",
+   "sfx": "crowd_gasp@0"
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Slowly, the golden doors slid *open*, revealing a frozen wasteland.",
+   "actors": [
+    "ryan 0,5 f180 /awe"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "ice_world",
+      "sky": "nebula"
+     },
+     "openAt": "w:slid",
+     "count": 3600
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     12,
+     -48
+    ],
+    "path": [
+     [
+      0,
+      2,
+      20
+     ],
+     [
+      0,
+      4,
+      6
+     ]
+    ],
+    "lens": 70
+   },
+   "sfx": "magic@slid",
+   "emotion": "dramatic",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "The clock read sixty *minutes*, and hundreds of people rushed inside.",
+   "actors": [
+    "ryan 0,5 f180 /awe"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "ice_world",
+      "sky": "nebula"
+     },
+     "open": true,
+     "count": 3600,
+     "rate": 1
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     25,
+     -50
+    ],
+    "path": [
+     [
+      0,
+      3,
+      0
+     ],
+     [
+      0,
+      7,
+      -4
+     ]
+    ],
+    "lens": 60
+   },
+   "sfx": "tick@minutes",
+   "emotion": "nervous",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Ryan took a deep breath and *followed*.",
+   "cam": "low ryan lens90 track",
+   "actors": [
+    "ryan 0,10 f180 rbx_sprint/determined to:0,-40 sp14"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "ice_world",
+      "sky": "nebula"
+     },
+     "open": true,
+     "count": 3580,
+     "rate": 1
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      -44
+     ],
+     "n": 120,
+     "radius": 40,
+     "inner": 3,
+     "seed": 2,
+     "mode": "gather"
+    }
+   ],
+   "transition": "white",
+   "sfx": "whoosh@followed",
+   "emotion": "calm",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "night",
+   "line": "Giants of glowing ice wandered the *storm*.",
+   "cam": "low ryan lens90 h0.4 static",
+   "actors": [
+    "ryan 6,6 f200 /awe",
+    "ice_giant -22,-60 f30 walk",
+    "ice_giant 38,-90 f-20 walk"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -110
+     ],
+     "portal": {
+      "loc": "town_square",
+      "sky": "day_puffy"
+     },
+     "open": true,
+     "count": 3540,
+     "rate": 1
+    }
+   ],
+   "sfx": "boom@glowing*0.5",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35,
+   "emotion": "mysterious"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "night",
+   "line": "Then something golden flashed in the ice: the statue from his father's *paradise*.",
+   "actors": [
+    "ryan 0,5 f200 /heartbroken"
+   ],
+   "props": [
+    {
+     "type": "statue",
+     "at": [
+      16,
+      -26
+     ],
+     "y": -1.2,
+     "rot": -30
+    }
+   ],
+   "fx": [
+    {
+     "type": "sparkles",
+     "pos": [
+      16,
+      6,
+      -26
+     ],
+     "at": 0,
+     "scale": 2.5
+    },
+    {
+     "type": "glow_orb",
+     "pos": [
+      16,
+      6,
+      -25
+     ],
+     "at": 0,
+     "scale": 1.2,
+     "color": "#ffcc55"
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     16,
+     7,
+     -26
+    ],
+    "path": [
+     [
+      0,
+      2,
+      8
+     ],
+     [
+      6,
+      3,
+      -4
+     ]
+    ],
+    "lens": 60
+   },
+   "sfx": "magic@paradise",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "night",
+   "line": "He dug with his bare hands until his fingers hit a rusty *hatch*.",
+   "cam": "medium ryan lens70 push",
+   "actors": [
+    "ryan 10,-18 f160 dig/grit"
+   ],
+   "props": [
+    {
+     "type": "statue",
+     "at": [
+      16,
+      -26
+     ],
+     "y": -1.2,
+     "rot": -30
+    },
+    {
+     "type": "hatch",
+     "at": [
+      10,
+      -18.5
+     ],
+     "y": -0.15,
+     "openAt": 99
+    }
+   ],
+   "fx": [
+    {
+     "type": "ice_shatter",
+     "pos": [
+      10,
+      0.3,
+      -17
+     ],
+     "at": 0.3,
+     "scale": 0.7
+    },
+    {
+     "type": "ice_shatter",
+     "pos": [
+      10,
+      0.3,
+      -17
+     ],
+     "at": 1.3,
+     "scale": 0.7,
+     "seed": 3
+    },
+    {
+     "type": "snow_flurry",
+     "pos": [
+      10,
+      0,
+      -18
+     ],
+     "at": 0,
+     "scale": 1
+    }
+   ],
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "night",
+   "line": "He heaved it open, and stairs led down into the *dark*.",
+   "cam": "medium ryan lens70 static",
+   "actors": [
+    "ryan 10,-15 f0 pull_door/grit reach:10,0.5,-18.5"
+   ],
+   "props": [
+    {
+     "type": "hatch",
+     "at": [
+      10,
+      -18.5
+     ],
+     "y": -0.15,
+     "openAt": "w:heaved"
+    }
+   ],
+   "fx": [
+    {
+     "type": "magic_aura",
+     "pos": [
+      10,
+      0.1,
+      -18.5
+     ],
+     "at": "w:heaved",
+     "scale": 1.2,
+     "color": "#ffcc66"
+    },
+    {
+     "type": "dust_cloud",
+     "pos": [
+      10,
+      0.3,
+      -18.5
+     ],
+     "at": "w:open",
+     "scale": 1
+    }
+   ],
+   "sfx": "boom@heaved*0.5",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "tunnel",
+   "sky": "none",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Below lay a tunnel with no end, its walls lined with thousands of glowing *doors*.",
+   "actors": [
+    "ryan 0,19 y7 f180 rbx_walk/awe to:0,-14,0"
+   ],
+   "props": [
+    {
+     "type": "stairs",
+     "at": [
+      0,
+      8
+     ],
+     "rise": 12,
+     "run": 16
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     6,
+     -60
+    ],
+    "path": [
+     [
+      0,
+      17,
+      23.4
+     ],
+     [
+      0,
+      15.5,
+      20
+     ]
+    ],
+    "lens": 85
+   },
+   "sfx": "whoosh@0",
+   "emotion": "mysterious",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "tunnel",
+   "sky": "none",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Far ahead, one door wrapped in golden clouds. He grabbed the handle and *pulled*.",
+   "actors": [
+    "ryan 0,-60 f180 /awe"
+   ],
+   "fx": [
+    {
+     "type": "fog_bank",
+     "pos": [
+      0,
+      0,
+      -150
+     ],
+     "at": 0,
+     "scale": 1.6,
+     "color": "#ffcf80"
+    },
+    {
+     "type": "magic_aura",
+     "pos": [
+      0,
+      0,
+      -154
+     ],
+     "at": 0,
+     "scale": 2.5,
+     "color": "#ffd27a"
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     10,
+     -158
+    ],
+    "path": [
+     [
+      8,
+      4,
+      -100
+     ],
+     [
+      2,
+      8,
+      -128
+     ]
+    ],
+    "lens": 60,
+    "roll": 6
+   },
+   "emotion": "nervous",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "dur": 1.04,
+   "cam": "close ryan lens50 pull",
+   "actors": [
+    "ryan 0,6 f20 /shocked brows:raised"
+   ],
+   "shots": [
+    "@50% extreme ryan crash"
+   ],
+   "overlay": "flash",
+   "fx": [
+    {
+     "type": "magic_burst",
+     "pos": [
+      0,
+      4,
+      0
+     ],
+     "at": 0,
+     "scale": 2,
+     "color": "#fff2c0"
+    }
+   ]
+  },
+  {
+   "loc": "sky_island",
+   "sky": "day_puffy>day_cumulus@empty",
+   "grade": "vivid>cold@empty",
+   "weather": "clear",
+   "time": "day",
+   "line": "An island drifted through the clouds, silent and *empty*.",
+   "cam": "close ryan lens50 static",
+   "actors": [
+    "ryan 0,2 f200 /worried gaze:left"
+   ],
+   "emotion": "sad",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "stone_court",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "dusk",
+   "line": "He searched the empty houses, calling for Dad, until he heard a faint, familiar *voice*.",
+   "cam": "close ryan lens50 push",
+   "actors": [
+    "ryan 0,-3 f30 /shocked brows:raised gaze:right"
+   ],
+   "sfx": "heartbeat@0",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "stone_court",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "dusk",
+   "line": "Behind a broken wall, his father hung in *chains*, and whispered one word: Ryan.",
+   "cam": "medium father lens70 push",
+   "actors": [
+    "father 0,-7 f0 sitsad/sad",
+    "ryan 0,6 f180 rbx_run/determined to:0,-1 sp12"
+   ],
+   "props": [
+    {
+     "type": "chains",
+     "at": [
+      0,
+      -8.4
+     ],
+     "y": 0,
+     "openAt": 99
+    }
+   ],
+   "sfx": "dun_dun_dun@chains",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "stone_court",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "dusk",
+   "line": "Ryan grabbed the chains and pulled with all his *strength* until the metal snapped.",
+   "actors": [
+    "ryan 0,-6 f180 unchain/grit reach:1.6,1,-8.4",
+    "father 0,-7 f0 sitsad/worried"
+   ],
+   "props": [
+    {
+     "type": "chains",
+     "at": [
+      0,
+      -8.4
+     ],
+     "y": 0,
+     "openAt": "w:strength"
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     -7
+    ],
+    "path": [
+     [
+      8,
+      4,
+      6
+     ],
+     [
+      6,
+      4,
+      3
+     ]
+    ],
+    "lens": 55
+   },
+   "sfx": "boom@strength*0.6",
+   "emotion": "dramatic",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "stone_court",
+   "sky": "day_puffy",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "dusk",
+   "line": "Then the ground began to shake, and a vast shadow swallowed the *island*.",
+   "cam": "low group lens90 static",
+   "actors": [
+    "father 0,-6 f20 /terrified gaze:up",
+    "ryan 0,-2 f160 /terrified gaze:up"
+   ],
+   "shakeAt": 0,
+   "overlay": "speedlines",
+   "sfx": "boom@0 heartbeat@0",
+   "emotion": "scared",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "line": "Something colossal crawled through the clouds, and dozens of glowing eyes blinked *open*.",
+   "actors": [
+    "sky_beast 0,-90 y45 f0 walk"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     45,
+     -90
+    ],
+    "path": [
+     [
+      36,
+      26,
+      58
+     ],
+     [
+      30,
+      30,
+      50
+     ]
+    ],
+    "lens": 75,
+    "occlude": false
+   },
+   "fx": [
+    {
+     "type": "fog_bank",
+     "pos": [
+      0,
+      25,
+      -80
+     ],
+     "at": 0,
+     "scale": 2.5
+    }
+   ],
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "line": "One enormous golden eye turned toward *them*.",
+   "actors": [
+    "sky_beast -40,-22 y6 f80 idle",
+    "ryan 3,6 f-60 /terrified gaze:left",
+    "father -1,6 f-40 /terrified gaze:left"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     -40,
+     12,
+     -22
+    ],
+    "path": [
+     [
+      10,
+      4,
+      4
+     ],
+     [
+      7,
+      5,
+      0
+     ]
+    ],
+    "lens": 45
+   },
+   "sfx": "dun_dun_dun@golden",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "line": "They sprinted for the golden door as its giant hand tore the islands *apart*.",
+   "actors": [
+    "father 4,8 f135 rbx_sprint/terrified to:-26,-12 sp16",
+    "ryan 6.5,8 f135 link:father:grab_arm/scared"
+   ],
+   "props": [
+    {
+     "type": "door",
+     "at": [
+      -28,
+      -14
+     ],
+     "rot": 40,
+     "color": "#d9a21b",
+     "scale": 1.8
+    }
+   ],
+   "fx": [
+    {
+     "type": "fog_bank",
+     "pos": [
+      -28,
+      0,
+      -14
+     ],
+     "at": 0,
+     "scale": 1.4,
+     "color": "#ffcf80"
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     -10,
+     3,
+     -2
+    ],
+    "path": [
+     [
+      10,
+      3,
+      18
+     ],
+     [
+      6,
+      4,
+      14
+     ]
+    ],
+    "lens": 60
+   },
+   "sfx": "cartoon_run@0",
+   "emotion": "scared",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "dur": 1.12,
+   "actors": [
+    "father -18,-6 f135 rbx_sprint/terrified to:-26,-12 sp16",
+    "ryan -15.5,-6 f135 link:father:grab_arm/scared"
+   ],
+   "shots": [
+    "@50% wide group lens85 h0.5"
+   ],
+   "props": [
+    {
+     "type": "door",
+     "at": [
+      -28,
+      -14
+     ],
+     "rot": 40,
+     "color": "#d9a21b",
+     "scale": 1.8
+    }
+   ],
+   "fx": [
+    {
+     "type": "debris",
+     "pos": [
+      -24,
+      14,
+      -20
+     ],
+     "at": 0,
+     "scale": 2.5
+    },
+    {
+     "type": "debris",
+     "pos": [
+      -20,
+      16,
+      -16
+     ],
+     "at": 0.8,
+     "scale": 2.5,
+     "seed": 5
+    },
+    {
+     "type": "dust_cloud",
+     "pos": [
+      -24,
+      0.3,
+      -16
+     ],
+     "at": 1.0,
+     "scale": 2
+    },
+    {
+     "type": "embers",
+     "pos": [
+      -24,
+      6,
+      -16
+     ],
+     "at": 0,
+     "scale": 2
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     -22,
+     3,
+     -9
+    ],
+    "path": [
+     [
+      -8,
+      3,
+      4
+     ],
+     [
+      -12,
+      4,
+      0
+     ]
+    ],
+    "lens": 65
+   },
+   "shakeAt": 0
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "line": "They leaped through just as it smashed down, and Ryan slammed the door *shut*.",
+   "actors": [
+    "father -22,-9 f135 rbx_jump/scream to:-30,-15,0 sp16",
+    "ryan -19.5,-9 f135 link:father:grab_arm/scream"
+   ],
+   "props": [
+    {
+     "type": "door",
+     "at": [
+      -28,
+      -14
+     ],
+     "rot": 40,
+     "color": "#d9a21b",
+     "scale": 1.8
+    }
+   ],
+   "fx": [
+    {
+     "type": "slam",
+     "pos": [
+      -24,
+      0,
+      -10
+     ],
+     "at": "w:smashed",
+     "scale": 2.2
+    },
+    {
+     "type": "shockwave_ring",
+     "pos": [
+      -24,
+      0.3,
+      -10
+     ],
+     "at": "w:smashed",
+     "scale": 3
+    },
+    {
+     "type": "explosion",
+     "pos": [
+      -24,
+      6,
+      -12
+     ],
+     "at": "w:smashed",
+     "scale": 1.6
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     -28,
+     4,
+     -14
+    ],
+    "path": [
+     [
+      -14,
+      3,
+      0
+     ],
+     [
+      -18,
+      4,
+      -5
+     ]
+    ],
+    "lens": 65
+   },
+   "shakeAt": "w:smashed",
+   "sfx": "boom@smashed",
+   "overlay": "speedlines",
+   "emotion": "dramatic",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "tunnel",
+   "sky": "none",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "How much time was left? Forty-seven *seconds*.",
+   "cam": "extreme ryan lens50 push",
+   "actors": [
+    "ryan 0,-140 f0 /terrified gaze:down"
+   ],
+   "props": [
+    {
+     "type": "countdown",
+     "hand": "ryan",
+     "count": 47,
+     "scale": 0.3,
+     "w": 5,
+     "h": 2,
+     "y0": 0
+    }
+   ],
+   "sfx": "tick@0",
+   "emotion": "nervous",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "tunnel",
+   "sky": "none",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "line": "Up the stairs, three at a time, with thirty *seconds* left.",
+   "actors": [
+    "ryan -1,8 y0 f0 rbx_sprint/determined to:-1,24,12 sp14",
+    "father 1.2,7 y0 f0 rbx_sprint/determined to:1.2,24,12 sp14"
+   ],
+   "props": [
+    {
+     "type": "stairs",
+     "at": [
+      0,
+      8
+     ],
+     "rise": 12,
+     "run": 16
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     9,
+     21
+    ],
+    "path": [
+     [
+      -4,
+      2,
+      -2
+     ],
+     [
+      -3,
+      5,
+      3
+     ]
+    ],
+    "lens": 70
+   },
+   "emotion": "scared",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "blizzard",
+   "time": "night",
+   "line": "Then the ice cracked, and black tentacles exploded from the *ground*.",
+   "cam": "low ryan lens90 crash",
+   "actors": [
+    "ryan 10,-8 f0 rbx_sprint/terrified to:6,6 sp16",
+    "father 11.5,-8 f0 rbx_sprint/terrified"
+   ],
+   "fx": [
+    {
+     "type": "crack",
+     "pos": [
+      9,
+      0.1,
+      0
+     ],
+     "at": 0.3,
+     "scale": 2.5
+    },
+    {
+     "type": "ice_shatter",
+     "pos": [
+      9,
+      0.3,
+      0
+     ],
+     "at": 0.5,
+     "scale": 1.8
+    },
+    {
+     "type": "ice_shatter",
+     "pos": [
+      6,
+      0.3,
+      3
+     ],
+     "at": 1,
+     "scale": 1.5,
+     "seed": 4
+    },
+    {
+     "type": "shards",
+     "pos": [
+      8,
+      1,
+      1
+     ],
+     "at": 0.5,
+     "scale": 1.5
+    }
+   ],
+   "shakeAt": 0.3,
+   "sfx": "boom@cracked",
+   "emotion": "dramatic",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "blizzard",
+   "time": "night",
+   "line": "They raced through the snow, dodging *tentacles*, with twenty seconds to go.",
+   "cam": "low ryan lens80 track",
+   "actors": [
+    "ryan 4,22 f180 rbx_sprint/terrified to:2,-30 sp20",
+    "father 6,22 f180 rbx_sprint/terrified link:ryan:hold_hands",
+    "tent1 -8,-14 f0 walk",
+    "tent2 22,-30 f0 walk",
+    "tent3 -18,-48 y-40 f0 walk to:-18,-48,0 sp60"
+   ],
+   "fx": [
+    {
+     "type": "shards",
+     "pos": [
+      -6,
+      2,
+      4
+     ],
+     "at": 1,
+     "scale": 2
+    },
+    {
+     "type": "ice_shatter",
+     "pos": [
+      -6,
+      0.3,
+      4
+     ],
+     "at": 1.2,
+     "scale": 2
+    }
+   ],
+   "shakeAt": 1,
+   "sfx": "cartoon_run@0 boom@snow",
+   "emotion": "scared",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "blizzard",
+   "time": "night",
+   "line": "Ten seconds. Through the doors, Ryan could see the town *square*.",
+   "cam": "low group lens90 track",
+   "actors": [
+    "ryan 2,-30 f180 rbx_sprint/determined to:1,-70 sp20",
+    "father 4,-30 f180 rbx_sprint/determined link:ryan:hold_hands",
+    "tent3 -18,-48 f0 walk"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -90
+     ],
+     "portal": {
+      "loc": "town_square",
+      "sky": "day_puffy"
+     },
+     "open": true,
+     "count": 6,
+     "rate": 1
+    }
+   ],
+   "sfx": "whoosh@0",
+   "emotion": "nervous",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "blizzard",
+   "time": "night",
+   "line": "A tentacle lunged at Ryan, but his father grabbed him and *jumped*.",
+   "cam": "low ryan lens90 crash",
+   "actors": [
+    "ryan 1,-70 f0 rbx_sprint/horrified to:0,-80 sp20",
+    "father 3,-70 f0 rbx_sprint/horrified",
+    "tent1 6,-62 y0 f180 walk to:2,-72,0 sp60"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -90
+     ],
+     "portal": {
+      "loc": "town_square",
+      "sky": "day_puffy"
+     },
+     "closeAt": 1.8,
+     "count": 3,
+     "rate": 1
+    }
+   ],
+   "shakeAt": 0,
+   "sfx": "boom@lunged",
+   "emotion": "dramatic",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "ice_world",
+   "sky": "nebula",
+   "grade": "cold",
+   "weather": "blizzard",
+   "time": "night",
+   "line": "They flew through just as the doors slammed *shut*.",
+   "cam": "low group lens90 fly",
+   "actors": [
+    "father 0,-84 f180 rbx_jump/scream to:0,-94,0 sp18",
+    "ryan 0,-84 f180 link:father:carry/scream"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -90
+     ],
+     "portal": {
+      "loc": "town_square",
+      "sky": "day_puffy"
+     },
+     "closeAt": "w:slammed",
+     "count": 0,
+     "rate": 1
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      -20
+     ],
+     "n": 1,
+     "radius": 1,
+     "inner": 1
+    }
+   ],
+   "fx": [
+    {
+     "type": "shockwave_ring",
+     "pos": [
+      0,
+      0.3,
+      -85
+     ],
+     "at": "w:slammed",
+     "scale": 3
+    },
+    {
+     "type": "dust_cloud",
+     "pos": [
+      0,
+      0.3,
+      -85
+     ],
+     "at": "w:slammed",
+     "scale": 3
+    }
+   ],
+   "shakeAt": "w:slammed",
+   "sfx": "boom@slammed",
+   "overlay": "flash",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "dur": 1.76,
+   "actors": [
+    "father -1,-7 f0 lie/relieved",
+    "ryan 1.5,-7 f0 lie/relieved"
+   ],
+   "shots": [
+    "@0.9 high group lens70 pull"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 0
+    }
+   ],
+   "fx": [
+    {
+     "type": "dust_cloud",
+     "pos": [
+      0,
+      0.3,
+      -8
+     ],
+     "at": 0.1,
+     "scale": 2.5
+    },
+    {
+     "type": "shockwave_ring",
+     "pos": [
+      0,
+      0.3,
+      -8
+     ],
+     "at": 0.1,
+     "scale": 2.5
+    },
+    {
+     "type": "smoke_plume",
+     "pos": [
+      -8,
+      0,
+      -30
+     ],
+     "at": 0,
+     "scale": 1
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     14,
+     -50
+    ],
+    "path": [
+     [
+      0,
+      3,
+      -4
+     ],
+     [
+      0,
+      4,
+      4
+     ]
+    ],
+    "lens": 80
+   },
+   "shakeAt": 0.1,
+   "transition": "white",
+   "sfx": "boom@0.1"
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "line": "Sunlight, cobblestones, home. Ryan threw his arms around his *father*.",
+   "cam": "low group lens90 rise",
+   "actors": [
+    "father -1,-7 f0 lie/relieved",
+    "ryan 1.5,-7 f0 lie/happy"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 0
+    }
+   ],
+   "fx": "sparkles:ryan@Home",
+   "emotion": "calm",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "line": "Five years of waiting poured out in tears as his father held him *tight*.",
+   "cam": "medium group lens60 60 push",
+   "actors": [
+    "father 0,-6 f0 hug/tears_joy tears",
+    "ryan 0,-6 f180 hug/bawling tears link:father:hug gaze:camera"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 0
+    }
+   ],
+   "sfx": "sad_trombone@0*0.0",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "line": "His father reached into his pocket and pulled out a gleaming piece of the *statue*.",
+   "cam": "close father lens50 push",
+   "actors": [
+    "father -1.5,-6 f20 /happy +nugget@pulled",
+    "ryan 1.5,-6 f-6 /awe pupils:big gaze:left"
+   ],
+   "props": [],
+   "fx": [
+    {
+     "type": "sparkles",
+     "pos": [
+      -1.5,
+      4,
+      -5
+     ],
+     "at": "w:gleaming",
+     "scale": 2
+    },
+    {
+     "type": "glow_orb",
+     "pos": [
+      -1.5,
+      4,
+      -5
+     ],
+     "at": "w:gleaming",
+     "scale": 0.8,
+     "color": "#ffcc55"
+    }
+   ],
+   "sfx": "sparkle@gleaming",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "line": "He smiled. Happy *birthday*.",
+   "cam": "medium group 25 push",
+   "actors": [
+    "father -1.5,-6 f20 /love +nugget",
+    "ryan 1.5,-6 f-6 /tears_joy tears gaze:left"
+   ],
+   "fx": [
+    {
+     "type": "confetti_cannon",
+     "pos": [
+      -4,
+      0,
+      -7
+     ],
+     "at": "w:birthday",
+     "scale": 1.2
+    },
+    {
+     "type": "confetti_cannon",
+     "pos": [
+      4,
+      0,
+      -7
+     ],
+     "at": "w:birthday",
+     "scale": 1.2,
+     "seed": 3
+    },
+    {
+     "type": "sparkles",
+     "pos": [
+      0,
+      4,
+      -6
+     ],
+     "at": 0,
+     "scale": 3
+    }
+   ],
+   "sfx": "tada@birthday",
+   "emotion": "happy",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "line": "And this time, he *stayed*.",
+   "actors": [
+    "father 0,-6 f0 hug/love",
+    "ryan 0,-6 f180 hug/tears_joy tears link:father:hug"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 0
+    }
+   ],
+   "fx": [
+    {
+     "type": "fireworks",
+     "pos": [
+      -30,
+      0,
+      -12
+     ],
+     "at": 0,
+     "scale": 1.6
+    },
+    {
+     "type": "fireworks",
+     "pos": [
+      30,
+      0,
+      -14
+     ],
+     "at": 0.8,
+     "scale": 1.6,
+     "seed": 3
+    },
+    {
+     "type": "confetti_cannon",
+     "pos": [
+      0,
+      0,
+      -8
+     ],
+     "at": 0.6,
+     "scale": 1.4,
+     "seed": 7
+    },
+    {
+     "type": "sparkles",
+     "pos": [
+      0,
+      4,
+      -6
+     ],
+     "at": 0,
+     "scale": 3
+    },
+    {
+     "type": "heal_sparkles",
+     "pos": [
+      0,
+      0.1,
+      -6
+     ],
+     "at": 0,
+     "scale": 2
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -6
+    ],
+    "path": [
+     [
+      0,
+      3,
+      -2
+     ],
+     [
+      0,
+      14,
+      12
+     ]
+    ],
+    "lens": 70
+   },
+   "sfx": "sparkle@0",
+   "emotion": "calm",
+   "voiceSettings": {
+    "speed": 0.93
+   },
+   "pad": 0.35
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "dur": 1.44,
+   "actors": [
+    "father 0,-6 f0 hug/love",
+    "ryan 0,-6 f180 hug/tears_joy tears link:father:hug"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "count": 0
+    }
+   ],
+   "fx": [
+    {
+     "type": "fireworks",
+     "pos": [
+      -30,
+      0,
+      -12
+     ],
+     "at": 0,
+     "scale": 1.8
+    },
+    {
+     "type": "fireworks",
+     "pos": [
+      30,
+      0,
+      -14
+     ],
+     "at": 0.6,
+     "scale": 1.8,
+     "seed": 5
+    },
+    {
+     "type": "sparkles",
+     "pos": [
+      0,
+      4,
+      -6
+     ],
+     "at": 0,
+     "scale": 3
+    }
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     6,
+     -6
+    ],
+    "path": [
+     [
+      0,
+      22,
+      24
+     ],
+     [
+      0,
+      40,
+      40
+     ]
+    ],
+    "lens": 60
+   },
+   "fadeOut": true
+  }
+ ]
+}

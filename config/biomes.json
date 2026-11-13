@@ -1,0 +1,15 @@
+{
+ "_doc": "Biome = a soft look preset any scene can apply to ANY set (scene field `biome`, inherited until changed, \"none\" resets). It only fills `treat` / `medium` / `weather` when the scene does not set them itself, so the story always wins. Examples: {\"loc\":\"jungle\",\"biome\":\"frozen\"} = a frost-covered jungle; {\"loc\":\"town_square\",\"biome\":\"flooded\"} = the plaza underwater.",
+ "frozen":   {"treat": "frost"},
+ "snowy":    {"treat": "snow", "weather": "snow"},
+ "scorched": {"treat": "ash"},
+ "desert":   {"treat": "sand"},
+ "overgrown":{"treat": "moss"},
+ "swamp":    {"treat": ["moss", "wet"]},
+ "rainy":    {"treat": "wet", "weather": "rain"},
+ "haunted":  {"treat": ["dead", "moonlit"]},
+ "toxic":    {"treat": "toxic"},
+ "golden":   {"treat": "golden"},
+ "flooded":  {"medium": "underwater"},
+ "abandoned":{"treat": ["dead", "moss"]}
+}

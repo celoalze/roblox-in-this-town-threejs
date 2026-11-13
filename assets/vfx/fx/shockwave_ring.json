@@ -1,0 +1,7 @@
+{"duration": 2, "emitters": [
+ {"texture": "soft", "blend": "add", "mode": "flat", "shape": "point", "life": 0.3, "size": 14, "color": "#ffffff", "burst": [[0, 1]], "over": {"size": [[0, 0.4], [1, 1.2]], "color": [["#fff", 0, 0.9], ["#bfe8ff", 1, 0]]}, "order": 5},
+ {"texture": "assets/vfx/textures/kenney/circle_03.png", "blend": "add", "mode": "flat", "shape": "point", "life": 0.75, "size": 28, "color": "#ffffff", "burst": [[0, 1]], "over": {"size": [[0, 0.08], [0.25, 0.55], [1, 1]], "color": [["#ffffff", 0, 1], ["#a8e4ff", 0.5, 0.8], ["#6cc8ff", 1, 0]]}, "order": 3},
+ {"texture": "ring", "blend": "normal", "mode": "flat", "shape": "point", "life": 0.75, "size": 28, "color": "#ffffff", "burst": [[0, 1]], "over": {"size": [[0, 0.08], [0.25, 0.55], [1, 1]], "color": [["#ffffff", 0, 1], ["#d8f0ff", 0.6, 0.7], ["#bfe4ff", 1, 0]]}, "order": 4},
+ {"texture": "ring", "blend": "add", "mode": "flat", "shape": "point", "life": 0.9, "size": 26, "color": "#ffe8b0", "burst": [[0.1, 1]], "over": {"size": [[0, 0.05], [0.3, 0.5], [1, 1]], "color": [["#fff0c0", 0, 0.9], ["#ffb050", 1, 0]]}, "order": 2},
+ {"texture": "assets/vfx/textures/kenney/smoke_04.png", "blend": "normal", "rot": [-90, 0, 0], "shape": {"type": "circle", "radius": 2.5, "thickness": 0.3}, "life": [0.7, 1.2], "speed": [10, 17], "size": [3, 5], "rotation": [0, 360], "color": ["#e8dcc4", "#cbbd9e"], "burst": [[0.02, 22]], "over": {"size": [[0, 0.5], [1, 1.5]], "color": [["#e8dcc4", 0, 0.8], ["#cbbd9e", 1, 0]], "drag": 0.08, "gravity": [0, 1.5, 0]}, "order": 1}
+]}

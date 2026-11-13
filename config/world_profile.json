@@ -1,0 +1,12 @@
+{
+ "_doc": "SOFT per-world defaults (never requirements). A scene's own `treat`/`medium`/`biome` always wins; `\"treat\": \"none\"` removes the default. `tags` describe what the world looks like, used by the intent check (pipeline/intent.py) to suggest a better world, never to block one.",
+ "ice_world":   {"treat": "frost", "tags": ["ice", "snow", "cold", "frozen", "crystal"]},
+ "ocean_world": {"tags": ["ocean", "sea", "water", "island", "beach", "palm"]},
+ "seabed":      {"medium": "underwater", "tags": ["ocean", "sea", "underwater", "water", "coral", "reef", "deep"]},
+ "jungle":      {"tags": ["jungle", "forest", "trees", "tropical", "green"]},
+ "gold_city":   {"tags": ["gold", "city", "treasure", "rich"]},
+ "stone_court": {"tags": ["ruins", "stone", "graveyard", "dark", "castle"]},
+ "sky_island":  {"tags": ["sky", "island", "clouds", "meadow", "floating"]},
+ "town_square": {"tags": ["town", "plaza", "city", "square", "village"]},
+ "tunnel":      {"tags": ["tunnel", "corridor", "hall", "temple", "palace"]}
+}

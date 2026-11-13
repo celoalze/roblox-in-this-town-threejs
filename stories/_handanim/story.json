@@ -1,0 +1,227 @@
+{
+ "title": "hand anim",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "hand anim",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "kneel",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 kneel"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "kneel_both",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 kneel_both"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "dig",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 dig"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.4,
+   "title": "pull_door",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 pull_door"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "unchain",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 unchain"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "reach",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 reach"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "reach_down",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 reach_down"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "panic",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 panic"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "scream_run",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 scream_run"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "hug_give",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 hug_give"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "crawl",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 crawl"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "carry_walk",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 carry_walk"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.05,
+   "title": "lift_heavy",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 lift_heavy"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.21,
+   "title": "stumble",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 stumble"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.71,
+   "title": "tumble",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 tumble"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.0,
+   "title": "crouch_sneak",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 crouch_sneak"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "cry_kneel",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 cry_kneel"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "shrug_big",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 shrug_big"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "duck",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 duck"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.9,
+   "title": "dive_forward",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 dive_forward"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.0,
+   "title": "look_around",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 look_around"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 1.6,
+   "title": "throw",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 throw"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.6,
+   "title": "exhausted_walk",
+   "cam": "full milo 90 static",
+   "actors": [
+    "milo 0,0 f0 exhausted_walk"
+   ]
+  }
+ ]
+}

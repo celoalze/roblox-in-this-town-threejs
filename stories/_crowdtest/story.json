@@ -1,0 +1,10 @@
+{"title": "crowd + creature test", "music": "none", "cast": ["milo", "zoe", "dragon", "dog", {"rex": {"like": "dragon", "scale": 0.5, "tint": "#ff8a8a"}}],
+ "publish": {"title": "crowd test", "description": "x", "tags": ["a", "b", "c", "d", "e"]},
+ "scenes": [
+  {"loc": "park", "dur": 3, "title": "crowd watch -> cheer @1.2", "cam": "wide group 0 static", "actors": ["milo -1.5,0 f20 cheer/laugh", "zoe 1.5,0 f-20 clap/grin"], "crowd": "cheer 14 @1.2"},
+  {"dur": 3, "title": "pedestrians: crowd walk", "cam": "wide group 0 static", "actors": ["milo -1.5,0 f20", "zoe 1.5,0 f-20 wave"], "crowd": "walk 10"},
+  {"dur": 3.5, "title": "dragon lands, crowd gathers", "cam": "establishing group 0 static", "actors": ["milo -7,0 f60 shocked/shocked", "dragon 6,-3 y9 f-60 fly to:6,-3,0"], "crowd": "gather 12 on:dragon"},
+  {"dur": 3.5, "title": "roar @1 -> crowd flees", "cam": "wide dragon 0 static", "actors": ["milo -7,0 f60 scared/scared", {"id": "dragon", "at": [6, -3], "face": -60, "anim": "idle", "actions": [{"at": 1, "anim": "roar"}]}], "crowd": "flee 12 from:dragon @1"},
+  {"dur": 3.5, "title": "fire breath + baby dragon + dog", "cam": "wide group 0 static", "actors": ["dragon 5,-2 f-70 fire", "rex -2,1 f40 jump", "dog -6,0 f60 run to:-1,3", "milo -8,-2 f50 scared/panic"]},
+  {"loc": "west_saloon", "dur": 3.5, "title": "kit: queue + dog walk + dragon flyby", "cam": "wide group 0 static", "actors": ["zoe 0,0 f10 wave", "dog -5,1 f90 walk to:4,1", "dragon -14,-8 y10 f90 fly to:14,-8,10"], "crowd": "queue 6 on:zoe"}
+ ]}

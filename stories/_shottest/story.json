@@ -1,0 +1,12 @@
+{"title": "shot test", "music": "none", "format": {"fps": 60}, "cast": ["milo", "zoe"],
+ "publish": {"title": "shot test", "description": "x", "tags": ["a", "b", "c", "d", "e"]},
+ "scenes": [
+  {"loc": "plaza", "dur": 4.4, "title": "fly > low lens90 dutch > crash > track", "cam": "wide milo fly",
+   "actors": ["milo -6,0 f90 run to:6,-2", "zoe 3,-4 f-20 wave/grin"],
+   "shots": ["@1.5 low milo lens90 dutch", "@2.4 close milo crash", "@3.2 medium milo track"]},
+  {"dur": 4.4, "title": "pov > whip close > whipout wide lens85 > pov tilt", "cam": "medium group static",
+   "actors": ["milo -1.5,0 f25 talk/happy +phone", "zoe 1.5,0 f-25 laugh/laugh"],
+   "shots": ["@1 pov:milo zoe", "@2 close zoe whip", "@3 wide group lens85 h0.3 whipout", "@3.8 pov:milo tilt50"]},
+  {"dur": 3, "title": "camera path", "shot": "wide", "camera": {"target": "zoe", "path": [[-14, 9, 14], [-4, 2, 8], [3, 1.2, 5], [6, 3.5, 1]], "move": "static"},
+   "actors": ["milo -1.5,0 f25 cheer/happy", "zoe 1.5,0 f-25 dance/grin"]}
+ ]}

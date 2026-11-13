@@ -1,0 +1,252 @@
+{
+ "hair": [
+  7259123616,
+  6501746646,
+  376524487,
+  376548738,
+  376527350,
+  2956239660,
+  63690008,
+  451221329,
+  376526888,
+  1103003368,
+  16630147
+ ],
+ "_note": "slot i (0-based) head centre at x=i*4 in hair.obj; Roblox front = -Z",
+ "styles": {
+  "middlepart": {
+   "kind": "layered",
+   "asset": 7193424874,
+   "mesh": 6933936443,
+   "ref": 6933936481,
+   "refOrigin": [
+    0.0053,
+    -2.4075,
+    0.0093
+   ],
+   "tex": 12778406124
+  },
+  "sidepart": {
+   "kind": "layered",
+   "asset": 7193386173,
+   "mesh": 6938280167,
+   "ref": 6938280175,
+   "refOrigin": [
+    0.0062,
+    -2.47,
+    0.0137
+   ],
+   "tex": 12778676262
+  },
+  "sleek": {
+   "kind": "layered",
+   "asset": 9243987340,
+   "mesh": 6938205353,
+   "ref": 6938205366,
+   "refOrigin": [
+    -0.0002,
+    -2.4576,
+    0.0363
+   ],
+   "tex": 12778662947
+  },
+  "surfer": {
+   "kind": "layered",
+   "asset": 9244029916,
+   "mesh": 6938294794,
+   "ref": 6938294801,
+   "refOrigin": [
+    0.0053,
+    -2.3973,
+    -0.0094
+   ],
+   "tex": 12778213554
+  },
+  "fade": {
+   "kind": "layered",
+   "asset": 9244008307,
+   "mesh": 6938246999,
+   "ref": 6938247011,
+   "refOrigin": [
+    -0.0027,
+    -2.5298,
+    0.0073
+   ],
+   "tex": 12778668044
+  },
+  "ponytail": {
+   "kind": "layered",
+   "asset": 9244095135,
+   "mesh": 6934021070,
+   "ref": 6934021080,
+   "refOrigin": [
+    -0.0291,
+    -2.164,
+    -0.1651
+   ],
+   "tex": 12778410597
+  },
+  "curlyafro": {
+   "kind": "layered",
+   "asset": 9244125859,
+   "mesh": 6937130923,
+   "ref": 6937130937,
+   "refOrigin": [
+    0.0008,
+    -2.4755,
+    -0.0145
+   ],
+   "tex": 12778423881
+  },
+  "wavy": {
+   "kind": "layered",
+   "asset": 7193445686,
+   "mesh": 6937034645,
+   "ref": 6937034657,
+   "refOrigin": [
+    0.0056,
+    -2.3281,
+    -0.0202
+   ],
+   "tex": 12777826719
+  },
+  "curls": {
+   "kind": "layered",
+   "asset": 9244134513,
+   "mesh": 7142599429,
+   "ref": 7142599446,
+   "refOrigin": [
+    -0.0001,
+    -2.4805,
+    -0.0026
+   ],
+   "tex": 12778445315
+  },
+  "dreads": {
+   "kind": "layered",
+   "asset": 9244067444,
+   "mesh": 7214350568,
+   "ref": 7214350579,
+   "refOrigin": [
+    -0.0014,
+    -2.487,
+    0.0052
+   ],
+   "tex": 12734583701
+  },
+  "topknot": {
+   "kind": "layered",
+   "asset": 9244057408,
+   "mesh": 7193639623,
+   "ref": 7193639639,
+   "refOrigin": [
+    -0.0015,
+    -2.7118,
+    -0.057
+   ],
+   "tex": 12778682031
+  },
+  "braids": {
+   "kind": "layered",
+   "asset": 9244148336,
+   "mesh": 7167534509,
+   "ref": 7167534522,
+   "refOrigin": [
+    0.0037,
+    -2.3564,
+    -0.0208
+   ],
+   "tex": 12778470861
+  },
+  "fringe": {
+   "kind": "layered",
+   "asset": 7193397693,
+   "mesh": 6938183147,
+   "ref": 6938183156,
+   "refOrigin": [
+    0.0004,
+    -2.4537,
+    0.0258
+   ],
+   "tex": 12778562399
+  },
+  "bangs": {
+   "kind": "layered",
+   "asset": 7193448988,
+   "mesh": 6937111331,
+   "ref": 6937111355,
+   "refOrigin": [
+    -0.0067,
+    -2.2971,
+    0.0083
+   ],
+   "tex": 12778420927
+  },
+  "updo": {
+   "kind": "classic",
+   "asset": 451220849,
+   "mesh": 81642452,
+   "tex": 6858318826,
+   "scale": [
+    1.15,
+    1.2,
+    1.1
+   ],
+   "pos": [
+    0,
+    0.4,
+    0.0003
+   ]
+  },
+  "sideshave": {
+   "kind": "classic",
+   "asset": 3814474927,
+   "mesh": 3711286040,
+   "tex": 3711286951,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "pos": [
+    0.0021,
+    0.3079,
+    0.0688
+   ]
+  },
+  "colorbraids": {
+   "kind": "classic",
+   "asset": 3814476174,
+   "mesh": 3814343463,
+   "tex": 3814345658,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "pos": [
+    -0.0021,
+    0.2276,
+    0.172
+   ],
+   "gray": false
+  },
+  "classicbrown": {
+   "kind": "classic",
+   "asset": 62234425,
+   "mesh": 81504052,
+   "tex": 81504106,
+   "scale": [
+    1,
+    1.1,
+    1
+   ],
+   "pos": [
+    0,
+    0.4,
+    -0.1997
+   ]
+  }
+ },
+ "_styles_note": "named styles: \"hair\": \"rbx:<name>\" + hairColor. Source: free Roblox-made catalog hairs (asset = catalog id). Files: assets/roblox/hair/<name>.json/.png, built by pipeline/roblox_hair.py"
+}

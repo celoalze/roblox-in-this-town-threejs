@@ -1,0 +1,203 @@
+{
+ "title": "wear test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe",
+  {
+   "c0": {
+    "like": "milo",
+    "hair": "rbx:curlyafro",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "c1": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "c2": {
+    "like": "milo",
+    "hair": "rbx:ponytail",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "c3": {
+    "like": "zoe",
+    "hair": "rbx:braids",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "c4": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "c5": {
+    "like": "zoe",
+    "hair": "rbx:middlepart",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "c6": {
+    "like": "milo",
+    "hair": "rbx:updo",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "c7": {
+    "like": "zoe",
+    "hair": "rbx:classicbrown",
+    "hairColor": "#a8432a"
+   }
+  }
+ ],
+ "publish": {
+  "title": "wear test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "skate_helmet: curlyafro / wavy / ponytail",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c0 -2.6,0 f30 +skate_helmet",
+    "c1 0,0 f180 +skate_helmet",
+    "c2 2.6,0 f-90 +skate_helmet"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "helmet: wavy / ponytail / braids",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c1 -2.6,0 f30 +helmet",
+    "c2 0,0 f180 +helmet",
+    "c3 2.6,0 f-90 +helmet"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "great_helm: ponytail / braids / surfer",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c2 -2.6,0 f30 +great_helm",
+    "c3 0,0 f180 +great_helm",
+    "c4 2.6,0 f-90 +great_helm"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "wizard_hat: braids / surfer / middlepart",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c3 -2.6,0 f30 +wizard_hat",
+    "c4 0,0 f180 +wizard_hat",
+    "c5 2.6,0 f-90 +wizard_hat"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "flight_helmet: surfer / middlepart / updo",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c4 -2.6,0 f30 +flight_helmet",
+    "c5 0,0 f180 +flight_helmet",
+    "c6 2.6,0 f-90 +flight_helmet"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "headphones: middlepart / updo / classicbrown",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c5 -2.6,0 f30 +headphones",
+    "c6 0,0 f180 +headphones",
+    "c7 2.6,0 f-90 +headphones"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "crown: updo / classicbrown / curlyafro",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c6 -2.6,0 f30 +crown",
+    "c7 0,0 f180 +crown",
+    "c0 2.6,0 f-90 +crown"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "call_headset: classicbrown / curlyafro / wavy",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "c7 -2.6,0 f30 +call_headset",
+    "c0 0,0 f180 +call_headset",
+    "c1 2.6,0 f-90 +call_headset"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2,
+   "title": "procedural hair + timed hat + two accessories",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "milo -2.6,0 f30 +helmet",
+    "zoe 0,0 f150 +skate_helmet@1.5",
+    "c0 2.6,0 f-30 +headphones +crown"
+   ]
+  }
+ ]
+}

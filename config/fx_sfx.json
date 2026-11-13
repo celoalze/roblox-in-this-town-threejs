@@ -1,0 +1,58 @@
+{
+ "_doc": "Automatic SFX for plain fx types (name, vol, offset s). Skipped when the scene already lists that sfx within 0.3 s. Disable with style.autoFxSfx=false.",
+ "slam": [
+  "boom",
+  1,
+  0
+ ],
+ "explosion": [
+  "boom",
+  1,
+  0
+ ],
+ "shockwave_ring": [
+  "thud",
+  0.8,
+  0
+ ],
+ "impact_hit": [
+  "pop",
+  0.8,
+  0
+ ],
+ "electric_arc": [
+  "glitch",
+  0.6,
+  0
+ ],
+ "magic_burst": [
+  "magic",
+  0.8,
+  0
+ ],
+ "fireworks": [
+  "boom",
+  0.5,
+  0.9
+ ],
+ "confetti_cannon": [
+  "pop",
+  0.8,
+  0
+ ],
+ "ice_shatter": [
+  "glitch",
+  0.7,
+  0
+ ],
+ "heal_sparkles": [
+  "sparkle",
+  0.6,
+  0
+ ],
+ "dust_cloud": [
+  "thud",
+  0.5,
+  0
+ ]
+}

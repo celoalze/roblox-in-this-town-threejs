@@ -1,0 +1,1717 @@
+{
+ "title": "In This Town, Your Coffee Predicts Your Day",
+ "narrator": "narrator",
+ "music": "curious",
+ "musicVol": 0.13,
+ "pad": 0.1,
+ "style": {
+  "captionWords": 1,
+  "uppercase": true,
+  "emphColor": "#FFE14D"
+ },
+ "cast": {
+  "milo": {
+   "hair": "rbx:376548738",
+   "shirt": "#4f8fe8",
+   "pants": "#22304f",
+   "shoes": "#f4f4f4",
+   "skin": "#eab892",
+   "details": [
+    "hood",
+    "kangaroo"
+   ],
+   "voice": "narrator"
+  },
+  "zoe": {
+   "hair": "rbx:6501746646",
+   "shirt": "#ff8fc7",
+   "pants": "#3d5fc4",
+   "skin": "#ffd6b4",
+   "sleeves": "short",
+   "details": [
+    "heart"
+   ],
+   "emblem": "#ffffff",
+   "lashes": true,
+   "voice": "girl"
+  },
+  "jay": {
+   "hair": "rbx:1103003368",
+   "shirt": "#2b2b33",
+   "pants": "#4a3a2a",
+   "skin": "#a06e50",
+   "details": [
+    "collar",
+    "pocket"
+   ],
+   "accent": "#ffffff",
+   "voice": "boy2"
+  },
+  "max": {
+   "hair": "rbx:376524487",
+   "shirt": "#3ecf8e",
+   "pants": "#22304f",
+   "skin": "#f5c79a",
+   "sleeves": "short",
+   "details": [
+    "stripes"
+   ],
+   "accent": "#ffffff",
+   "scale": 0.85,
+   "voice": "boy"
+  }
+ },
+ "locations": {
+  "cafe": {
+   "setOpts": {
+    "kit": "modern-restaurant-cafe-01ea4c",
+    "near": "bistro-table",
+    "index": 10,
+    "dx": 1.2
+   }
+  },
+  "home": {
+   "setOpts": {
+    "kit": "neighborhood-pathways-kit-a992cf",
+    "near": "porch-front-cottage",
+    "dz": 11
+   }
+  },
+  "skate": {
+   "setOpts": {
+    "kit": "skatepark-0922a9",
+    "near": "skate-shop",
+    "dz": 5
+   }
+  },
+  "home2": {
+   "setOpts": {
+    "kit": "neighborhood-pathways-kit-a992cf",
+    "near": "trimmed-foundation-shrub",
+    "dz": 2
+   }
+  },
+  "cafe2": {
+   "setOpts": {
+    "kit": "modern-restaurant-cafe-01ea4c",
+    "near": "bistro-table",
+    "index": 3,
+    "dx": 1.2
+   }
+  },
+  "cafe3": {
+   "setOpts": {
+    "kit": "modern-restaurant-cafe-01ea4c",
+    "near": "bistro-table",
+    "index": 20,
+    "dx": 1.2
+   }
+  },
+  "home3": {
+   "setOpts": {
+    "kit": "neighborhood-pathways-kit-a992cf",
+    "near": "curbside-mailbox",
+    "dz": 3
+   }
+  }
+ },
+ "scenes": [
+  {
+   "line": "In this town, every coffee comes with a *fortune*.",
+   "title": "IN THIS TOWN...",
+   "emotion": "mysterious",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 30,
+     "anim": "hold",
+     "expr": "happy"
+    },
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": "milo",
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "milo"
+    }
+   ],
+   "loc": "cafe"
+  },
+  {
+   "line": "And every fortune comes *true*.",
+   "emotion": "mysterious",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 15
+   },
+   "punch": true,
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 20,
+     "anim": "hold",
+     "expr": "smug"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "magic",
+     "at": "w:true",
+     "vol": 0.6
+    }
+   ]
+  },
+  {
+   "line": "Jay's cup said he'd find *money*.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "jay",
+    "move": "push",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": 0,
+     "anim": "hold",
+     "expr": "surprised"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "jay"
+    }
+   ]
+  },
+  {
+   "line": "Ten minutes later, fifty bucks in his *shoe*.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "jay",
+    "move": "push",
+    "angle": -10
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": 0,
+     "anim": "cheer",
+     "expr": "laugh"
+    }
+   ],
+   "fx": [
+    {
+     "type": "cash",
+     "on": "jay",
+     "mode": "burst",
+     "at": "w:shoe"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cash",
+     "at": "w:shoe"
+    }
+   ]
+  },
+  {
+   "line": "So every morning, I read my *future*.",
+   "emotion": "calm",
+   "shot": "full",
+   "camera": {
+    "target": "milo",
+    "move": "drift",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "hold",
+     "expr": "content"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "milo"
+    }
+   ],
+   "loc": "home"
+  },
+  {
+   "line": "Most days it's boring. *Stub* your toe.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "neutral",
+     "actions": [
+      {
+       "at": "w:toe",
+       "anim": "jump",
+       "expr": "angry"
+      }
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thud",
+     "at": "w:toe"
+    }
+   ]
+  },
+  {
+   "line": "Lose a sock. *Find* it.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "shrug",
+     "expr": "smug"
+    }
+   ]
+  },
+  {
+   "line": "But this morning, my cup said *this*.",
+   "emotion": "mysterious",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "hold",
+     "expr": "neutral"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "vol": 0.5
+    }
+   ],
+   "loc": "cafe"
+  },
+  {
+   "line": "Today, you lose your *best* friend.",
+   "emotion": "dramatic",
+   "punch": true,
+   "shot": "extreme",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 0
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "hold",
+     "expr": "shocked"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "milo"
+    }
+   ],
+   "overlay": [
+    "vignette",
+    {
+     "type": "text",
+     "text": "TODAY YOU LOSE YOUR BEST FRIEND",
+     "y": 0.22,
+     "size": 0.085,
+     "color": "#ff5a5a"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "dun_dun_dun",
+     "at": "w:best"
+    }
+   ]
+  },
+  {
+   "line": "My best friend is *Zoe*.",
+   "emotion": "sad",
+   "shot": "full",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "wave",
+     "expr": "happy"
+    }
+   ],
+   "loc": "skate"
+  },
+  {
+   "line": "We've been friends since we were *five*.",
+   "emotion": "sad",
+   "transition": "fade",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "move": "drift",
+    "angle": -20
+   },
+   "overlay": [
+    "flashback"
+   ],
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": "milo",
+     "anim": "laugh",
+     "expr": "laugh"
+    },
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": "zoe",
+     "anim": "laugh",
+     "expr": "laugh"
+    }
+   ]
+  },
+  {
+   "line": "And the fortunes are *never* wrong.",
+   "emotion": "dramatic",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "worried"
+    }
+   ],
+   "loc": "cafe"
+  },
+  {
+   "line": "So I made a *plan*.",
+   "emotion": "excited",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "think",
+     "expr": "confident"
+    }
+   ],
+   "fx": [
+    {
+     "type": "sparkles",
+     "on": "milo",
+     "mode": "burst",
+     "at": "w:plan"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": "w:plan"
+    }
+   ]
+  },
+  {
+   "line": "If I stay away from Zoe all day...",
+   "emotion": "excited",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 30
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "point",
+     "expr": "confident"
+    }
+   ],
+   "loc": "home"
+  },
+  {
+   "line": "I can't *lose* her.",
+   "emotion": "excited",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "smug"
+    }
+   ]
+  },
+  {
+   "line": "Genius, right?",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "pull",
+    "angle": -10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "dab",
+     "expr": "grin"
+    }
+   ]
+  },
+  {
+   "line": "Hey Milo! Skatepark after school?",
+   "speaker": "zoe",
+   "emotion": "happy",
+   "shot": "full",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": -25
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      7,
+      3
+     ],
+     "to": [
+      2.5,
+      0.5
+     ],
+     "face": "milo",
+     "anim": "walk",
+     "after": "wave",
+     "expr": "happy"
+    },
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": "zoe",
+     "anim": "idle",
+     "expr": "shocked"
+    }
+   ]
+  },
+  {
+   "line": "I ran.",
+   "emotion": "funny",
+   "shot": "wide",
+   "camera": {
+    "target": "zoe",
+    "move": "static",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "to": [
+      -14,
+      6
+     ],
+     "anim": "run",
+     "expr": "scared"
+    },
+    {
+     "id": "zoe",
+     "at": [
+      2.5,
+      0.5
+     ],
+     "face": "milo",
+     "anim": "idle",
+     "expr": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cartoon_run",
+     "at": 0.05,
+     "vol": 0.7
+    }
+   ]
+  },
+  {
+   "line": "Milo?",
+   "speaker": "zoe",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      2.5,
+      0.5
+     ],
+     "face": -60,
+     "anim": "idle",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "I hid behind a *bush*.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "sneak",
+     "expr": "nervous"
+    }
+   ],
+   "loc": "home2"
+  },
+  {
+   "line": "I took the long way home. Like, *really* long.",
+   "emotion": "funny",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": 70
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -6,
+      2
+     ],
+     "to": [
+      6,
+      2
+     ],
+     "anim": "walk",
+     "expr": "sleepy"
+    }
+   ],
+   "loc": "skate"
+  },
+  {
+   "line": "At lunch, she saved me a *seat*.",
+   "emotion": "sad",
+   "shot": "full",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "wave",
+     "expr": "happy"
+    }
+   ],
+   "loc": "cafe2"
+  },
+  {
+   "line": "I sat with the *bus* driver.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "move": "push",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.2,
+      0
+     ],
+     "face": 30,
+     "anim": "idle",
+     "expr": "nervous"
+    },
+    {
+     "id": "jay",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": "milo",
+     "anim": "shrug",
+     "expr": "neutral"
+    }
+   ],
+   "loc": "cafe3"
+  },
+  {
+   "line": "After school, she texted me *nine* times.",
+   "emotion": "sad",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "worried"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": "w:texted"
+    },
+    {
+     "name": "ding",
+     "at": "w:nine"
+    },
+    {
+     "name": "ding",
+     "at": "w:times"
+    }
+   ],
+   "loc": "home"
+  },
+  {
+   "line": "I didn't answer *once*.",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": -10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "sad"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    }
+   ]
+  },
+  {
+   "line": "Every buzz made my heart *drop*.",
+   "emotion": "nervous",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "nervous"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": "w:drop",
+     "vol": 0.6
+    }
+   ]
+  },
+  {
+   "line": "Because what if this was *it*?",
+   "emotion": "nervous",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "drift",
+    "angle": -25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "think",
+     "expr": "worried"
+    }
+   ]
+  },
+  {
+   "line": "One wrong word, and I'd lose her *forever*.",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "It was working. The day was almost *over*.",
+   "emotion": "calm",
+   "time": "sunset",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pull",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "content"
+    }
+   ]
+  },
+  {
+   "line": "Then Max showed up.",
+   "emotion": "mysterious",
+   "shot": "full",
+   "camera": {
+    "target": "max",
+    "move": "push",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      6,
+      3
+     ],
+     "to": [
+      2.2,
+      0.8
+     ],
+     "face": "milo",
+     "anim": "run",
+     "after": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": "max",
+     "expr": "surprised"
+    }
+   ]
+  },
+  {
+   "line": "Zoe's *moving* away. Tonight!",
+   "speaker": "max",
+   "emotion": "scared",
+   "punch": true,
+   "shot": "close",
+   "camera": {
+    "target": "max",
+    "move": "push",
+    "angle": -25
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      2.2,
+      0.8
+     ],
+     "face": "milo",
+     "anim": "point",
+     "expr": "scared"
+    },
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": "max",
+     "expr": "shocked"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "record_scratch",
+     "at": "w:moving"
+    }
+   ]
+  },
+  {
+   "line": "She wanted to say *goodbye*.",
+   "speaker": "max",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "max",
+    "move": "push",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      2.2,
+      0.8
+     ],
+     "face": -65,
+     "anim": "idle",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "All day. And you *ignored* her.",
+   "speaker": "max",
+   "emotion": "angry",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "move": "push",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      2.2,
+      0.8
+     ],
+     "face": "milo",
+     "anim": "angry",
+     "expr": "angry"
+    },
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": "max",
+     "anim": "idle",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "That's when I *got* it.",
+   "emotion": "dramatic",
+   "shot": "extreme",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 0
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "shocked"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0,
+     "vol": 0.6
+    }
+   ]
+  },
+  {
+   "line": "I wasn't saving our friendship.",
+   "emotion": "sad",
+   "shot": "high",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "sitsad",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "I was the one *losing* it.",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "cry",
+     "expr": "cry"
+    }
+   ]
+  },
+  {
+   "line": "So I *ran*. Faster than ever.",
+   "emotion": "excited",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": 80
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -8,
+      0
+     ],
+     "to": [
+      10,
+      0
+     ],
+     "anim": "run",
+     "expr": "confident"
+    }
+   ],
+   "overlay": [
+    "speedlines"
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": "w:ran"
+    }
+   ],
+   "loc": "home3"
+  },
+  {
+   "line": "Past the street. Past the park.",
+   "emotion": "excited",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": -70
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -10,
+      2
+     ],
+     "to": [
+      8,
+      2
+     ],
+     "anim": "run",
+     "expr": "confident"
+    }
+   ],
+   "overlay": [
+    "speedlines"
+   ],
+   "loc": "skate"
+  },
+  {
+   "line": "Her moving truck was already *leaving*.",
+   "emotion": "scared",
+   "shot": "full",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": 30
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      3,
+      -2
+     ],
+     "face": 200,
+     "anim": "walk",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "ZOE! WAIT!",
+   "speaker": "milo",
+   "emotion": "scared",
+   "punch": true,
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -3,
+      2
+     ],
+     "face": "zoe",
+     "anim": "wave",
+     "expr": "scared"
+    },
+    {
+     "id": "zoe",
+     "at": [
+      3,
+      -2
+     ],
+     "face": 200,
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "She turned around.",
+   "emotion": "calm",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": 0
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      3,
+      -2
+     ],
+     "face": 200,
+     "expr": "sad",
+     "actions": [
+      {
+       "at": "w:turned",
+       "face": "milo",
+       "expr": "surprised"
+      }
+     ]
+    },
+    {
+     "id": "milo",
+     "at": [
+      -3,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "line": "I'm sorry. I thought if I stayed away, I wouldn't lose you.",
+   "speaker": "milo",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 70,
+     "anim": "talk",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "That's the dumbest plan *ever*. [laugh]",
+   "speaker": "zoe",
+   "emotion": "happy",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": -70,
+     "anim": "laugh",
+     "expr": "laugh"
+    }
+   ]
+  },
+  {
+   "line": "Moving doesn't end a friendship, Milo.",
+   "speaker": "zoe",
+   "emotion": "calm",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": -65,
+     "anim": "talk",
+     "expr": "content"
+    }
+   ]
+  },
+  {
+   "line": "*Ignoring* someone does.",
+   "speaker": "zoe",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "move": "push",
+    "angle": -5,
+    "zoom": 0.85
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": -65,
+     "anim": "idle",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "We hugged. For like, a *really* long time.",
+   "emotion": "happy",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "move": "orbit",
+    "amount": 50
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -0.9,
+      0
+     ],
+     "face": "zoe",
+     "anim": "hug",
+     "expr": "content"
+    },
+    {
+     "id": "zoe",
+     "at": [
+      0.9,
+      0
+     ],
+     "face": "milo",
+     "anim": "hug",
+     "expr": "content"
+    }
+   ],
+   "fx": [
+    {
+     "type": "hearts",
+     "on": "zoe",
+     "mode": "rise",
+     "at": "w:hugged"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd_aww",
+     "at": "w:hugged",
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "And we promised to call every single *night*.",
+   "emotion": "happy",
+   "time": "dusk",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "move": "pull",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": "zoe",
+     "anim": "wave",
+     "expr": "happy"
+    },
+    {
+     "id": "zoe",
+     "at": [
+      6,
+      -6
+     ],
+     "face": "milo",
+     "anim": "wave",
+     "expr": "happy"
+    }
+   ]
+  },
+  {
+   "line": "For the first time ever, a fortune was *wrong*.",
+   "emotion": "excited",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "cheer",
+     "expr": "laugh"
+    }
+   ],
+   "fx": [
+    {
+     "type": "confetti",
+     "on": "milo",
+     "mode": "burst",
+     "at": "w:wrong"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tada",
+     "at": "w:wrong"
+    }
+   ],
+   "loc": "home"
+  },
+  {
+   "line": "I didn't lose my best friend.",
+   "emotion": "happy",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "happy"
+    }
+   ]
+  },
+  {
+   "line": "The next morning, Jay looked *pale*.",
+   "emotion": "mysterious",
+   "shot": "medium",
+   "camera": {
+    "target": "jay",
+    "move": "push",
+    "angle": -55
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": "milo",
+     "anim": "idle",
+     "expr": "scared"
+    },
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": "jay",
+     "expr": "neutral"
+    }
+   ],
+   "loc": "cafe",
+   "time": "day"
+  },
+  {
+   "line": "Dude. Every cup in town printed the *same* thing.",
+   "speaker": "jay",
+   "emotion": "scared",
+   "shot": "close",
+   "camera": {
+    "target": "jay",
+    "move": "push",
+    "angle": -25
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": -65,
+     "anim": "hold",
+     "expr": "scared"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "jay"
+    }
+   ]
+  },
+  {
+   "line": "Milo broke the *rules*.",
+   "emotion": "dramatic",
+   "punch": true,
+   "shot": "extreme",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 0
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "idle",
+     "expr": "shocked"
+    }
+   ],
+   "overlay": [
+    "vignette",
+    "red",
+    {
+     "type": "text",
+     "text": "MILO BROKE THE RULES",
+     "y": 0.22,
+     "size": 0.085,
+     "color": "#ff5a5a"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boom",
+     "at": "w:rules"
+    }
+   ]
+  },
+  {
+   "line": "And now... they're coming for *him*.",
+   "emotion": "whisper",
+   "time": "dusk",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "push",
+    "angle": 160
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 160,
+     "anim": "scared",
+     "expr": "scared"
+    }
+   ],
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": [
+    {
+     "name": "dun_dun_dun",
+     "at": "w:him"
+    }
+   ],
+   "fadeOut": true
+  }
+ ]
+}

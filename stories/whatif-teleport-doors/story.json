@@ -1,0 +1,1115 @@
+{
+  "title": "What If Every Door Led To A Different City?",
+  "genre": "what_if",
+  "narrator": "narrator",
+  "music": "upbeat",
+  "musicVol": 0.14,
+  "pad": 0.1,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "style": {
+    "captionWords": 1,
+    "captionY": 0.7,
+    "captionSize": 0.13,
+    "uppercase": true,
+    "emphColor": "#FFE14D",
+    "bloom": 0.35,
+    "autoWhoosh": true,
+    "saturation": 0.14,
+    "ao": false
+  },
+  "cast": {
+    "milo": {
+      "hair": "rbx:376548738",
+      "shirt": "#4f8fe8",
+      "pants": "#22304f",
+      "shoes": "#f4f4f4",
+      "skin": "#eab892",
+      "details": [
+        "hood",
+        "kangaroo"
+      ]
+    },
+    "zoe": {
+      "hair": "rbx:6501746646",
+      "shirt": "#ff8fc7",
+      "pants": "#3d5fc4",
+      "skin": "#ffd6b4",
+      "sleeves": "short",
+      "details": [
+        "heart"
+      ],
+      "emblem": "#ffffff",
+      "lashes": true
+    },
+    "jay": {
+      "hair": "rbx:1103003368",
+      "shirt": "#2b2b33",
+      "pants": "#4a3a2a",
+      "skin": "#a06e50",
+      "details": [
+        "collar",
+        "pocket"
+      ],
+      "accent": "#ffffff"
+    }
+  },
+  "locations": {
+    "street_home": {
+      "set": "street",
+      "seed": 42,
+      "time": "day",
+      "setOpts": {
+        "label": "MAPLE STREET"
+      }
+    },
+    "tokyo_street": {
+      "set": "kit",
+      "setOpts": {
+        "kit": "japanese-suburban-city-street-baa482",
+        "near": "cherry-blossom-tree",
+        "index": 0,
+        "dx": 2,
+        "dz": 4
+      }
+    },
+    "tokyo_cherry": {
+      "set": "kit",
+      "setOpts": {
+        "kit": "japanese-suburban-city-street-baa482",
+        "near": "cherry-blossom-tree",
+        "index": 0,
+        "dx": 2,
+        "dz": 4
+      }
+    },
+    "farm_barn": {
+      "set": "kit",
+      "setOpts": {
+        "kit": "cozy-farm-cc979f",
+        "near": "red-barn",
+        "dx": -2,
+        "dz": 5
+      }
+    },
+    "farm_tractor": {
+      "set": "kit",
+      "setOpts": {
+        "kit": "cozy-farm-cc979f",
+        "near": "compact-tractor",
+        "dx": 2,
+        "dz": 3
+      }
+    },
+    "cafe": {
+      "set": "kit",
+      "setOpts": {
+        "kit": "modern-restaurant-cafe-01ea4c",
+        "near": "bistro-table",
+        "index": 10,
+        "dx": 1.2
+      }
+    },
+    "skatepark": {
+      "set": "kit",
+      "setOpts": {
+        "kit": "skatepark-0922a9",
+        "near": "skate-shop",
+        "dx": 7,
+        "dz": 5
+      }
+    }
+  },
+  "publish": {
+    "title": "What If Every Door Led To A Different City? #shorts",
+    "description": "Milo finds a magical brass key that turns every regular doorway into a teleporter across the world. Where would you want your bedroom door to lead?",
+    "tags": [
+      "what if",
+      "roblox story",
+      "teleport door",
+      "magic key",
+      "roblox shorts",
+      "funny roblox",
+      "storytime"
+    ],
+    "caption": "What if every door led to a different city? 🚪✨"
+  },
+  "scenes": [
+    {
+      "line": "What if every door you opened led to a completely different *city*?",
+      "loc": "street_home",
+      "shot": "wide",
+      "title": "WHAT IF...",
+      "camera": {
+        "target": "milo",
+        "angle": 15,
+        "move": "push"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "surprised"
+        }
+      ]
+    },
+    {
+      "line": "It all started when I found an old brass key in my *attic*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "talk",
+          "expr": "grin"
+        }
+      ],
+      "props": [
+        {
+          "type": "coin",
+          "at": [0.4, 0.8],
+          "scale": 0.5
+        }
+      ]
+    },
+    {
+      "line": "I tried turning it inside my regular bedroom *closet*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "knock",
+          "expr": "nervous"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "pop",
+          "at": "w:closet"
+        }
+      ]
+    },
+    {
+      "line": "The wooden door unlocked with a strange golden *glow*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "surprised"
+        }
+      ],
+      "fx": [
+        {
+          "type": "sparkles",
+          "on": "milo",
+          "at": "w:glow"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "magic",
+          "at": "w:glow"
+        }
+      ]
+    },
+    {
+      "line": "I took one step forward and fell straight into downtown *Tokyo*.",
+      "loc": "tokyo_street",
+      "shot": "wide",
+      "punch": true,
+      "transition": "white",
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "fall",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:Tokyo"
+        }
+      ]
+    },
+    {
+      "line": "Bright neon signs and colorful vending machines were glowing all around *me*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "surprised"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "ding",
+          "at": "w:me"
+        }
+      ]
+    },
+    {
+      "line": "Pink cherry blossom petals were floating softly across the paved *sidewalk*.",
+      "loc": "tokyo_cherry",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "move": "orbit"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "cheer",
+          "expr": "happy"
+        }
+      ],
+      "fx": [
+        {
+          "type": "confetti",
+          "on": "milo",
+          "at": "w:sidewalk"
+        }
+      ]
+    },
+    {
+      "line": "Zoe appeared right behind me, dropping her boba tea in absolute *shock*.",
+      "loc": "tokyo_street",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": -15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": 30,
+          "anim": "talk",
+          "expr": "grin"
+        },
+        {
+          "id": "zoe",
+          "at": [1.6, 0],
+          "face": -30,
+          "anim": "shocked",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd_gasp",
+          "at": "w:shock"
+        }
+      ]
+    },
+    {
+      "line": "She begged me to find a way back home before school *started*.",
+      "shot": "medium",
+      "camera": {
+        "target": "zoe",
+        "angle": -10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": 30,
+          "anim": "facepalm",
+          "expr": "nervous"
+        },
+        {
+          "id": "zoe",
+          "at": [1.6, 0],
+          "face": -30,
+          "anim": "angry",
+          "expr": "worried"
+        }
+      ]
+    },
+    {
+      "line": "I grabbed the nearest alley doorway and turned the key once *more*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "phone",
+          "expr": "nervous"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "pop",
+          "at": "w:more"
+        }
+      ]
+    },
+    {
+      "line": "A loud gust of wind sucked us right through the *frame*.",
+      "shot": "wide",
+      "overlay": [
+        "flash"
+      ],
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": "camera",
+          "anim": "jump",
+          "expr": "scared"
+        },
+        {
+          "id": "zoe",
+          "at": [1.2, 0],
+          "face": "camera",
+          "anim": "jump",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": "w:frame"
+        }
+      ]
+    },
+    {
+      "line": "We landed face down in a gigantic field of yellow *hay*.",
+      "loc": "farm_barn",
+      "shot": "wide",
+      "punch": true,
+      "transition": "wipe",
+      "camera": {
+        "target": "group",
+        "angle": -25,
+        "zoom": 1.1
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "ko"
+        },
+        {
+          "id": "zoe",
+          "at": [1.6, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:hay"
+        }
+      ]
+    },
+    {
+      "line": "A towering red barn and a rumbling green tractor stood right *here*.",
+      "loc": "farm_tractor",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 0,
+        "height": 2.5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.5, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "surprised"
+        },
+        {
+          "id": "zoe",
+          "at": [1.5, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "surprised"
+        }
+      ]
+    },
+    {
+      "line": "Jay was sitting on a wooden fence, happily eating a stolen *apple*.",
+      "loc": "farm_barn",
+      "shot": "medium",
+      "camera": {
+        "target": "jay",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.8, 0],
+          "face": 20,
+          "anim": "talk",
+          "expr": "neutral"
+        },
+        {
+          "id": "jay",
+          "at": [1.8, 0],
+          "face": -20,
+          "anim": "cheer",
+          "expr": "grin"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "tada",
+          "at": "w:apple"
+        }
+      ]
+    },
+    {
+      "line": "A massive spotted cow trotted over and licked the top of my *head*.",
+      "shot": "medium",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": "camera",
+          "anim": "scared",
+          "expr": "nervous"
+        },
+        {
+          "id": "jay",
+          "at": [1.8, 0],
+          "face": -20,
+          "anim": "laugh",
+          "expr": "happy"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "pop",
+          "at": "w:head"
+        }
+      ]
+    },
+    {
+      "line": "Jay laughed so hard he fell backward off the wooden *railing*.",
+      "shot": "medium",
+      "camera": {
+        "target": "jay",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": 30,
+          "anim": "laugh",
+          "expr": "grin"
+        },
+        {
+          "id": "jay",
+          "at": [1.4, 0],
+          "face": "camera",
+          "anim": "fall",
+          "expr": "ko"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd_laugh",
+          "at": "w:railing"
+        }
+      ]
+    },
+    {
+      "line": "I spotted a red barn door and sprinted forward to *escape*.",
+      "loc": "farm_barn",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "move": "push"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [2, 0],
+          "to": [-1.8, 0],
+          "face": -90,
+          "anim": "run",
+          "expr": "scared"
+        }
+      ]
+    },
+    {
+      "line": "I turned the golden handle and hauled all three of us *inside*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "angry",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:inside"
+        }
+      ]
+    },
+    {
+      "line": "The next instant, we plunged straight into a crowded outdoor *cafe*.",
+      "loc": "cafe",
+      "shot": "wide",
+      "punch": true,
+      "transition": "white",
+      "camera": {
+        "target": "group",
+        "angle": 0
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.4, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "surprised"
+        },
+        {
+          "id": "zoe",
+          "at": [1.4, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "surprised"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "ding",
+          "at": "w:cafe"
+        }
+      ]
+    },
+    {
+      "line": "I knocked over a tray of iced tea and bistro *chairs*.",
+      "shot": "medium",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 0,
+        "height": 2.5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 1.2],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:chairs"
+        }
+      ]
+    },
+    {
+      "line": "The angry manager sprinted toward our table, waving his kitchen *towel*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 25
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.5, 0],
+          "face": 30,
+          "anim": "scared",
+          "expr": "scared"
+        },
+        {
+          "id": "zoe",
+          "at": [1.5, 0],
+          "face": -30,
+          "anim": "scared",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "buzzer",
+          "at": "w:towel"
+        }
+      ]
+    },
+    {
+      "line": "We scrambled through the kitchen service door in pure *panic*.",
+      "loc": "cafe",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "move": "pan"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [1.5, 1.0],
+          "to": [-2.2, 1.0],
+          "face": -90,
+          "anim": "run",
+          "expr": "scared"
+        },
+        {
+          "id": "zoe",
+          "at": [2.5, -1.8],
+          "to": [-1.2, -1.8],
+          "face": -90,
+          "anim": "run",
+          "expr": "scared"
+        }
+      ]
+    },
+    {
+      "line": "We tumbled out into the blazing sun of a bustling *skatepark*.",
+      "loc": "skatepark",
+      "shot": "wide",
+      "punch": true,
+      "transition": "wipe",
+      "camera": {
+        "target": "group",
+        "angle": 0
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.5, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "nervous"
+        },
+        {
+          "id": "jay",
+          "at": [1.5, 0],
+          "face": "camera",
+          "anim": "jump",
+          "expr": "happy"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "riser",
+          "at": "w:skatepark"
+        }
+      ]
+    },
+    {
+      "line": "Skaters were grinding metal rails and flying over giant half-pipe *ramps*.",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "angle": 0
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.5, 0],
+          "face": 30,
+          "anim": "cheer",
+          "expr": "happy"
+        },
+        {
+          "id": "jay",
+          "at": [1.5, 0],
+          "face": -30,
+          "anim": "dance",
+          "expr": "grin"
+        }
+      ]
+    },
+    {
+      "line": "Then I noticed a horrifying rattle shaking inside the brass *key*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "glitch",
+          "at": "w:key"
+        }
+      ]
+    },
+    {
+      "line": "Hairline cracks were spreading rapidly across the glowing metal *teeth*.",
+      "shot": "close",
+      "camera": {
+        "target": "milo",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "scared",
+          "expr": "cry"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": "w:teeth"
+        }
+      ]
+    },
+    {
+      "line": "One more wrong turn would shatter the key and strand us *forever*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": 30,
+          "anim": "talk",
+          "expr": "nervous"
+        },
+        {
+          "id": "zoe",
+          "at": [1.6, 0],
+          "face": -30,
+          "anim": "angry",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "dun_dun_dun",
+          "at": "w:forever"
+        }
+      ]
+    },
+    {
+      "line": "Jay spotted an old green maintenance door beside the skate *shop*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": -10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.4, 1.8],
+          "face": 30,
+          "anim": "idle",
+          "expr": "surprised"
+        },
+        {
+          "id": "jay",
+          "at": [1.4, 1.8],
+          "face": -30,
+          "anim": "point",
+          "expr": "grin"
+        }
+      ]
+    },
+    {
+      "line": "We sprinted together across the concrete bowls with everything on the *line*.",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "move": "pan"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [2, 1.2],
+          "to": [-1.8, 1.2],
+          "face": -90,
+          "anim": "run",
+          "expr": "scared"
+        },
+        {
+          "id": "jay",
+          "at": [3, -1.2],
+          "to": [-0.8, -1.2],
+          "face": -90,
+          "anim": "run",
+          "expr": "scared"
+        }
+      ]
+    },
+    {
+      "line": "I jammed the fractured key into the rusty lock with all my *might*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "angry",
+          "expr": "angry"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:might"
+        }
+      ]
+    },
+    {
+      "line": "The lock exploded into a blinding rainbow storm of golden *sparks*.",
+      "shot": "wide",
+      "overlay": [
+        "flash",
+        "speedlines"
+      ],
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "float",
+          "expr": "scared"
+        }
+      ],
+      "fx": [
+        {
+          "type": "sparkles",
+          "on": "milo",
+          "at": "w:sparks"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": "w:sparks"
+        }
+      ]
+    },
+    {
+      "line": "We tumbled through the vortex and crashed right onto my front *lawn*.",
+      "loc": "street_home",
+      "shot": "wide",
+      "punch": true,
+      "transition": "white",
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "ko"
+        },
+        {
+          "id": "jay",
+          "at": [1.6, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "ko"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:lawn"
+        }
+      ]
+    },
+    {
+      "line": "The brass key crumbled into a tiny handful of harmless gray *dust*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "surprised"
+        }
+      ],
+      "fx": [
+        {
+          "type": "puff",
+          "on": "milo",
+          "at": "w:dust"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "pop",
+          "at": "w:dust"
+        }
+      ]
+    },
+    {
+      "line": "Zoe looked at her watch and realized the school bell had just *rung*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.6, 0],
+          "face": 30,
+          "anim": "sitfloor",
+          "expr": "nervous"
+        },
+        {
+          "id": "zoe",
+          "at": [1.6, 0],
+          "face": -30,
+          "anim": "shocked",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "buzzer",
+          "at": "w:rung"
+        }
+      ]
+    },
+    {
+      "line": "We made it home safe, with a pocket full of fresh Japanese *snacks*.",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "move": "pull"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-2.2, 0],
+          "face": 20,
+          "anim": "cheer",
+          "expr": "happy"
+        },
+        {
+          "id": "zoe",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "cheer",
+          "expr": "happy"
+        },
+        {
+          "id": "jay",
+          "at": [2.2, 0],
+          "face": -20,
+          "anim": "cheer",
+          "expr": "happy"
+        }
+      ],
+      "fx": [
+        {
+          "type": "confetti",
+          "on": "milo",
+          "at": "w:snacks"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "tada",
+          "at": "w:snacks"
+        }
+      ]
+    }
+  ]
+}

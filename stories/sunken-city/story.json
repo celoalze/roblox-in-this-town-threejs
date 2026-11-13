@@ -1,0 +1,1259 @@
+{
+ "title": "The Sunken Golden City",
+ "genre": "aaa_story",
+ "publish": {
+  "title": "He Dove Under The Ice And Found A Golden City #shorts",
+  "description": "Kai broke through a frozen lake to bring back his grandpa's lantern, and found a golden city guarded by a giant octopus. What would you have done?",
+  "tags": [
+   "roblox",
+   "roblox story",
+   "underwater",
+   "octopus",
+   "golden city",
+   "adventure",
+   "roblox shorts",
+   "animation"
+  ],
+  "caption": "He dove under the ice for his grandpa \ud83e\udd79\ud83c\udf0a\u2728 #roblox"
+ },
+ "cast": {
+  "kai": {
+   "like": "milo",
+   "shirt": "#f1f1f1",
+   "details": [
+    "jacket",
+    "pocket"
+   ],
+   "jacket": "#2f6fd6",
+   "pants": "#2a3550",
+   "hair": "rbx:376548738",
+   "wear": [
+    "adventure_pack"
+   ]
+  },
+  "grandpa": {
+   "like": "grandpa"
+  },
+  "kraken": {
+   "like": "octopus",
+   "scale": 4,
+   "recolor": "#5b2a86",
+   "spots": "#ffcf40",
+   "glow": 0.8
+  }
+ },
+ "scenes": [
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "line": "Every winter, Kai's grandpa stared at the frozen *lake*.",
+   "cam": "wide group lens85 h1 pull",
+   "actors": [
+    "kai -2,1 f160 /neutral",
+    "grandpa 2,0 f-160 idle/sad"
+   ],
+   "shots": [
+    "@frozen low lens90 push",
+    "@70% close grandpa"
+   ],
+   "title": "THE SUNKEN CITY"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "line": "He said a golden city slept beneath the ice.",
+   "cam": "close grandpa push",
+   "actors": [
+    "grandpa 1.5,0 f20 think/sad >camera"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "line": "Nobody believed him. Nobody except *Kai*.",
+   "cam": "medium kai 20 drift",
+   "actors": [
+    "kai -1.5,0 f20 idle/determined"
+   ],
+   "sfx": "ding@Kai"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "line": "Long ago, his grandpa lost something down there.",
+   "cam": "close grandpa low",
+   "actors": [
+    "grandpa 1.5,0 f-20 hold/teary +lantern"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "line": "A golden *lantern*, the last gift from his wife.",
+   "cam": "extreme close grandpa push",
+   "actors": [
+    "grandpa 1.5,0 f-20 hold/teary +lantern"
+   ],
+   "fx": "sparkles:grandpa@lantern",
+   "sfx": "sparkle@lantern"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "dur": 1.0,
+   "cam": "wide group drift",
+   "actors": [
+    "kai -2,1 f160 /neutral",
+    "grandpa 2,0 f-160 idle/sad"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "sky": "toon_blue_horizon",
+   "grade": "cold",
+   "weather": "snow",
+   "time": "day",
+   "biome": "frozen",
+   "line": "So Kai made a promise. *Tonight*, he would bring it back.",
+   "cam": "medium kai punch lens85",
+   "actors": [
+    "kai -1.5,0 f20 point/determined"
+   ],
+   "sfx": "boom@Tonight"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "He crept out under a silent, *frozen* moon.",
+   "cam": "wide kai low lens90 pull",
+   "actors": [
+    "kai 0,2 f180 sneak/neutral to:0,-2"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "The ice cracked with every step.",
+   "cam": "low close kai track",
+   "actors": [
+    "kai 0,-2 f180 sneak/nervous to:0,-5"
+   ],
+   "fx": "crack:kai@cracked",
+   "sfx": "tick@0 tick@0.7"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "He found the center of the lake.",
+   "cam": "top kai dutch",
+   "actors": [
+    "kai 0,-5 f180 look_around/awe"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "Then he took a *deep* breath.",
+   "cam": "close kai punch",
+   "actors": [
+    "kai 0,-5 f10 idle/determined"
+   ],
+   "sfx": "riser@deep"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "And smashed the *ice*.",
+   "cam": "low kai lens90 crash",
+   "actors": [
+    "kai 0,-5 f10 knock/furious +hammer"
+   ],
+   "fx": "ice_shatter:kai@ice impact_big:kai@ice",
+   "sfx": "boom@ice"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "The hole opened like a dark mouth.",
+   "cam": "high kai pull",
+   "actors": [
+    "kai 0,-5 f10 look_around/scared"
+   ],
+   "fx": "fog_bank:kai@0"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "night_moon",
+   "grade": "cold",
+   "weather": "starry",
+   "time": "night",
+   "biome": "frozen",
+   "line": "Kai jumped!",
+   "cam": "wide kai whip",
+   "actors": [
+    "kai 0,-5 f10 jump/scream_open"
+   ],
+   "fx": "puff:kai@0.2",
+   "sfx": "whoosh@0 vineboom@0.3"
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "Cold water swallowed him whole.",
+   "cam": "wide kai lens90 fly",
+   "actors": [
+    "kai 0,-3 f180 float/shocked"
+   ],
+   "fx": "bubbles:kai@0",
+   "sfx": "pop@0"
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "He kicked deeper and *deeper*.",
+   "cam": "low kai lens90 push",
+   "actors": [
+    "kai 0,-3 f160 float/determined to:0,-3"
+   ],
+   "shots": [
+    "@deeper top kai"
+   ]
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "His lungs burned, but he kept *going*.",
+   "cam": "close kai shake",
+   "actors": [
+    "kai 0,-3 f20 float/grit"
+   ],
+   "sfx": "heartbeat@0"
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "dream",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "Then the dark water *glowed*.",
+   "cam": "wide kai h0.5 lens90 pull",
+   "actors": [
+    "kai 0,-3 f20 float/awe"
+   ],
+   "fx": "glow_orb:kai@glowed",
+   "sfx": "sparkle@glowed"
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "Fish of every color circled him.",
+   "cam": "orbit kai",
+   "actors": [
+    "kai 0,-3 f20 float/happy"
+   ],
+   "dress": 2
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "They seemed to be leading the way.",
+   "cam": "medium kai track",
+   "actors": [
+    "kai 0,-3 f160 float/curious to:0,-3"
+   ],
+   "dress": 1.5
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "A giant shadow slid across the sea floor.",
+   "cam": "low kai dutch lens90",
+   "actors": [
+    "kai 0,-3 f20 float/scared"
+   ],
+   "sfx": "dun_dun_dun@shadow"
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "Kai froze. Then he saw *why*.",
+   "cam": "wide kai lens90 low push",
+   "actors": [
+    "kai 0,-3 f20 float/shocked"
+   ]
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "vivid",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "dur": 0.7,
+   "cam": "close kai crash",
+   "actors": [
+    "kai 0,-3 f20 float/terrified"
+   ],
+   "sfx": "heartbeat@0"
+  },
+  {
+   "loc": "seabed",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "none",
+   "line": "Below him, glittering through the dark...",
+   "cam": "top kai lens90 fly",
+   "actors": [
+    "kai 0,-3 f20 float/awe"
+   ],
+   "shots": [
+    "@glittering high kai pull"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "...lay a city made of *gold*.",
+   "cam": "wide group lens90 rise h0.5",
+   "actors": [
+    "kai 0,3 f180 float/starstruck"
+   ],
+   "fx": "sparkles:kai@gold",
+   "sfx": "tada@gold magic@0.2",
+   "shots": [
+    "@gold establishing kai lens85 pull"
+   ],
+   "bloom": 0.4
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Towers. Bridges. Ten thousand golden *windows*.",
+   "cam": "wide kai low lens90 drift",
+   "actors": [
+    "kai 0,3 f180 float/awe"
+   ],
+   "bloom": 0.35
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The old man was right all along.",
+   "cam": "close kai push",
+   "actors": [
+    "kai 0,3 f15 float/teary"
+   ],
+   "fx": "heal_sparkles:kai@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Kai swam down toward the main *gate*.",
+   "cam": "track kai lens90 fly",
+   "actors": [
+    "kai 0,3 f180 float/determined to:0,-6"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Statues stood guard in the silent streets.",
+   "cam": "low kai lens90 pan",
+   "actors": [
+    "kai 0,-6 f160 float/curious"
+   ],
+   "dress": 1.5
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Coins drifted like golden snow.",
+   "cam": "close kai orbit",
+   "actors": [
+    "kai 0,-6 f20 float/happy"
+   ],
+   "fx": "coins:kai:rise@0",
+   "sfx": "sparkle@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "He followed a trail of glowing *footprints*.",
+   "cam": "high kai track",
+   "actors": [
+    "kai 0,-6 f180 float/curious to:3,-12"
+   ],
+   "fx": "sparks:kai@footprints"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "They led to a huge temple.",
+   "cam": "wide kai lens90 low pull",
+   "actors": [
+    "kai 3,-12 f180 float/awe"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "dream",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Inside, the water hummed with *magic*.",
+   "cam": "medium kai drift",
+   "actors": [
+    "kai 3,-12 f20 float/awe"
+   ],
+   "fx": "magic_aura:kai@magic",
+   "sfx": "magic@magic"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "And there, on a pedestal...",
+   "cam": "close kai push",
+   "actors": [
+    "kai 3,-12 f20 float/shocked"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "...sat grandpa's golden *lantern*.",
+   "cam": "extreme close kai push",
+   "actors": [
+    "kai 2,-12 f20 float/starstruck +lantern"
+   ],
+   "fx": "glow_orb:kai@lantern",
+   "sfx": "sparkle@lantern",
+   "bloom": 0.5
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Kai reached out, slowly, carefully.",
+   "cam": "close kai push",
+   "actors": [
+    "kai 2,-12 f20 reach/determined reach:3,-13,1"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "dur": 0.8,
+   "cam": "extreme close kai",
+   "actors": [
+    "kai 2,-12 f20 reach/nervous"
+   ],
+   "sfx": "heartbeat@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "His fingers touched the *lantern*.",
+   "cam": "extreme close kai crash",
+   "actors": [
+    "kai 2,-12 f20 reach/scared"
+   ],
+   "fx": "magic_burst:kai@lantern",
+   "sfx": "boom@lantern"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The whole city shook.",
+   "cam": "wide kai shake dutch lens90",
+   "actors": [
+    "kai 2,-12 f20 float/scared"
+   ],
+   "fx": "debris:kai@0",
+   "sfx": "thunder@0",
+   "shake": 1
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The golden light turned *red*.",
+   "cam": "medium kai crash",
+   "actors": [
+    "kai 2,-12 f20 float/terrified"
+   ],
+   "sfx": "riser@red",
+   "overlay": "vignette red"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Something ancient had *awakened*.",
+   "cam": "low kai lens90 dutch push",
+   "actors": [
+    "kai 2,-12 f20 float/scared"
+   ],
+   "sfx": "dun_dun_dun@awakened"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Eight enormous arms rose from the dark.",
+   "cam": "wide kai lens90 low",
+   "actors": [
+    "kai 2,-12 f160 float/terrified"
+   ],
+   "fx": "smoke_plume:kai@0",
+   "shots": [
+    "@arms top kai fly"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The guardian of the city, a *giant* octopus!",
+   "cam": "wide kraken lens90 low pull",
+   "actors": [
+    "kai 4,2 f180 float/terrified",
+    "kraken 0,-14 f0 idle"
+   ],
+   "fx": "impact_big:kraken@giant",
+   "sfx": "vineboom@giant"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Its glowing eyes locked on him.",
+   "cam": "extreme close kraken push",
+   "actors": [
+    "kraken 0,-8 f0 idle"
+   ],
+   "sfx": "heartbeat@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Kai swam for his life!",
+   "cam": "track kai lens90 whip",
+   "actors": [
+    "kai 4,2 f180 float/scream_open to:0,8"
+   ],
+   "sfx": "whoosh@0 cartoon_run@0.3",
+   "overlay": "speedlines"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "A tentacle smashed the street behind him.",
+   "cam": "wide kai low lens90",
+   "actors": [
+    "kai 0,8 f180 float/panic to:-2,10",
+    "kraken 0,-8 f0 roar"
+   ],
+   "fx": "impact_big:kraken@smashed",
+   "sfx": "boom@smashed"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Another tentacle blocked the *gate*.",
+   "cam": "medium kai crash dutch",
+   "actors": [
+    "kai -2,10 f20 float/horrified",
+    "kraken 0,-5 f0 roar"
+   ],
+   "fx": "impact_small:kai@gate"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "He was trapped!",
+   "cam": "close kai punch",
+   "actors": [
+    "kai -2,10 f20 float/terrified"
+   ],
+   "sfx": "dun_dun_dun@trapped"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The monster leaned closer and closer.",
+   "cam": "ots:kraken kai push",
+   "actors": [
+    "kai -2,10 f20 float/scared",
+    "kraken 0,0 f0 idle"
+   ],
+   "fx": "fog_bank:kai@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "dream",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Kai closed his eyes and thought of *grandpa*.",
+   "cam": "close kai orbit",
+   "actors": [
+    "kai -2,10 f20 float/teary"
+   ],
+   "sfx": "sad_trombone@0.1*0.3"
+  },
+  {
+   "loc": "ice_world",
+   "medium": "none",
+   "grade": "flashback",
+   "weather": "snow",
+   "time": "day",
+   "sky": "toon_blue_horizon",
+   "biome": "frozen",
+   "line": "He remembered the old man's sad, *lonely* stare.",
+   "cam": "close grandpa",
+   "actors": [
+    "grandpa 1.5,0 f20 think/sad >camera"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Slowly, Kai opened his eyes.",
+   "cam": "close kai push",
+   "actors": [
+    "kai -2,10 f20 float/determined"
+   ],
+   "sfx": "sparkle@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The octopus wasn't attacking.",
+   "cam": "medium kraken drift",
+   "actors": [
+    "kraken 0,0 f0 idle/sad"
+   ]
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "It was *crying*.",
+   "cam": "close kraken",
+   "actors": [
+    "kraken 0,0 f0 idle"
+   ],
+   "fx": "bubbles:kraken@crying",
+   "sfx": "sad_trombone@0.1*0.4"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "threat",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "For a hundred years, it had waited alone.",
+   "cam": "wide kraken lens90 pull",
+   "actors": [
+    "kraken 0,-6 f0 idle",
+    "kai -3,6 f20 float/awe"
+   ],
+   "sfx": "sparkle@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "dream",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "That lantern was its only *light*.",
+   "cam": "extreme close kai",
+   "actors": [
+    "kai -3,6 f20 float/curious +lantern"
+   ],
+   "fx": "glow_orb:kai@light"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Kai swam closer, hands open and *slow*.",
+   "cam": "medium kai track",
+   "actors": [
+    "kai -3,6 f20 float/determined to:-1,2",
+    "kraken 0,-2 f0 idle/sad"
+   ],
+   "bloom": 0.3
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "He held out the lantern.",
+   "cam": "close kai push",
+   "actors": [
+    "kai -1,2 f20 hold/love +lantern",
+    "kraken 0,-2 f0 idle"
+   ],
+   "sfx": "sparkle@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Then he made a *choice*.",
+   "cam": "close kai punch",
+   "actors": [
+    "kai -1,2 f20 hold/determined +lantern"
+   ],
+   "sfx": "ding@choice"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "He gave the octopus half the light.",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "kai -1,2 f20 reach/love",
+    "kraken 0,-2 f0 idle/love"
+   ],
+   "fx": "magic_cast:kai@half",
+   "sfx": "magic@half"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The golden glow split in two.",
+   "cam": "wide group lens90 rise",
+   "actors": [
+    "kai -1,2 f20 float/awe",
+    "kraken 0,-2 f0 idle"
+   ],
+   "fx": "sparkles:kraken@0",
+   "bloom": 0.5
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The monster's eyes turned *warm*.",
+   "cam": "extreme close kraken",
+   "actors": [
+    "kraken 0,-2 f0 idle/love"
+   ],
+   "fx": "heal_sparkles:kraken@warm",
+   "sfx": "sparkle@warm"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "All around them, the dead city *woke*.",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "kai -1,2 f20 float/awe",
+    "kraken 0,-2 f0 idle"
+   ],
+   "fx": "celebrate:kai@woke",
+   "sfx": "tada@woke",
+   "bloom": 0.5
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Golden lights lit every window.",
+   "cam": "high group top pull",
+   "actors": [
+    "kai -1,2 f20 float/happy"
+   ],
+   "fx": "fireworks:kai@0",
+   "dress": 2
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "The octopus wrapped him in a gentle hug.",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "kai -1,2 f20 hug/love",
+    "kraken 0,-2 f0 idle/love"
+   ],
+   "sfx": "sparkle@0"
+  },
+  {
+   "loc": "gold_city",
+   "medium": "underwater",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "day",
+   "sky": "none",
+   "biome": "flooded",
+   "line": "Then it carried Kai to the *surface*.",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "kai -1,2 f20 float/happy to:0,-10",
+    "kraken 0,-2 f0 walk"
+   ],
+   "fx": "bubbles:kai@surface"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "medium": "none",
+   "line": "Dawn painted the frozen lake *gold*.",
+   "cam": "establishing wide lens85 rise",
+   "actors": [
+    "grandpa 3,0 f-160 idle/sad"
+   ],
+   "fx": "sparkles:grandpa@gold",
+   "bloom": 0.3
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "Grandpa waited at the edge, shivering.",
+   "cam": "close grandpa push",
+   "actors": [
+    "grandpa 3,0 f-160 idle/worried"
+   ],
+   "fx": "snow_flurry:grandpa@0"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "The ice trembled.",
+   "cam": "low wide grandpa lens90",
+   "actors": [
+    "grandpa 3,0 f-160 idle/surprised"
+   ],
+   "fx": "crack:grandpa@trembled",
+   "sfx": "boom@trembled*0.5"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "And Kai burst out of the *water*!",
+   "cam": "wide kai lens90 crash",
+   "actors": [
+    "kai -1,-2 f180 cheer/laugh +lantern",
+    "grandpa 3,1 f-160 shocked"
+   ],
+   "fx": "ice_shatter:kai@water",
+   "sfx": "pop@water tada@water"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "He was holding the golden *lantern*.",
+   "cam": "close grandpa punch",
+   "actors": [
+    "grandpa 2,0 f20 shocked/teary"
+   ],
+   "sfx": "sparkle@lantern"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "Grandpa's hands shook as he took it.",
+   "cam": "extreme close grandpa",
+   "actors": [
+    "grandpa 2,0 f20 hold/tears_joy +lantern",
+    "kai -1,0 f-20 idle/love"
+   ],
+   "fx": "heal_sparkles:grandpa@0"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "Half of it still glowed, warm and *bright*.",
+   "cam": "close grandpa orbit",
+   "actors": [
+    "grandpa 2,0 f20 hold/love +lantern"
+   ],
+   "fx": "glow_orb:grandpa@bright",
+   "bloom": 0.5
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "Kai told him everything about the lonely octopus.",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "kai -1.5,0 f20 talk/happy",
+    "grandpa 1.5,0 f-20 idle/awe"
+   ]
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "Grandpa smiled for the first time in years.",
+   "cam": "close grandpa",
+   "actors": [
+    "grandpa 1.5,0 f-20 idle/content"
+   ],
+   "fx": "hearts:grandpa@smiled"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "Because some treasures aren't meant to be *kept*.",
+   "cam": "low group lens90 pull",
+   "actors": [
+    "kai -1.5,0 f20 idle/proud",
+    "grandpa 1.5,0 f-20 idle/proud"
+   ],
+   "sfx": "ding@kept"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "They're meant to be *shared*.",
+   "cam": "close kai",
+   "actors": [
+    "kai -1.5,0 f20 idle/love"
+   ],
+   "sfx": "sparkle@shared"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "And every winter since, the lake glows gold.",
+   "cam": "wide lens85 rise group",
+   "actors": [
+    "kai -1.5,0 f20 idle/happy",
+    "grandpa 1.5,0 f-20 idle/happy"
+   ],
+   "fx": "fireworks:kai@0 sparkles:kai@0",
+   "bloom": 0.5,
+   "music": "epic"
+  },
+  {
+   "loc": "ice_world",
+   "sky": "golden_hour",
+   "grade": "gold",
+   "weather": "clear",
+   "time": "sunset",
+   "biome": "frozen",
+   "line": "A promise kept beneath the ice.",
+   "cam": "top group pull",
+   "actors": [
+    "kai -1.5,0 f20 hug/love",
+    "grandpa 1.5,0 f-20 hug/tears_joy"
+   ],
+   "fadeOut": true
+  }
+ ]
+}

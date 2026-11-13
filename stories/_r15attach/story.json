@@ -1,0 +1,570 @@
+{
+ "title": "r15 attach",
+ "music": "none",
+ "cast": [
+  {
+   "a0": {
+    "like": "milo",
+    "hair": "rbx:middlepart",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "b0": {
+    "like": "milo",
+    "hair": "rbx:middlepart",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "a1": {
+    "like": "zoe",
+    "hair": "rbx:curlyafro",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "b1": {
+    "like": "zoe",
+    "hair": "rbx:curlyafro",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "a2": {
+    "like": "zoe",
+    "hair": "rbx:ponytail",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "b2": {
+    "like": "zoe",
+    "hair": "rbx:ponytail",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "a3": {
+    "like": "zoe",
+    "hair": "rbx:braids",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "b3": {
+    "like": "zoe",
+    "hair": "rbx:braids",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "a4": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "b4": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "a5": {
+    "like": "zoe",
+    "hair": "rbx:updo",
+    "hairColor": "#5a3a22"
+   }
+  },
+  {
+   "b5": {
+    "like": "zoe",
+    "hair": "rbx:updo",
+    "hairColor": "#5a3a22"
+   }
+  },
+  {
+   "a6": {
+    "like": "milo",
+    "hair": "rbx:fade",
+    "hairColor": "#e86aa6"
+   }
+  },
+  {
+   "b6": {
+    "like": "milo",
+    "hair": "rbx:fade",
+    "hairColor": "#e86aa6"
+   }
+  },
+  {
+   "a7": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "b7": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "p6": {
+    "like": "milo",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   }
+  },
+  {
+   "p15": {
+    "like": "milo",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   }
+  },
+  {
+   "g6": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a",
+    "glasses": "shades",
+    "wear": [
+     "dogpack",
+     "jadenecklace"
+    ]
+   }
+  },
+  {
+   "g15": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a",
+    "glasses": "shades",
+    "wear": [
+     "dogpack",
+     "jadenecklace"
+    ]
+   }
+  },
+  {
+   "w6": {
+    "like": "milo",
+    "hair": "rbx:fade",
+    "hairColor": "#7a4a21",
+    "wear": [
+     "aviators"
+    ]
+   }
+  },
+  {
+   "w15": {
+    "like": "milo",
+    "hair": "rbx:fade",
+    "hairColor": "#7a4a21",
+    "wear": [
+     "aviators"
+    ]
+   }
+  }
+ ],
+ "publish": {
+  "title": "r15 attach",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair middlepart/curlyafro f30",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30",
+    "b0 -1.1,0 f30",
+    "a1 1.1,0 f30",
+    "b1 3.2,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair middlepart/curlyafro f180",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f180",
+    "b0 -1.1,0 f180",
+    "a1 1.1,0 f180",
+    "b1 3.2,0 f180"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair ponytail/braids f30",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a2 -3.2,0 f30",
+    "b2 -1.1,0 f30",
+    "a3 1.1,0 f30",
+    "b3 3.2,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair ponytail/braids f180",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a2 -3.2,0 f180",
+    "b2 -1.1,0 f180",
+    "a3 1.1,0 f180",
+    "b3 3.2,0 f180"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair surfer/updo f30",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a4 -3.2,0 f30",
+    "b4 -1.1,0 f30",
+    "a5 1.1,0 f30",
+    "b5 3.2,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair surfer/updo f180",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a4 -3.2,0 f180",
+    "b4 -1.1,0 f180",
+    "a5 1.1,0 f180",
+    "b5 3.2,0 f180"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair fade/wavy f30",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a6 -3.2,0 f30",
+    "b6 -1.1,0 f30",
+    "a7 1.1,0 f30",
+    "b7 3.2,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hair fade/wavy f180",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a6 -3.2,0 f180",
+    "b6 -1.1,0 f180",
+    "a7 1.1,0 f180",
+    "b7 3.2,0 f180"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "short procedural",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "p6 -1.2,0 f30",
+    "p15 1.2,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hat crown",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30 +crown",
+    "b0 -1.1,0 f30 +crown",
+    "a2 1.1,0 f30 +crown",
+    "b2 3.2,0 f30 +crown"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hat cap",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30 +cap",
+    "b0 -1.1,0 f30 +cap",
+    "a2 1.1,0 f30 +cap",
+    "b2 3.2,0 f30 +cap"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hat wizard_hat",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30 +wizard_hat",
+    "b0 -1.1,0 f30 +wizard_hat",
+    "a2 1.1,0 f30 +wizard_hat",
+    "b2 3.2,0 f30 +wizard_hat"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hat headphones",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30 +headphones",
+    "b0 -1.1,0 f30 +headphones",
+    "a2 1.1,0 f30 +headphones",
+    "b2 3.2,0 f30 +headphones"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hat great_helm",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30 +great_helm",
+    "b0 -1.1,0 f30 +great_helm",
+    "a2 1.1,0 f30 +great_helm",
+    "b2 3.2,0 f30 +great_helm"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "hat fedora",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a0 -3.2,0 f30 +fedora",
+    "b0 -1.1,0 f30 +fedora",
+    "a2 1.1,0 f30 +fedora",
+    "b2 3.2,0 f30 +fedora"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "glasses shades + worn aviators, dogpack, necklace",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "g6 -3.2,0 f30",
+    "g15 -1.1,0 f30",
+    "w6 1.1,0 f30",
+    "w15 3.2,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "back view dogpack",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "g6 -1.6,0 f180",
+    "g15 1.6,0 f180"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.4,
+   "title": "timed cap pop-in",
+   "cam": "close group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.2,0 f30 +cap@50%",
+    "b1 1.2,0 f30 +cap@50%"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held sword",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +sword",
+    "b1 1.8,0 f-20 +sword"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held L:phone",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +L:phone",
+    "b1 1.8,0 f-20 +L:phone"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held trophy",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +trophy",
+    "b1 1.8,0 f-20 +trophy"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held gift",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +gift",
+    "b1 1.8,0 f-20 +gift"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held cake",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +cake",
+    "b1 1.8,0 f-20 +cake"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held pizzabox",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +pizzabox",
+    "b1 1.8,0 f-20 +pizzabox"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.4,
+   "title": "held sword walking",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -4,0 to:4,0 +sword",
+    "b1 -4,2 to:4,2 +sword"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "held phone anim",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 phone +L:phone",
+    "b1 1.8,0 f-20 phone +L:phone"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.4,
+   "title": "timed gift pop-in",
+   "cam": "medium group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "a1 -1.8,0 f20 +gift@50%",
+    "b1 1.8,0 f-20 +gift@50%"
+   ]
+  }
+ ]
+}

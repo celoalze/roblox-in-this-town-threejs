@@ -1,0 +1,61 @@
+{
+ "title": "live test",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "live test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "camp",
+   "dur": 4,
+   "title": "camp extras",
+   "cam": "wide milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle"
+   ],
+   "extras": 6
+  },
+  {
+   "loc": "west_saloon",
+   "dur": 4,
+   "title": "west extras",
+   "cam": "wide milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle"
+   ],
+   "extras": 6
+  },
+  {
+   "loc": "park",
+   "dur": 4,
+   "title": "park sway + pollen",
+   "cam": "wide milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle"
+   ],
+   "extras": 0
+  },
+  {
+   "loc": "forest",
+   "time": "night",
+   "dur": 4,
+   "title": "fireflies",
+   "cam": "wide milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle"
+   ],
+   "extras": 0
+  }
+ ]
+}

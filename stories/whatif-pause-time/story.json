@@ -1,0 +1,1130 @@
+{
+ "title": "What If You Could Pause Time?",
+ "genre": "what_if",
+ "cast": {
+  "milo": {
+   "hair": "rbx:376548738",
+   "shirt": "#4f8fe8",
+   "pants": "#22304f",
+   "shoes": "#f4f4f4",
+   "skin": "#eab892",
+   "details": [
+    "hood",
+    "kangaroo"
+   ]
+  },
+  "zoe": {
+   "hair": "rbx:6501746646",
+   "shirt": "#ff8fc7",
+   "pants": "#3d5fc4",
+   "skin": "#ffd6b4",
+   "sleeves": "short",
+   "details": [
+    "heart"
+   ],
+   "emblem": "#ffffff",
+   "lashes": true
+  },
+  "jay": {
+   "hair": "rbx:1103003368",
+   "shirt": "#2b2b33",
+   "pants": "#4a3a2a",
+   "skin": "#a06e50",
+   "details": [
+    "collar",
+    "pocket"
+   ],
+   "accent": "#ffffff"
+  },
+  "max": {
+   "hair": "rbx:376524487",
+   "shirt": "#3ecf8e",
+   "pants": "#22304f",
+   "skin": "#f5c79a",
+   "sleeves": "short",
+   "details": [
+    "stripes"
+   ],
+   "accent": "#ffffff",
+   "scale": 0.85
+  }
+ },
+ "locations": {
+  "home": {
+   "setOpts": {
+    "kit": "neighborhood-pathways-kit-a992cf",
+    "near": "porch-front-cottage",
+    "dz": 11
+   }
+  },
+  "bus": {
+   "setOpts": {
+    "kit": "neighborhood-pathways-kit-a992cf",
+    "near": "yellow-school-bus",
+    "dz": 8
+   }
+  },
+  "cafe": {
+   "setOpts": {
+    "kit": "modern-restaurant-cafe-01ea4c",
+    "near": "bistro-table",
+    "index": 10,
+    "dx": 1.2
+   }
+  },
+  "skate": {
+   "setOpts": {
+    "kit": "skatepark-0922a9",
+    "near": "skate-shop",
+    "dz": 5
+   }
+  }
+ },
+ "publish": {
+  "title": "What If You Could Pause Time By Holding Your Breath? #shorts",
+  "description": "One deep breath freezes the whole world for thirty seconds, and Milo uses it for pranks until a birthday cake is on the line. What would you do with a pause button?",
+  "tags": [
+   "what if",
+   "roblox story",
+   "roblox animation",
+   "pause time",
+   "funny story",
+   "roblox shorts",
+   "storytime"
+  ],
+  "caption": "What if holding your breath paused time? ⏸️"
+ },
+ "scenes": [
+  {
+   "line": "What if you could pause time by holding your *breath*?",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "move": "push",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 20,
+     "anim": "idle",
+     "expr": "nervous",
+     "at": [
+      -1.5,
+      0
+     ]
+    },
+    {
+     "id": "zoe",
+     "face": -20,
+     "anim": "wave",
+     "expr": "happy",
+     "at": [
+      2.4,
+      0
+     ]
+    }
+   ],
+   "loc": "home",
+   "title": "WHAT IF..."
+  },
+  {
+   "line": "I found out on a Tuesday. By *accident*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "idle",
+     "expr": "surprised",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "line": "I was late for the school *bus*.",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": 70
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "run",
+     "expr": "scared",
+     "at": [
+      -10,
+      3
+     ],
+     "to": [
+      0,
+      0
+     ],
+     "after": "idle"
+    }
+   ],
+   "loc": "bus",
+   "sfx": [
+    {
+     "name": "cartoon_run",
+     "at": 0.1,
+     "vol": 0.7
+    }
+   ]
+  },
+  {
+   "line": "The doors started closing, so I panicked and held my *breath*.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "idle",
+     "expr": "scared",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.5,
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "And the whole world just... *stopped*.",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "move": "pull",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "shocked",
+     "expr": "shocked",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ],
+   "punch": true,
+   "sfx": [
+    {
+     "name": "magic",
+     "at": "w:stopped"
+    }
+   ],
+   "overlay": [
+    "flash"
+   ]
+  },
+  {
+   "line": "No birds. No wind. No *sound*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": -20,
+    "move": "drift"
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": -30,
+     "anim": "think",
+     "expr": "surprised",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crickets",
+     "at": 0.3,
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "Just me, walking through a frozen *street*.",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": 80
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "walk",
+     "expr": "content",
+     "at": [
+      -8,
+      0
+     ],
+     "to": [
+      8,
+      0
+     ],
+     "after": "idle"
+    }
+   ]
+  },
+  {
+   "line": "Thirty seconds of silence. Thirty seconds of *power*.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "idle",
+     "expr": "smug",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "line": "So naturally, I used it for something *important*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "think",
+     "expr": "confident",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Like swapping Jay's coffee for *pickle* juice.",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 30,
+     "anim": "sneak",
+     "expr": "evil",
+     "at": [
+      -1.5,
+      0
+     ]
+    },
+    {
+     "id": "jay",
+     "face": -30,
+     "anim": "hold",
+     "expr": "happy",
+     "at": [
+      2,
+      -1
+     ]
+    }
+   ],
+   "loc": "cafe",
+   "props": [
+    {
+     "type": "cup",
+     "hand": "jay"
+    }
+   ]
+  },
+  {
+   "line": "Then I gasped for air, and time came *back*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 30,
+     "anim": "tired",
+     "expr": "nervous",
+     "at": [
+      -1.5,
+      0
+     ]
+    },
+    {
+     "id": "jay",
+     "face": -30,
+     "anim": "hold",
+     "expr": "happy",
+     "at": [
+      2,
+      -1
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": "w:gasped"
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "jay"
+    }
+   ]
+  },
+  {
+   "line": "Jay took one sip. His face did *things*.",
+   "shot": "close",
+   "camera": {
+    "target": "jay",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "face": -30,
+     "anim": "hold",
+     "expr": "shocked",
+     "at": [
+      2,
+      -1
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cup",
+     "hand": "jay"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd_gasp",
+     "at": "w:sip",
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "Worth it.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 30,
+     "anim": "idle",
+     "expr": "smug",
+     "at": [
+      -1.5,
+      0
+     ]
+    },
+    {
+     "id": "jay",
+     "face": -30,
+     "anim": "angry",
+     "expr": "angry",
+     "at": [
+      2,
+      -1
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "line": "Round two. The *skatepark*.",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "idle",
+     "expr": "grin",
+     "at": [
+      -2,
+      2
+     ]
+    },
+    {
+     "id": "max",
+     "face": 200,
+     "anim": "float",
+     "expr": "happy",
+     "at": [
+      4,
+      -3
+     ]
+    }
+   ],
+   "loc": "skate"
+  },
+  {
+   "line": "A kid hung in mid-air like a *poster*.",
+   "shot": "medium",
+   "camera": {
+    "target": "max",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "max",
+     "face": 200,
+     "anim": "float",
+     "expr": "happy",
+     "at": [
+      4,
+      -3
+     ]
+    }
+   ]
+  },
+  {
+   "line": "I tied his shoelaces together. Very gently. Very *evil*.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": -45,
+     "anim": "sneak",
+     "expr": "evil",
+     "at": [
+      1,
+      -2
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Time snapped back, and Max did a perfect *faceplant*.",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": -45,
+     "anim": "laugh",
+     "expr": "laugh",
+     "at": [
+      1,
+      -2
+     ]
+    },
+    {
+     "id": "max",
+     "face": 200,
+     "anim": "fall",
+     "expr": "ko",
+     "at": [
+      4,
+      -3
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thud",
+     "at": "w:faceplant"
+    },
+    {
+     "name": "crowd_laugh",
+     "at": "w:faceplant",
+     "vol": 0.4
+    }
+   ]
+  },
+  {
+   "line": "By Friday, I was *unstoppable*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "dab",
+     "expr": "grin",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ],
+   "loc": "home"
+  },
+  {
+   "line": "I dodged every chore. I never lost a single board *game*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": -20,
+    "move": "drift"
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "cheer",
+     "expr": "laugh",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "line": "I even froze time to eat the last *cookie*.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "hold",
+     "expr": "content",
+     "at": [
+      0,
+      0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "milo"
+    }
+   ]
+  },
+  {
+   "line": "Then Zoe tripped, carrying her own birthday *cake*.",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 30,
+     "anim": "idle",
+     "expr": "shocked",
+     "at": [
+      -3,
+      0
+     ]
+    },
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "fall",
+     "expr": "scared",
+     "at": [
+      2.4,
+      0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "zoe"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd_gasp",
+     "at": "w:tripped",
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "I panicked. I held my *breath*.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 15,
+    "zoom": 0.85
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 30,
+     "anim": "idle",
+     "expr": "scared",
+     "at": [
+      -3,
+      0
+     ]
+    }
+   ],
+   "punch": true,
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.3,
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "Zoe, the cake, the frosting. All *frozen*.",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 15,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 30,
+     "anim": "idle",
+     "expr": "nervous",
+     "at": [
+      -3,
+      0
+     ]
+    },
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "float",
+     "expr": "scared",
+     "at": [
+      2.4,
+      0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "zoe"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "magic",
+     "at": "w:frozen"
+    }
+   ]
+  },
+  {
+   "line": "Thirty seconds to save her *cake*.",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": 75
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "run",
+     "expr": "confident",
+     "at": [
+      -3,
+      0
+     ],
+     "to": [
+      -0.5,
+      0.8
+     ],
+     "after": "idle"
+    },
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "float",
+     "expr": "scared",
+     "at": [
+      2.4,
+      0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "zoe"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.2,
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "I caught the cake. I caught Zoe. I caught *Max*, somehow.",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 20,
+     "anim": "hold",
+     "expr": "confident",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    },
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "float",
+     "expr": "scared",
+     "at": [
+      2.4,
+      0
+     ]
+    },
+    {
+     "id": "max",
+     "face": 0,
+     "anim": "float",
+     "expr": "scared",
+     "at": [
+      -3.2,
+      2.2
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "milo"
+    }
+   ]
+  },
+  {
+   "line": "But thirty seconds is a long time to hold your *breath*.",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 20,
+     "anim": "hold",
+     "expr": "worried",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "vol": 0.6
+    }
+   ]
+  },
+  {
+   "line": "I turned blue. Then purple. Then a *color* that does not exist.",
+   "shot": "extreme",
+   "camera": {
+    "target": "milo",
+    "angle": 0
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "hold",
+     "expr": "ko",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    }
+   ],
+   "overlay": [
+    "vignette",
+    "red"
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "milo"
+    }
+   ]
+  },
+  {
+   "line": "I gasped. Time came back. And there I stood, holding the *cake*.",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 20,
+     "anim": "hold",
+     "expr": "nervous",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    },
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "sitfloor",
+     "expr": "surprised",
+     "at": [
+      2.4,
+      0
+     ]
+    },
+    {
+     "id": "max",
+     "face": 0,
+     "anim": "idle",
+     "expr": "surprised",
+     "at": [
+      -3.2,
+      2.2
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "cake",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": "w:gasped"
+    }
+   ]
+  },
+  {
+   "line": "Zoe stared at the cake, then at *me*.",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "sitfloor",
+     "expr": "surprised",
+     "at": [
+      2.4,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "line": "She asked how I got there. I said *gym* class.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "shrug",
+     "expr": "smug",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "record_scratch",
+     "at": "w:gym",
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "She believed me. Which tells you everything about *gym* class.",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "face": -30,
+     "anim": "laugh",
+     "expr": "laugh",
+     "at": [
+      2.4,
+      0
+     ]
+    },
+    {
+     "id": "milo",
+     "face": 20,
+     "anim": "idle",
+     "expr": "happy",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd_laugh",
+     "at": "w:everything",
+     "vol": 0.4
+    }
+   ]
+  },
+  {
+   "line": "Moral of the story: use your powers for *good*.",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 15,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "face": 0,
+     "anim": "idle",
+     "expr": "content",
+     "at": [
+      -0.5,
+      0.8
+     ]
+    }
+   ]
+  },
+  {
+   "line": "And Jay still has not forgiven the pickle *juice*.",
+   "shot": "medium",
+   "camera": {
+    "target": "jay",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "face": 0,
+     "anim": "angry",
+     "expr": "angry",
+     "at": [
+      2,
+      -1
+     ]
+    }
+   ],
+   "loc": "cafe",
+   "props": [
+    {
+     "type": "cup",
+     "hand": "jay"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "sad_trombone",
+     "at": "w:juice",
+     "vol": 0.5
+    }
+   ]
+  }
+ ]
+}

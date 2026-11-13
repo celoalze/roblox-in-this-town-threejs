@@ -1,0 +1,261 @@
+{
+ "title": "expr test",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "rig test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "studio",
+   "dur": 1,
+   "title": "furious",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo 0,0 f0 idle/furious"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "determined",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/determined"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "teary",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/teary"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "heartbroken",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/heartbroken"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "betrayed",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/betrayed"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "scream",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/scream"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "panic",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/panic"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "horrified",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/horrified"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "awe",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/awe"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "suspicious",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/suspicious"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "bored",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/bored"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "skeptical",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/skeptical"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "curious",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/curious"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "shy",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/shy"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "pout",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/pout"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "annoyed",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/annoyed"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "proud",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/proud"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "relieved",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/relieved"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "dizzy",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/dizzy"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "starstruck",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/starstruck"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "wink",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/wink"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "disgusted",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/disgusted"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "deadpan",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/deadpan"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "mischief",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/mischief"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "sly",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/sly"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "awkward",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/awkward"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "stunned",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/stunned"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "hysterical",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/hysterical"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "silly",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/silly"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "grumpy",
+   "cam": "extreme milo 0 static",
+   "actors": [
+    "milo idle/grumpy"
+   ]
+  }
+ ]
+}

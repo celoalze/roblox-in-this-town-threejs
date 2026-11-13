@@ -1,0 +1,18 @@
+{"title": "skybox test", "music": "none", "cast": ["milo", "zoe"],
+ "publish": {"title": "skybox test", "description": "x", "tags": ["a", "b", "c", "d", "e"]},
+ "scenes": [
+  {"loc": "plaza", "sky": "day_puffy", "dur": 1.5, "title": "day_puffy", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/happy"]},
+  {"sky": "day_cumulus", "dur": 1.5, "title": "day_cumulus", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/happy"]},
+  {"sky": "golden_hour", "dur": 1.5, "title": "golden_hour", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/happy"]},
+  {"sky": "sunset", "dur": 1.5, "title": "sunset", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/happy"]},
+  {"sky": "storm", "dur": 1.5, "title": "storm", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 scared/scared"]},
+  {"sky": "night_moon", "dur": 1.5, "title": "night_moon", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/happy"]},
+  {"sky": "night_stars", "dur": 1.5, "title": "night_stars", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/happy"]},
+  {"sky": "purple_planets", "dur": 1.5, "title": "purple_planets", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/awe"]},
+  {"sky": "nebula", "dur": 1.5, "title": "nebula", "cam": "low milo lens90 static", "actors": ["milo 0,0 f0 wave/awe"]},
+  {"sky": "day_puffy", "dur": 1.5, "title": "sun in frame: rays + flare", "cam": "low milo lens90 static 180", "actors": ["milo 0,0 f0 cheer/happy"]},
+  {"sky": "day_puffy>storm@30%", "grade": "vivid>threat@30%", "dur": 3, "title": "day_puffy > storm + grade threat", "cam": "wide group lens85 h0.4 static", "actors": ["milo -1.5,0 f20 /scared", "zoe 1.5,0 f-20 /horrified"]},
+  {"sky": "golden_hour", "grade": "flashback", "dur": 1.5, "title": "grade flashback", "cam": "medium zoe", "actors": ["zoe 0,0 f0 /happy"]},
+  {"sky": "day_puffy", "grade": "vivid", "dur": 1.5, "title": "grade vivid", "cam": "medium zoe", "actors": ["zoe 0,0 f0 /happy"]},
+  {"sky": "night_moon", "grade": "cold", "dur": 1.5, "title": "grade cold", "cam": "medium zoe", "actors": ["zoe 0,0 f0 /happy"]}
+ ]}

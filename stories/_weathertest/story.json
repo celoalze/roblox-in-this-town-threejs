@@ -1,0 +1,205 @@
+{
+ "title": "weather test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "zoe"
+ ],
+ "publish": {
+  "title": "rig test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "dur": 3.2,
+   "title": "sunny",
+   "weather": "sunny",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo -1.5,0 f20 idle/happy",
+    "zoe 1.5,0 f-20 wave/grin"
+   ],
+   "loc": "park",
+   "time": "day"
+  },
+  {
+   "dur": 3.2,
+   "title": "heatwave",
+   "weather": "heatwave",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "cloudy",
+   "weather": "cloudy",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "fog",
+   "weather": "fog",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "windy",
+   "weather": "windy",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "rain",
+   "weather": "rain",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "storm",
+   "weather": "storm",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "snow",
+   "weather": "snow",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "blizzard",
+   "weather": "blizzard",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "sandstorm",
+   "weather": "sandstorm",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "rainbow",
+   "weather": "rainbow",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "fullmoon",
+   "weather": "fullmoon",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "starry",
+   "weather": "starry",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "aurora",
+   "weather": "aurora",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "eclipse",
+   "weather": "eclipse",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 3.2,
+   "title": "solar_eclipse",
+   "weather": "solar_eclipse",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "dur": 2,
+   "title": "clear (back to day)",
+   "weather": "clear",
+   "time": "day",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo",
+    "zoe"
+   ]
+  },
+  {
+   "loc": "bedroom",
+   "dur": 3.2,
+   "title": "storm indoors",
+   "weather": "storm",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo -1.5,0 f20 scared/scared",
+    "zoe 1.5,0 f-20 idle/worried"
+   ]
+  }
+ ]
+}

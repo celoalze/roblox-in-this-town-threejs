@@ -1,0 +1,17 @@
+{
+ "title": "In This Town, <premise>",
+ "genre": "in_this_town",
+ "cast": ["milo", "zoe"],
+ "publish": {
+  "title": "<hook keyword first, <=70 chars> #shorts",
+  "description": "<premise in one sentence>. <question to the viewer>?",
+  "tags": ["roblox story", "roblox animation", "in this town", "roblox shorts", "storytime"],
+  "caption": "In this town, <premise> <emoji>"
+ },
+ "scenes": [
+  {"loc": "home", "line": "In this town, <premise with one *keyword*>.", "title": "IN THIS TOWN...", "cam": "wide group 15 push",
+   "actors": ["milo -1.5,0 f20 /happy", "zoe 1.5,0 f-20 wave/grin"], "sfx": "boom@keyword"},
+  {"line": "<next beat with a *key* word>.", "cam": "close milo", "actors": ["milo think/worried"]},
+  {"line": "<reveal: she won a *trophy*>.", "cam": "medium zoe punch", "actors": ["zoe cheer/laugh +trophy@trophy"], "fx": "confetti:zoe@trophy", "sfx": "tada@trophy"}
+ ]
+}

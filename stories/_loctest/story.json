@@ -1,0 +1,471 @@
+{
+"title": "location presets test",
+"music": "none",
+"cast": [
+"milo",
+"zoe"
+],
+"publish": {
+"title": "t",
+"description": "t",
+"tags": [
+"a",
+"b",
+"c",
+"d",
+"e"
+]
+},
+"scenes": [
+{
+"loc": "home",
+"dur": 1,
+"title": "home",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "mailbox",
+"dur": 1,
+"title": "mailbox",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "yard",
+"dur": 1,
+"title": "yard",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "bus",
+"dur": 1,
+"title": "bus",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "cafe",
+"dur": 1,
+"title": "cafe",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "cafe2",
+"dur": 1,
+"title": "cafe2",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "cafe3",
+"dur": 1,
+"title": "cafe3",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "skate",
+"dur": 1,
+"title": "skate",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "tokyo",
+"dur": 1,
+"title": "tokyo",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "farm",
+"dur": 1,
+"title": "farm",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "lab",
+"dur": 1,
+"title": "lab",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "lab_robot",
+"dur": 1,
+"title": "lab_robot",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "lab_airlock",
+"dur": 1,
+"title": "lab_airlock",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "space",
+"dur": 1,
+"title": "space",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "space_tower",
+"dur": 1,
+"title": "space_tower",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "space_crystal",
+"dur": 1,
+"title": "space_crystal",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "space_pad",
+"dur": 1,
+"title": "space_pad",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "west_saloon",
+"dur": 1,
+"title": "west_saloon",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "west_sheriff",
+"dur": 1,
+"title": "west_sheriff",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "west_bank",
+"dur": 1,
+"title": "west_bank",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "west_mine",
+"dur": 1,
+"title": "west_mine",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "hospital",
+"dur": 1,
+"title": "hospital",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "ambulance",
+"dur": 1,
+"title": "ambulance",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "camp",
+"dur": 1,
+"title": "camp",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "camp_cabin",
+"dur": 1,
+"title": "camp_cabin",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "camp_dock",
+"dur": 1,
+"title": "camp_dock",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "camp_tent",
+"dur": 1,
+"title": "camp_tent",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "site",
+"dur": 1,
+"title": "site",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "site_crane",
+"dur": 1,
+"title": "site_crane",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "site_digger",
+"dur": 1,
+"title": "site_digger",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "station",
+"dur": 1,
+"title": "station",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "plaza",
+"dur": 1,
+"title": "plaza",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "church",
+"dur": 1,
+"title": "church",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "office",
+"dur": 1,
+"title": "office",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "street",
+"dur": 1,
+"title": "street",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "city",
+"dur": 1,
+"title": "city",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "park",
+"dur": 1,
+"title": "park",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "school",
+"dur": 1,
+"title": "school",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "classroom",
+"dur": 1,
+"title": "classroom",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "bedroom",
+"dur": 1,
+"title": "bedroom",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "livingroom",
+"dur": 1,
+"title": "livingroom",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "store",
+"dur": 1,
+"title": "store",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "forest",
+"dur": 1,
+"title": "forest",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "dock",
+"dur": 1,
+"title": "dock",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+},
+{
+"loc": "studio",
+"dur": 1,
+"title": "studio",
+"cam": "wide group 15 static",
+"actors": [
+"milo -1.5,0 f15",
+"zoe 1.5,0 f-15 wave/grin"
+]
+}
+]
+}

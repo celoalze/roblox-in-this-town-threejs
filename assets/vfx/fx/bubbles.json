@@ -1,0 +1,6 @@
+{"duration": 4, "emitters": [
+ {"texture": "ring", "blend": "add", "rot": [-90, 0, 0], "shape": {"type": "rectangle", "width": 44, "height": 34, "speed": [0, 0]}, "at": [0, 0.3, -8], "life": [3.5, 5.5], "size": [0.25, 0.8], "color": "#d9f6ff", "rate": 26, "looping": true, "prewarm": true, "duration": 4, "order": 2,
+  "over": {"size": [[0, 0.6], [1, 1.25]], "color": [["#ffffff", 0, 0], ["#e6fbff", 0.15, 0.85], ["#ffffff", 1, 0]], "gravity": [0, 3.2, 0], "drag": 0.05, "noise": [0.3, 1.2]}},
+ {"texture": "soft", "blend": "add", "rot": [-90, 0, 0], "shape": {"type": "rectangle", "width": 50, "height": 40, "speed": [0, 0]}, "at": [0, 2, -10], "life": [5, 8], "size": [0.12, 0.3], "color": "#bfeaff", "rate": 40, "looping": true, "prewarm": true, "duration": 4, "order": 1,
+  "over": {"size": [[0, 1], [1, 1]], "color": [["#ffffff", 0, 0], ["#cfefff", 0.2, 0.55], ["#ffffff", 1, 0]], "gravity": [0, 0.5, 0], "drag": 0.1, "noise": [0.5, 0.8]}}
+]}

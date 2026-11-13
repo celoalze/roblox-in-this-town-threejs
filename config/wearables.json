@@ -1,0 +1,227 @@
+{
+ "_doc": "Roblox catalog accessories worn on a body part (free Roblox-made items; asset = catalog id). Use: cast spec \"wear\": [\"cap\", \"aviators\"] (always on) or on an actor `+cap` / `+cap@word` (timed). part = R6 part the accessory's attachment lives on; pos = handle position in that part's space; scale = SpecialMesh scale (all from a read-only Studio probe). Files: assets/roblox/wear/<name>.json/.png, built by `python pipeline/roblox_wear.py`. slot = Roblox accessory type (layer order: face < neck < front < back < shoulder < hat).",
+ "cap": {
+  "asset": 607702162,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 71483350,
+  "tex": 607698990,
+  "scale": [
+   0.66,
+   0.66,
+   0.66
+  ],
+  "pos": [
+   0,
+   0.575,
+   -0.1997
+  ]
+ },
+ "rcap": {
+  "asset": 417457461,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 417373422,
+  "tex": 417371021,
+  "scale": [
+   0.52,
+   0.52,
+   0.52
+  ],
+  "pos": [
+   0,
+   0.55,
+   -0.1097
+  ]
+ },
+ "redcap": {
+  "asset": 48474313,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 46834172,
+  "tex": 47991609,
+  "scale": [
+   1.05,
+   1.05,
+   1.05
+  ],
+  "pos": [
+   0,
+   0.55,
+   -0.0997
+  ]
+ },
+ "encierro": {
+  "asset": 3403874988,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 151779305,
+  "tex": 3398535435,
+  "scale": [
+   1.1,
+   1.1,
+   1.1
+  ],
+  "pos": [
+   0,
+   0.6,
+   -0.1997
+  ]
+ },
+ "fedora": {
+  "asset": 4047554959,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 3030546036,
+  "tex": 3650205764,
+  "scale": [
+   1,
+   1,
+   1
+  ],
+  "pos": [
+   -0.0325,
+   0.8238,
+   -0.0061
+  ]
+ },
+ "visor": {
+  "asset": 2646473721,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 1081088,
+  "tex": 2646470932,
+  "scale": [
+   1.02,
+   1.02,
+   1.02
+  ],
+  "pos": [
+   0,
+   0.41,
+   -0.1797
+  ]
+ },
+ "hood": {
+  "asset": 617605556,
+  "slot": "hat",
+  "part": "head",
+  "mesh": 617474228,
+  "tex": 617406825,
+  "scale": [
+   1,
+   0.9,
+   0.9
+  ],
+  "pos": [
+   0,
+   -0.03,
+   0.23
+  ]
+ },
+ "aviators": {
+  "asset": 376526673,
+  "slot": "face",
+  "part": "head",
+  "mesh": 116436358,
+  "tex": 376188793,
+  "scale": [
+   1,
+   1,
+   1
+  ],
+  "pos": [
+   0,
+   0.14,
+   -0.1497
+  ]
+ },
+ "shades": {
+  "asset": 376527500,
+  "slot": "face",
+  "part": "head",
+  "mesh": 116437983,
+  "tex": 376188465,
+  "scale": [
+   1.01,
+   1,
+   1
+  ],
+  "pos": [
+   0,
+   0.13,
+   -0.1497
+  ]
+ },
+ "jadenecklace": {
+  "asset": 376527115,
+  "slot": "neck",
+  "part": "torso",
+  "mesh": 28461516,
+  "tex": 376188163,
+  "scale": [
+   1.15,
+   1.15,
+   1.25
+  ],
+  "pos": [
+   0,
+   1.02,
+   0.0003
+  ]
+ },
+ "dogpack": {
+  "asset": 98752422639730,
+  "slot": "back",
+  "part": "torso",
+  "mesh": 90109292651244,
+  "tex": 119537042058526,
+  "scale": [
+   1,
+   1,
+   1
+  ],
+  "pos": [
+   -0.0349,
+   0.1621,
+   0.5091
+  ]
+ },
+ "_skipped": "flowercrown / heartnecklace (asset download needs a login) and starwisp (mesh format 7, Draco) could not be converted.",
+ "beard_full": {
+  "asset": 158066137,
+  "slot": "face",
+  "part": "head",
+  "mesh": 157959108,
+  "tex": 157924575,
+  "scale": [
+   0.533,
+   0.54,
+   0.533
+  ],
+  "pos": [
+   0,
+   -0.1965,
+   -0.3091
+  ],
+  "note": "Andrew's Beard (Roblox, catalog 158066137)"
+ },
+ "adventure_pack": {
+  "asset": 2042023834,
+  "slot": "back",
+  "part": "torso",
+  "mesh": 1703855748,
+  "tex": 1703858651,
+  "scale": [
+   1.943,
+   2.016,
+   2.209
+  ],
+  "pos": [
+   -0.1943,
+   0.5837,
+   0.741
+  ],
+  "note": "Adventure Backpack (Roblox, catalog 2042023834)"
+ }
+}

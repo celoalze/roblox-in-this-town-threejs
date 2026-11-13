@@ -1,0 +1,237 @@
+{
+ "title": "mbtest",
+ "music": "none",
+ "style": {
+  "look": "aaa"
+ },
+ "cast": {
+  "ryan": {
+   "like": "milo",
+   "shirt": "#f0f0f0",
+   "jacket": "#d6312b",
+   "details": [
+    "jacket",
+    "pocket"
+   ],
+   "pants": "#2a3550",
+   "hair": "rbx:376548738",
+   "wear": [
+    "dogpack"
+   ]
+  },
+  "father": {
+   "like": "dad",
+   "extras": [
+    "mustache",
+    "beard"
+   ],
+   "beardColor": "#3a2a1e",
+   "hair": "rbx:63690008"
+  },
+  "tent": {
+   "like": "worm",
+   "height": 40,
+   "recolor": "#0b0810",
+   "spots": "#ff2a2a",
+   "glow": 2.5
+  },
+  "whale": {
+   "like": "dolphin",
+   "scale": 4,
+   "recolor": "#35557a"
+  },
+  "ice_giant": {},
+  "sky_beast": {},
+  "trex": {}
+ },
+ "publish": {
+  "title": "x",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "title": "ryan+father close",
+   "dur": 2,
+   "loc": "stone_court",
+   "cam": "medium group",
+   "actors": [
+    "ryan 0,0 f20 /grit",
+    "father 3,0 f-20 /happy"
+   ],
+   "props": [
+    {
+     "type": "chains",
+     "at": [
+      3,
+      -4
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ryan back pack",
+   "dur": 2,
+   "loc": "stone_court",
+   "cam": "medium ryan 150",
+   "actors": [
+    "ryan 0,0 f150 /grit"
+   ]
+  },
+  {
+   "title": "statue",
+   "dur": 2,
+   "loc": "ice_world",
+   "sky": "nebula",
+   "actors": [
+    "ryan 0,2 f180 /awe"
+   ],
+   "props": [
+    {
+     "type": "statue",
+     "at": [
+      0,
+      -16
+     ],
+     "y": -1.5
+    }
+   ],
+   "weather": "snow",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     6,
+     -16
+    ],
+    "path": [
+     [
+      12,
+      5,
+      12
+     ],
+     [
+      12,
+      5,
+      12
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "title": "hatch",
+   "dur": 2,
+   "loc": "ice_world",
+   "sky": "nebula",
+   "cam": "high ryan",
+   "actors": [
+    "ryan 0,2 f0 dig/grit"
+   ],
+   "props": [
+    {
+     "type": "hatch",
+     "at": [
+      0,
+      0
+     ],
+     "openAt": 1
+    }
+   ]
+  },
+  {
+   "title": "tentacle",
+   "dur": 2,
+   "loc": "ice_world",
+   "sky": "nebula",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     16,
+     -40
+    ],
+    "path": [
+     [
+      30,
+      8,
+      30
+     ],
+     [
+      30,
+      8,
+      30
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "ryan 0,6 f180 /terrified",
+    "tent 0,-40 f0 walk"
+   ]
+  },
+  {
+   "title": "whale",
+   "dur": 2,
+   "loc": "ocean_world",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -50
+    ],
+    "path": [
+     [
+      30,
+      10,
+      0
+     ],
+     [
+      30,
+      10,
+      0
+     ]
+    ],
+    "lens": 60,
+    "move": "static",
+    "occlude": false
+   },
+   "actors": [
+    "whale 0,-50 f0 walk"
+   ]
+  },
+  {
+   "title": "watch",
+   "dur": 2,
+   "loc": "ice_world",
+   "cam": "extreme ryan",
+   "actors": [
+    "ryan 0,2 f0 /terrified +countdown"
+   ],
+   "props": []
+  },
+  {
+   "title": "beast",
+   "dur": 2,
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "cam": "low ryan lens90",
+   "actors": [
+    "ryan 0,2 f0 /horrified",
+    "sky_beast 0,-110 y60 f0 walk"
+   ]
+  }
+ ]
+}

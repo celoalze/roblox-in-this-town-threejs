@@ -1,0 +1,22 @@
+{
+ "title": "In This World, <rule>",
+ "genre": "in_this_world",
+ "cast": ["milo", "mom", "zoe", "jay"],
+ "publish": {
+  "title": "In This World, <rule> <emoji>",
+  "description": "<premise in one sentence>. Who would you hide it from?",
+  "tags": ["roblox story", "roblox animation", "in this world", "roblox shorts", "storytime", "emotional"],
+  "caption": "In this world, <rule> <emoji>"
+ },
+ "scenes": [
+  {"beat": "rule", "loc": "street", "line": "In this world, everyone has a *<thing>* above their head.", "title": "IN THIS WORLD... <RULE>", "cam": "wide group 15 push", "actors": ["zoe -2,0 f20 /neutral", "jay 2,0 f-20 /surprised"], "extras": 5, "sfx": "boom@<thing>"},
+  {"beat": "example", "line": "You see, <how people live with it, one concrete detail>.", "cam": "medium zoe", "actors": ["zoe idle/worried"]},
+  {"beat": "example", "line": "<mini-story with a small tragic or funny ending>.", "cam": "close jay punch", "actors": ["jay shocked"]},
+  {"beat": "hero", "loc": "home", "line": "My name is *Leo*, and my mom has a saying: \"<family saying>.\"", "cam": "medium group", "actors": ["milo -1.5,0 f20 /happy", "mom 1.5,0 f-20 /content"]},
+  {"beat": "clue", "line": "<strange thing nobody explains: mom wears a big hat everywhere>.", "cam": "close mom", "actors": ["mom /nervous"]},
+  {"beat": "clue", "line": "<second strange thing: even the bully is nice to me>.", "cam": "medium milo", "actors": ["milo /worried"]},
+  {"beat": "twist", "line": "Then I turned back and I *froze*.", "cam": "low mom punch push", "actors": ["mom /sad"], "sfx": "heartbeat riser@froze"},
+  {"beat": "choice", "dur": 1.5, "cam": "close milo", "actors": ["milo /heartbroken"]},
+  {"beat": "cta", "line": "Subscribe if you love your *mom*.", "cam": "wide group pull", "actors": ["milo /love", "mom /love"]}
+ ]
+}

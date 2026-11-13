@@ -1,0 +1,25 @@
+# dependencies and local environments
+node_modules/
+.venv-tts/
+.tools/
+__pycache__/
+
+# generated output and caches
+cache/
+out/
+publish/
+tmp/
+tests/golden/
+
+# large binaries (models, reference videos, downloaded assets)
+models/
+.references/
+assets/models/
+assets/sky/
+assets/textures/
+assets/audio/
+assets/fonts/
+
+# secrets
+.env
+.mcp.json

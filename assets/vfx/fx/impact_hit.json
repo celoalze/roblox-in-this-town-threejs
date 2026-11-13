@@ -1,0 +1,7 @@
+{"duration": 1.5, "emitters": [
+ {"texture": "star", "blend": "normal", "shape": "point", "life": [0.38, 0.45], "size": [9, 9], "rotation": [-12, 12], "color": "#ffd21a", "burst": [[0, 1]], "over": {"size": [[0, 0.3], [0.2, 1.05], [0.4, 1], [1, 0.85]], "color": [["#ffd21a", 0, 1], ["#ffb000", 0.6, 1], ["#ff8a00", 1, 0]]}, "order": 3},
+ {"texture": "star", "blend": "normal", "shape": "point", "life": [0.3, 0.35], "size": [5.5, 5.5], "rotation": [10, 25], "color": "#ffffff", "burst": [[0, 1]], "over": {"size": [[0, 0.3], [0.2, 1.1], [1, 0.8]], "color": [["#ffffff", 0, 1], ["#fff7c0", 0.7, 1], ["#fff7c0", 1, 0]]}, "order": 4},
+ {"texture": "soft", "blend": "add", "shape": "point", "life": 0.16, "size": 14, "color": "#ffffff", "burst": [[0, 1]], "over": {"size": [[0, 0.5], [1, 1.3]], "color": [["#fff", 0, 0.9], ["#ffe9a0", 1, 0]]}, "order": 5},
+ {"texture": "ring", "blend": "add", "shape": "point", "life": 0.32, "size": 7, "color": "#ffffff", "burst": [[0, 1]], "over": {"size": [[0, 0.3], [1, 3.4]], "color": [["#fff", 0, 1], ["#ffd060", 1, 0]]}, "order": 2},
+ {"texture": "spark", "blend": "normal", "mode": "stretch", "stretchScale": 5, "shape": {"type": "sphere", "radius": 0.4}, "life": [0.3, 0.6], "speed": [16, 30], "size": [0.7, 1.2], "color": ["#fff6b0", "#ffb830"], "burst": [[0, 12]], "over": {"size": [[0, 1], [1, 0.1]], "color": [["#ffffff", 0, 1], ["#ff9a20", 1, 0]], "gravity": [0, -20, 0]}, "order": 1}
+]}

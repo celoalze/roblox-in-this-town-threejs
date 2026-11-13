@@ -1,0 +1,147 @@
+{
+ "title": "fx test",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "fx test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "dur": 1.2,
+   "title": "confetti",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "confetti:milo",
+   "loc": "park"
+  },
+  {
+   "dur": 1.2,
+   "title": "coins",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "coins:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "hearts",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "hearts:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "sparkles",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "sparkles:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "puff",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "puff:milo@0.45"
+  },
+  {
+   "dur": 1.2,
+   "title": "dust",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "dust:milo@0.55"
+  },
+  {
+   "dur": 1.2,
+   "title": "shockwave",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "shockwave:milo@0.5"
+  },
+  {
+   "dur": 1.2,
+   "title": "impact",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "impact:milo@0.62"
+  },
+  {
+   "dur": 1.2,
+   "title": "sweat",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/nervous"
+   ],
+   "fx": "sweat:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "anger",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/angry"
+   ],
+   "fx": "anger:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "question",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "question:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "exclaim",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "exclaim:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "zzz",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/sleepy"
+   ],
+   "fx": "zzz:milo"
+  },
+  {
+   "dur": 1.2,
+   "title": "glow",
+   "cam": "full milo 15 static",
+   "actors": [
+    "milo 0,0 f10 idle/happy"
+   ],
+   "fx": "glow:milo"
+  }
+ ]
+}

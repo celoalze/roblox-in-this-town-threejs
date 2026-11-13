@@ -1,0 +1,5 @@
+{"duration": 1.2, "light": ["#6cb4ff", 40, 24], "emitters": [
+ {"texture": "bolt", "blend": "normal", "shape": {"type": "sphere", "radius": 0.6}, "life": [0.1, 0.16], "size": [7, 11], "rotation": [0, 360], "color": "#ffffff", "burst": [[0, 3], [0.14, 3], [0.28, 3], [0.42, 2], [0.58, 2]], "over": {"size": [[0, 0.8], [0.5, 1.1], [1, 0.9]], "color": [["#ffffff", 0, 1], ["#e0f4ff", 0.7, 1], ["#8fd0ff", 1, 0]]}, "order": 3},
+ {"texture": "glow", "blend": "add", "shape": "point", "life": [0.12, 0.2], "size": [8, 11], "color": "#4f9cff", "burst": [[0, 1], [0.14, 1], [0.28, 1], [0.42, 1], [0.58, 1]], "over": {"size": [[0, 0.6], [1, 1.2]], "color": [["#9fd8ff", 0, 0.8], ["#3070ff", 1, 0]]}, "order": 1},
+ {"texture": "spark", "blend": "normal", "mode": "stretch", "stretchScale": 4, "shape": {"type": "sphere", "radius": 0.5}, "life": [0.2, 0.45], "speed": [10, 22], "size": [0.45, 0.8], "color": ["#ffffff", "#9fd8ff"], "burst": [[0, 8], [0.14, 6], [0.28, 6], [0.42, 4]], "over": {"size": [[0, 1], [1, 0.1]], "color": [["#ffffff", 0, 1], ["#6cc0ff", 1, 0]], "gravity": [0, -14, 0]}, "order": 2}
+]}

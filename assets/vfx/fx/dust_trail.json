@@ -1,0 +1,4 @@
+{"duration": 2, "emitters": [
+ {"texture": "assets/vfx/textures/kenney/smoke_04.png", "blend": "normal", "shape": {"type": "sphere", "radius": 0.5}, "life": [0.9, 1.5], "speed": [0.5, 2], "size": [3.2, 5], "rotation": [0, 360], "color": ["#fff0d0", "#e6d0a4"], "rate": 22, "looping": true, "duration": 1, "over": {"size": [[0, 0.4], [0.4, 1], [1, 1.6]], "color": [["#eedcb4", 0, 0.85], ["#d2ba8c", 0.5, 0.6], ["#c8b088", 1, 0]], "gravity": [0, 1.5, 0], "rotate": [-30, 30], "noise": [1.2, 1.2], "drag": 0.04}, "order": 1},
+ {"texture": "soft", "blend": "normal", "shape": {"type": "sphere", "radius": 0.4}, "life": [0.3, 0.6], "speed": [1, 4], "size": [0.8, 1.4], "color": ["#c8a878", "#a48660"], "rate": 14, "looping": true, "duration": 1, "over": {"size": [[0, 1], [1, 0.3]], "color": [["#b89868", 0, 0.9], ["#a48660", 1, 0]], "gravity": [0, -6, 0]}, "order": 2}
+]}

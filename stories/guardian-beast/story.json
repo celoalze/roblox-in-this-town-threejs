@@ -1,0 +1,851 @@
+{
+ "title": "In This World, Everyone Summons a Guardian Beast",
+ "genre": "in_this_world",
+ "format": {
+  "fps": 60
+ },
+ "style": {
+  "look": "aaa",
+  "bloom": 0.45
+ },
+ "music": "epic",
+ "cast": [
+  {
+   "milo": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#3b2219",
+    "shirt": "rbx:denimhoodie",
+    "pants": "rbx:blackjeanssneakers"
+   }
+  },
+  {
+   "dad": {
+    "like": "dad",
+    "hair": "rbx:middlepart",
+    "hairColor": "#555555",
+    "shirt": "rbx:blueplaid",
+    "pants": "rbx:darkgreenjeans"
+   }
+  },
+  "zoe",
+  "jay",
+  "max",
+  "boss",
+  {
+   "zephyr": {
+    "like": "dragon",
+    "scale": 0.6,
+    "tint": "#dbeafe"
+   }
+  },
+  {
+   "pyro": {
+    "like": "dragon",
+    "scale": 1.0,
+    "tint": "#ff3b30"
+   }
+  }
+ ],
+ "publish": {
+  "title": "In This World, You Summon a Guardian Beast #shorts",
+  "description": "On your twelfth birthday, the sky opens and you summon your guardian creature. But Leo's broken beast held a secret his dad never told him. Would you trade it away?",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "in this world",
+   "roblox shorts",
+   "storytime",
+   "emotional",
+   "dad",
+   "dragon",
+   "family",
+   "viral"
+  ],
+  "caption": "True strength does not roar to be feared \ud83e\udd7a\u2764\ufe0f #roblox #shorts #storytime"
+ },
+ "scenes": [
+  {
+   "beat": "rule",
+   "loc": "plaza",
+   "sky": "day_puffy",
+   "time": "day",
+   "weather": "sunny",
+   "title": "IN THIS WORLD... EVERYONE SUMMONS A GUARDIAN BEAST",
+   "cam": "wide group 15 push",
+   "shots": [
+    "@birthday low milo lens90 dutch",
+    "@summon wide group crash"
+   ],
+   "actors": [
+    "milo -3,0 f25 /neutral",
+    "jay 3,0 f-25 /grin",
+    "zoe 0,-2 f0 /happy"
+   ],
+   "crowd": "watch 20 on:0,-8",
+   "line": "In this world, on your twelfth birthday, you *summon* a beast.",
+   "sfx": "boom@summon"
+  },
+  {
+   "beat": "rule",
+   "cam": "medium jay lens85 push",
+   "actors": [
+    "jay 0,0 f0 /confident"
+   ],
+   "line": "The greater your ambition, the more *terrifying* it becomes.",
+   "sfx": "swoosh@terrifying"
+  },
+  {
+   "beat": "example",
+   "cam": "wide group lens90 push",
+   "shots": [
+    "@scorch medium jay whip"
+   ],
+   "actors": [
+    "pyro 5,-3 y6 fly to:5,-1,0",
+    "jay -3,0 f40 cheer/starstruck"
+   ],
+   "line": "Rich kids summon colossal *dragons* that scorch mountains.",
+   "sfx": "whoosh@dragons thunder@scorch"
+  },
+  {
+   "beat": "example",
+   "loc": "west_bank",
+   "cam": "wide group lens85 rise",
+   "actors": [
+    "jay -2.5,0 f20 /smug +gold_bar",
+    "pyro 3.5,-2 f-30 idle"
+   ],
+   "props": [
+    "chest 0,-1"
+   ],
+   "line": "Warriors summon armored *monsters* to guard their gold.",
+   "sfx": "cash@gold"
+  },
+  {
+   "beat": "example",
+   "grade": "vivid>cold@cold",
+   "cam": "medium jay",
+   "actors": [
+    "jay 0,0 f0 idle/scared"
+   ],
+   "line": "Every beast binds to its master, and cruelty turns your soul *cold*.",
+   "sfx": "heartbeat@cold"
+  },
+  {
+   "beat": "example",
+   "loc": "city",
+   "cam": "establishing group lens90 shake",
+   "shots": [
+    "@crushed wide group crash"
+   ],
+   "actors": [
+    "zoe -3,0 f20 scared/panic",
+    "jay 3,0 f-20 scared/scream"
+   ],
+   "crowd": "flee 18 on:0,-5 @crushed",
+   "line": "A greedy king summoned a titan that *crushed* him.",
+   "sfx": "boom@crushed"
+  },
+  {
+   "beat": "hero",
+   "loc": "home",
+   "sky": "golden_hour",
+   "time": "sunset",
+   "cam": "medium group ots:dad",
+   "actors": [
+    "milo -2,0 f25 /happy",
+    "dad 2,0 f-25 /content"
+   ],
+   "line": "My name is *Leo*, and Dad had one rule.",
+   "sfx": "sparkle@Leo"
+  },
+  {
+   "beat": "hero",
+   "cam": "close dad punch",
+   "shots": [
+    "@love close milo lens85"
+   ],
+   "actors": [
+    "dad 1.5,0 f-25 talk/content",
+    "milo -1.5,0 f25 /curious"
+   ],
+   "line": "He said: \"A beast protects with *love*, not claws.\""
+  },
+  {
+   "beat": "hero",
+   "cam": "medium dad lens85 pull",
+   "actors": [
+    "dad -1.5,0 f15 idle/sad",
+    "milo 2,0 f-30 /sad"
+   ],
+   "line": "Dad was once a captain, but had *no* creature.",
+   "sfx": "suspense@no"
+  },
+  {
+   "beat": "hero",
+   "loc": "street",
+   "cam": "wide group lens90 push",
+   "actors": [
+    "dad -3,0 f0 walk to:-3,-4",
+    "jay 3,-2 f-40 laugh/smug",
+    "zoe 6,-2 f-40 /skeptical"
+   ],
+   "crowd": "watch 12 on:dad",
+   "line": "In town, a man without a beast is mocked with cruel *laughter*.",
+   "sfx": "crowd_laugh@laughter"
+  },
+  {
+   "beat": "hero",
+   "loc": "home",
+   "cam": "medium group",
+   "actors": [
+    "dad -2,0 f25 talk/content",
+    "milo 2,0 f-25 /happy +rcap"
+   ],
+   "line": "Dad never complained; he gave me his warm *jacket*.",
+   "sfx": "sparkle@jacket"
+  },
+  {
+   "beat": "hero",
+   "loc": "plaza",
+   "sky": "day_puffy",
+   "cam": "establishing group lens90 rise",
+   "shots": [
+    "@circle low milo lens90 dutch"
+   ],
+   "actors": [
+    "milo 0,0 f0 /nervous",
+    "dad -4,2 f30 /proud"
+   ],
+   "crowd": "watch 24 on:0,0",
+   "line": "Today was my twelfth birthday at the *stone* circle.",
+   "sfx": "bell@stone"
+  },
+  {
+   "beat": "hero",
+   "cam": "close milo punch",
+   "actors": [
+    "milo 0,0 f0 idle/worried"
+   ],
+   "line": "Everyone expected nothing, but I prayed to make Dad *proud*.",
+   "sfx": "riser@proud"
+  },
+  {
+   "beat": "hero",
+   "sky": "day_puffy>storm@thunder",
+   "grade": "vivid>threat@thunder",
+   "cam": "low milo lens90 crash",
+   "shots": [
+    "@thunder wide group lens85 h0.4 shake"
+   ],
+   "actors": [
+    "milo 0,0 f0 shocked",
+    "dad -4,2 f30 /surprised"
+   ],
+   "crowd": "panic 20 on:0,0 @thunder",
+   "fx": "lightning:milo@thunder shockwave:milo@thunder",
+   "line": "Suddenly, the sky split open with deafening *thunder*.",
+   "sfx": "thunder@thunder"
+  },
+  {
+   "beat": "clue",
+   "cam": "wide group lens90 fly",
+   "shots": [
+    "@descended low milo lens85"
+   ],
+   "actors": [
+    "zephyr 4,-3 y8 fly to:4,-1,0",
+    "milo -3,0 f30 /awe"
+   ],
+   "fx": "dust:zephyr@descended",
+   "line": "Through the smoke, a silver dragon gently *descended*.",
+   "sfx": "whoosh@descended"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group lens85 push",
+   "shots": [
+    "@scarred close milo crash"
+   ],
+   "actors": [
+    "zephyr 3,-1 f-30 idle",
+    "milo -3,0 f30 /curious"
+   ],
+   "line": "It had silver scales, but its wing was *scarred*.",
+   "sfx": "suspense@scarred"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group lens85 push",
+   "actors": [
+    "zephyr 3,-1 f-30 idle",
+    "milo -2,-0.5 f30 /curious"
+   ],
+   "line": "Around its neck was a collar with a *brass* buckle.",
+   "sfx": "sparkle@brass"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium jay lens85 whip",
+   "shots": [
+    "@pigeon close jay crash"
+   ],
+   "actors": [
+    "jay 2,0 f-30 laugh/laugh",
+    "zoe 5,0 f-30 /smug"
+   ],
+   "crowd": "cheer 16 on:jay @pigeon",
+   "line": "Jay laughed: \"Look at that flightless *pigeon*!\"",
+   "sfx": "crowd_laugh@pigeon"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group lens85 push",
+   "shots": [
+    "@shoulder close milo lens90"
+   ],
+   "actors": [
+    "zephyr 2.5,-1 f-30 idle",
+    "milo -2,0 f30 /love"
+   ],
+   "fx": "hearts:milo@shoulder",
+   "line": "The dragon rested its head near my *shoulder*.",
+   "sfx": "magic@shoulder"
+  },
+  {
+   "beat": "clue",
+   "cam": "ots:milo medium dad lens85",
+   "shots": [
+    "@face close dad punch"
+   ],
+   "actors": [
+    "dad -4,2 f-30 idle/teary",
+    "milo 0,0 f-40 /curious"
+   ],
+   "line": "Across the square, Dad wiped tears and hid his *face*.",
+   "sfx": "suspense@face"
+  },
+  {
+   "beat": "clue",
+   "loc": "street",
+   "cam": "wide group lens85 track",
+   "shots": [
+    "@gate medium group"
+   ],
+   "actors": [
+    "zephyr 3,-2 f0 walk to:3,-6",
+    "milo -2,-2 f0 walk to:-2,-6",
+    "dad 0.5,-2 f0 walk to:0.5,-6"
+   ],
+   "line": "Heading home, it knew the way to our *gate*.",
+   "sfx": "step@Heading"
+  },
+  {
+   "beat": "clue",
+   "loc": "livingroom",
+   "cam": "wide group lens90 push",
+   "actors": [
+    "zephyr 3,-2 f-45 sleep",
+    "dad -2.5,0 f30 sit/content",
+    "milo 0.5,0 f0 /curious"
+   ],
+   "line": "It walked in and curled beside Dad's old *chair*.",
+   "sfx": "crickets@chair"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group lens85",
+   "shots": [
+    "@gold close dad punch"
+   ],
+   "actors": [
+    "zephyr 3,-2 f-45 idle",
+    "dad -2,0 f30 tired/sad"
+   ],
+   "fx": "sparkles:zephyr@gold",
+   "line": "When Dad coughed, Zephyr's chest glowed with *gold* light.",
+   "sfx": "magic@gold"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group",
+   "shots": [
+    "@Leo close dad punch"
+   ],
+   "actors": [
+    "dad -2,0 f30 talk/teary",
+    "zephyr 2.5,-2 f-30 idle"
+   ],
+   "line": "Dad stroked its snout: \"You belong to *Leo* now.\"",
+   "sfx": "heartbeat@Leo"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium group ots:milo",
+   "actors": [
+    "dad 2,0 f-25 talk/content",
+    "milo -2,0 f25 /skeptical"
+   ],
+   "line": "I asked why, but Dad just handed me *soup*.",
+   "sfx": "ding@soup"
+  },
+  {
+   "beat": "hero",
+   "loc": "park",
+   "sky": "day_cumulus",
+   "cam": "wide group lens85 fly",
+   "shots": [
+    "@Zephyr low milo lens90 dutch"
+   ],
+   "actors": [
+    "zephyr 3,-2 f-30 walk",
+    "milo -3,0 f30 run+cheer to:0,0"
+   ],
+   "line": "Every morning, I trained with Zephyr in the *park*.",
+   "sfx": "whoosh@trained"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium milo track",
+   "shots": [
+    "@fell close milo crash"
+   ],
+   "actors": [
+    "milo -2,0 f0 fall",
+    "zephyr 2.5,-1 f-30 idle"
+   ],
+   "fx": "dust:milo@fell",
+   "line": "He could not fly, but caught me when I *fell*.",
+   "sfx": "thud@fell"
+  },
+  {
+   "beat": "hero",
+   "loc": "plaza",
+   "cam": "wide group lens90 push",
+   "actors": [
+    "jay 2,0 f-25 /smug",
+    "pyro 5,-3 f-30 roar",
+    "milo -1,0 f25 /neutral",
+    "zephyr -3.5,-2 f25 idle"
+   ],
+   "crowd": "watch 14 on:jay",
+   "line": "Bullies still mocked us with their flame *dragons*.",
+   "sfx": "boom@dragons"
+  },
+  {
+   "beat": "hero",
+   "cam": "close jay punch",
+   "shots": [
+    "@candle close milo lens85"
+   ],
+   "actors": [
+    "jay 2,0 f-25 /smug",
+    "milo -2,0 f25 /determined"
+   ],
+   "line": "Jay sneered: \"Your broken pet cannot blow out a *candle*!\"",
+   "sfx": "crowd_laugh@candle"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium group",
+   "actors": [
+    "milo -2,0 f20 /determined",
+    "zephyr 2,-1 f-20 idle"
+   ],
+   "line": "I held Zephyr close: \"We do not need fire to be *strong*.\"",
+   "sfx": "heartbeat@strong"
+  },
+  {
+   "beat": "hero",
+   "sky": "golden_hour>storm@ring",
+   "grade": "vivid>threat@ring",
+   "cam": "establishing group lens90 shake",
+   "shots": [
+    "@ring wide group crash"
+   ],
+   "actors": [
+    "zoe -3,0 f20 scared/panic",
+    "jay 3,0 f-20 /shocked",
+    "milo 0,0 f0 /shocked"
+   ],
+   "crowd": "panic 20 on:0,-5 @ring",
+   "line": "Then, on a freezing morning, alarm bells began to *ring*.",
+   "sfx": "bell@ring boom@ring"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens90 fly",
+   "shots": [
+    "@frenzy medium jay whip"
+   ],
+   "actors": [
+    "pyro 3,-4 y4 roar",
+    "jay -3,0 f30 /horrified"
+   ],
+   "fx": "embers:pyro@frenzy",
+   "line": "Jay's dragon broke its chains in wild *frenzy*.",
+   "sfx": "thunder@frenzy"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens85 h0.4 push",
+   "shots": [
+    "@gates low max crash"
+   ],
+   "actors": [
+    "pyro 3,-4 f-30 fire",
+    "max -3,0 f20 scared/panic",
+    "zoe -6,0 f20 /horrified"
+   ],
+   "fx": "lightning:pyro@gates",
+   "line": "It unleashed a wall of flames toward the school *gates*.",
+   "sfx": "boom@gates"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium jay lens85 whip",
+   "shots": [
+    "@ground close jay crash"
+   ],
+   "actors": [
+    "jay -2,0 f0 fall",
+    "pyro 3.5,-3 f-30 roar"
+   ],
+   "fx": "dust:jay@ground impact:jay@ground",
+   "line": "Jay screamed, but the beast threw him to the *ground*.",
+   "sfx": "thud@ground"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "pyro 4,-4 f-30 roar",
+    "zoe 2,0 f0 run to:8,0",
+    "jay -3,0 f0 scared/panic"
+   ],
+   "crowd": "flee 24 on:pyro @fled",
+   "line": "Cowardly beasts turned and *fled*, abandoning their masters in fear.",
+   "sfx": "whoosh@fled"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium group lens90 crash",
+   "actors": [
+    "max -3,0 f20 cry/panic",
+    "pyro 3,-4 f-20 idle"
+   ],
+   "line": "The wild dragon locked burning eyes on little *Max*.",
+   "sfx": "riser@Max"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens90 fly",
+   "shots": [
+    "@second low milo lens85 dutch"
+   ],
+   "actors": [
+    "zephyr 1.5,-1 f-20 idle",
+    "max -3,0 f20 /shocked",
+    "milo -5.5,0 f30 /determined"
+   ],
+   "fx": "dust:zephyr@second",
+   "line": "Zephyr leaped forward without hesitating a *second*.",
+   "sfx": "whoosh@leaped boom@second"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens90 crash",
+   "shots": [
+    "@flames close max lens85"
+   ],
+   "actors": [
+    "zephyr 1.5,-1 f-20 idle",
+    "pyro 5.5,-3 f-30 fire",
+    "max -3,0 f20 scared/panic"
+   ],
+   "fx": "shockwave:zephyr@flames",
+   "line": "He spread his scarred wings, shielding kids from *flames*.",
+   "sfx": "boom@flames"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens85 shake",
+   "actors": [
+    "zephyr 1.5,-1 f-20 idle",
+    "pyro 5.5,-3 f-30 fire"
+   ],
+   "fx": "embers:zephyr@flinched impact:zephyr@flinched",
+   "line": "The blazing fire battered him, but Zephyr never *flinched*.",
+   "sfx": "boom@flinched"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens90 whip",
+   "shots": [
+    "@inferno wide group crash"
+   ],
+   "actors": [
+    "zephyr -2.5,-1 f30 idle",
+    "pyro 4,-3 f-30 idle"
+   ],
+   "fx": "dustwave:zephyr@inferno",
+   "line": "With one sweep of his wing, he snuffed the *inferno*.",
+   "sfx": "swoosh@inferno"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group lens85 pull",
+   "actors": [
+    "pyro 6,-8 y4 fly to:12,-16,8",
+    "milo -2,0 f30 /relieved"
+   ],
+   "line": "The defeated dragon broke away and vanished into *mist*.",
+   "sfx": "whoosh@mist"
+  },
+  {
+   "beat": "twist",
+   "grade": "threat>cold@ground",
+   "cam": "wide group lens90 crash",
+   "shots": [
+    "@ground close milo crash"
+   ],
+   "actors": [
+    "zephyr 2.5,-1 f-30 sleep",
+    "milo -2,0 f30 run to:0,0"
+   ],
+   "fx": "dust:zephyr@ground",
+   "line": "Silence fell as Zephyr collapsed onto the *ground*.",
+   "sfx": "thud@ground"
+  },
+  {
+   "beat": "twist",
+   "cam": "close milo punch",
+   "actors": [
+    "milo -1.5,0 f30 /heartbroken",
+    "zephyr 2.5,-1 f-30 sleep"
+   ],
+   "fx": "hearts:milo@Zephyr",
+   "line": "I dropped beside Zephyr, crying: \"Don't close your *eyes*!\"",
+   "sfx": "riser@eyes"
+  },
+  {
+   "beat": "twist",
+   "cam": "medium boss lens85 push",
+   "actors": [
+    "boss 2,0 f-25 talk/smug +gem",
+    "milo -2,0 f25 /shocked"
+   ],
+   "line": "The guildmaster offered me a glowing ruby *crystal*.",
+   "sfx": "magic@crystal"
+  },
+  {
+   "beat": "twist",
+   "cam": "close boss punch",
+   "shots": [
+    "@phoenix close milo lens85"
+   ],
+   "actors": [
+    "boss talk/smug +gem",
+    "milo /shocked"
+   ],
+   "line": "He said: \"Shatter this over him to summon a golden *phoenix*!\"",
+   "sfx": "swoosh@phoenix"
+  },
+  {
+   "beat": "twist",
+   "cam": "medium group ots:boss",
+   "actors": [
+    "boss 2,0 f-25 talk/confident",
+    "milo -2,0 f25 /furious"
+   ],
+   "line": "\"Why sacrifice your future for a broken *creature*?\"",
+   "sfx": "suspense@creature"
+  },
+  {
+   "beat": "twist",
+   "cam": "medium group lens90 crash",
+   "actors": [
+    "zephyr 3,-1 f-30 sleep",
+    "milo -1.5,0 f30 /shocked"
+   ],
+   "line": "As I reached out, burnt bandages revealed his brass *buckle*.",
+   "sfx": "glitch@buckle"
+  },
+  {
+   "beat": "twist",
+   "cam": "close milo punch",
+   "actors": [
+    "milo 0,0 f0 idle/shocked"
+   ],
+   "line": "Engraved in the metal were words from years *ago*.",
+   "sfx": "heartbeat@ago"
+  },
+  {
+   "beat": "twist",
+   "grade": "cold>dream@beating",
+   "cam": "extreme milo lens85 push",
+   "shots": [
+    "@beating low dad lens90"
+   ],
+   "actors": [
+    "milo -2,0 f30 /teary",
+    "dad 2,0 f-30 /heartbroken"
+   ],
+   "line": "\"Assigned to keep my infant son's heart *beating*.\"",
+   "sfx": "riser@beating"
+  },
+  {
+   "beat": "twist",
+   "cam": "close milo punch",
+   "actors": [
+    "milo 0,0 f0 /awe"
+   ],
+   "line": "That was the exact second everything made *sense*.",
+   "sfx": "ding@sense"
+  },
+  {
+   "beat": "twist",
+   "cam": "medium group ots:milo",
+   "shots": [
+    "@me close dad lens85"
+   ],
+   "actors": [
+    "milo -2,0 f20 /teary",
+    "dad 2,0 f-20 idle/teary"
+   ],
+   "line": "Dad didn't lose his beast; he gave it to save *me*.",
+   "sfx": "heartbeat@me"
+  },
+  {
+   "beat": "twist",
+   "cam": "medium group lens85 push",
+   "actors": [
+    "zephyr 3,-1 f-30 sleep",
+    "milo -1.5,0 f30 /love"
+   ],
+   "fx": "hearts:milo@blizzard",
+   "line": "Zephyr's scarred wings shielded my crib from the *blizzard*.",
+   "sfx": "magic@blizzard"
+  },
+  {
+   "beat": "choice",
+   "cam": "medium milo lens85 whip",
+   "shots": [
+    "@dust low boss crash"
+   ],
+   "actors": [
+    "milo -2,0 f25 /determined",
+    "boss 2,0 f-25 /shocked"
+   ],
+   "fx": "shards:boss@dust shockwave:milo@dust",
+   "line": "I turned and smashed the royal crystal into *dust*.",
+   "sfx": "boom@dust"
+  },
+  {
+   "beat": "choice",
+   "dur": 1.5,
+   "cam": "close milo lens85 push",
+   "actors": [
+    "milo 0,0 f0 /determined"
+   ]
+  },
+  {
+   "beat": "choice",
+   "cam": "medium group lens90 push",
+   "shots": [
+    "@heart close milo crash"
+   ],
+   "actors": [
+    "milo -1.5,0 f30 /love",
+    "zephyr 2.5,-1 f-30 idle"
+   ],
+   "fx": "sparkles:zephyr@heart glow:zephyr@heart",
+   "line": "I hugged Zephyr, pouring my love into his *heart*.",
+   "sfx": "magic@heart"
+  },
+  {
+   "beat": "choice",
+   "sky": "storm>golden_hour@feathers",
+   "grade": "cold>gold@feathers",
+   "cam": "wide group lens90 fly",
+   "shots": [
+    "@feathers medium milo lens85"
+   ],
+   "actors": [
+    "zephyr 2.5,-1 y3 fly to:2.5,0,0",
+    "milo -3,0 f30 /starstruck"
+   ],
+   "fx": "sparkles:zephyr@feathers dustwave:zephyr@feathers",
+   "line": "The bond sparked, healing his wings into silver *feathers*.",
+   "sfx": "tada@feathers boom@feathers"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "wide group lens85 rise",
+   "shots": [
+    "@town medium milo lens90"
+   ],
+   "actors": [
+    "zephyr 0,0 f0 idle",
+    "milo -3,0 f20 /proud"
+   ],
+   "crowd": "watch 24 on:zephyr",
+   "line": "He rose into the air, singing across *town*.",
+   "sfx": "magic@town"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "medium group lens85 push",
+   "shots": [
+    "@shoulder close dad lens85"
+   ],
+   "actors": [
+    "dad -2,0 f20 talk/content",
+    "milo 2,0 f-20 /love"
+   ],
+   "line": "Dad stepped forward, resting a hand on my *shoulder*.",
+   "sfx": "heartbeat@shoulder"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "close dad punch",
+   "shots": [
+    "@means close milo lens85"
+   ],
+   "actors": [
+    "dad -2,0 f20 talk/proud",
+    "milo 2,0 f-20 /relieved"
+   ],
+   "line": "He whispered with tears: \"You showed them what strength *means*.\"",
+   "sfx": "sparkle@means"
+  },
+  {
+   "beat": "aftermath",
+   "loc": "plaza",
+   "sky": "golden_hour",
+   "cam": "wide group lens90 pull",
+   "actors": [
+    "milo -3,0 f20 /content",
+    "dad 3,0 f-20 /content",
+    "zephyr 0,-3 f0 idle"
+   ],
+   "line": "A beast doesn't protect with claws; it protects with *love*.",
+   "sfx": "sparkle@love"
+  },
+  {
+   "beat": "cta",
+   "loc": "home",
+   "sky": "golden_hour",
+   "time": "sunset",
+   "cam": "wide group pull",
+   "actors": [
+    "milo -2,0 f20 hug/love",
+    "dad 2,0 f-20 hug/love"
+   ],
+   "fx": "hearts:milo@dad",
+   "line": "Subscribe if you love your *dad*.",
+   "sfx": "ding@dad"
+  }
+ ]
+}

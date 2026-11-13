@@ -1,0 +1,83 @@
+{
+ "title": "anim gen",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "anim gen",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "plaza",
+   "dur": 2.57,
+   "title": "kneel",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 kneel"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.57,
+   "title": "reach",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 reach"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.57,
+   "title": "reach_down",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 reach_down"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.57,
+   "title": "bow_deep",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 bow_deep"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 2.57,
+   "title": "shrug_big",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 shrug_big"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.57,
+   "title": "cry_kneel",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 cry_kneel"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3.57,
+   "title": "catch_breath",
+   "cam": "wide milo 90 static",
+   "actors": [
+    "milo 0,0 f20 catch_breath"
+   ]
+  }
+ ]
+}

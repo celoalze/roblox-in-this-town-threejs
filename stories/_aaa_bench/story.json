@@ -1,0 +1,579 @@
+{
+ "title": "AAA bench: the mystery box",
+ "music": "epic",
+ "format": {
+  "fps": 60
+ },
+ "style": {
+  "look": "aaa",
+  "bloom": 0.45
+ },
+ "cast": [
+  "milo",
+  "zoe",
+  "jay",
+  "dad",
+  "trex",
+  "dolphin",
+  "sky_beast"
+ ],
+ "publish": {
+  "title": "aaa bench",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "line": "In this world, once every year, an enormous black *mystery* box falls from the sky into every town.",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     70,
+     -50
+    ],
+    "path": [
+     [
+      0,
+      1.2,
+      30
+     ],
+     [
+      0,
+      1.2,
+      28
+     ]
+    ],
+    "lens": 90
+   },
+   "actors": [
+    "milo -3,2 f180 /awe",
+    "zoe 3,3 f180 /shocked"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "y": 330,
+     "drift": [
+      0,
+      -110,
+      0
+     ],
+     "floor": 0
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      0
+     ],
+     "n": 200,
+     "radius": 55,
+     "inner": 14,
+     "mode": "flee",
+     "seed": 5
+    }
+   ],
+   "fx": [
+    {
+     "type": "slam",
+     "pos": [
+      0,
+      0,
+      -30
+     ],
+     "at": 3.0,
+     "scale": 1.8,
+     "seed": 4
+    },
+    {
+     "type": "shockwave_ring",
+     "pos": [
+      0,
+      0.3,
+      -30
+     ],
+     "at": 3.0,
+     "scale": 3
+    }
+   ],
+   "shots": [
+    {
+     "at": 2.0,
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       8,
+       -50
+      ],
+      "path": [
+       [
+        18,
+        2,
+        18
+       ],
+       [
+        14,
+        3,
+        12
+       ]
+      ],
+      "lens": 85,
+      "roll": 6
+     }
+    },
+    {
+     "at": 3.0,
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       30,
+       -50
+      ],
+      "path": [
+       [
+        -26,
+        4,
+        8
+       ],
+       [
+        -24,
+        6,
+        4
+       ]
+      ],
+      "lens": 90,
+      "crash": 1,
+      "shake": 1.2
+     }
+    }
+   ],
+   "overlay": "",
+   "shakeAt": 3.0,
+   "sfx": "riser@mystery boom@2.9"
+  },
+  {
+   "loc": "town_square",
+   "line": "The boxes are hundreds of feet tall, covered in glowing *golden* symbols, and each contains a portal to a different world.",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     22,
+     -50
+    ],
+    "path": [
+     [
+      0,
+      0.8,
+      26
+     ],
+     [
+      0,
+      0.8,
+      12
+     ]
+    ],
+    "lens": 85
+   },
+   "actors": [
+    "milo -3,2 f180 /awe",
+    "zoe 3,4 f180 point/shocked"
+   ],
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "ice_world",
+      "sky": "nebula"
+     },
+     "openAt": "w:contains",
+     "count": 3600
+    },
+    {
+     "type": "mob",
+     "at": [
+      0,
+      0
+     ],
+     "n": 200,
+     "radius": 55,
+     "inner": 14,
+     "seed": 5
+    }
+   ],
+   "shots": [
+    {
+     "at": "w:hundreds",
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       70,
+       -50
+      ],
+      "path": [
+       [
+        22,
+        1,
+        4
+       ],
+       [
+        16,
+        1,
+        -6
+       ]
+      ],
+      "lens": 90,
+      "roll": -14
+     }
+    },
+    {
+     "at": "w:golden",
+     "shot": "wide",
+     "camera": {
+      "target": [
+       -12,
+       30,
+       -20
+      ],
+      "path": [
+       [
+        -34,
+        3,
+        -8
+       ],
+       [
+        -33,
+        10,
+        -14
+       ]
+      ],
+      "lens": 70,
+      "roll": 12,
+      "whip": 1
+     }
+    },
+    {
+     "at": "w:contains",
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       14,
+       -20
+      ],
+      "path": [
+       [
+        0,
+        1.2,
+        14
+       ],
+       [
+        0,
+        5,
+        -2
+       ]
+      ],
+      "lens": 80
+     }
+    },
+    {
+     "at": "w:different",
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       16,
+       -20
+      ],
+      "path": [
+       [
+        0,
+        10,
+        -4
+       ],
+       [
+        0,
+        16,
+        -16
+       ]
+      ],
+      "lens": 60,
+      "roll": 8,
+      "crash": 1
+     }
+    }
+   ],
+   "sfx": "magic@contains"
+  },
+  {
+   "loc": "jungle",
+   "line": "One year, a box revealed a *jungle* filled with dinosaurs.",
+   "cam": "low trex lens90 fly",
+   "actors": [
+    "trex 0,-12 f10 roar",
+    "milo -3,4 f160 /scared"
+   ],
+   "shots": [
+    "@filled wide trex whip dutch"
+   ],
+   "sfx": "whoosh@0"
+  },
+  {
+   "loc": "gold_city",
+   "line": "Another contained a city made of *gold*.",
+   "cam": "wide milo lens90 h0.5 rise",
+   "actors": [
+    "milo 0,2 f180 cheer/starstruck"
+   ],
+   "shots": [
+    "@made low milo lens90 crash"
+   ],
+   "fx": "sparkles:milo@gold"
+  },
+  {
+   "loc": "ocean_world",
+   "line": "And another held an endless *ocean* filled with enormous creatures.",
+   "cam": "wide zoe lens85 h0.4 pull",
+   "actors": [
+    "zoe 0,2 f180 /awe",
+    "dolphin 6,-30 f200 walk"
+   ],
+   "shots": [
+    "@ocean establishing zoe high",
+    "@enormous close zoe crash"
+   ]
+  },
+  {
+   "loc": "town_square",
+   "sky": "day_puffy",
+   "line": "Every box stays open for exactly *one* hour.",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     40,
+     -20
+    ],
+    "path": [
+     [
+      0,
+      3,
+      6
+     ],
+     [
+      0,
+      9,
+      -8
+     ]
+    ],
+    "lens": 60
+   },
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "jungle"
+     },
+     "count": 3599,
+     "rate": 25
+    }
+   ],
+   "actors": [
+    "milo -3,2 f180 /awe"
+   ],
+   "sfx": "tick@one"
+  },
+  {
+   "line": "Anyone can enter and take *whatever* they find.",
+   "cam": "low milo lens90 track",
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "jungle"
+     },
+     "count": 2100,
+     "rate": 25
+    }
+   ],
+   "actors": [
+    "milo -3,6 f180 run to:0,-16",
+    "jay 4,8 f180 run to:2,-14",
+    "zoe -6,10 f180 run to:-2,-12"
+   ],
+   "shots": [
+    "@take wide group lens85 h0.3 whip-"
+   ]
+  },
+  {
+   "line": "But when the doors close, anyone still inside is *never* seen again.",
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     40,
+     -20
+    ],
+    "path": [
+     [
+      0,
+      2,
+      14
+     ],
+     [
+      0,
+      2,
+      10
+     ]
+    ],
+    "lens": 75
+   },
+   "sky": "day_puffy>storm@close",
+   "grade": "vivid>threat@close",
+   "props": [
+    {
+     "type": "mysterybox",
+     "at": [
+      0,
+      -50
+     ],
+     "portal": {
+      "loc": "jungle"
+     },
+     "closeAt": "w:close",
+     "count": 6,
+     "rate": 1
+    }
+   ],
+   "actors": [
+    "zoe 0,4 f180 /horrified"
+   ],
+   "shots": [
+    "@anyone close zoe 0 crash",
+    {
+     "at": "w:never",
+     "shot": "wide",
+     "camera": {
+      "target": [
+       0,
+       46,
+       -20
+      ],
+      "path": [
+       [
+        8,
+        1,
+        12
+       ],
+       [
+        10,
+        1,
+        16
+       ]
+      ],
+      "lens": 90,
+      "roll": -10
+     }
+    }
+   ],
+   "sfx": "boom@close dun_dun_dun@never"
+  },
+  {
+   "loc": "sky_island",
+   "sky": "storm",
+   "grade": "threat",
+   "line": "Then, an enormous *shadow* passed overhead.",
+   "cam": "low milo lens90 static",
+   "actors": [
+    "milo 0,2 f0 /horrified",
+    "zoe 3,3 f0 /scared",
+    "sky_beast 0,-110 y60 f0 walk"
+   ],
+   "props": [],
+   "shots": [
+    "@enormous wide sky_beast lens80 fly"
+   ],
+   "sfx": "heartbeat@0"
+  },
+  {
+   "loc": "tunnel",
+   "line": "Ryan sprinted down the tunnel, past thousands of *doors*.",
+   "cam": "low milo lens90 track",
+   "actors": [
+    "milo 0,10 f180 scream_run/terrified to:0,-30 sp16"
+   ],
+   "shots": [
+    "@thousands wide milo lens85 h0.6 whip"
+   ],
+   "sfx": "cartoon_run@0"
+  },
+  {
+   "loc": "stone_court",
+   "time": "dusk",
+   "line": "His father was *chained* to the wall of an abandoned building.",
+   "cam": "medium dad lens70 push",
+   "actors": [
+    "dad 0,-7 f0 sitsad/bawling tears",
+    "milo 0,6 f180 run to:0,-3 sp12"
+   ],
+   "shots": [
+    "@chained close dad crash",
+    "@abandoned wide milo lens85 h0.4 static"
+   ]
+  },
+  {
+   "loc": "stone_court",
+   "line": "Ryan grabbed the *chains* and pulled with all his strength.",
+   "cam": "medium milo lens75 static",
+   "actors": [
+    "milo 0,-3 f180 unchain/grit gaze:camera",
+    "dad 0,-7 f0 sitsad/worried"
+   ],
+   "shots": [
+    "@strength close milo lens60 crash"
+   ],
+   "sfx": "boom@chains"
+  },
+  {
+   "loc": "stone_court",
+   "line": "Then he *hugged* his father tightly, tears streaming down his face.",
+   "cam": "medium group lens70 orbit",
+   "actors": [
+    "dad 0,-3 f0 hug/tears_joy",
+    "milo 0,-3 f180 hug/bawling gaze:camera link:dad:hug"
+   ],
+   "shots": [
+    "@tears extreme milo lens50 static"
+   ],
+   "sfx": "sparkle@hugged"
+  }
+ ]
+}

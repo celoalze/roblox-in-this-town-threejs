@@ -1,0 +1,871 @@
+{
+ "_doc": "Prop short names -> GLB model. model = <category>/<file without .glb> under assets/models/. hold = carried in a hand (true) or furniture/vehicle/large (false). height = target height in engine units (1 m = 4 units; hand-held props clamped to 0.9-2.2, using the longest axis for items that lie flat). Generated from assets/models/*/manifest.json; animals are not listed.",
+ "sword": {
+  "model": "armas_e_tesouros/sword-0e681b",
+  "hold": true,
+  "height": 2.2
+ },
+ "greatsword": {
+  "model": "armas_e_tesouros/greatsword-a956f3",
+  "hold": true,
+  "height": 2.2
+ },
+ "arming_sword": {
+  "model": "armas_e_tesouros/arming-sword-401972",
+  "hold": true,
+  "height": 2.2
+ },
+ "arming_sword2": {
+  "model": "armas_e_tesouros/arming-sword-ab8738",
+  "hold": true,
+  "height": 2.2
+ },
+ "heater_shield": {
+  "model": "armas_e_tesouros/heater-shield-c51b76",
+  "hold": true,
+  "height": 2.2
+ },
+ "dagger": {
+  "model": "armas_e_tesouros/jewelled-dagger-38f556",
+  "hold": true,
+  "height": 1.4
+ },
+ "spear": {
+  "model": "armas_e_tesouros/spear-e9824e",
+  "hold": true,
+  "height": 2.2
+ },
+ "hand_axe": {
+  "model": "armas_e_tesouros/hand-axe-cee9e7",
+  "hold": true,
+  "height": 2.2
+ },
+ "chest": {
+  "model": "armas_e_tesouros/legendary-chest-4abed4",
+  "hold": false,
+  "height": 3.8
+ },
+ "mimic": {
+  "model": "armas_e_tesouros/mimic-chest-57e440",
+  "hold": false,
+  "height": 3.68
+ },
+ "coin": {
+  "model": "armas_e_tesouros/gold-coin-29afc1",
+  "hold": true,
+  "height": 0.9
+ },
+ "coin_stack": {
+  "model": "armas_e_tesouros/gold-coin-stack-a9ef52",
+  "hold": true,
+  "height": 0.9
+ },
+ "gold_bar": {
+  "model": "armas_e_tesouros/gold-ingot-85e62e",
+  "hold": true,
+  "height": 0.96
+ },
+ "nugget": {
+  "model": "armas_e_tesouros/gold-nugget-ccd143",
+  "hold": true,
+  "height": 0.9
+ },
+ "diamond": {
+  "model": "armas_e_tesouros/cut-diamond-1fd38b",
+  "hold": true,
+  "height": 0.9
+ },
+ "ruby": {
+  "model": "armas_e_tesouros/cut-ruby-3ded3a",
+  "hold": true,
+  "height": 0.9
+ },
+ "emerald": {
+  "model": "armas_e_tesouros/cut-emerald-74d180",
+  "hold": true,
+  "height": 0.9
+ },
+ "sapphire": {
+  "model": "armas_e_tesouros/cut-sapphire-04ba83",
+  "hold": true,
+  "height": 0.9
+ },
+ "potion": {
+  "model": "armas_e_tesouros/potion-bottle-099ad7",
+  "hold": true,
+  "height": 0.9
+ },
+ "goblet": {
+  "model": "armas_e_tesouros/goblet-87c3ba",
+  "hold": true,
+  "height": 0.9
+ },
+ "key": {
+  "model": "armas_e_tesouros/chest-key-458007",
+  "hold": true,
+  "height": 0.9
+ },
+ "shield": {
+  "model": "armas_e_tesouros/shield-24b9f0",
+  "hold": true,
+  "height": 2.2
+ },
+ "round_shield": {
+  "model": "armas_e_tesouros/round-wooden-shield-b81fe3",
+  "hold": true,
+  "height": 2.2
+ },
+ "bow": {
+  "model": "armas_e_tesouros/bow-9a225d",
+  "hold": true,
+  "height": 2.2
+ },
+ "axe": {
+  "model": "armas_e_tesouros/axe-b545d6",
+  "hold": true,
+  "height": 2.2
+ },
+ "wand": {
+  "model": "armas_e_tesouros/magic-wand-83682a",
+  "hold": true,
+  "height": 1.76
+ },
+ "staff": {
+  "model": "armas_e_tesouros/arcane-staff-49d687",
+  "hold": true,
+  "height": 2.2
+ },
+ "war_hammer": {
+  "model": "armas_e_tesouros/war-hammer-656ffd",
+  "hold": true,
+  "height": 2.2
+ },
+ "crossbow": {
+  "model": "armas_e_tesouros/crossbow-59750a",
+  "hold": true,
+  "height": 2.2
+ },
+ "treasure": {
+  "model": "armas_e_tesouros/overflowing-treasure-chest-3d6ee0",
+  "hold": false,
+  "height": 4.52
+ },
+ "gem": {
+  "model": "armas_e_tesouros/power-gem-e28c25",
+  "hold": true,
+  "height": 0.9
+ },
+ "safe": {
+  "model": "armas_e_tesouros/iron-vault-safe-8b8f29",
+  "hold": false,
+  "height": 3.6
+ },
+ "spellbook": {
+  "model": "armas_e_tesouros/spellbook-1e8dfe",
+  "hold": true,
+  "height": 1.24
+ },
+ "scroll": {
+  "model": "armas_e_tesouros/spell-scroll-29d32d",
+  "hold": true,
+  "height": 1.68
+ },
+ "burger": {
+  "model": "comida/hamburger-060fd6",
+  "hold": true,
+  "height": 0.9
+ },
+ "pizza": {
+  "model": "comida/pizza-slice-ddfb9d",
+  "hold": true,
+  "height": 1.28
+ },
+ "apple_tree": {
+  "model": "comida/apple-tree-ef0ba0",
+  "hold": false,
+  "height": 13.56
+ },
+ "berry_bush": {
+  "model": "comida/berry-bush-ee4812",
+  "hold": false,
+  "height": 3.88
+ },
+ "corn": {
+  "model": "comida/corn-crop-b71f2f",
+  "hold": false,
+  "height": 7.24
+ },
+ "hotdog": {
+  "model": "comida/hotdog-4e86d3",
+  "hold": true,
+  "height": 0.9
+ },
+ "ice_cream": {
+  "model": "comida/ice-cream-cone-9d3d4b",
+  "hold": true,
+  "height": 0.9
+ },
+ "donut": {
+  "model": "comida/donut-a82577",
+  "hold": true,
+  "height": 0.9
+ },
+ "apple": {
+  "model": "comida/apple-b15012",
+  "hold": true,
+  "height": 0.9
+ },
+ "cookie": {
+  "model": "comida/cookie-2016bb",
+  "hold": true,
+  "height": 0.9
+ },
+ "banana": {
+  "model": "comida/banana-09c206",
+  "hold": true,
+  "height": 0.9
+ },
+ "bread": {
+  "model": "comida/bread-loaf-0e0ab5",
+  "hold": true,
+  "height": 0.9
+ },
+ "cake": {
+  "model": "comida/layer-cake-45d142",
+  "hold": true,
+  "height": 1.0
+ },
+ "cupcake": {
+  "model": "comida/cupcake-827a79",
+  "hold": true,
+  "height": 0.9
+ },
+ "pie": {
+  "model": "comida/pie-c27178",
+  "hold": true,
+  "height": 1.04
+ },
+ "lollipop": {
+  "model": "comida/lollipop-6b90e0",
+  "hold": true,
+  "height": 0.9
+ },
+ "carrot": {
+  "model": "comida/carrot-1f7e61",
+  "hold": true,
+  "height": 1.16
+ },
+ "watermelon": {
+  "model": "comida/watermelon-slice-bd255f",
+  "hold": true,
+  "height": 0.9
+ },
+ "pumpkin": {
+  "model": "comida/pumpkin-5f977e",
+  "hold": true,
+  "height": 1.08
+ },
+ "energy_drink": {
+  "model": "comida/energy-drink-can-c47bcf",
+  "hold": true,
+  "height": 0.9
+ },
+ "crown": {
+  "model": "coroas_e_acessorios/crown-a294ce",
+  "hold": true,
+  "height": 0.9,
+  "wear": {
+   "w": 1.3,
+   "y": 0.56
+  }
+ },
+ "great_helm": {
+  "model": "coroas_e_acessorios/great-helm-2551bc",
+  "hold": true,
+  "height": 1.28,
+  "wear": {
+   "w": 1.6,
+   "y": -0.62
+  }
+ },
+ "helmet": {
+  "model": "coroas_e_acessorios/steel-helmet-f5aa7d",
+  "hold": true,
+  "height": 0.9,
+  "wear": {
+   "w": 1.65,
+   "y": 0.0
+  }
+ },
+ "flight_helmet": {
+  "model": "coroas_e_acessorios/flight-helmet-56f390",
+  "hold": true,
+  "height": 1.16,
+  "wear": {
+   "w": 1.6,
+   "y": -0.45
+  }
+ },
+ "skate_helmet": {
+  "model": "coroas_e_acessorios/skate-helmet-cf1e6e",
+  "hold": true,
+  "height": 1.08,
+  "wear": {
+   "w": 1.6,
+   "y": -0.5
+  }
+ },
+ "call_headset": {
+  "model": "coroas_e_acessorios/call-headset-a95887",
+  "hold": true,
+  "height": 0.9,
+  "wear": {
+   "w": 1.55,
+   "y": -0.25
+  }
+ },
+ "wizard_hat": {
+  "model": "coroas_e_acessorios/wizard-hat-84bb49",
+  "hold": true,
+  "height": 2.2,
+  "wear": {
+   "w": 2.1,
+   "y": 0.42
+  }
+ },
+ "shovel": {
+  "model": "ferramentas/shovel-997c4d",
+  "hold": true,
+  "height": 2.2
+ },
+ "pickaxe": {
+  "model": "ferramentas/mining-pickaxe-90bdf6",
+  "hold": true,
+  "height": 2.2
+ },
+ "wrench": {
+  "model": "ferramentas/wrench-390c5f",
+  "hold": true,
+  "height": 0.9
+ },
+ "hammer": {
+  "model": "ferramentas/hammer-fa3e51",
+  "hold": true,
+  "height": 1.28
+ },
+ "ladder": {
+  "model": "ferramentas/rustic-wooden-ladder-a40b5f",
+  "hold": false,
+  "height": 12
+ },
+ "bucket": {
+  "model": "ferramentas/beach-bucket-dc52dd",
+  "hold": true,
+  "height": 1.12
+ },
+ "broom": {
+  "model": "ferramentas/witch-s-broom-ec84c6",
+  "hold": true,
+  "height": 2.2
+ },
+ "torch": {
+  "model": "ferramentas/pitch-torch-79d752",
+  "hold": true,
+  "height": 2.2
+ },
+ "fishing_rod": {
+  "model": "ferramentas/propped-fishing-rod-072978",
+  "hold": true,
+  "height": 2.2
+ },
+ "phone": {
+  "model": "objetos_comuns/smartphone-5f05e5",
+  "hold": true,
+  "height": 0.9
+ },
+ "phone_handset": {
+  "model": "objetos_comuns/righthand-item-cf3cdf",
+  "hold": true,
+  "height": 0.96
+ },
+ "keyboard": {
+  "model": "objetos_comuns/desk-keyboard-6cd4d9",
+  "hold": false,
+  "height": 0.12
+ },
+ "mouse": {
+  "model": "objetos_comuns/desk-mouse-2c7d42",
+  "hold": true,
+  "height": 0.9
+ },
+ "monitor": {
+  "model": "objetos_comuns/desk-monitor-32cfce",
+  "hold": false,
+  "height": 1.72
+ },
+ "school_backpack": {
+  "model": "objetos_comuns/pupil-backpack-d9b5fb",
+  "hold": true,
+  "height": 1.84
+ },
+ "backpack": {
+  "model": "objetos_comuns/adventurer-s-backpack-b1365c",
+  "hold": true,
+  "height": 2.2
+ },
+ "guitar": {
+  "model": "objetos_comuns/guitar-b013ee",
+  "hold": true,
+  "height": 2.2
+ },
+ "mug": {
+  "model": "objetos_comuns/office-mug-8afee0",
+  "hold": true,
+  "height": 0.9
+ },
+ "coffee": {
+  "model": "objetos_comuns/coffee-cup-90be67",
+  "hold": true,
+  "height": 0.9
+ },
+ "coffee_to_go": {
+  "model": "objetos_comuns/takeaway-coffee-cup-1fd6dd",
+  "hold": true,
+  "height": 0.9
+ },
+ "desk_chair": {
+  "model": "objetos_comuns/dorm-desk-chair-9b4076",
+  "hold": false,
+  "height": 3.44
+ },
+ "teacher_desk": {
+  "model": "objetos_comuns/teacher-s-desk-381eeb",
+  "hold": false,
+  "height": 3.12
+ },
+ "lectern": {
+  "model": "objetos_comuns/chained-book-lectern-381597",
+  "hold": false,
+  "height": 5.2
+ },
+ "lantern": {
+  "model": "objetos_comuns/hooded-lantern-b60021",
+  "hold": true,
+  "height": 1.4
+ },
+ "miner_lantern": {
+  "model": "objetos_comuns/miner-lantern-c13511",
+  "hold": true,
+  "height": 1.4
+ },
+ "barrel": {
+  "model": "objetos_comuns/oak-barrel-b65311",
+  "hold": false,
+  "height": 3.64
+ },
+ "crate": {
+  "model": "objetos_comuns/timber-crate-ba0739",
+  "hold": false,
+  "height": 2.64
+ },
+ "picnic_table": {
+  "model": "objetos_comuns/campsite-picnic-table-361d51",
+  "hold": false,
+  "height": 3.0
+ },
+ "beehive": {
+  "model": "objetos_comuns/beehive-2e70bf",
+  "hold": false,
+  "height": 3.6
+ },
+ "clothesline": {
+  "model": "objetos_comuns/clothes-line-ee47e4",
+  "hold": false,
+  "height": 7.24
+ },
+ "laptop": {
+  "model": "objetos_comuns/laptop-e775ba",
+  "hold": true,
+  "height": 0.9
+ },
+ "tv": {
+  "model": "objetos_comuns/flat-screen-television-97b1f3",
+  "hold": false,
+  "height": 3.28
+ },
+ "microphone": {
+  "model": "objetos_comuns/vintage-microphone-stand-c5ba82",
+  "hold": false,
+  "height": 7.8
+ },
+ "umbrella": {
+  "model": "objetos_comuns/bangasa-paper-umbrella-402f7b",
+  "hold": true,
+  "height": 2.2
+ },
+ "clock": {
+  "model": "objetos_comuns/wall-clock-0c555c",
+  "hold": true,
+  "height": 1.4
+ },
+ "trash_can": {
+  "model": "objetos_comuns/metal-trash-can-f57043",
+  "hold": false,
+  "height": 3.6
+ },
+ "mailbox": {
+  "model": "objetos_comuns/mailbox-8e36e8",
+  "hold": false,
+  "height": 4.8
+ },
+ "bench": {
+  "model": "objetos_comuns/plank-bench-c46528",
+  "hold": false,
+  "height": 1.8
+ },
+ "chair": {
+  "model": "objetos_comuns/folding-camp-chair-2fc7d1",
+  "hold": false,
+  "height": 3.6
+ },
+ "sofa": {
+  "model": "objetos_comuns/sofa-9c0e7e",
+  "hold": false,
+  "height": 3.84
+ },
+ "fridge": {
+  "model": "objetos_comuns/fridge-freezer-fb9b5a",
+  "hold": false,
+  "height": 7.6
+ },
+ "bed": {
+  "model": "objetos_comuns/bed-6e10e8",
+  "hold": false,
+  "height": 4.2
+ },
+ "toilet": {
+  "model": "objetos_comuns/toilet-2edbd9",
+  "hold": false,
+  "height": 3.2
+ },
+ "boombox": {
+  "model": "objetos_comuns/boombox-d0048f",
+  "hold": true,
+  "height": 2.2
+ },
+ "headphones": {
+  "model": "objetos_comuns/headphones-d3e940",
+  "hold": true,
+  "height": 0.9,
+  "wear": {
+   "w": 1.7,
+   "y": -0.2
+  }
+ },
+ "trumpet": {
+  "model": "objetos_comuns/trumpet-349b2e",
+  "hold": true,
+  "height": 2.0
+ },
+ "piano": {
+  "model": "objetos_comuns/upright-piano-c0b0ef",
+  "hold": false,
+  "height": 4.8
+ },
+ "campfire": {
+  "model": "objetos_comuns/campfire-4390aa",
+  "hold": false,
+  "height": 2.08
+ },
+ "soccer_ball": {
+  "model": "objetos_comuns/match-ball-0e675d",
+  "hold": true,
+  "height": 0.9
+ },
+ "pencil": {
+  "model": "objetos_comuns/graphite-pencil-041893",
+  "hold": true,
+  "height": 0.9
+ },
+ "book": {
+  "model": "objetos_comuns/lefthand-item-30f012",
+  "hold": true,
+  "height": 1.2
+ },
+ "desk": {
+  "model": "objetos_comuns/office-desk-021eb3",
+  "hold": false,
+  "height": 3.0
+ },
+ "tractor": {
+  "model": "veiculos/compact-tractor-35b84b",
+  "hold": false,
+  "height": 8
+ },
+ "pickup": {
+  "model": "veiculos/ranger-pickup-truck-97057d",
+  "hold": false,
+  "height": 7.92
+ },
+ "rowboat": {
+  "model": "veiculos/wooden-rowboat-916981",
+  "hold": false,
+  "height": 3.28
+ },
+ "mine_cart": {
+  "model": "veiculos/mine-cart-94bd76",
+  "hold": false,
+  "height": 3.6
+ },
+ "hand_cart": {
+  "model": "veiculos/wooden-hand-cart-3ae5b5",
+  "hold": false,
+  "height": 3.84
+ },
+ "bicycle": {
+  "model": "veiculos/city-bicycle-5b67d1",
+  "hold": false,
+  "height": 4.16
+ },
+ "skateboard": {
+  "model": "veiculos/skateboard-667a82",
+  "hold": true,
+  "height": 2.2
+ },
+ "hot_air_balloon": {
+  "model": "veiculos/hot-air-balloon-a2a511",
+  "hold": false,
+  "height": 10.44
+ },
+ "helicopter": {
+  "model": "veiculos/helicopter-9d1986",
+  "hold": false,
+  "height": 15.56
+ },
+ "_wear": "wear = worn on the head when given to an actor (+crown): w = width in studs (head is 1.28), y = height of the model's base above the head centre. Hair settles under it automatically (engine/layers.js). Long form {\"type\":\"crown\",\"hand\":\"milo\",\"wear\":false} holds it instead.",
+ "palm_tree": {
+  "model": "cenario/palm_tree",
+  "hold": false,
+  "height": 24
+ },
+ "tree_fern": {
+  "model": "cenario/tree_fern",
+  "hold": false,
+  "height": 32
+ },
+ "banana_plant": {
+  "model": "cenario/banana_plant",
+  "hold": false,
+  "height": 24
+ },
+ "taro_plant": {
+  "model": "cenario/taro_plant",
+  "hold": false,
+  "height": 4
+ },
+ "fern_plant": {
+  "model": "cenario/fern_plant",
+  "hold": false,
+  "height": 4
+ },
+ "fern_bush": {
+  "model": "cenario/fern_bush",
+  "hold": false,
+  "height": 4
+ },
+ "ti_plant": {
+  "model": "cenario/ti_plant",
+  "hold": false,
+  "height": 8
+ },
+ "chilean_palm": {
+  "model": "cenario/chilean_palm",
+  "hold": false,
+  "height": 48
+ },
+ "large_boulder": {
+  "model": "cenario/large_boulder",
+  "hold": false,
+  "height": 12
+ },
+ "medium_rock": {
+  "model": "cenario/medium_rock",
+  "hold": false,
+  "height": 8
+ },
+ "basalt_boulder": {
+  "model": "cenario/basalt_boulder",
+  "hold": false,
+  "height": 8
+ },
+ "soft_coral": {
+  "model": "cenario/soft_coral",
+  "hold": false,
+  "height": 4
+ },
+ "staghorn_coral": {
+  "model": "cenario/staghorn_coral",
+  "hold": false,
+  "height": 5.6
+ },
+ "table_coral": {
+  "model": "cenario/table_coral",
+  "hold": false,
+  "height": 2.8
+ },
+ "reef_rock": {
+  "model": "cenario/reef_rock",
+  "hold": false,
+  "height": 1.6
+ },
+ "reef_fish": {
+  "model": "cenario/reef_fish",
+  "hold": false,
+  "height": 2.8
+ },
+ "market_stall": {
+  "model": "cenario/market_stall",
+  "hold": false,
+  "height": 16
+ },
+ "mercado_stall": {
+  "model": "cenario/mercado_stall",
+  "hold": false,
+  "height": 8.8
+ },
+ "plaza_fountain": {
+  "model": "cenario/plaza_fountain",
+  "hold": false,
+  "height": 9.6
+ },
+ "tiered_fountain": {
+  "model": "cenario/tiered_fountain",
+  "hold": false,
+  "height": 12.8
+ },
+ "broken_column": {
+  "model": "cenario/broken_column",
+  "hold": false,
+  "height": 10.0
+ },
+ "gothic_statue": {
+  "model": "cenario/gothic_statue",
+  "hold": false,
+  "height": 10.4
+ },
+ "pine_tall": {
+  "model": "cenario/pine_tall",
+  "hold": false,
+  "height": 36
+ },
+ "pine_young": {
+  "model": "cenario/pine_young",
+  "hold": false,
+  "height": 12
+ },
+ "rock_outcrop": {
+  "model": "cenario/rock_outcrop",
+  "hold": false,
+  "height": 8
+ },
+ "geode_boulder": {
+  "model": "cenario/geode_boulder",
+  "hold": false,
+  "height": 6.4
+ },
+ "dead_tree": {
+  "model": "cenario/dead_tree",
+  "hold": false,
+  "height": 20
+ },
+ "dead_oak": {
+  "model": "cenario/dead_oak",
+  "hold": false,
+  "height": 28
+ },
+ "dead_cottonwood": {
+  "model": "cenario/dead_cottonwood",
+  "hold": false,
+  "height": 28
+ },
+ "headstone": {
+  "model": "cenario/headstone",
+  "hold": false,
+  "height": 4.2
+ },
+ "gravestone": {
+  "model": "cenario/gravestone",
+  "hold": false,
+  "height": 2.4
+ },
+ "reed_torch": {
+  "model": "cenario/reed_torch",
+  "hold": false,
+  "height": 11.6
+ },
+ "flame_brazier": {
+  "model": "cenario/flame_brazier",
+  "hold": false,
+  "height": 3.2
+ },
+ "magnolia": {
+  "model": "cenario/magnolia",
+  "hold": false,
+  "height": 24
+ },
+ "lineside_tree": {
+  "model": "cenario/lineside_tree",
+  "hold": false,
+  "height": 37
+ },
+ "sunflower": {
+  "model": "cenario/sunflower",
+  "hold": false,
+  "height": 7.2
+ },
+ "wildflower": {
+  "model": "cenario/wildflower",
+  "hold": false,
+  "height": 1.6
+ },
+ "swing_tree": {
+  "model": "cenario/swing_tree",
+  "hold": false,
+  "height": 36
+ },
+ "canopy_tree": {
+  "model": "cenario/canopy_tree",
+  "hold": false,
+  "height": 24
+ },
+ "mesquite_tree": {
+  "model": "cenario/mesquite_tree",
+  "hold": false,
+  "height": 18
+ },
+ "barrel_wood": {
+  "model": "cenario/barrel_wood",
+  "hold": false,
+  "height": 4
+ },
+ "loot_crate": {
+  "model": "cenario/loot_crate",
+  "hold": false,
+  "height": 2.4
+ },
+ "crate_sacks": {
+  "model": "cenario/crate_sacks",
+  "hold": false,
+  "height": 3.6
+ },
+ "dragon_pillar": {
+  "model": "cenario/dragon_pillar",
+  "hold": false,
+  "height": 36
+ },
+ "log_bench": {
+  "model": "cenario/log_bench",
+  "hold": false,
+  "height": 1.8
+ }
+}

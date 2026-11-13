@@ -1,0 +1,178 @@
+{
+ "title": "interact test",
+ "music": "none",
+ "cast": {
+  "milo": {
+   "like": "milo",
+   "scale": 1.15
+  },
+  "max": {
+   "like": "max",
+   "scale": 0.6
+  },
+  "zoe": {}
+ },
+ "publish": {
+  "title": "t",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "shoulder",
+   "cam": "full group 95 static",
+   "actors": [
+    "milo -4,0 f90 walk to:4,0",
+    "max link:milo:shoulder/laugh"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "shoulder run",
+   "cam": "full group 95 static",
+   "actors": [
+    "milo -4,0 f90 run to:5,0",
+    "max link:milo:shoulder/happy"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "piggyback",
+   "cam": "full group 160 static",
+   "actors": [
+    "milo -4,0 f90 walk to:4,0",
+    "max link:milo:piggyback/laugh"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "carry",
+   "cam": "full group 95 static",
+   "actors": [
+    "milo -4,0 f90 walk to:4,0",
+    "max link:milo:carry/sleepy"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "hold_hands walk",
+   "cam": "full group 95 static",
+   "actors": [
+    "milo -4,0 f90 walk to:4,0",
+    "max link:milo:hold_hands/happy"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "hold_hands run",
+   "cam": "full group 95 static",
+   "actors": [
+    "milo -4,0 f90 run to:5,0",
+    "max link:milo:hold_hands/laugh"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "hug",
+   "cam": "full group 90 static",
+   "actors": [
+    "milo 0,0 f20 idle/love",
+    "max link:milo:hug/love"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "drag",
+   "cam": "full group 100 static",
+   "actors": [
+    "milo -4,0 f90 walk to:4,0",
+    "zoe link:milo:drag/ko"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "lean_on",
+   "cam": "full group 100 static",
+   "actors": [
+    "milo 0,0 f0 idle/content",
+    "zoe link:milo:lean_on/content"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "grab_arm run",
+   "cam": "full group 95 static",
+   "actors": [
+    "milo -4,0 f90 run to:5,0",
+    "zoe link:milo:grab_arm/scared"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "timed shoulder 1-2.2s",
+   "cam": "full group 70 static",
+   "actors": [
+    "milo -4,0 f90 walk to:4,0",
+    "max link:milo:shoulder@1 until:2.2/happy"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "reach zoe + side L shoulder",
+   "shot": "full",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "absolute": true,
+    "move": "static"
+   },
+   "actors": [
+    "milo 0,0 f0 idle reach:zoe",
+    "zoe 4,0 f-90 idle",
+    "max link:milo:shoulder:L/happy"
+   ]
+  },
+  {
+   "loc": "plaza",
+   "dur": 3,
+   "title": "reach xyz",
+   "shot": "full",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "absolute": true,
+    "move": "static"
+   },
+   "actors": [
+    "milo 0,0 f0 idle reach:3,5,1:L"
+   ]
+  }
+ ]
+}

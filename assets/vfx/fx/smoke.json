@@ -1,0 +1,8 @@
+{"duration": 2, "emitters": [
+ {"at": [-7.5, 0, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 2.2}, "life": [2.6, 3.4], "size": [2.8, 4.2], "rotation": [0, 360], "color": "#ffffff", "rate": 30, "duration": 2,
+  "over": {"size": [[0, 1], [0.5, 1.6], [1, 2.8]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.12, 1], ["#ffffff", 0.7, 0.9], ["#ffffff", 1, 0]], "gravity": [0, 4.5, 0], "force": [1.2, 0, 0], "rotate": [-20, 20], "noise": [0.25, 1.5]}},
+ {"at": [0, 0, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 2.2}, "life": [2.6, 3.4], "size": [2.8, 4.2], "rotation": [0, 360], "color": "#ffffff", "rate": 30, "duration": 2,
+  "over": {"size": [[0, 1], [0.5, 1.6], [1, 2.8]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.12, 1], ["#ffffff", 0.7, 0.9], ["#ffffff", 1, 0]], "gravity": [0, 4.5, 0], "force": [1.2, 0, 0], "rotate": [-20, 20], "noise": [0.25, 1.5]}},
+ {"at": [7.5, 0, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 2.2}, "life": [2.6, 3.4], "size": [2.8, 4.2], "rotation": [0, 360], "color": "#ffffff", "rate": 30, "duration": 2,
+  "over": {"size": [[0, 1], [0.5, 1.6], [1, 2.8]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.12, 1], ["#ffffff", 0.7, 0.9], ["#ffffff", 1, 0]], "gravity": [0, 4.5, 0], "force": [1.2, 0, 0], "rotate": [-20, 20], "noise": [0.25, 1.5]}}
+]}

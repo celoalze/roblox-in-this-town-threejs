@@ -1,0 +1,1777 @@
+{
+ "title": "r15 anim",
+ "music": "none",
+ "cast": [
+  {
+   "milo": {}
+  }
+ ],
+ "publish": {
+  "title": "r15 anim",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "walk"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "run",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "run"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_walk"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_run",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_run"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_sprint",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_sprint"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "ninja_run",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "ninja_run"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "zombie_walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "zombie_walk"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "superhero_walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "superhero_walk"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "sneak",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "sneak"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_climb",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_climb"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "ninja_climb",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "ninja_climb"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "jump",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "jump"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_jump",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_jump"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "fall",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "fall"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_fall",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_fall"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "hero_landing",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "hero_landing"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "dive_forward",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "dive_forward"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "floss",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "floss"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "cutesy_dance",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "cutesy_dance"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "dance1",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "dance1"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rocker_dance",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rocker_dance"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "break_dance",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "break_dance"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "dance",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "dance"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "idle"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_idle"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "sit",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "sit"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "sitfloor",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "sitfloor"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "sitsad",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "sitsad"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_sit",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_sit"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "lie",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "lie"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "wave",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "wave"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_wave",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_wave"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "cheer"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_cheer"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "rbx_point",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "rbx_point"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "shocked",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "shocked"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "scared",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "scared"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "cry",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "cry"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "laugh",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "laugh"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "clap",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "clap"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "think",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "think"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "shrug",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "shrug"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "kneel",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "kneel"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "kneel_both",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "kneel_both"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "crawl",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "crawl"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "crouch_sneak",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "crouch_sneak"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "tumble",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "tumble"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "dig",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "dig"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "unchain",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "unchain"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "pull_door",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "pull_door"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "hug_give",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "hug_give"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "reach",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "reach"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "reach_down",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "reach_down"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "cry_kneel",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "cry_kneel"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "carry_walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "carry_walk"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "panic",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "panic"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "scream_run",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "scream_run"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "lift_heavy",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "lift_heavy"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "stumble",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "stumble"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "duck",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "duck"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "throw",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "throw"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "exhausted_walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "exhausted_walk"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "walk+wave",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "walk+wave"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "run+cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "run+cheer"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "sit+phone",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 70,
+     "anim": "sit+phone"
+    }
+   ]
+  }
+ ]
+}

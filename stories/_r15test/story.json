@@ -1,0 +1,430 @@
+{
+ "title": "r15 test",
+ "music": "none",
+ "cast": [
+  "milo"
+ ],
+ "publish": {
+  "title": "r15 test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "idle",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "idle"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.4,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "walk",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -5,
+      -1
+     ],
+     "to": [
+      5,
+      -1
+     ],
+     "face": 0
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 2.0,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "run",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -5,
+      -1
+     ],
+     "to": [
+      5,
+      -1
+     ],
+     "face": 0
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "wave",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "wave"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "sit",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "sit"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "jump",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "jump"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "cheer",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "cheer"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "kneel",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "kneel"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "dance",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "dance"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "sitfloor",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "sitfloor"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "swim crouch",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "swim"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "think",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "think"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "bow",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "bow"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.6,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 0,
+    "move": "static"
+   },
+   "title": "dab",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": -15,
+     "anim": "dab"
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.4,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "walk side milo",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -3,
+      0
+     ],
+     "to": [
+      3,
+      0
+     ],
+     "face": 0,
+     "speed": 2.2
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.4,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "walk side milo15",
+   "actors": []
+  },
+  {
+   "set": "studio",
+   "dur": 1.4,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "run side milo",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -3,
+      0
+     ],
+     "to": [
+      3,
+      0
+     ],
+     "face": 0,
+     "speed": 3.5
+    }
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.4,
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     3,
+     0
+    ],
+    "angle": 0,
+    "move": "static",
+    "absolute": true
+   },
+   "title": "run side milo15",
+   "actors": []
+  }
+ ]
+}

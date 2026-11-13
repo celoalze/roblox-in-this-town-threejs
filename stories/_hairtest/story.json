@@ -1,0 +1,439 @@
+{
+ "title": "hair test",
+ "music": "none",
+ "cast": [
+  {
+   "h0": {
+    "like": "milo",
+    "hair": "rbx:middlepart",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "h1": {
+    "like": "zoe",
+    "hair": "rbx:sidepart",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "h2": {
+    "like": "milo",
+    "hair": "rbx:sleek",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "h3": {
+    "like": "zoe",
+    "hair": "rbx:surfer",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "h4": {
+    "like": "milo",
+    "hair": "rbx:fade",
+    "hairColor": "#e86aa6"
+   }
+  },
+  {
+   "h5": {
+    "like": "zoe",
+    "hair": "rbx:ponytail",
+    "hairColor": "#5a3a22"
+   }
+  },
+  {
+   "h6": {
+    "like": "milo",
+    "hair": "rbx:curlyafro",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "h7": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "h8": {
+    "like": "milo",
+    "hair": "rbx:curls",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "h9": {
+    "like": "zoe",
+    "hair": "rbx:dreads",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "h10": {
+    "like": "milo",
+    "hair": "rbx:topknot",
+    "hairColor": "#e86aa6"
+   }
+  },
+  {
+   "h11": {
+    "like": "zoe",
+    "hair": "rbx:braids",
+    "hairColor": "#5a3a22"
+   }
+  },
+  {
+   "h12": {
+    "like": "milo",
+    "hair": "rbx:fringe",
+    "hairColor": "#d9b36b"
+   }
+  },
+  {
+   "h13": {
+    "like": "zoe",
+    "hair": "rbx:bangs",
+    "hairColor": "#1a1a1a"
+   }
+  },
+  {
+   "h14": {
+    "like": "milo",
+    "hair": "rbx:updo",
+    "hairColor": "#7a4a21"
+   }
+  },
+  {
+   "h15": {
+    "like": "zoe",
+    "hair": "rbx:sideshave",
+    "hairColor": "#a8432a"
+   }
+  },
+  {
+   "h16": {
+    "like": "milo",
+    "hair": "rbx:colorbraids",
+    "hairColor": "#e86aa6"
+   }
+  },
+  {
+   "h17": {
+    "like": "zoe",
+    "hair": "rbx:classicbrown",
+    "hairColor": "#5a3a22"
+   }
+  }
+ ],
+ "publish": {
+  "title": "hair test",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "middlepart",
+   "cam": "close h0 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h0 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "sidepart",
+   "cam": "close h1 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h1 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "sleek",
+   "cam": "close h2 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h2 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "surfer",
+   "cam": "close h3 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h3 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "fade",
+   "cam": "close h4 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h4 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "ponytail",
+   "cam": "close h5 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h5 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "curlyafro",
+   "cam": "close h6 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h6 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "wavy",
+   "cam": "close h7 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h7 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "curls",
+   "cam": "close h8 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h8 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "dreads",
+   "cam": "close h9 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h9 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "topknot",
+   "cam": "close h10 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h10 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "braids",
+   "cam": "close h11 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h11 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "fringe",
+   "cam": "close h12 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h12 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "bangs",
+   "cam": "close h13 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h13 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "updo",
+   "cam": "close h14 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h14 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "sideshave",
+   "cam": "close h15 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h15 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "colorbraids",
+   "cam": "close h16 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h16 0,0 f30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "classicbrown",
+   "cam": "close h17 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "h17 0,0 f-30"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "middlepart (back)",
+   "cam": "close h0 0 static",
+   "camera": {
+    "dof": 0,
+    "absolute": true
+   },
+   "actors": [
+    "h0 0,0 f150"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "sleek (back)",
+   "cam": "close h2 0 static",
+   "camera": {
+    "dof": 0,
+    "absolute": true
+   },
+   "actors": [
+    "h2 0,0 f150"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "ponytail (back)",
+   "cam": "close h5 0 static",
+   "camera": {
+    "dof": 0,
+    "absolute": true
+   },
+   "actors": [
+    "h5 0,0 f150"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "curls (back)",
+   "cam": "close h8 0 static",
+   "camera": {
+    "dof": 0,
+    "absolute": true
+   },
+   "actors": [
+    "h8 0,0 f150"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "topknot (back)",
+   "cam": "close h10 0 static",
+   "camera": {
+    "dof": 0,
+    "absolute": true
+   },
+   "actors": [
+    "h10 0,0 f150"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "fringe (back)",
+   "cam": "close h12 0 static",
+   "camera": {
+    "dof": 0,
+    "absolute": true
+   },
+   "actors": [
+    "h12 0,0 f150"
+   ]
+  }
+ ]
+}

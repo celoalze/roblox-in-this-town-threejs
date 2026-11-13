@@ -1,0 +1,284 @@
+{
+ "title": "big creature test",
+ "music": "none",
+ "cast": [
+  "milo",
+  "trex",
+  "raptor",
+  "triceratops",
+  "dolphin",
+  "ice_giant",
+  "sky_beast",
+  "worm",
+  "octopus"
+ ],
+ "publish": {
+  "title": "t",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "dur": 1.5,
+   "title": "trex",
+   "loc": "park",
+   "actors": [
+    "milo 6,0 f0",
+    "trex 0,-14 f0 roar"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -15
+    ],
+    "path": [
+     [
+      0,
+      4,
+      32
+     ],
+     [
+      0,
+      4,
+      32
+     ]
+    ],
+    "lens": 50,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "raptor",
+   "loc": "park",
+   "actors": [
+    "milo 6,0 f0",
+    "raptor 0,-14 f0 run"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -15
+    ],
+    "path": [
+     [
+      0,
+      4,
+      32
+     ],
+     [
+      0,
+      4,
+      32
+     ]
+    ],
+    "lens": 50,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "triceratops",
+   "loc": "park",
+   "actors": [
+    "milo 6,0 f0",
+    "triceratops 0,-14 f0 walk"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -15
+    ],
+    "path": [
+     [
+      0,
+      4,
+      32
+     ],
+     [
+      0,
+      4,
+      32
+     ]
+    ],
+    "lens": 50,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "dolphin",
+   "loc": "park",
+   "actors": [
+    "milo 0,0 f0",
+    "dolphin 0,-60 y25 f0 walk"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     20,
+     -60
+    ],
+    "path": [
+     [
+      0,
+      3,
+      30
+     ],
+     [
+      0,
+      3,
+      30
+     ]
+    ],
+    "lens": 70,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "ice_giant",
+   "loc": "park",
+   "actors": [
+    "milo 0,0 f0",
+    "ice_giant 0,-60 f0 roar"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     20,
+     -60
+    ],
+    "path": [
+     [
+      0,
+      3,
+      30
+     ],
+     [
+      0,
+      3,
+      30
+     ]
+    ],
+    "lens": 70,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "sky_beast",
+   "loc": "park",
+   "actors": [
+    "milo 0,0 f0",
+    "sky_beast 0,-110 f0 walk"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     20,
+     -60
+    ],
+    "path": [
+     [
+      0,
+      3,
+      30
+     ],
+     [
+      0,
+      3,
+      30
+     ]
+    ],
+    "lens": 70,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "worm",
+   "loc": "park",
+   "actors": [
+    "milo 6,0 f0",
+    "worm 0,-14 f0 idle"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -15
+    ],
+    "path": [
+     [
+      0,
+      4,
+      32
+     ],
+     [
+      0,
+      4,
+      32
+     ]
+    ],
+    "lens": 50,
+    "move": "static",
+    "occlude": false
+   }
+  },
+  {
+   "dur": 1.5,
+   "title": "octopus",
+   "loc": "park",
+   "actors": [
+    "milo 6,0 f0",
+    "octopus 0,-14 f0 walk"
+   ],
+   "shot": "wide",
+   "camera": {
+    "target": [
+     0,
+     5,
+     -15
+    ],
+    "path": [
+     [
+      0,
+      4,
+      32
+     ],
+     [
+      0,
+      4,
+      32
+     ]
+    ],
+    "lens": 50,
+    "move": "static",
+    "occlude": false
+   }
+  }
+ ]
+}

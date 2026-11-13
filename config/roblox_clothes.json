@@ -1,0 +1,95 @@
+{
+ "_doc": "Classic Roblox clothing (2D templates, the clothing an R6 character wears natively). Cast spec: \"shirt\": \"rbx:<name>\", \"pants\": \"rbx:<name>\". asset = catalog id, template = image id (read-only Studio probe: Shirt.ShirtTemplate / Pants.PantsTemplate). Files: assets/roblox/clothes/<name>.png via `python pipeline/roblox_wear.py`. Free Roblox-made items only.",
+ "shirts": {
+  "denimhoodie": {
+   "asset": 398633584,
+   "template": 398633582
+  },
+  "motorcycle": {
+   "asset": 144076358,
+   "template": 144076357
+  },
+  "robloxjacket": {
+   "asset": 607785314,
+   "template": 607785311
+  },
+  "greystriped": {
+   "asset": 144076436,
+   "template": 144076435
+  },
+  "pastelstarburst": {
+   "asset": 398634295,
+   "template": 398634294
+  },
+  "simplepattern": {
+   "asset": 3670737444,
+   "template": 3670737337
+  },
+  "greenjersey": {
+   "asset": 382538059,
+   "template": 382538058
+  },
+  "blueplaid": {
+   "asset": 398635081,
+   "template": 398635080
+  },
+  "teal": {
+   "asset": 382537702,
+   "template": 382537700
+  },
+  "pizza": {
+   "asset": 382537085,
+   "template": 382537084
+  },
+  "guitartee": {
+   "asset": 382538295,
+   "template": 382538294
+  },
+  "favpizza": {
+   "asset": 4047884939,
+   "template": 4047884910
+  },
+  "_tpl": {
+   "asset": 0,
+   "template": 0
+  }
+ },
+ "pants": {
+  "darkgreenjeans": {
+   "asset": 144076760,
+   "template": 144076759
+  },
+  "beautifuljeans": {
+   "asset": 398634487,
+   "template": 398634485
+  },
+  "blackjeanswhiteshoes": {
+   "asset": 398633812,
+   "template": 398633811
+  },
+  "rippedskater": {
+   "asset": 398635338,
+   "template": 398635336
+  },
+  "jeanshorts": {
+   "asset": 382537806,
+   "template": 382537805
+  },
+  "blackjeanssneakers": {
+   "asset": 382538503,
+   "template": 382538502
+  },
+  "blackjeans": {
+   "asset": 382537569,
+   "template": 382537568
+  },
+  "jeanshortswhiteshoes": {
+   "asset": 382537950,
+   "template": 382537949
+  },
+  "_tpl": {
+   "asset": 0,
+   "template": 0
+  }
+ }
+}

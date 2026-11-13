@@ -1,0 +1,59 @@
+{
+ "_comment": "Voice aliases. local = reference clip cloned by Chatterbox (default provider), elevenlabs = voice_id, kokoro = offline fallback.",
+ "_defaults": {
+  "speed": 1.08,
+  "model": "eleven_multilingual_v2",
+  "stability": 0.4,
+  "style": 0.35
+ },
+ "narrator": {
+  "elevenlabs": "SDARFhQygpPvpLh7Ad1B",
+  "kokoro": "am_michael",
+  "local": "assets/audio/voices/am_puck.wav"
+ },
+ "narrator_f": {
+  "elevenlabs": "cgSgspJ2msm6clMCkdW9",
+  "kokoro": "af_heart",
+  "local": "assets/audio/voices/af_heart.wav"
+ },
+ "boy": {
+  "elevenlabs": "TX3LPaxmHKxFdv7VOQHJ",
+  "kokoro": "am_puck",
+  "local": "assets/audio/voices/am_echo.wav"
+ },
+ "boy2": {
+  "elevenlabs": "bIHbv24MWmeRgasZH58o",
+  "kokoro": "am_echo",
+  "local": "assets/audio/voices/am_liam.wav"
+ },
+ "girl": {
+  "elevenlabs": "cgSgspJ2msm6clMCkdW9",
+  "kokoro": "af_bella",
+  "local": "assets/audio/voices/af_bella.wav"
+ },
+ "woman": {
+  "elevenlabs": "EXAVITQu4vr4xnSDxMaL",
+  "kokoro": "af_sarah",
+  "local": "assets/audio/voices/af_heart.wav"
+ },
+ "man": {
+  "elevenlabs": "iP95p4xoKVk53GoZ742B",
+  "kokoro": "am_adam",
+  "local": "assets/audio/voices/am_adam.wav"
+ },
+ "old_man": {
+  "elevenlabs": "pqHfZKP75CvOlQylNhV4",
+  "kokoro": "bm_george",
+  "local": "assets/audio/voices/bm_george.wav"
+ },
+ "king": {
+  "elevenlabs": "onwK4e9ZLuTAKqWW03F9",
+  "kokoro": "bm_fable",
+  "local": "assets/audio/voices/bm_george.wav"
+ },
+ "goofy": {
+  "elevenlabs": "N2lVS1w4EtoT3dr4eOWO",
+  "kokoro": "am_fenrir",
+  "local": "assets/audio/voices/am_puck.wav"
+ }
+}

@@ -1,0 +1,22 @@
+{"duration": 5, "radius": 26, "count": 44, "emitters": [
+ {"at": [-9, 0, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 2.6}, "life": [3.0, 3.8], "size": [3.4, 5.0], "rotation": [0, 360], "color": "#ffffff", "rate": 40, "duration": 2.4, "delay": 0.15,
+  "over": {"size": [[0, 1], [0.5, 1.6], [1, 2.8]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.12, 1], ["#ffffff", 0.7, 0.9], ["#ffffff", 1, 0]], "gravity": [0, 4.5, 0], "force": [1.2, 0, 0], "rotate": [-20, 20], "noise": [0.25, 1.5]}},
+ {"at": [0, 0, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 2.6}, "life": [3.0, 3.8], "size": [3.4, 5.0], "rotation": [0, 360], "color": "#ffffff", "rate": 40, "duration": 2.4, "delay": 0.15,
+  "over": {"size": [[0, 1], [0.5, 1.6], [1, 2.8]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.12, 1], ["#ffffff", 0.7, 0.9], ["#ffffff", 1, 0]], "gravity": [0, 4.5, 0], "force": [1.2, 0, 0], "rotate": [-20, 20], "noise": [0.25, 1.5]}},
+ {"at": [9, 0, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 2.6}, "life": [3.0, 3.8], "size": [3.4, 5.0], "rotation": [0, 360], "color": "#ffffff", "rate": 40, "duration": 2.4, "delay": 0.15,
+  "over": {"size": [[0, 1], [0.5, 1.6], [1, 2.8]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.12, 1], ["#ffffff", 0.7, 0.9], ["#ffffff", 1, 0]], "gravity": [0, 4.5, 0], "force": [1.2, 0, 0], "rotate": [-20, 20], "noise": [0.25, 1.5]}},
+ {"countable": true, "at": [0, 1.5, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 1}, "speed": [16, 19], "life": [3, 3.5], "size": [4, 6], "rotation": [0, 360], "color": "#d2c4aa", "burst": [[0.15, 56]], "duration": 0.5,
+  "over": {"size": [[0, 0.5], [0.25, 1], [1, 1.15]], "speed": [[0, 1], [0.5, 0.45], [1, 0.1]], "color": [["#ffffff", 0, 0.9], ["#ffffff", 0.8, 0.7], ["#ffffff", 1, 0]], "rotate": [-25, 25]}},
+ {"mode": "flat", "at": [0, 0.07, 0], "texture": "crack", "blend": "normal", "shape": "point", "life": 5, "size": 23.4, "burst": [[0.15, 1]], "duration": 0.1,
+  "over": {"size": [[0, 0.05], [0.16, 1], [1, 1]]}},
+ {"mode": "flat", "at": [0, 0.09, 0], "texture": "crackglow", "blend": "add", "shape": "point", "life": 5, "size": 23.4, "color": "#ff7a1a", "burst": [[0.15, 1]], "duration": 0.1,
+  "over": {"size": [[0, 0.05], [0.16, 1], [1, 1]], "color": [["#ffffff", 0, 1], ["#ffffff", 0.7, 0.8], ["#ffffff", 1, 0.3]]}},
+ {"mode": "flat", "at": [0, 0.25, 0], "texture": "ring", "blend": "add", "shape": "point", "life": 0.7, "size": 41.6, "color": "#fff0cc", "burst": [[0, 1]], "duration": 0.1,
+  "over": {"size": [[0, 0.01], [0.5, 0.8], [1, 1]], "color": [["#fff0cc", 0, 0.85], ["#fff0cc", 1, 0]]}},
+ {"at": [0, 1, 0], "texture": "soft", "blend": "add", "shape": "point", "life": 0.5, "size": 13, "color": "#ffe2a8", "burst": [[0, 1]], "duration": 0.1,
+  "over": {"size": [[0, 0.4], [1, 1.4]], "color": [["#ffe2a8", 0, 0.9], ["#ffe2a8", 1, 0]]}},
+ {"countable": true, "mode": "mesh", "geometry": "icosa", "color": ["#a5603f", "#8a4f32"], "shape": {"type": "cone", "radius": 0.6, "angle": 70}, "rot": [-90, 0, 0], "at": [0, 0.8, 0], "speed": [3, 16], "life": [2.4, 3.4], "size": [0.3, 1.2], "burst": [[0.15, 39]], "duration": 0.1, "collide": 0.3,
+  "over": {"gravity": [0, -34, 0], "rotate": [-200, 200]}},
+ {"countable": true, "mode": "mesh", "geometry": "slab", "color": "#8a5a3a", "shape": {"type": "cone", "radius": 0.6, "angle": 50}, "rot": [-90, 0, 0], "at": [0, 0.8, 0], "speed": [2, 6], "life": [2.6, 3.4], "size": [1.5, 2.5], "burst": [[0.15, 5]], "duration": 0.1, "collide": 0.25,
+  "over": {"gravity": [0, -34, 0], "rotate": [-100, 100]}}
+]}

@@ -1,0 +1,180 @@
+{
+ "title": "r15 skin",
+ "music": "none",
+ "cast": [
+  {
+   "milo15": {
+    "like": "milo"
+   }
+  },
+  {
+   "zoe15": {
+    "like": "zoe"
+   }
+  },
+  {
+   "jay15": {
+    "like": "jay"
+   }
+  },
+  {
+   "mom15": {
+    "like": "mom"
+   }
+  },
+  {
+   "dad15": {
+    "like": "dad"
+   }
+  },
+  {
+   "cl15": {
+    "like": "milo",
+    "shirt": "rbx:pizza",
+    "pants": "rbx:blackjeanssneakers"
+   }
+  },
+  {
+   "tpl15": {
+    "like": "milo",
+    "shirt": "rbx:_tpl",
+    "pants": "rbx:_tpl"
+   }
+  }
+ ],
+ "publish": {
+  "title": "r15 skin",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "loc": "studio",
+   "dur": 1,
+   "title": "front line-up",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo15 -5,0 f0",
+    "zoe15 -3,0 f0",
+    "jay15 -1,0 f0",
+    "mom15 1,0 f0",
+    "dad15 3,0 f0",
+    "cl15 5,0 f0"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "classic clothes",
+   "cam": "wide group 0 static",
+   "actors": [
+    "cl15 -1.5,0 f0",
+    "milo15 1.5,0 f0",
+    "zoe15 4.5,0 f0"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "tpl front",
+   "cam": "full group 0 static",
+   "actors": [
+    "tpl15 0,0 f0"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "tpl back",
+   "cam": "full group 0 static",
+   "actors": [
+    "tpl15 0,0 f180"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "tpl side",
+   "cam": "full group 0 static",
+   "actors": [
+    "tpl15 0,0 f90"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "close happy",
+   "cam": "close milo15 0 static",
+   "actors": [
+    "milo15 idle/happy"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "close laugh",
+   "cam": "close milo15 0 static",
+   "actors": [
+    "milo15 idle/laugh"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "close angry",
+   "cam": "close milo15 0 static",
+   "actors": [
+    "milo15 idle/angry"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "close cry",
+   "cam": "close milo15 0 static",
+   "actors": [
+    "milo15 idle/cry"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "close smirk",
+   "cam": "close milo15 0 static",
+   "actors": [
+    "milo15 idle/smirk"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "close terrified",
+   "cam": "close milo15 0 static",
+   "actors": [
+    "milo15 idle/terrified"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "back",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo15 -5,0 f180",
+    "zoe15 -3,0 f180",
+    "jay15 -1,0 f180",
+    "mom15 1,0 f180",
+    "dad15 3,0 f180",
+    "cl15 5,0 f180"
+   ]
+  },
+  {
+   "dur": 1,
+   "title": "side",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo15 -5,0 f90",
+    "zoe15 -3,0 f90",
+    "jay15 -1,0 f90",
+    "mom15 1,0 f90",
+    "dad15 3,0 f90",
+    "cl15 5,0 f90"
+   ]
+  }
+ ]
+}

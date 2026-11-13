@@ -1,0 +1,240 @@
+{
+ "_comment": "Recurring cast presets. In a story: \"cast\": [\"milo\",\"zoe\"] or {\"coach\": {\"like\": \"dad\", \"shirt\": \"#d33\"}}. Keep these stable: they are the channel's faces.",
+ "milo": {
+  "hair": "rbx:376548738",
+  "shirt": "#4f8fe8",
+  "pants": "#22304f",
+  "shoes": "#f4f4f4",
+  "skin": "#eab892",
+  "details": [
+   "hood",
+   "kangaroo"
+  ]
+ },
+ "zoe": {
+  "hair": "rbx:6501746646",
+  "shirt": "#ff8fc7",
+  "pants": "#3d5fc4",
+  "skin": "#ffd6b4",
+  "sleeves": "short",
+  "details": [
+   "heart"
+  ],
+  "lashes": true
+ },
+ "jay": {
+  "hair": "rbx:1103003368",
+  "shirt": "#2b2b33",
+  "pants": "#4a3a2a",
+  "skin": "#a06e50",
+  "details": [
+   "collar",
+   "pocket"
+  ],
+  "accent": "#ffffff"
+ },
+ "max": {
+  "hair": "rbx:376524487",
+  "shirt": "#3ecf8e",
+  "pants": "#22304f",
+  "skin": "#f5c79a",
+  "sleeves": "short",
+  "details": [
+   "stripes"
+  ],
+  "accent": "#ffffff",
+  "scale": 0.85
+ },
+ "mia": {
+  "hair": "rbx:2956239660",
+  "shirt": "#8e6bff",
+  "pants": "#2b2b33",
+  "skin": "#f2c6a0",
+  "details": [
+   "star"
+  ],
+  "lashes": true,
+  "blush": true
+ },
+ "mom": {
+  "hair": "rbx:16630147",
+  "shirt": "#e8a23d",
+  "pants": "#3a4a6b",
+  "skin": "#eab892",
+  "details": [
+   "collar",
+   "buttons"
+  ],
+  "lashes": true,
+  "scale": 1.08
+ },
+ "dad": {
+  "hair": "rbx:63690008",
+  "shirt": "#5a7d5a",
+  "pants": "#3b3b45",
+  "skin": "#eab892",
+  "details": [
+   "collar",
+   "pocket"
+  ],
+  "extras": [
+   "mustache"
+  ],
+  "scale": 1.1
+ },
+ "grandpa": {
+  "hair": "buzz",
+  "hairColor": "#d8d8d8",
+  "shirt": "#a8693a",
+  "pants": "#55504a",
+  "skin": "#e2b08a",
+  "details": [
+   "buttons",
+   "collar"
+  ],
+  "extras": [
+   "mustache",
+   "glasses"
+  ],
+  "beardColor": "#d8d8d8",
+  "scale": 1.02
+ },
+ "teacher": {
+  "hair": "rbx:376527350",
+  "shirt": "#f4f4f4",
+  "pants": "#2b2b33",
+  "skin": "#c98e6a",
+  "details": [
+   "collar",
+   "tie"
+  ],
+  "tie": "#c0392b",
+  "glasses": "glasses",
+  "scale": 1.1
+ },
+ "boss": {
+  "hair": "swept",
+  "hairColor": "#3a2a1e",
+  "shirt": "#f4f4f4",
+  "jacket": "#27324a",
+  "pants": "#27324a",
+  "skin": "#f0c4a0",
+  "details": [
+   "collar",
+   "tie"
+  ],
+  "tie": "#c0392b",
+  "hands": true,
+  "scale": 1.12
+ },
+ "cop": {
+  "hat": "police",
+  "hair": "buzz",
+  "hairColor": "#2b2b2b",
+  "shirt": "#2f4a8a",
+  "pants": "#1c2540",
+  "skin": "#c98e6a",
+  "details": [
+   "collar",
+   "badge",
+   "belt"
+  ],
+  "extras": [
+   "shades"
+  ],
+  "scale": 1.1
+ },
+ "doctor": {
+  "hair": "rbx:376526888",
+  "shirt": "#f7f9fb",
+  "pants": "#5fb3b3",
+  "skin": "#ffd6b4",
+  "details": [
+   "collar",
+   "pocket",
+   "buttons"
+  ],
+  "glasses": "glasses",
+  "lashes": true,
+  "scale": 1.08
+ },
+ "builder": {
+  "hat": "hardhat",
+  "hatColor": "#ffcc33",
+  "hair": "buzz",
+  "hairColor": "#2b2b2b",
+  "shirt": "#ff8a1f",
+  "pants": "#3a4a6b",
+  "skin": "#a06e50",
+  "details": [
+   "stripes",
+   "belt"
+  ],
+  "accent": "#f4f46a",
+  "scale": 1.1
+ },
+ "pirate": {
+  "hat": "tophat",
+  "hatColor": "#1d1d24",
+  "hair": "long",
+  "hairColor": "#3a2a1e",
+  "shirt": "#b03030",
+  "pants": "#2b2b33",
+  "skin": "#d9a47a",
+  "details": [
+   "belt",
+   "buttons"
+  ],
+  "extras": [
+   "beard"
+  ],
+  "beardColor": "#3a2a1e",
+  "scale": 1.12
+ },
+ "sheriff": {
+  "hat": "cap",
+  "hatColor": "#8a5a3a",
+  "hair": "short",
+  "hairColor": "#5a3b26",
+  "shirt": "#c9a36a",
+  "pants": "#5a3b26",
+  "skin": "#e2b08a",
+  "details": [
+   "collar",
+   "star",
+   "belt"
+  ],
+  "emblem": "#ffd23f",
+  "extras": [
+   "mustache"
+  ],
+  "scale": 1.1
+ },
+ "ranger": {
+  "hat": "cap",
+  "hatColor": "#3d5a34",
+  "hair": "rbx:376527350",
+  "shirt": "#7a8f4e",
+  "pants": "#4a3a2a",
+  "skin": "#c98e6a",
+  "details": [
+   "collar",
+   "badge",
+   "pocket"
+  ],
+  "lashes": true,
+  "scale": 1.06
+ },
+ "villain": {
+  "hair": "spiky",
+  "hairColor": "#1d1d24",
+  "shirt": "#2b1d3a",
+  "pants": "#1d1d24",
+  "skin": "#cfd3dc",
+  "details": [
+   "hood"
+  ],
+  "expr": "evil",
+  "scale": 1.1
+ }
+}

@@ -1,0 +1,6 @@
+{"duration": 4, "radius": 30, "count": 56, "emitters": [
+ {"countable": true, "at": [0, 1.5, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 1}, "speed": [18, 22], "life": [3.2, 3.8], "size": [4.5, 6.0], "rotation": [0, 360], "color": "#d2c4aa", "burst": [[0.1, 56]], "duration": 0.5,
+  "over": {"size": [[0, 0.5], [0.25, 1], [1, 1.15]], "speed": [[0, 1], [0.5, 0.45], [1, 0.1]], "color": [["#ffffff", 0, 0.9], ["#ffffff", 0.8, 0.7], ["#ffffff", 1, 0]], "rotate": [-25, 25]}},
+ {"countable": true, "at": [0, 0.8, 0], "rot": [-90, 0, 0], "texture": "puff", "blend": "normal", "shape": {"type": "circle", "radius": 1}, "speed": [9, 12], "life": [2.6, 3.2], "size": [3, 4], "rotation": [0, 360], "color": "#b8a88c", "alpha": 0.5, "burst": [[0.3, 112]], "duration": 0.5,
+  "over": {"size": [[0, 0.4], [1, 1.4]], "speed": [[0, 1], [1, 0.2]], "color": [["#ffffff", 0, 0], ["#ffffff", 0.2, 1], ["#ffffff", 1, 0]], "rotate": [-20, 20]}}
+]}

@@ -1,0 +1,4 @@
+{"duration": 6, "count": 110, "emitters": [
+ {"countable": true, "mode": "mesh", "geometry": "plane", "color": ["#e8761f", "#f0a030"], "at": [0, 5, 0], "rot": [-90, 0, 0], "shape": {"type": "rectangle", "width": 24, "height": 24}, "speed": [0.2, 0.6], "life": [7, 12], "size": [0.9, 1.4], "rate": 12, "looping": true, "duration": 6,
+  "over": {"size": [[0, 0.4], [0.08, 1], [0.85, 1], [1, 0.2]], "rotate": [-200, 200], "noise": [0.5, 1.2], "drag": 0.8, "gravity": [0, -0.4, 0]}}
+]}

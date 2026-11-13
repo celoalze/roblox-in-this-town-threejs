@@ -1,0 +1,2004 @@
+{
+ "title": "In This Town, Every Idea Turns On A Light",
+ "genre": "in_this_town",
+ "narrator": "narrator_f",
+ "music": "curious",
+ "musicVol": 0.13,
+ "pad": 0.1,
+ "style": {
+  "captionWords": 1,
+  "uppercase": true,
+  "emphColor": "#FFE14D",
+  "bloom": 0.42,
+  "saturation": 0.16,
+  "tone": "agx",
+  "exposure": 1.02,
+  "rim": 1.25,
+  "dof": 1.0,
+  "motes": true,
+  "lens": true,
+  "handheld": 0.6,
+  "autoWhoosh": true
+ },
+ "locations": {
+  "lantern_plaza": {
+   "setOpts": {
+    "kit": "dia-de-muertos-f2f8f8",
+    "near": "cempasuchil-arch",
+    "dz": 7
+   }
+  },
+  "sky_town": {
+   "setOpts": {
+    "kit": "salvage-commons-d0be9f",
+    "near": "conservatory",
+    "dz": 8
+   }
+  }
+ },
+ "cast": {
+  "milo": {
+   "like": "milo"
+  },
+  "zoe": {
+   "like": "zoe"
+  },
+  "max": {
+   "like": "max",
+   "hat": "beanie",
+   "hatColor": "#ffcf4d"
+  },
+  "jay": {
+   "like": "jay"
+  },
+  "mia": {
+   "like": "mia"
+  },
+  "grandpa": {
+   "like": "grandpa"
+  },
+  "teacher": {
+   "like": "teacher"
+  },
+  "builder": {
+   "like": "builder"
+  },
+  "sheriff": {
+   "like": "sheriff"
+  },
+  "mayor": {
+   "like": "pirate",
+   "shirt": "#3a2a7a",
+   "hat": "tophat",
+   "hatColor": "#ffd23f",
+   "emblem": "#ffd23f",
+   "expr": "smug"
+  }
+ },
+ "publish": {
+  "title": "Every IDEA Turns On A Light In This Town #shorts",
+  "description": "In this town, every idea switches on a floating light above your head, except for one quiet kid who never got one. What would YOUR light look like?",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "in this town",
+   "roblox shorts",
+   "storytime",
+   "wholesome roblox",
+   "glowing lights",
+   "kids animation",
+   "short film"
+  ],
+  "caption": "The kid with no light had the brightest idea of all 💡✨"
+ },
+ "scenes": [
+  {
+   "loc": "lantern_plaza",
+   "time": "night",
+   "weather": "aurora",
+   "line": "In this town, every *idea* turns on a light.",
+   "title": "EVERY IDEA LIGHTS UP",
+   "titleSize": 0.075,
+   "cam": "wide group 15 push",
+   "actors": [
+    "milo -1.5,0 f20 think/awe",
+    "zoe 1.5,0 f-20 point/grin"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.75,
+     "pop": true,
+     "bob": true,
+     "from": "w:idea"
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -2
+     ],
+     "y": 7.6,
+     "color": "#FF8FC7",
+     "scale": 0.6,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3.5,
+      -3
+     ],
+     "y": 9.0,
+     "color": "#5BD6FF",
+     "scale": 0.55,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3.5,
+      -3
+     ],
+     "y": 8.4,
+     "color": "#B58CFF",
+     "scale": 0.55,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -2
+     ],
+     "y": 7.4,
+     "color": "#FFD54D",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "fx": [
+    {
+     "type": "glow",
+     "on": "milo",
+     "at": "w:idea",
+     "color": "#FFD54D"
+    },
+    {
+     "type": "sparkles",
+     "on": "milo",
+     "mode": "burst",
+     "at": "w:idea",
+     "count": 20
+    }
+   ],
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "ding@idea sparkle@idea*0.5",
+   "titleColor": "#FFE14D",
+   "extras": 3
+  },
+  {
+   "line": "The second you think it, *pop*, there it is.",
+   "cam": "close zoe punch z1.2",
+   "actors": [
+    "zoe 1.5,0 f-20 laugh/surprised",
+    "milo -1.5,0 f20 /grin"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      1.5,
+      0
+     ],
+     "y": 6.5,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "pop": true,
+     "bob": true
+    }
+   ],
+   "fx": "sparkles:zoe:burst@pop glow:zoe@pop",
+   "overlay": [
+    "flash"
+   ],
+   "sfx": "pop@pop tada@pop*0.4",
+   "weather": "aurora"
+  },
+  {
+   "loc": "street",
+   "time": "day",
+   "weather": "sunny",
+   "seed": 21,
+   "line": "Nobody in town buys *lamps* anymore.",
+   "cam": "establishing group 10 drift",
+   "extras": 4,
+   "actors": [
+    "milo -3,0 f20 wave/happy",
+    "zoe 0,0 f0 /grin",
+    "jay 3,0 f-20 idle/silly"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      0
+     ],
+     "y": 6.5,
+     "color": "#6CFF8A",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -3
+     ],
+     "y": 8.2,
+     "color": "#B58CFF",
+     "scale": 0.6,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 8.5,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "sfx": "ding@lamps crowd_aww@lamps*0.4"
+  },
+  {
+   "line": "Even the *mayor* wears three at once.",
+   "cam": "medium group 0 push",
+   "actors": [
+    "mayor 0,0 f0 >camera cheer/proud",
+    "milo -3,0 f20 /starstruck",
+    "zoe 3,0 f-20 /silly"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -0.9,
+      0
+     ],
+     "y": 6.5,
+     "color": "#B58CFF",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 7.8,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true,
+     "from": 0.5,
+     "spin": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0.9,
+      0
+     ],
+     "y": 6.5,
+     "color": "#5BD6FF",
+     "scale": 0.7,
+     "bob": true,
+     "from": 0.9
+    }
+   ],
+   "fx": "sparkles:mayor:orbit@mayor",
+   "sfx": "tada@mayor crowd_laugh@mayor*0.4"
+  },
+  {
+   "loc": "cafe2",
+   "time": "day",
+   "weather": "clear",
+   "line": "At the cafe, a *cake* idea glowed pink.",
+   "cam": "medium group 20 orbit",
+   "actors": [
+    "mia -1.5,0 f25 /love +cake@cake",
+    "zoe 1.5,0 f-25 point/happy"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "pop": true,
+     "bob": true
+    }
+   ],
+   "fx": "confetti:mia:burst@cake hearts:zoe:rise@cake",
+   "sfx": "pop@cake crowd_aww@cake*0.5"
+  },
+  {
+   "loc": "skate",
+   "time": "day",
+   "weather": "sunny",
+   "line": "Jay's skate trick lit up *green*.",
+   "cam": "low jay 0 push punch z1.2",
+   "shakeAt": "w:green",
+   "actors": [
+    "jay -1,0 f15 jump/wink to:1.5,-1",
+    "milo 5,-1 f-25 cheer/laugh"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -1,
+      0
+     ],
+     "y": 7.6,
+     "color": "#6CFF8A",
+     "scale": 0.8,
+     "pop": true,
+     "spin": true
+    }
+   ],
+   "fx": "impact:jay@green dust:jay@green stars:jay:orbit@green",
+   "overlay": [
+    "speedlines"
+   ],
+   "sfx": "boom@green whoosh@green*0.4 tada@green*0.5"
+  },
+  {
+   "loc": "site_crane",
+   "time": "day",
+   "weather": "sunny",
+   "extras": 3,
+   "line": "The builder's crane idea was *orange* and huge.",
+   "cam": "establishing group 10 rise",
+   "actors": [
+    "builder 0,0 f15 point/confident",
+    "jay -3,0 f25 /starstruck"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      1.5,
+      1
+     ],
+     "y": 6.6,
+     "color": "#FFA33D",
+     "scale": 1.25,
+     "pop": true,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      -2
+     ],
+     "y": 6.7,
+     "color": "#FFD54D",
+     "scale": 0.6,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      -2
+     ],
+     "y": 7.2,
+     "color": "#B58CFF",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "fx": "sparkles:builder:burst@orange",
+   "sfx": "tada@orange whoosh@orange*0.4"
+  },
+  {
+   "loc": "tokyo",
+   "time": "sunset",
+   "weather": "pastel_golden",
+   "line": "Under cherry trees, Grandpa's was *gold*.",
+   "cam": "wide group 15 drift",
+   "actors": [
+    "grandpa -1.5,0 f20 think/content",
+    "max 1.5,0 f-20 /curious"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFE9A8",
+     "scale": 0.8,
+     "pop": true,
+     "spin": true
+    }
+   ],
+   "fx": "stars:grandpa:rise@gold sparkles:grandpa:orbit@gold",
+   "sfx": "sparkle@gold ding@gold*0.5"
+  },
+  {
+   "loc": "classroom",
+   "time": "day",
+   "weather": "clear",
+   "line": "In class, twenty bulbs *blinked* at once.",
+   "cam": "high group 0 push",
+   "actors": [
+    "teacher -3,1 f20 talk/proud",
+    "max -1,0 f15 /curious",
+    "mia 1,0 f-15 /grin",
+    "jay 3,0 f-20 /silly"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      1
+     ],
+     "y": 6.6,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "pop": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -1,
+      0
+     ],
+     "y": 6.5,
+     "color": "#FF8FC7",
+     "scale": 0.6,
+     "pop": true,
+     "from": 0.35
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      1,
+      0
+     ],
+     "y": 6.7,
+     "color": "#6CFF8A",
+     "scale": 0.6,
+     "pop": true,
+     "from": 0.6
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      0
+     ],
+     "y": 6.5,
+     "color": "#FFD54D",
+     "scale": 0.6,
+     "pop": true,
+     "from": 0.85
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -4,
+      -2
+     ],
+     "y": 8.4,
+     "color": "#B58CFF",
+     "scale": 0.55,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      -2
+     ],
+     "y": 9.0,
+     "color": "#FFA33D",
+     "scale": 0.55,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      4,
+      -2
+     ],
+     "y": 8.6,
+     "color": "#5BD6FF",
+     "scale": 0.55,
+     "bob": true
+    }
+   ],
+   "fx": "sparkles:teacher:burst@blinked",
+   "sfx": "ding@blinked crowd_gasp@blinked*0.5"
+  },
+  {
+   "loc": "street",
+   "time": "day",
+   "weather": "sunny",
+   "seed": 21,
+   "extras": 6,
+   "line": "By noon the whole *street* looked like a party.",
+   "cam": "medium group 0 push",
+   "actors": [
+    "milo -2,0 f20 wave/laugh",
+    "zoe 0,0 f0 dance/grin",
+    "max 2,0 f-20 /shy"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -2
+     ],
+     "y": 7.4,
+     "color": "#FF8FC7",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      0
+     ],
+     "y": 6.7,
+     "color": "#6CFF8A",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      -2
+     ],
+     "y": 8.2,
+     "color": "#B58CFF",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 9.0,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "fx": "confetti:milo:rain@street stars:zoe:orbit@street",
+   "sfx": "crowd_laugh@street tada@street*0.4"
+  },
+  {
+   "line": "Mine was gold. Max had *nothing*.",
+   "cam": "close max static",
+   "actors": [
+    "max 1.5,0 f-20 /shy",
+    "milo -1.5,0 f20 /worried"
+   ],
+   "fx": "question:max",
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "record_scratch@nothing crickets@nothing*0.3",
+   "props": []
+  },
+  {
+   "loc": "yard",
+   "time": "day",
+   "weather": "sunny",
+   "line": "He waited all morning for a *spark*.",
+   "cam": "medium max 20 static",
+   "actors": [
+    "max -1,0 f15 >camera /curious",
+    "zoe 2,0 f-20 /worried"
+   ],
+   "fx": "question:max sweat:max",
+   "sfx": "tick@spark"
+  },
+  {
+   "line": "I told him every idea I *knew*.",
+   "cam": "medium group 15 push",
+   "actors": [
+    "zoe -1.5,0 f25 talk/confident",
+    "max 1.5,0 f-25 /bored"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FF8FC7",
+     "scale": 0.6,
+     "pop": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2.4,
+      -1
+     ],
+     "y": 7.8,
+     "color": "#FF8FC7",
+     "scale": 0.55,
+     "pop": true,
+     "from": 0.7
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -0.7,
+      -1
+     ],
+     "y": 8.2,
+     "color": "#FF8FC7",
+     "scale": 0.55,
+     "pop": true,
+     "from": 1.1
+    }
+   ],
+   "fx": "sparkles:zoe:burst@knew",
+   "sfx": "ding@knew pop@knew*0.4"
+  },
+  {
+   "line": "Nothing. Not even one tiny *flicker*.",
+   "cam": "close max static",
+   "actors": [
+    "max 1.5,0 f-20 /sad",
+    "zoe -1.5,0 f25 facepalm/awkward"
+   ],
+   "fx": "sweat:zoe",
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "sad_trombone@flicker"
+  },
+  {
+   "loc": "lab_robot",
+   "time": "day",
+   "weather": "clear",
+   "line": "So we built a *machine* in the lab.",
+   "cam": "wide group 15 push",
+   "actors": [
+    "milo -1.5,0 f25 knock/determined",
+    "zoe 1.5,0 f-25 /curious",
+    "max 0,-2 f0 /shy"
+   ],
+   "props": [
+    {
+     "type": "box",
+     "at": [
+      2,
+      -2
+     ],
+     "scale": 1.3,
+     "rot": 15
+    },
+    {
+     "type": "chest",
+     "at": [
+      -3,
+      -2
+     ],
+     "scale": 1.1
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      -2
+     ],
+     "y": 4.6,
+     "color": "#5BD6FF",
+     "scale": 1.2,
+     "pop": true,
+     "bob": true
+    }
+   ],
+   "fx": [
+    {
+     "type": "glow",
+     "pos": [
+      2,
+      4.6,
+      -2
+     ],
+     "at": "w:machine",
+     "color": "#5BD6FF"
+    },
+    {
+     "type": "sparkles",
+     "on": "milo",
+     "mode": "burst",
+     "at": "w:machine",
+     "count": 14
+    }
+   ],
+   "sfx": "tada@machine whoosh@machine*0.4"
+  },
+  {
+   "line": "It had dials, a *countdown*, and a bell.",
+   "cam": "close milo punch z1.2",
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 25,
+     "anim": "think",
+     "actions": [
+      {
+       "at": "w:countdown",
+       "anim": "point",
+       "expr": "confident"
+      },
+      {
+       "at": 1.4,
+       "anim": "jump",
+       "expr": "surprised"
+      }
+     ]
+    },
+    "zoe 1.5,0 f-25 /nervous"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      -2
+     ],
+     "y": 4.6,
+     "color": "#5BD6FF",
+     "scale": 1.2,
+     "spin": true
+    }
+   ],
+   "fx": [
+    {
+     "type": "timer",
+     "on": "milo",
+     "from": 3,
+     "to": 0,
+     "rate": 1,
+     "fmt": "num",
+     "color": "#FFE14D",
+     "redBelow": 1,
+     "size": 1.1,
+     "glitch": true
+    }
+   ],
+   "sfx": "tick@countdown ding@countdown*0.5"
+  },
+  {
+   "line": "Three, two, one... it made a *pizza*.",
+   "cam": "medium group 20 shake",
+   "shakeAt": "w:pizza",
+   "actors": [
+    "milo -1.5,0 f20 /stunned +pizza@pizza",
+    "zoe 1.5,0 f-20 laugh/hysterical",
+    "max 0,-2 f0 /silly"
+   ],
+   "fx": "puff:milo@pizza confetti:milo:burst@pizza",
+   "overlay": [
+    "flash"
+   ],
+   "sfx": "pop@pizza crowd_laugh@pizza*0.6"
+  },
+  {
+   "line": "Max laughed, but still no *light*.",
+   "cam": "close max static",
+   "actors": [
+    "max 0,0 f0 laugh/happy"
+   ],
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "sad_trombone@light"
+  },
+  {
+   "loc": "plaza",
+   "time": "day",
+   "weather": "sunny",
+   "extras": 6,
+   "line": "The mayor declared an idea *emergency*.",
+   "cam": "low mayor 20 rise shake",
+   "actors": [
+    "mayor 0,0 f0 angry/determined",
+    "sheriff -3,0 f25 /suspicious",
+    "milo 3,-1 f-25 /nervous",
+    "max 3,1 f-25 /shy"
+   ],
+   "overlay": [
+    "red",
+    "speedlines",
+    {
+     "type": "text",
+     "text": "IDEA EMERGENCY",
+     "at": "w:emergency",
+     "until": 2.4,
+     "y": 0.16,
+     "size": 0.07,
+     "color": "#FF5252"
+    }
+   ],
+   "fx": "coins:mayor:burst@emergency exclaim:sheriff",
+   "sfx": "dun_dun_dun@emergency crowd_gasp@emergency*0.6"
+  },
+  {
+   "loc": "space_tower",
+   "time": "day",
+   "weather": "sunny",
+   "extras": 5,
+   "line": "Every inventor in town started *shouting* ideas.",
+   "cam": "establishing group 10 orbit",
+   "actors": [
+    "milo -2,0 f20 talk/confident",
+    "zoe 0,0 f0 /nervous",
+    "builder 2,0 f-20 point/determined",
+    "mayor 4,-2 f-25 /furious"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -4,
+      -1
+     ],
+     "y": 7.0,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "pop": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.7,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.35
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.9,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.6
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      0
+     ],
+     "y": 6.7,
+     "color": "#FFA33D",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.85
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      4,
+      -2
+     ],
+     "y": 8.0,
+     "color": "#B58CFF",
+     "scale": 0.7,
+     "pop": true,
+     "from": 1.1
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 9.4,
+     "color": "#5BD6FF",
+     "scale": 0.65,
+     "pop": true,
+     "from": 1.35
+    }
+   ],
+   "fx": "sparkles:builder:burst@shouting stars:milo:rise@shouting",
+   "sfx": "riser@shouting whoosh@shouting*0.4"
+  },
+  {
+   "line": "Bulbs stacked up into a *tower*.",
+   "cam": "wide group 0 rise",
+   "actors": [
+    "milo -2,0 f20 /awe",
+    "zoe 2,0 f-20 /starstruck"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      -2
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.85,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      -2
+     ],
+     "y": 7.7,
+     "color": "#FF8FC7",
+     "scale": 0.8,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      -2
+     ],
+     "y": 8.8,
+     "color": "#6CFF8A",
+     "scale": 0.8,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      1.5,
+      -2
+     ],
+     "y": 7.7,
+     "color": "#5BD6FF",
+     "scale": 0.8,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      -2
+     ],
+     "y": 6.6,
+     "color": "#B58CFF",
+     "scale": 0.85,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      -2
+     ],
+     "y": 9.8,
+     "color": "#FFA33D",
+     "scale": 0.75,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      -2
+     ],
+     "y": 11.0,
+     "color": "#FFD54D",
+     "scale": 1.1,
+     "bob": true,
+     "spin": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      1.5,
+      -2
+     ],
+     "y": 9.8,
+     "color": "#7CFFC4",
+     "scale": 0.75,
+     "bob": true
+    }
+   ],
+   "fx": "stars:milo:orbit@tower sparkles:zoe:rise@tower",
+   "sfx": "tada@tower riser@tower*0.4"
+  },
+  {
+   "loc": "sky_town",
+   "time": "dusk",
+   "weather": "solar_eclipse",
+   "line": "Then the biggest one went *dark*.",
+   "cam": "extreme group 20 push shake",
+   "shakeAt": "w:dark",
+   "actors": [
+    "milo -1.5,0 f20 shocked/horrified",
+    "zoe 1.5,0 f-20 /panic"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      -2
+     ],
+     "y": 8.0,
+     "color": "#FFD54D",
+     "scale": 2.2,
+     "until": "w:dark"
+    }
+   ],
+   "fx": "puff:milo@dark puff:zoe@dark",
+   "overlay": [
+    "flash",
+    "red",
+    "vignette"
+   ],
+   "sfx": "record_scratch@dark glitch@dark*0.7"
+  },
+  {
+   "loc": "plaza",
+   "time": "night",
+   "weather": "eclipse",
+   "extras": 4,
+   "line": "Every light in town *followed* it.",
+   "cam": "high group 0 pull",
+   "actors": [
+    "milo -2,0 f20 /horrified",
+    "zoe 0,0 f0 /scared",
+    "mayor 2,0 f-20 /panic",
+    "max 4,0 f-25 /worried"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.7,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "until": "w:followed"
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "until": "w:followed"
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      0
+     ],
+     "y": 6.7,
+     "color": "#B58CFF",
+     "scale": 0.7,
+     "until": "w:followed"
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      4,
+      0
+     ],
+     "y": 7.1,
+     "color": "#5BD6FF",
+     "scale": 0.7,
+     "until": "w:followed"
+    }
+   ],
+   "fx": "puff:mayor@followed puff:milo@followed",
+   "overlay": [
+    "flash",
+    "vignette"
+   ],
+   "sfx": "vineboom@followed boom@followed*0.5"
+  },
+  {
+   "loc": "street",
+   "time": "night",
+   "weather": "eclipse",
+   "line": "For the first time ever, it was *night*.",
+   "cam": "wide group 0 static",
+   "actors": [
+    "milo -3,0 f20 /sad",
+    "zoe 0,0 f0 /worried",
+    "max 3,0 f-20 /shy"
+   ],
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "crickets@night*0.5"
+  },
+  {
+   "loc": "plaza",
+   "time": "night",
+   "weather": "eclipse",
+   "extras": 3,
+   "line": "The mayor tried to *buy* him a light.",
+   "cam": "medium mayor 15 push",
+   "actors": [
+    "mayor -1.5,0 f25 /smug +moneystack@buy",
+    "max 1.5,0 f-25 /nervous"
+   ],
+   "props": [
+    {
+     "type": "chest",
+     "at": [
+      3,
+      -2
+     ],
+     "scale": 1.2
+    },
+    {
+     "type": "cash",
+     "at": [
+      -3,
+      -2
+     ],
+     "scale": 1.1
+    }
+   ],
+   "fx": "coins:mayor:burst@buy",
+   "sfx": "ding@buy crowd_gasp@buy*0.4"
+  },
+  {
+   "line": "Coins, cake, a *parade*. Nothing worked.",
+   "cam": "wide group 10 drift",
+   "extras": 5,
+   "actors": [
+    "max 0,0 f0 /pout +cake@parade",
+    "mayor -3,0 f25 shrug/awkward",
+    "zoe 3,0 f-20 facepalm/deadpan"
+   ],
+   "fx": "confetti:mayor:rain@parade",
+   "sfx": "sad_trombone@parade crowd_laugh@parade*0.3"
+  },
+  {
+   "loc": "camp_dock",
+   "time": "night",
+   "weather": "fullmoon",
+   "transition": "wipe",
+   "line": "So I just sat down *beside* him.",
+   "cam": "wide group 0 drift",
+   "actors": [
+    "zoe -1.5,0 f25 sitfloor/content",
+    "max 1.5,0 f-25 sitfloor/shy"
+   ],
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "crickets@beside*0.4"
+  },
+  {
+   "line": "No advice. No machine. Just *quiet*.",
+   "cam": "medium group 20 static",
+   "actors": [
+    "zoe -1.5,0 f25 /content",
+    "max 1.5,0 f-25 /shy"
+   ],
+   "sfx": "crickets@quiet*0.5"
+  },
+  {
+   "line": "I asked what *he* thought about all this.",
+   "cam": "close max 15 push",
+   "actors": [
+    "max 1.5,0 f-15 idle/shy",
+    "zoe -1.5,0 f20 /curious"
+   ],
+   "fx": "question:max",
+   "sfx": "ding@he*0.3"
+  },
+  {
+   "line": "He whispered something I couldn't *hear*.",
+   "cam": "extreme max static",
+   "actors": [
+    "max 1.5,0 f-10 talk/shy",
+    "zoe -1.5,0 f20 /curious"
+   ],
+   "overlay": [
+    "vignette"
+   ],
+   "sfx": "whoosh@hear*0.3"
+  },
+  {
+   "line": "And a tiny light blinked *on*.",
+   "cam": "close max punch z1.3",
+   "actors": [
+    "max 1.5,0 f-15 /awe",
+    "zoe -1.5,0 f20 /starstruck"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true,
+     "color": "#7CFFC4",
+     "scale": 0.8,
+     "pop": true,
+     "from": "w:on"
+    }
+   ],
+   "fx": [
+    {
+     "type": "glow",
+     "on": "max",
+     "at": "w:on",
+     "color": "#7CFFC4"
+    },
+    {
+     "type": "sparkles",
+     "on": "max",
+     "mode": "burst",
+     "at": "w:on",
+     "count": 22
+    }
+   ],
+   "overlay": [
+    "flash"
+   ],
+   "sfx": "ding@on magic@on*0.6 sparkle@on*0.5"
+  },
+  {
+   "line": "It was the *smallest* one I'd ever seen.",
+   "cam": "close max static",
+   "actors": [
+    "max 1.5,0 f-15 /proud",
+    "zoe -1.5,0 f20 /love"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true,
+     "color": "#7CFFC4",
+     "scale": 0.8,
+     "bob": true
+    }
+   ],
+   "fx": "sparkles:zoe:rise@smallest sparkles:max:orbit@smallest glow:max",
+   "sfx": "sparkle@smallest crowd_aww@smallest*0.4"
+  },
+  {
+   "line": "His idea was simply: *stay* a little longer.",
+   "cam": "medium group 20 pull",
+   "actors": [
+    "max 1.5,0 f-25 hug/content",
+    "zoe -1.5,0 f25 hug/love"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true,
+     "color": "#7CFFC4",
+     "scale": 0.8,
+     "bob": true
+    }
+   ],
+   "fx": "hearts:max:rise@stay glow:max@stay glow:max",
+   "sfx": "crowd_aww@stay"
+  },
+  {
+   "loc": "street",
+   "time": "night",
+   "weather": "starry",
+   "transition": "fade",
+   "extras": 4,
+   "line": "One by one, the street lights *remembered*.",
+   "cam": "establishing group 10 push",
+   "actors": [
+    "milo -2,0 f20 /awe",
+    "zoe 0,0 f0 /happy",
+    "max 2,0 f-20 /content"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -2
+     ],
+     "y": 7.4,
+     "color": "#FF8FC7",
+     "scale": 0.65,
+     "pop": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      0
+     ],
+     "y": 6.7,
+     "color": "#6CFF8A",
+     "scale": 0.65,
+     "pop": true,
+     "from": 0.45
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.8
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "pop": true,
+     "from": 1.1
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      -2
+     ],
+     "y": 8.2,
+     "color": "#B58CFF",
+     "scale": 0.65,
+     "pop": true,
+     "from": 1.4
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 9.0,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "pop": true,
+     "from": 1.7
+    }
+   ],
+   "fx": "stars:milo:rise@remembered",
+   "sfx": "ding@remembered tada@remembered*0.4"
+  },
+  {
+   "line": "Pink, green, gold, *blue*, all of them.",
+   "cam": "wide group 15 orbit",
+   "extras": 6,
+   "actors": [
+    "milo -2,0 f20 cheer/laugh",
+    "zoe 0,0 f0 dance/grin",
+    "max 2,0 f-20 clap/happy"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -2
+     ],
+     "y": 7.4,
+     "color": "#FF8FC7",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      0
+     ],
+     "y": 6.7,
+     "color": "#6CFF8A",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      0
+     ],
+     "y": 6.9,
+     "color": "#5BD6FF",
+     "scale": 0.8,
+     "bob": true,
+     "spin": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      -2
+     ],
+     "y": 8.2,
+     "color": "#B58CFF",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 9.0,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -1,
+      -3
+     ],
+     "y": 10.0,
+     "color": "#FFA33D",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "fx": "confetti:zoe:rain@blue sparkles:milo:orbit@blue",
+   "sfx": "tada@blue crowd_laugh@blue*0.4"
+  },
+  {
+   "loc": "plaza",
+   "time": "night",
+   "weather": "starry",
+   "line": "The mayor's hat lit up *first*.",
+   "cam": "medium group 15 push",
+   "actors": [
+    "mayor 0,0 f0 /stunned",
+    "zoe -3,0 f25 point/silly",
+    "milo 3,0 f-25 laugh/happy"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -0.9,
+      0
+     ],
+     "y": 7.2,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "pop": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 8.6,
+     "color": "#B58CFF",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.4
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0.9,
+      0
+     ],
+     "y": 7.6,
+     "color": "#5BD6FF",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.7
+    }
+   ],
+   "fx": "sparkles:mayor:burst@first",
+   "sfx": "pop@first crowd_laugh@first*0.6"
+  },
+  {
+   "loc": "lab_robot",
+   "time": "night",
+   "weather": "clear",
+   "line": "Even the machine made a *pizza* again.",
+   "cam": "medium group 20 push",
+   "actors": [
+    "milo -1.5,0 f20 /silly +pizza@pizza",
+    "max 1.5,0 f-25 laugh/hysterical"
+   ],
+   "props": [
+    {
+     "type": "box",
+     "at": [
+      2,
+      -2
+     ],
+     "scale": 1.3
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      -2
+     ],
+     "y": 4.6,
+     "color": "#5BD6FF",
+     "scale": 1.1,
+     "pop": true
+    }
+   ],
+   "fx": "puff:milo@pizza confetti:max:burst@pizza",
+   "sfx": "pop@pizza crowd_laugh@pizza*0.5"
+  },
+  {
+   "loc": "lantern_plaza",
+   "time": "night",
+   "weather": "aurora",
+   "line": "Max's little light never got *bigger*.",
+   "cam": "wide group 10 drift",
+   "actors": [
+    "max -1.5,0 f20 /content",
+    "zoe 1.5,0 f-20 /love"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true,
+     "color": "#7CFFC4",
+     "scale": 0.5,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      1.5,
+      0
+     ],
+     "y": 6.7,
+     "color": "#FF8FC7",
+     "scale": 0.8,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      4,
+      -2
+     ],
+     "y": 8.0,
+     "color": "#FFD54D",
+     "scale": 0.8,
+     "bob": true
+    }
+   ],
+   "fx": "sparkles:max:orbit@bigger hearts:zoe:rise@bigger",
+   "sfx": "sparkle@bigger"
+  },
+  {
+   "line": "It just kept *finding* people who'd gone dark.",
+   "cam": "low group 20 rise",
+   "extras": 5,
+   "actors": [
+    "max 0,0 f0 point/determined",
+    "milo -3,0 f25 /awe",
+    "zoe 3,0 f-25 /proud",
+    "grandpa 5,-2 f-30 /relieved"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true,
+     "color": "#7CFFC4",
+     "scale": 0.8,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      0
+     ],
+     "y": 6.7,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "pop": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.5
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -2
+     ],
+     "y": 7.2,
+     "color": "#FFE9A8",
+     "scale": 0.7,
+     "pop": true,
+     "from": 0.9
+    }
+   ],
+   "fx": "stars:max:burst@finding glow:max@finding glow:max",
+   "sfx": "magic@finding crowd_aww@finding*0.4"
+  },
+  {
+   "time": "sunset",
+   "weather": "rainbow",
+   "extras": 6,
+   "line": "Now nobody buys lamps. We *share* them.",
+   "cam": "establishing group 10 pull",
+   "actors": [
+    "milo -2,0 f20 wave/happy",
+    "zoe 0,0 f0 /love",
+    "max 2,0 f-20 /happy",
+    "mayor 5,-2 f-30 clap/relieved"
+   ],
+   "props": [
+    {
+     "type": "rainbow",
+     "at": [
+      0,
+      -5
+     ],
+     "scale": 1.4
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -2
+     ],
+     "y": 7.4,
+     "color": "#FF8FC7",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -3,
+      0
+     ],
+     "y": 6.7,
+     "color": "#6CFF8A",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      0
+     ],
+     "y": 6.9,
+     "color": "#7CFFC4",
+     "scale": 0.6,
+     "bob": true,
+     "spin": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      3,
+      -2
+     ],
+     "y": 8.2,
+     "color": "#B58CFF",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 9.0,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "fx": "confetti:milo:rain@share hearts:zoe:rise@share",
+   "sfx": "tada@share crowd_aww@share*0.5"
+  },
+  {
+   "line": "Turns out the brightest idea was to *listen*.",
+   "cam": "medium group 15 push",
+   "actors": [
+    "zoe -1.5,0 f25 hug/love",
+    "max 1.5,0 f-25 hug/happy",
+    "milo 0,-2 f0 /content"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "hand": "max",
+     "left": true,
+     "color": "#7CFFC4",
+     "scale": 0.8,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -1.5,
+      0
+     ],
+     "y": 6.7,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      1.5,
+      0
+     ],
+     "y": 6.7,
+     "color": "#7CFFC4",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      -2
+     ],
+     "y": 7.0,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true
+    }
+   ],
+   "fx": "hearts:max:rise@listen confetti:zoe:rain@listen sparkles:milo:orbit@listen glow:max",
+   "sfx": "crowd_aww@listen tada@listen*0.5"
+  },
+  {
+   "dur": 1.8,
+   "cam": "wide group static",
+   "actors": [
+    "milo -2,0 f20 /content",
+    "zoe 0,0 f0 /love",
+    "max 2,0 f-20 /happy"
+   ],
+   "props": [
+    {
+     "type": "lightbulb",
+     "at": [
+      -5,
+      -2
+     ],
+     "y": 7.4,
+     "color": "#FF8FC7",
+     "scale": 0.65,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      -2,
+      0
+     ],
+     "y": 6.6,
+     "color": "#FFD54D",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      0,
+      0
+     ],
+     "y": 6.8,
+     "color": "#FF8FC7",
+     "scale": 0.7,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      2,
+      0
+     ],
+     "y": 6.9,
+     "color": "#7CFFC4",
+     "scale": 0.6,
+     "bob": true
+    },
+    {
+     "type": "lightbulb",
+     "at": [
+      5,
+      -3
+     ],
+     "y": 9.0,
+     "color": "#5BD6FF",
+     "scale": 0.6,
+     "bob": true
+    }
+   ],
+   "overlay": [
+    {
+     "type": "text",
+     "text": "WHAT WOULD YOUR LIGHT LOOK LIKE?",
+     "at": 0,
+     "until": 1.8,
+     "y": 0.2,
+     "size": 0.05,
+     "color": "#FFE14D"
+    }
+   ],
+   "sfx": "sparkle@0.2*0.4",
+   "fadeOut": true
+  }
+ ]
+}

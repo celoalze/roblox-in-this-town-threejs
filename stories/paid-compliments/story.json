@@ -1,0 +1,949 @@
+{
+ "title": "In This Town, Compliments Pay Cash",
+ "narrator": "narrator",
+ "music": "upbeat",
+ "musicVol": 0.12,
+ "pad": 0.1,
+ "style": {
+  "captionWords": 1,
+  "uppercase": true,
+  "emphColor": "#FFE14D"
+ },
+ "cast": {
+  "milo": {
+   "hair": "rbx:376548738",
+   "shirt": "#4f8fe8",
+   "pants": "#22304f",
+   "shoes": "#f4f4f4",
+   "skin": "#eab892",
+   "details": [
+    "hood",
+    "kangaroo"
+   ],
+   "voice": "narrator"
+  },
+  "zoe": {
+   "hair": "rbx:6501746646",
+   "shirt": "#ff8fc7",
+   "pants": "#3d5fc4",
+   "skin": "#ffd6b4",
+   "sleeves": "short",
+   "details": [
+    "heart"
+   ],
+   "emblem": "#ffffff",
+   "lashes": true,
+   "voice": "girl"
+  },
+  "jay": {
+   "hair": "rbx:1103003368",
+   "shirt": "#2b2b33",
+   "pants": "#4a3a2a",
+   "skin": "#a06e50",
+   "details": [
+    "collar",
+    "pocket"
+   ],
+   "accent": "#ffffff",
+   "voice": "boy2"
+  },
+  "max": {
+   "hair": "rbx:376524487",
+   "shirt": "#3ecf8e",
+   "pants": "#22304f",
+   "skin": "#f5c79a",
+   "sleeves": "short",
+   "details": [
+    "stripes"
+   ],
+   "accent": "#ffffff",
+   "scale": 0.85,
+   "voice": "boy"
+  }
+ },
+ "locations": {
+  "cafe": {
+   "setOpts": {
+    "kit": "modern-restaurant-cafe-01ea4c",
+    "near": "bistro-table",
+    "index": 10,
+    "dx": 1.2
+   }
+  },
+  "home": {
+   "setOpts": {
+    "kit": "neighborhood-pathways-kit-a992cf",
+    "near": "porch-front-cottage",
+    "dz": 11
+   }
+  },
+  "skate": {
+   "setOpts": {
+    "kit": "skatepark-0922a9",
+    "near": "skate-shop",
+    "dz": 5
+   }
+  }
+ },
+ "scenes": [
+  {
+   "loc": "home",
+   "line": "In this town, every compliment pays *cash*.",
+   "title": "IN THIS TOWN...",
+   "emotion": "mysterious",
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": "milo",
+     "anim": "talk",
+     "expr": "happy"
+    },
+    {
+     "id": "milo",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": "zoe",
+     "expr": "happy",
+     "actions": [
+      {
+       "at": "w:cash",
+       "anim": "cheer"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "type": "cash",
+     "on": "milo",
+     "mode": "burst",
+     "at": "w:cash"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cash",
+     "at": "w:cash"
+    }
+   ]
+  },
+  {
+   "line": "Say something nice, and money just *appears*.",
+   "emotion": "excited",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "cheer",
+     "expr": "laugh"
+    }
+   ],
+   "fx": [
+    {
+     "type": "coins",
+     "on": "milo",
+     "mode": "rain",
+     "at": "w:appears"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": "w:appears"
+    }
+   ]
+  },
+  {
+   "line": "The nicer you mean it, the *more* you get.",
+   "emotion": "calm",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      1.5,
+      0
+     ],
+     "face": 0,
+     "expr": "smug"
+    }
+   ]
+  },
+  {
+   "loc": "cafe",
+   "line": "Jay told a lady her hat was cute. Five *bucks*.",
+   "emotion": "funny",
+   "shot": "medium",
+   "camera": {
+    "target": "jay",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": 0,
+     "anim": "talk",
+     "expr": "happy"
+    }
+   ],
+   "fx": [
+    {
+     "type": "cash",
+     "on": "jay",
+     "mode": "burst",
+     "at": "w:bucks"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cash",
+     "at": "w:bucks"
+    }
+   ]
+  },
+  {
+   "line": "So I had a brilliant *idea*.",
+   "emotion": "excited",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 15
+   },
+   "punch": true,
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "think",
+     "expr": "smug"
+    }
+   ],
+   "fx": [
+    {
+     "type": "sparkles",
+     "on": "milo",
+     "mode": "burst",
+     "at": "w:idea"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": "w:idea"
+    }
+   ]
+  },
+  {
+   "line": "Compliment *everyone*. All day. Get rich.",
+   "emotion": "excited",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "anim": "dab",
+     "expr": "grin"
+    }
+   ]
+  },
+  {
+   "line": "Nice shoes, Jay!",
+   "speaker": "milo",
+   "emotion": "happy",
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": "jay",
+     "anim": "point",
+     "expr": "grin"
+    },
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": "milo",
+     "expr": "neutral"
+    }
+   ]
+  },
+  {
+   "line": "One *cent*.",
+   "emotion": "funny",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": 0,
+     "expr": "shocked"
+    }
+   ],
+   "props": [
+    {
+     "type": "coin",
+     "hand": "milo",
+     "pop": true
+    }
+   ],
+   "sfx": [
+    {
+     "name": "sad_trombone",
+     "at": "w:cent"
+    }
+   ]
+  },
+  {
+   "line": "Love your apron!",
+   "speaker": "milo",
+   "emotion": "happy",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -1.5,
+      0
+     ],
+     "face": "jay",
+     "anim": "wave",
+     "expr": "grin"
+    },
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": "milo",
+     "expr": "smug"
+    }
+   ]
+  },
+  {
+   "line": "*Nothing*.",
+   "emotion": "funny",
+   "shot": "close",
+   "camera": {
+    "target": "jay",
+    "angle": -25
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": -60,
+     "anim": "shrug",
+     "expr": "smug"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crickets",
+     "at": 0.1,
+     "vol": 0.6
+    }
+   ]
+  },
+  {
+   "line": "Dude, it only works if you *mean* it.",
+   "speaker": "jay",
+   "emotion": "funny",
+   "shot": "close",
+   "camera": {
+    "target": "jay",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "jay",
+     "at": [
+      2,
+      -1
+     ],
+     "face": -60,
+     "anim": "talk",
+     "expr": "smug"
+    }
+   ]
+  },
+  {
+   "loc": "skate",
+   "line": "I didn't listen. I went to the *skatepark*.",
+   "emotion": "funny",
+   "shot": "wide",
+   "camera": {
+    "target": "milo",
+    "move": "pan",
+    "angle": 70
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -6,
+      2
+     ],
+     "to": [
+      0,
+      0
+     ],
+     "anim": "walk",
+     "after": "idle",
+     "expr": "confident"
+    }
+   ]
+  },
+  {
+   "line": "Cool board! Sick hair! Great *jacket*!",
+   "speaker": "milo",
+   "emotion": "excited",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "point",
+     "expr": "grin"
+    }
+   ]
+  },
+  {
+   "line": "Total earnings: three *cents*.",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": -10
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "sitsad",
+     "expr": "sad"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "sad_trombone",
+     "at": "w:cents"
+    }
+   ]
+  },
+  {
+   "line": "Then I saw Max. Alone. Trying the big *ramp*.",
+   "emotion": "calm",
+   "shot": "full",
+   "camera": {
+    "target": "max",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": 200,
+     "anim": "idle",
+     "expr": "nervous"
+    }
+   ]
+  },
+  {
+   "line": "He fell. Again. And *again*.",
+   "emotion": "sad",
+   "shot": "medium",
+   "camera": {
+    "target": "max",
+    "angle": -10
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": 30,
+     "anim": "fall",
+     "expr": "ko"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "thud",
+     "at": "w:fell"
+    },
+    {
+     "name": "thud",
+     "at": "w:again#2"
+    }
+   ]
+  },
+  {
+   "line": "Everyone *laughed*.",
+   "emotion": "sad",
+   "shot": "close",
+   "camera": {
+    "target": "max",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": 0,
+     "anim": "sitfloor",
+     "expr": "cry"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd_laugh",
+     "at": "w:laughed",
+     "vol": 0.5
+    }
+   ]
+  },
+  {
+   "line": "I walked over. I wasn't thinking about money *anymore*.",
+   "emotion": "calm",
+   "shot": "full",
+   "camera": {
+    "target": "group",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      -2,
+      0
+     ],
+     "to": [
+      2.2,
+      -2.2
+     ],
+     "face": "max",
+     "expr": "worried"
+    },
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": "milo",
+     "anim": "sitfloor",
+     "expr": "sad"
+    }
+   ]
+  },
+  {
+   "line": "Hey. Nobody else even tried that ramp.",
+   "speaker": "milo",
+   "emotion": "calm",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 30
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      2.2,
+      -2.2
+     ],
+     "face": 60,
+     "anim": "talk",
+     "expr": "content"
+    }
+   ]
+  },
+  {
+   "line": "You're the *bravest* kid here.",
+   "speaker": "milo",
+   "emotion": "happy",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      2.2,
+      -2.2
+     ],
+     "face": 60,
+     "anim": "idle",
+     "expr": "happy"
+    }
+   ]
+  },
+  {
+   "line": "Max smiled. For real.",
+   "emotion": "happy",
+   "shot": "close",
+   "camera": {
+    "target": "max",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": -60,
+     "anim": "sitfloor",
+     "expr": "happy"
+    }
+   ]
+  },
+  {
+   "line": "And then the sky went *crazy*.",
+   "emotion": "excited",
+   "punch": true,
+   "shot": "wide",
+   "camera": {
+    "target": "group",
+    "angle": 10,
+    "move": "rise"
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      2.2,
+      -2.2
+     ],
+     "face": "max",
+     "anim": "shocked",
+     "expr": "shocked"
+    },
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": "milo",
+     "anim": "cheer",
+     "expr": "laugh"
+    }
+   ],
+   "fx": [
+    {
+     "type": "cash",
+     "mode": "rain",
+     "pos": [
+      3,
+      12,
+      -2
+     ],
+     "count": 120,
+     "at": "w:crazy"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tada",
+     "at": "w:crazy"
+    }
+   ]
+  },
+  {
+   "line": "Ten thousand *dollars*.",
+   "emotion": "shocked",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 0,
+    "zoom": 0.85
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      2.2,
+      -2.2
+     ],
+     "face": 0,
+     "anim": "shocked",
+     "expr": "shocked"
+    }
+   ],
+   "fx": [
+    {
+     "type": "cash",
+     "on": "milo",
+     "mode": "rain",
+     "count": 80
+    }
+   ]
+  },
+  {
+   "line": "One real compliment beat a hundred *fake* ones.",
+   "emotion": "calm",
+   "shot": "medium",
+   "camera": {
+    "target": "group",
+    "angle": 15,
+    "move": "orbit"
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      2.2,
+      -2.2
+     ],
+     "face": "max",
+     "anim": "laugh",
+     "expr": "laugh"
+    },
+    {
+     "id": "max",
+     "at": [
+      4,
+      -3
+     ],
+     "face": "milo",
+     "anim": "dance",
+     "expr": "laugh"
+    }
+   ]
+  },
+  {
+   "loc": "home",
+   "time": "dusk",
+   "line": "That night, Zoe called.",
+   "emotion": "mysterious",
+   "shot": "medium",
+   "camera": {
+    "target": "milo",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "neutral"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "line": "Milo. Someone in town just got paid a *million*.",
+   "speaker": "zoe",
+   "emotion": "scared",
+   "shot": "close",
+   "camera": {
+    "target": "zoe",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "scared"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "zoe"
+    }
+   ]
+  },
+  {
+   "line": "For a compliment about *you*.",
+   "speaker": "zoe",
+   "emotion": "whisper",
+   "punch": true,
+   "shot": "extreme",
+   "camera": {
+    "target": "zoe",
+    "angle": 0
+   },
+   "actors": [
+    {
+     "id": "zoe",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "shocked"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "zoe"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "dun_dun_dun",
+     "at": "w:you"
+    }
+   ]
+  },
+  {
+   "line": "Who in this town means it *that* much?",
+   "emotion": "mysterious",
+   "shot": "close",
+   "camera": {
+    "target": "milo",
+    "angle": 0
+   },
+   "fadeOut": true,
+   "actors": [
+    {
+     "id": "milo",
+     "at": [
+      0,
+      0
+     ],
+     "face": 0,
+     "anim": "phone",
+     "expr": "worried"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "milo"
+    }
+   ],
+   "overlay": [
+    "vignette"
+   ]
+  }
+ ],
+ "dialogue": true,
+ "genre": "in_this_town",
+ "publish": {
+  "title": "In This Town, Compliments Pay Cash #shorts",
+  "description": "Every kind word pays real cash, but only if you mean it. Would you earn a fortune or end up broke?",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "in this town",
+   "roblox shorts",
+   "storytime",
+   "kindness",
+   "money"
+  ],
+  "caption": "In this town, compliments pay cash \ud83d\udcb5 but only if you mean them"
+ }
+}

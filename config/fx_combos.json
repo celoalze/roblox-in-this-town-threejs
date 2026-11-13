@@ -1,0 +1,260 @@
+{
+ "_doc": "Composite effects. A story fx whose type is a key here expands into its parts (positions are offsets from the fx `pos`, `at` offsets from the fx `at`, scales multiply the fx `scale`). `sfx` plays automatically at the fx time.",
+ "impact_big": {
+  "sfx": [
+   [
+    "boom",
+    0,
+    1
+   ],
+   [
+    "thud",
+    0.05,
+    0.9
+   ]
+  ],
+  "parts": [
+   {
+    "type": "slam",
+    "off": [
+     0,
+     0,
+     0
+    ],
+    "scale": 1,
+    "seed": 4
+   },
+   {
+    "type": "shockwave_ring",
+    "off": [
+     0,
+     0.3,
+     -10
+    ],
+    "scale": 1.4
+   },
+   {
+    "type": "dust_cloud",
+    "off": [
+     -6,
+     0,
+     0
+    ],
+    "scale": 0.7,
+    "seed": 2
+   },
+   {
+    "type": "dust_cloud",
+    "off": [
+     6,
+     0,
+     0
+    ],
+    "scale": 0.7,
+    "seed": 3
+   },
+   {
+    "type": "smoke_plume",
+    "off": [
+     -6,
+     0,
+     -2
+    ],
+    "scale": 0.5,
+    "dt": 0.1
+   },
+   {
+    "type": "smoke_plume",
+    "off": [
+     6,
+     0,
+     -2
+    ],
+    "scale": 0.5,
+    "dt": 0.1
+   },
+   {
+    "type": "debris",
+    "off": [
+     0,
+     1,
+     2
+    ],
+    "scale": 1.1
+   },
+   {
+    "type": "crack",
+    "off": [
+     0,
+     0.05,
+     0
+    ],
+    "scale": 1.2
+   },
+   {
+    "type": "dustwave",
+    "off": [
+     0,
+     0,
+     0
+    ],
+    "scale": 0.8
+   }
+  ]
+ },
+ "impact_small": {
+  "sfx": [
+   [
+    "thud",
+    0,
+    0.8
+   ]
+  ],
+  "parts": [
+   {
+    "type": "dust_cloud",
+    "off": [
+     0,
+     0,
+     0
+    ],
+    "scale": 1,
+    "seed": 1
+   },
+   {
+    "type": "debris",
+    "off": [
+     0,
+     0.5,
+     0
+    ],
+    "scale": 0.5
+   },
+   {
+    "type": "impact_hit",
+    "off": [
+     0,
+     2,
+     0
+    ],
+    "scale": 0.6
+   }
+  ]
+ },
+ "blast": {
+  "sfx": [
+   [
+    "boom",
+    0,
+    1
+   ]
+  ],
+  "parts": [
+   {
+    "type": "explosion",
+    "off": [
+     0,
+     3,
+     0
+    ],
+    "scale": 1
+   },
+   {
+    "type": "shockwave_ring",
+    "off": [
+     0,
+     0.3,
+     0
+    ],
+    "scale": 1
+   },
+   {
+    "type": "debris",
+    "off": [
+     0,
+     1,
+     0
+    ],
+    "scale": 1
+   },
+   {
+    "type": "smoke_plume",
+    "off": [
+     0,
+     0,
+     0
+    ],
+    "scale": 0.8,
+    "dt": 0.4
+   }
+  ]
+ },
+ "magic_cast": {
+  "sfx": [
+   [
+    "magic",
+    0,
+    0.9
+   ]
+  ],
+  "parts": [
+   {
+    "type": "magic_burst",
+    "off": [
+     0,
+     3,
+     0
+    ],
+    "scale": 1
+   },
+   {
+    "type": "glow_orb",
+    "off": [
+     0,
+     3,
+     0
+    ],
+    "scale": 0.6
+   }
+  ]
+ },
+ "celebrate": {
+  "sfx": [
+   [
+    "tada",
+    0,
+    0.8
+   ]
+  ],
+  "parts": [
+   {
+    "type": "confetti_cannon",
+    "off": [
+     -4,
+     0,
+     0
+    ],
+    "scale": 1
+   },
+   {
+    "type": "confetti_cannon",
+    "off": [
+     4,
+     0,
+     0
+    ],
+    "scale": 1,
+    "seed": 2
+   },
+   {
+    "type": "fireworks",
+    "off": [
+     0,
+     0,
+     -20
+    ],
+    "scale": 1.2
+   }
+  ]
+ }
+}

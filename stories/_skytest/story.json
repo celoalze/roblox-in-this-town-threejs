@@ -1,0 +1,10 @@
+{
+ "title": "sky test", "genre": "what_if", "cast": ["jay", "milo"], "music": "none",
+ "style": {"bloom": 0.3, "saturation": 0.08},
+ "locations": {"sky_norays": {"set": "skyrealm", "setOpts": {"rays": false}}},
+ "publish": {"title": "sky test #shorts", "description": "x", "tags": ["a","b","c","d","e"]},
+ "scenes": [
+  {"loc": "sky", "weather": "pastel_noon", "dur": 1.5, "cam": "wide jay pan", "actors": ["jay -7,0 y0 f60 surf/whee to:7,-1 sp6", "milo -4,-6 /laugh"], "props": ["cloud 0,0 under:jay y0.1 s1.3"]},
+  {"loc": "sky_norays", "weather": "pastel_noon", "dur": 1.5, "cam": "wide jay pan", "actors": ["jay -7,0 y0 f60 surf/whee to:7,-1 sp6", "milo -4,-6 /laugh"], "props": ["cloud 0,0 under:jay y0.1 s1.3"]}
+ ]
+}

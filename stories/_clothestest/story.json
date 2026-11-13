@@ -1,0 +1,230 @@
+{
+ "title": "roblox clothes test",
+ "music": "none",
+ "cast": [
+  {
+   "o0": {
+    "like": "milo",
+    "hair": "rbx:sleek",
+    "hairColor": "#7a4a21",
+    "shirt": "rbx:denimhoodie",
+    "pants": "rbx:darkgreenjeans"
+   }
+  },
+  {
+   "o1": {
+    "like": "zoe",
+    "hair": "rbx:wavy",
+    "hairColor": "#1a1a1a",
+    "shirt": "rbx:motorcycle",
+    "pants": "rbx:beautifuljeans"
+   }
+  },
+  {
+   "o2": {
+    "like": "milo",
+    "hair": "rbx:surfer",
+    "hairColor": "#d9b36b",
+    "shirt": "rbx:robloxjacket",
+    "pants": "rbx:blackjeanswhiteshoes"
+   }
+  },
+  {
+   "o3": {
+    "like": "zoe",
+    "hair": "rbx:ponytail",
+    "hairColor": "#a8432a",
+    "shirt": "rbx:greystriped",
+    "pants": "rbx:rippedskater"
+   }
+  },
+  {
+   "o4": {
+    "like": "milo",
+    "hair": "rbx:fade",
+    "hairColor": "#7a4a21",
+    "shirt": "rbx:pastelstarburst",
+    "pants": "rbx:jeanshorts"
+   }
+  },
+  {
+   "o5": {
+    "like": "zoe",
+    "hair": "rbx:braids",
+    "hairColor": "#1a1a1a",
+    "shirt": "rbx:simplepattern",
+    "pants": "rbx:blackjeanssneakers"
+   }
+  },
+  {
+   "o6": {
+    "like": "milo",
+    "hair": "rbx:curls",
+    "hairColor": "#d9b36b",
+    "shirt": "rbx:greenjersey",
+    "pants": "rbx:blackjeans"
+   }
+  },
+  {
+   "o7": {
+    "like": "zoe",
+    "hair": "rbx:bangs",
+    "hairColor": "#a8432a",
+    "shirt": "rbx:blueplaid",
+    "pants": "rbx:jeanshortswhiteshoes"
+   }
+  },
+  {
+   "o8": {
+    "like": "milo",
+    "hair": "rbx:dreads",
+    "hairColor": "#7a4a21",
+    "shirt": "rbx:teal",
+    "pants": "rbx:darkgreenjeans"
+   }
+  },
+  {
+   "o9": {
+    "like": "zoe",
+    "hair": "rbx:middlepart",
+    "hairColor": "#1a1a1a",
+    "shirt": "rbx:pizza",
+    "pants": "rbx:beautifuljeans"
+   }
+  },
+  {
+   "o10": {
+    "like": "milo",
+    "hair": "rbx:topknot",
+    "hairColor": "#d9b36b",
+    "shirt": "rbx:guitartee",
+    "pants": "rbx:blackjeanswhiteshoes"
+   }
+  },
+  {
+   "o11": {
+    "like": "zoe",
+    "hair": "rbx:curlyafro",
+    "hairColor": "#a8432a",
+    "shirt": "rbx:favpizza",
+    "pants": "rbx:rippedskater"
+   }
+  },
+  {
+   "mix": {
+    "like": "milo",
+    "shirt": "rbx:pizza",
+    "wear": [
+     "rcap",
+     "aviators",
+     "dogpack"
+    ]
+   }
+  },
+  {
+   "mix2": {
+    "like": "zoe",
+    "pants": "rbx:rippedskater",
+    "wear": [
+     "jadenecklace"
+    ]
+   }
+  }
+ ],
+ "publish": {
+  "title": "x",
+  "description": "x",
+  "tags": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ },
+ "scenes": [
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "denimhoodie / motorcycle / robloxjacket",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "o0 -3,0 f25",
+    "o1 0,0 f0 wave",
+    "o2 3,0 f-25"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "greystriped / pastelstarburst / simplepattern",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "o3 -3,0 f25",
+    "o4 0,0 f0 wave",
+    "o5 3,0 f-25"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "greenjersey / blueplaid / teal",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "o6 -3,0 f25",
+    "o7 0,0 f0 wave",
+    "o8 3,0 f-25"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "pizza / guitartee / favpizza",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "o9 -3,0 f25",
+    "o10 0,0 f0 wave",
+    "o11 3,0 f-25"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "back / side / walk",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "o0 -3,0 f180",
+    "o2 0,0 f90 cheer",
+    "o4 3,0 f-140"
+   ]
+  },
+  {
+   "set": "studio",
+   "dur": 1.5,
+   "title": "shirt only + accessories / pants only",
+   "cam": "full group 0 static",
+   "camera": {
+    "dof": 0
+   },
+   "actors": [
+    "mix -2,0 f25",
+    "mix2 2,0 f-25 dance"
+   ]
+  }
+ ]
+}

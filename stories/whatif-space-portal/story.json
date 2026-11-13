@@ -1,0 +1,1114 @@
+{
+  "title": "What If Your Science Project Opened A Space Portal?",
+  "genre": "what_if",
+  "narrator": "narrator",
+  "music": "upbeat",
+  "musicVol": 0.14,
+  "pad": 0.1,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "style": {
+    "captionWords": 1,
+    "captionY": 0.7,
+    "captionSize": 0.13,
+    "uppercase": true,
+    "emphColor": "#FFE14D",
+    "bloom": 0.35,
+    "autoWhoosh": true,
+    "saturation": 0.14,
+    "ao": false
+  },
+  "cast": {
+    "milo": {
+      "hair": "rbx:376548738",
+      "shirt": "#4f8fe8",
+      "pants": "#22304f",
+      "shoes": "#f4f4f4",
+      "skin": "#eab892",
+      "details": [
+        "hood",
+        "kangaroo"
+      ]
+    },
+    "zoe": {
+      "hair": "rbx:6501746646",
+      "shirt": "#ff8fc7",
+      "pants": "#3d5fc4",
+      "skin": "#ffd6b4",
+      "sleeves": "short",
+      "details": [
+        "heart"
+      ],
+      "emblem": "#ffffff",
+      "lashes": true
+    },
+    "jay": {
+      "hair": "rbx:1103003368",
+      "shirt": "#2b2b33",
+      "pants": "#4a3a2a",
+      "skin": "#a06e50",
+      "details": [
+        "collar",
+        "pocket"
+      ],
+      "accent": "#ffffff"
+    },
+    "mr_henderson": {
+      "hair": "rbx:376526888",
+      "shirt": "#3a4a5b",
+      "pants": "#1a1e24",
+      "shoes": "#2b2b33",
+      "skin": "#f5c79a",
+      "details": [
+        "tie",
+        "collar"
+      ],
+      "tie": "#d64545"
+    }
+  },
+  "locations": {
+    "home_porch": {
+      "setOpts": {
+        "kit": "neighborhood-pathways-kit-a992cf",
+        "near": "porch-front-cottage",
+        "dz": 11
+      }
+    },
+    "home": {
+      "setOpts": {
+        "kit": "neighborhood-pathways-kit-a992cf",
+        "near": "curbside-mailbox",
+        "dz": 4
+      }
+    },
+    "lab_bench": {
+      "setOpts": {
+        "kit": "research-lab-9b9b5d",
+        "near": "write-up-desk",
+        "dz": 2
+      }
+    },
+    "lab_robot": {
+      "setOpts": {
+        "kit": "research-lab-9b9b5d",
+        "near": "liquid-handling-robot",
+        "dx": -2,
+        "dz": 2
+      }
+    },
+    "lab_optics": {
+      "setOpts": {
+        "kit": "research-lab-9b9b5d",
+        "near": "optics-table",
+        "dz": 2
+      }
+    },
+    "lab_airlock": {
+      "setOpts": {
+        "kit": "research-lab-9b9b5d",
+        "near": "air-shower-airlock",
+        "dx": -2,
+        "dz": 2
+      }
+    },
+    "space_dome": {
+      "setOpts": {
+        "kit": "space-base-kit-cf65de",
+        "near": "bldg-hab-dome",
+        "dz": 12
+      }
+    },
+    "space_dish": {
+      "setOpts": {
+        "kit": "space-base-kit-cf65de",
+        "near": "bldg-observation-tower",
+        "dz": 14
+      }
+    },
+    "space_crystal": {
+      "setOpts": {
+        "kit": "space-base-kit-cf65de",
+        "near": "prop-crystal",
+        "dz": 4
+      }
+    },
+    "space_pad": {
+      "setOpts": {
+        "kit": "space-base-kit-cf65de",
+        "near": "landing-pad",
+        "dz": 8
+      }
+    }
+  },
+  "publish": {
+    "title": "What If Your Science Project Opened A Space Portal? #shorts",
+    "description": "Milo modified a kitchen microwave for extra credit and accidentally warped his friends to a lunar research base. What would you do if you were stranded on the moon?",
+    "tags": [
+      "what if",
+      "roblox story",
+      "space base",
+      "science project",
+      "roblox shorts",
+      "funny roblox",
+      "storytime"
+    ],
+    "caption": "What if your science project opened a space portal? 🚀🌌"
+  },
+  "scenes": [
+    {
+      "line": "What if your science fair project opened a real *portal*?",
+      "loc": "home_porch",
+      "shot": "wide",
+      "title": "WHAT IF...",
+      "camera": {
+        "target": "milo",
+        "angle": 15,
+        "move": "push"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "nervous"
+        }
+      ]
+    },
+    {
+      "line": "I only wanted an extra credit grade from Mr. *Henderson*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "think",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "line": "So I modified an old microwave with spare *batteries*.",
+      "shot": "close",
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "talk",
+          "expr": "grin"
+        }
+      ],
+      "props": [
+        {
+          "type": "box",
+          "at": [0.6, -0.4],
+          "scale": 0.6,
+          "color": "#888888"
+        }
+      ]
+    },
+    {
+      "line": "The moment I flipped the switch, the air began to *sparkle*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "surprised"
+        }
+      ],
+      "fx": [
+        {
+          "type": "sparkles",
+          "on": "milo",
+          "at": "w:sparkle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "sparkle",
+          "at": "w:sparkle"
+        }
+      ]
+    },
+    {
+      "line": "Suddenly, my entire porch warped into a secret research *lab*.",
+      "loc": "lab_bench",
+      "shot": "wide",
+      "punch": true,
+      "transition": "white",
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:lab"
+        }
+      ]
+    },
+    {
+      "line": "Massive robotic arms were spinning chemical vials right beside *me*.",
+      "loc": "lab_robot",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "move": "push"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "scared",
+          "expr": "surprised"
+        }
+      ]
+    },
+    {
+      "line": "Zoe rushed over in protective goggles, completely *panicking*.",
+      "loc": "lab_bench",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": 45,
+          "anim": "idle",
+          "expr": "nervous"
+        },
+        {
+          "id": "zoe",
+          "at": [3, 0],
+          "to": [1.2, 0],
+          "face": -45,
+          "anim": "run",
+          "after": "talk",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": "w:panicking"
+        }
+      ]
+    },
+    {
+      "line": "She yelled that I had triggered a high-voltage containment *breach*.",
+      "shot": "medium",
+      "camera": {
+        "target": "zoe",
+        "angle": -15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": 45,
+          "anim": "facepalm",
+          "expr": "nervous"
+        },
+        {
+          "id": "zoe",
+          "at": [1.2, 0],
+          "face": -45,
+          "anim": "angry",
+          "expr": "angry"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "buzzer",
+          "at": "w:breach"
+        }
+      ]
+    },
+    {
+      "line": "I stumbled backward and accidentally bumped into the laser *table*.",
+      "loc": "lab_optics",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "fall",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:table"
+        }
+      ]
+    },
+    {
+      "line": "My elbow slammed the master override button with a loud *click*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "shocked"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "pop",
+          "at": "w:click"
+        }
+      ]
+    },
+    {
+      "line": "A wave of blinding purple light engulfed the entire *facility*.",
+      "shot": "wide",
+      "overlay": [
+        "flash"
+      ],
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "scared",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "riser",
+          "at": "w:facility"
+        }
+      ]
+    },
+    {
+      "line": "When the dust cleared, the ceiling had turned into outer *space*.",
+      "loc": "space_dome",
+      "shot": "establishing",
+      "transition": "wipe",
+      "camera": {
+        "target": "milo",
+        "move": "pull"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "surprised"
+        },
+        {
+          "id": "zoe",
+          "at": [1, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "surprised"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "dun_dun_dun",
+          "at": "w:space"
+        }
+      ]
+    },
+    {
+      "line": "We were standing outside a lunar base surrounded by dark *craters*.",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "scared"
+        },
+        {
+          "id": "zoe",
+          "at": [1.2, 0],
+          "face": "camera",
+          "anim": "idle",
+          "expr": "scared"
+        }
+      ]
+    },
+    {
+      "line": "Jay was already outside, doing goofy backflips beside a giant *crystal*.",
+      "loc": "space_crystal",
+      "shot": "medium",
+      "camera": {
+        "target": "jay",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "jay",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "dance",
+          "expr": "happy"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "tada",
+          "at": "w:crystal"
+        }
+      ]
+    },
+    {
+      "line": "Zero gravity took over, and my boots instantly left the *ground*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "move": "rise"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "float",
+          "expr": "surprised"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": "w:ground"
+        }
+      ]
+    },
+    {
+      "line": "For two whole minutes, it felt like the greatest field *trip*.",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "move": "orbit"
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": "camera",
+          "anim": "cheer",
+          "expr": "happy"
+        },
+        {
+          "id": "jay",
+          "at": [1.2, 0],
+          "face": "camera",
+          "anim": "jump",
+          "expr": "grin"
+        }
+      ]
+    },
+    {
+      "line": "We vaulted clean over high-tech solar panels and satellite *dishes*.",
+      "loc": "space_dish",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "angle": 0
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.4, 0],
+          "face": 30,
+          "anim": "jump",
+          "expr": "happy"
+        },
+        {
+          "id": "jay",
+          "at": [1.4, 0],
+          "face": -30,
+          "anim": "cheer",
+          "expr": "grin"
+        }
+      ]
+    },
+    {
+      "line": "Zoe even grabbed a glowing alien meteorite chunk to *keep*.",
+      "loc": "space_crystal",
+      "shot": "close",
+      "camera": {
+        "target": "zoe",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "zoe",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "hold",
+          "expr": "grin"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "ding",
+          "at": "w:keep"
+        }
+      ]
+    },
+    {
+      "line": "Then the base warning siren started blaring an emergency *alarm*.",
+      "loc": "space_dome",
+      "shot": "wide",
+      "punch": true,
+      "overlay": [
+        "red"
+      ],
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-2.8, 0],
+          "face": 20,
+          "anim": "shocked",
+          "expr": "scared"
+        },
+        {
+          "id": "zoe",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "shocked"
+        },
+        {
+          "id": "jay",
+          "at": [2.8, 0],
+          "face": -20,
+          "anim": "scared",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "buzzer",
+          "at": "w:alarm"
+        }
+      ]
+    },
+    {
+      "line": "A storm of fast space rocks was hurtling directly toward *us*.",
+      "loc": "space_pad",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "scared",
+          "expr": "scared"
+        }
+      ],
+      "fx": [
+        {
+          "type": "stars",
+          "on": "milo",
+          "mode": "rain",
+          "at": "w:us"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:us"
+        }
+      ]
+    },
+    {
+      "line": "I reached into my hoodie pocket and pulled out the *controller*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "phone",
+          "expr": "nervous"
+        }
+      ]
+    },
+    {
+      "line": "The tiny screen flickered with a terrifying red low *battery*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "shocked",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "glitch",
+          "at": "w:battery"
+        }
+      ]
+    },
+    {
+      "line": "We had exactly one jump left before the signal died *forever*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": 30,
+          "anim": "scared",
+          "expr": "cry"
+        },
+        {
+          "id": "zoe",
+          "at": [1.2, 0],
+          "face": -30,
+          "anim": "angry",
+          "expr": "worried"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": "w:forever"
+        }
+      ]
+    },
+    {
+      "line": "Zoe grabbed my jacket and dragged me toward the open *airlock*.",
+      "loc": "space_dome",
+      "shot": "wide",
+      "camera": {
+        "target": "milo",
+        "move": "pan"
+      },
+      "actors": [
+        {
+          "id": "zoe",
+          "at": [2, -1.5],
+          "to": [-1, -1.5],
+          "face": -90,
+          "anim": "run",
+          "expr": "scared"
+        },
+        {
+          "id": "milo",
+          "at": [0, 1.5],
+          "to": [-2, 1.5],
+          "face": -90,
+          "anim": "run",
+          "expr": "nervous"
+        }
+      ]
+    },
+    {
+      "line": "Jay tripped over a jagged regolith mound and dropped his *helmet*.",
+      "loc": "space_pad",
+      "shot": "medium",
+      "punch": true,
+      "camera": {
+        "target": "jay",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "jay",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "fall",
+          "expr": "ko"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:helmet"
+        }
+      ]
+    },
+    {
+      "line": "I dashed backwards through falling debris to catch his outstretched *arm*.",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-3.5, 0],
+          "to": [-1.5, 0],
+          "face": 90,
+          "anim": "run",
+          "expr": "scared"
+        },
+        {
+          "id": "jay",
+          "at": [1.5, 0],
+          "face": -90,
+          "anim": "sitfloor",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": "w:arm"
+        }
+      ]
+    },
+    {
+      "line": "The airlock pressure doors were slamming shut with thunderous *speed*.",
+      "loc": "lab_airlock",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-1, 0],
+          "face": 20,
+          "anim": "scared",
+          "expr": "scared"
+        },
+        {
+          "id": "zoe",
+          "at": [1, 0],
+          "face": -20,
+          "anim": "scared",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:speed"
+        }
+      ]
+    },
+    {
+      "line": "We tumbled through the chamber together just as sparks began to *fly*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 10
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-0.8, 0],
+          "face": "camera",
+          "anim": "jump",
+          "expr": "scared"
+        },
+        {
+          "id": "jay",
+          "at": [0.8, 0],
+          "face": "camera",
+          "anim": "jump",
+          "expr": "scared"
+        }
+      ],
+      "fx": [
+        {
+          "type": "sparkles",
+          "on": "milo",
+          "at": "w:fly"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "riser",
+          "at": "w:fly"
+        }
+      ]
+    },
+    {
+      "line": "I slammed the home reset toggle with all my remaining *might*.",
+      "shot": "close",
+      "punch": true,
+      "camera": {
+        "target": "milo",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "angry",
+          "expr": "angry"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:might"
+        }
+      ]
+    },
+    {
+      "line": "Space, lab, and earth collided into a roaring purple *vortex*.",
+      "shot": "wide",
+      "overlay": [
+        "flash",
+        "speedlines"
+      ],
+      "camera": {
+        "target": "milo",
+        "angle": 25
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "float",
+          "expr": "scared"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": "w:vortex"
+        }
+      ]
+    },
+    {
+      "line": "We slammed headfirst back onto the wooden planks of my *porch*.",
+      "loc": "home_porch",
+      "shot": "medium",
+      "punch": true,
+      "transition": "white",
+      "camera": {
+        "target": "group",
+        "angle": 5
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [-0.8, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "ko"
+        },
+        {
+          "id": "jay",
+          "at": [1.0, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "ko"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "boom",
+          "at": "w:porch"
+        }
+      ]
+    },
+    {
+      "line": "The modified microwave popped open and hissed a tiny puff of *smoke*.",
+      "shot": "medium",
+      "camera": {
+        "target": "milo",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "milo",
+          "at": [0, 0],
+          "face": "camera",
+          "anim": "sitfloor",
+          "expr": "nervous"
+        }
+      ],
+      "fx": [
+        {
+          "type": "puff",
+          "on": "milo",
+          "at": "w:smoke"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "pop",
+          "at": "w:smoke"
+        }
+      ]
+    },
+    {
+      "line": "Mr. Henderson was standing on the sidewalk with a giant red *pen*.",
+      "loc": "home",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 15
+      },
+      "actors": [
+        {
+          "id": "mr_henderson",
+          "at": [1.8, 0],
+          "face": -45,
+          "anim": "think",
+          "expr": "neutral"
+        },
+        {
+          "id": "milo",
+          "at": [-1.2, 0],
+          "face": 45,
+          "anim": "sitfloor",
+          "expr": "nervous"
+        }
+      ]
+    },
+    {
+      "line": "He stared at Zoe holding a rock that defied the laws of *physics*.",
+      "shot": "medium",
+      "camera": {
+        "target": "group",
+        "angle": 20
+      },
+      "actors": [
+        {
+          "id": "mr_henderson",
+          "at": [2, 0],
+          "face": -45,
+          "anim": "shocked",
+          "expr": "shocked"
+        },
+        {
+          "id": "zoe",
+          "at": [-0.5, 0],
+          "face": 45,
+          "anim": "hold",
+          "expr": "smug"
+        }
+      ]
+    },
+    {
+      "line": "He gave a slow nod, smiled, and marked me with an *A-plus*.",
+      "shot": "wide",
+      "camera": {
+        "target": "group",
+        "move": "pull"
+      },
+      "actors": [
+        {
+          "id": "mr_henderson",
+          "at": [2.6, 0],
+          "face": -45,
+          "anim": "cheer",
+          "expr": "happy"
+        },
+        {
+          "id": "milo",
+          "at": [-2.4, 0],
+          "face": 30,
+          "anim": "cheer",
+          "expr": "happy"
+        },
+        {
+          "id": "zoe",
+          "at": [0.2, 0],
+          "face": -20,
+          "anim": "cheer",
+          "expr": "happy"
+        }
+      ],
+      "fx": [
+        {
+          "type": "confetti",
+          "on": "milo",
+          "at": "w:A-plus"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "tada",
+          "at": "w:A-plus"
+        }
+      ]
+    }
+  ]
+}

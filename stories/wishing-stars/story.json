@@ -1,0 +1,784 @@
+{
+ "title": "In This World, Everyone Is Born With 10 Wishes",
+ "genre": "in_this_world",
+ "cast": [
+  "milo",
+  "dad",
+  "zoe",
+  "jay",
+  "max",
+  "teacher",
+  "grandpa"
+ ],
+ "publish": {
+  "title": "In This World, You Get 10 Wishes... But There's a Catch #shorts",
+  "description": "In this world, everyone is born with ten wishing stars, and Leo is the luckiest kid in town. But his luck has a secret. Who would you give your stars to?",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "in this world",
+   "roblox shorts",
+   "storytime",
+   "emotional",
+   "dad",
+   "wish",
+   "family",
+   "viral"
+  ],
+  "caption": "A wish isn't something you use. It's something you give"
+ },
+ "scenes": [
+  {
+   "beat": "rule",
+   "cam": "wide group 15 push",
+   "actors": [
+    "zoe -2,0 f20 /happy",
+    "jay 2,0 f-20 /grin",
+    "teacher 0,-2 f0 idle/content"
+   ],
+   "line": "In this world, everyone has ten *stars* above their head.",
+   "loc": "plaza",
+   "time": "day",
+   "weather": "sunny",
+   "title": "IN THIS WORLD... EVERYONE HAS 10 WISHES",
+   "extras": 6,
+   "fx": [
+    {
+     "type": "label",
+     "on": "zoe",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    },
+    {
+     "type": "label",
+     "on": "jay",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "sfx": "sparkle@stars"
+  },
+  {
+   "beat": "example",
+   "cam": "medium zoe",
+   "actors": [
+    "zoe point/surprised"
+   ],
+   "line": "Each star is one wish, and every wish *always* comes true.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "zoe",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "sfx": "magic@always"
+  },
+  {
+   "beat": "example",
+   "cam": "close zoe punch",
+   "actors": [
+    "zoe idle/worried"
+   ],
+   "line": "But once you wish, that star burns out *forever*.",
+   "fx": "sparkles:zoe@burns",
+   "sfx": "whoosh@burns"
+  },
+  {
+   "beat": "example",
+   "cam": "wide group",
+   "actors": [
+    "zoe -2,0 f20 idle/curious",
+    "jay 2,0 f-20 /neutral"
+   ],
+   "line": "You can see everyone's stars, but never your *own*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "jay",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "extras": 4
+  },
+  {
+   "beat": "example",
+   "cam": "medium jay",
+   "actors": [
+    "jay cheer/starstruck"
+   ],
+   "line": "Jay once wished for a pizza the size of a *car*.",
+   "props": [
+    "car 3,-3 s0.8"
+   ],
+   "fx": [
+    {
+     "type": "label",
+     "on": "jay",
+     "text": "9 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "sfx": "pop@car"
+  },
+  {
+   "beat": "example",
+   "cam": "medium jay",
+   "actors": [
+    "jay sit/sad"
+   ],
+   "line": "He ate for days. Now he has a *stomachache*.",
+   "sfx": "sad_trombone@stomachache"
+  },
+  {
+   "beat": "example",
+   "cam": "medium grandpa",
+   "actors": [
+    "grandpa -1,0 f10 think/worried"
+   ],
+   "line": "Mr. Hill wished to be young. His *last* star.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "grandpa",
+     "text": "1 STARS",
+     "color": "#FF5A5A"
+    }
+   ]
+  },
+  {
+   "beat": "example",
+   "cam": "close grandpa punch",
+   "actors": [
+    "grandpa shrug/awkward"
+   ],
+   "line": "Poof. Then he lost his *glasses*, with no stars left.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "grandpa",
+     "text": "0 STARS",
+     "color": "#FF5A5A"
+    }
+   ],
+   "sfx": "pop@Poof"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium milo",
+   "actors": [
+    "milo 0,0 f10 cheer/proud"
+   ],
+   "line": "My name is Leo, and everyone calls me *Lucky Ten*.",
+   "loc": "school",
+   "fx": [
+    {
+     "type": "label",
+     "on": "milo",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "sfx": "tada@Lucky"
+  },
+  {
+   "beat": "hero",
+   "cam": "close milo",
+   "actors": [
+    "milo idle/smug"
+   ],
+   "line": "Because I have never used a *single* star.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "milo",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ]
+  },
+  {
+   "beat": "hero",
+   "cam": "medium milo",
+   "actors": [
+    "milo -1.5,0 f20 shrug/smug",
+    "zoe 1.5,0 f-20 /curious"
+   ],
+   "line": "Kids ask how. I just shrug. I never *needed* one."
+  },
+  {
+   "beat": "hero",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 /happy",
+    "dad 1.5,0 f-20 talk/content"
+   ],
+   "line": "Dad says: \"A wish isn't something you use. It's something you *give*.\"",
+   "loc": "bedroom",
+   "time": "night",
+   "sfx": "ding@give"
+  },
+  {
+   "beat": "hero",
+   "cam": "close dad",
+   "actors": [
+    "dad /content"
+   ],
+   "line": "I never understood it. I loved my *dad*."
+  },
+  {
+   "beat": "example",
+   "cam": "medium milo",
+   "actors": [
+    "milo 0,0 f0 sit/surprised"
+   ],
+   "line": "When I broke my arm, it healed in a *day*.",
+   "loc": "livingroom",
+   "time": "day",
+   "sfx": "magic@day"
+  },
+  {
+   "beat": "example",
+   "cam": "wide milo",
+   "actors": [
+    "milo 0,0 f0 hug/love"
+   ],
+   "line": "My dog came home from the storm *dry*.",
+   "loc": "yard",
+   "weather": "storm",
+   "sfx": "ding@dry"
+  },
+  {
+   "beat": "example",
+   "cam": "medium teacher",
+   "actors": [
+    "teacher 0,0 f0 shrug/awkward"
+   ],
+   "line": "When I failed a test, the teacher *lost* it.",
+   "loc": "classroom",
+   "weather": "clear",
+   "time": "day"
+  },
+  {
+   "beat": "hero",
+   "cam": "close milo punch",
+   "actors": [
+    "milo think/curious"
+   ],
+   "line": "I called it luck. I didn't know luck had a *price*.",
+   "sfx": "riser@price"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium dad",
+   "actors": [
+    "dad 0,0 f0 idle/nervous"
+   ],
+   "line": "But my dad started wearing a *cap*, pulled low.",
+   "loc": "home",
+   "sfx": "dun_dun_dun@cap"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 /curious",
+    "dad 1.5,0 f-20 sit/neutral"
+   ],
+   "line": "Breakfast, car, even the *garden*.",
+   "loc": "livingroom"
+  },
+  {
+   "beat": "clue",
+   "cam": "wide group",
+   "actors": [
+    "milo -2,0 f20 fall/scared",
+    "dad 2,0 f-20 run/worried"
+   ],
+   "line": "Whenever I got hurt, dad was *already* standing there.",
+   "loc": "park",
+   "sfx": "whoosh@already"
+  },
+  {
+   "beat": "clue",
+   "cam": "close dad",
+   "actors": [
+    "dad tired/content"
+   ],
+   "line": "He always looked tired. \"I'm *fine*, bud.\"",
+   "sfx": "tick@fine"
+  },
+  {
+   "beat": "clue",
+   "cam": "wide milo",
+   "actors": [
+    "milo -2,0 f20 idle/awe",
+    "dad 3,-1 f90 walk/worried to:5,-2"
+   ],
+   "line": "And when shooting stars filled the sky, he went *inside*.",
+   "loc": "yard",
+   "time": "night",
+   "weather": "starry",
+   "sfx": "sparkle@shooting"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium milo",
+   "actors": [
+    "milo think/curious"
+   ],
+   "line": "Everyone's stars were *glowing*.",
+   "loc": "street",
+   "time": "day",
+   "weather": "clear",
+   "extras": 4
+  },
+  {
+   "beat": "clue",
+   "cam": "close dad punch",
+   "actors": [
+    "dad 0,0 f0 idle/nervous"
+   ],
+   "line": "Except dad's, hidden under that *cap*.",
+   "loc": "street"
+  },
+  {
+   "beat": "clue",
+   "cam": "medium zoe",
+   "actors": [
+    "zoe -1,0 f20 idle/worried",
+    "milo 1.5,0 f-20 /curious"
+   ],
+   "line": "I told Zoe. She just stared at the *ground*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "zoe",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ]
+  },
+  {
+   "beat": "clue",
+   "cam": "medium zoe",
+   "actors": [
+    "zoe 0,0 f0 hold/shy +box"
+   ],
+   "line": "Then she gave me her whole *lunch*. The good one."
+  },
+  {
+   "beat": "clue",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 /surprised",
+    "max 1.5,0 f-20 idle/sad +ball"
+   ],
+   "line": "Even Max, my bully, gave back every *toy* he stole.",
+   "loc": "school"
+  },
+  {
+   "beat": "hero",
+   "cam": "close milo",
+   "actors": [
+    "milo scared/scared"
+   ],
+   "line": "I was terrified. Nobody is *nice* for free.",
+   "sfx": "heartbeat@terrified"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium milo",
+   "actors": [
+    "milo -1.5,0 f20 think/determined"
+   ],
+   "line": "So if time was short, I wouldn't waste a *day*.",
+   "loc": "livingroom",
+   "time": "day"
+  },
+  {
+   "beat": "hero",
+   "cam": "close milo",
+   "actors": [
+    "milo idle/grin +book"
+   ],
+   "line": "I made a list, and Dad said yes to *all* of it."
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group",
+   "actors": [
+    "milo -1.5,0 f20 cheer/laugh",
+    "dad 1.5,0 f-20 cheer/laugh"
+   ],
+   "line": "We rode the tallest coaster *twelve* times in a row.",
+   "loc": "park",
+   "time": "sunset",
+   "sfx": "crowd_laugh@twelve*0.5"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group",
+   "actors": [
+    "milo -2,0 f20 point/awe",
+    "dad 2,0 f-20 point/awe"
+   ],
+   "line": "We lit a hundred *fireworks* on the beach.",
+   "loc": "camp",
+   "time": "night",
+   "fx": "confetti:milo@fireworks",
+   "sfx": "boom@fireworks"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 sit/happy",
+    "dad 1.5,0 f-20 sit/laugh"
+   ],
+   "line": "We ate pancakes for dinner on the *roof*.",
+   "loc": "home",
+   "time": "dusk"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group",
+   "actors": [
+    "milo -1.5,0 f20 sit/awe",
+    "dad 1.5,0 f-20 sit/content"
+   ],
+   "line": "On the last night, we rode the Ferris wheel to the *top*.",
+   "loc": "park",
+   "time": "night",
+   "weather": "starry"
+  },
+  {
+   "beat": "hero",
+   "cam": "establishing group push",
+   "actors": [
+    "milo -1.5,0 f20 sit/awe",
+    "dad 1.5,0 f-20 sit/content"
+   ],
+   "line": "The town glowed below us like tiny *stars*.",
+   "extras": 6,
+   "sfx": "sparkle@stars"
+  },
+  {
+   "beat": "hero",
+   "cam": "medium dad",
+   "actors": [
+    "dad 0,0 f0 laugh/laugh"
+   ],
+   "line": "Dad was laughing when a huge gust of *wind* hit.",
+   "weather": "windy",
+   "sfx": "whoosh@wind"
+  },
+  {
+   "beat": "hero",
+   "cam": "wide group",
+   "actors": [
+    "milo -1.5,0 f20 idle/shocked",
+    "dad 1.5,0 f-20 shocked/shocked"
+   ],
+   "line": "It knocked his cap clean off. I watched it *fall*.",
+   "sfx": "whoosh@fall"
+  },
+  {
+   "beat": "twist",
+   "cam": "low dad punch push",
+   "actors": [
+    "dad 0,0 f0 idle/worried"
+   ],
+   "line": "Then I turned back to my dad, and I *froze*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "dad",
+     "text": "0 STARS",
+     "color": "#FF5A5A"
+    }
+   ],
+   "overlay": "flash vignette",
+   "sfx": "record_scratch@froze"
+  },
+  {
+   "beat": "twist",
+   "cam": "close dad punch",
+   "actors": [
+    "dad idle/teary"
+   ],
+   "line": "Zero stars. He had *spent* every single one.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "dad",
+     "text": "0 STARS",
+     "color": "#FF5A5A"
+    }
+   ],
+   "sfx": "heartbeat"
+  },
+  {
+   "beat": "twist",
+   "cam": "close milo",
+   "actors": [
+    "milo idle/awe"
+   ],
+   "line": "That's when I realized, my stars were never *lucky*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "milo",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ]
+  },
+  {
+   "beat": "twist",
+   "cam": "medium group",
+   "actors": [
+    "dad -1.5,0 f20 idle/sad",
+    "milo 1.5,0 f-20 /shocked"
+   ],
+   "line": "Every time I got hurt, he wished it away *first*.",
+   "loc": "park",
+   "sfx": "sparkle"
+  },
+  {
+   "beat": "twist",
+   "cam": "wide group",
+   "actors": [
+    "milo 0,0 f0 /heartbroken"
+   ],
+   "line": "The whole school knew, and was kind to the kid whose dad was *out*.",
+   "extras": 5,
+   "sfx": "crowd_aww@kind*0.5"
+  },
+  {
+   "beat": "twist",
+   "cam": "close dad",
+   "actors": [
+    "dad /love"
+   ],
+   "line": "He hid it under that cap, so I would never *count*."
+  },
+  {
+   "beat": "twist",
+   "cam": "close dad punch",
+   "actors": [
+    "dad cry/teary"
+   ],
+   "line": "\"I didn't want you counting, bud.\" His *eyes* were full.",
+   "sfx": "sad_trombone*0.5"
+  },
+  {
+   "beat": "choice",
+   "cam": "wide milo",
+   "actors": [
+    "milo 0,0 f0 idle/determined"
+   ],
+   "line": "I had ten stars, and a life of wishes to *make*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "milo",
+     "text": "10 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "time": "night",
+   "sfx": "riser"
+  },
+  {
+   "beat": "choice",
+   "cam": "medium milo",
+   "actors": [
+    "milo think/awe"
+   ],
+   "line": "I could wish for anything. I looked at *him*."
+  },
+  {
+   "beat": "choice",
+   "cam": "close milo",
+   "actors": [
+    "milo idle/heartbroken"
+   ],
+   "dur": 1.6
+  },
+  {
+   "beat": "choice",
+   "cam": "close milo punch",
+   "actors": [
+    "milo cheer/love"
+   ],
+   "line": "\"I wish my dad and I *shared* our stars.\"",
+   "fx": "sparkles:milo:rise@shared",
+   "sfx": "magic@shared"
+  },
+  {
+   "beat": "choice",
+   "cam": "low dad",
+   "actors": [
+    "dad 0,0 f0 idle/stunned"
+   ],
+   "line": "Five stars floated over and landed above *his*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "dad",
+     "text": "5 STARS",
+     "color": "#FFE14D"
+    },
+    {
+     "type": "stars",
+     "on": "dad",
+     "mode": "burst"
+    }
+   ],
+   "sfx": "tada@landed"
+  },
+  {
+   "beat": "choice",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 hug/love",
+    "dad 1.5,0 f-20 hug/teary"
+   ],
+   "line": "\"Wishing is for you.\" \"Then I wish for *us*, Dad.\"",
+   "sfx": "ding@us"
+  },
+  {
+   "beat": "choice",
+   "cam": "close group",
+   "actors": [
+    "milo hug/love",
+    "dad hug/love"
+   ],
+   "line": "He hugged me so hard the Ferris wheel *shook*.",
+   "shakeAt": "w:shook",
+   "sfx": "sparkle"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "wide group",
+   "actors": [
+    "milo -1.5,0 f20 walk/happy",
+    "dad 1.5,0 f-20 walk/happy"
+   ],
+   "line": "For two days, we wished for nothing *big*.",
+   "loc": "street",
+   "time": "day",
+   "weather": "sunny",
+   "extras": 3
+  },
+  {
+   "beat": "aftermath",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f0 lie/sleepy",
+    "dad 1.5,0 f0 lie/content"
+   ],
+   "line": "We ate pancakes. We fell asleep watching *cartoons*.",
+   "loc": "livingroom"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "close dad",
+   "actors": [
+    "dad /content"
+   ],
+   "line": "He tucked me in twice, just because he *could*.",
+   "loc": "bedroom",
+   "time": "night"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "medium dad",
+   "actors": [
+    "dad idle/surprised"
+   ],
+   "line": "By morning, a new star glowed over his *head*.",
+   "fx": [
+    {
+     "type": "label",
+     "on": "dad",
+     "text": "6 STARS",
+     "color": "#FFE14D"
+    }
+   ],
+   "time": "day",
+   "sfx": "ding@star"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 idle/awe",
+    "dad 1.5,0 f-20 /grin"
+   ],
+   "line": "Stars come back when someone *gives* them.",
+   "sfx": "magic@gives"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "close milo punch",
+   "actors": [
+    "milo cheer/love"
+   ],
+   "line": "We weren't spending wishes. We were *sharing* them.",
+   "fx": "hearts:milo:rise@sharing"
+  },
+  {
+   "beat": "aftermath",
+   "cam": "medium group",
+   "actors": [
+    "milo -1.5,0 f20 idle/content",
+    "dad 1.5,0 f-20 idle/content"
+   ],
+   "line": "Now nobody in my family counts *stars*.",
+   "loc": "street",
+   "time": "sunset",
+   "fx": [
+    {
+     "type": "label",
+     "on": "milo",
+     "text": "5 STARS",
+     "color": "#99CCFF"
+    },
+    {
+     "type": "label",
+     "on": "dad",
+     "text": "6 STARS",
+     "color": "#99CCFF"
+    }
+   ]
+  },
+  {
+   "beat": "aftermath",
+   "cam": "close milo",
+   "actors": [
+    "milo /love"
+   ],
+   "line": "Now I wear a cap, and I remember: a wish is something you *give*.",
+   "loc": "bedroom",
+   "time": "night",
+   "sfx": "sparkle@give"
+  },
+  {
+   "beat": "cta",
+   "cam": "wide group pull",
+   "actors": [
+    "milo -1.5,0 f20 hug/love",
+    "dad 1.5,0 f-20 hug/love"
+   ],
+   "line": "Subscribe if you love your *dad*.",
+   "loc": "home",
+   "time": "sunset",
+   "fx": "hearts:milo@dad",
+   "sfx": "ding@dad"
+  }
+ ]
+}
