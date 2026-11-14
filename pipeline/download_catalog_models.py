@@ -4,6 +4,7 @@ Saves .glb files into assets/models/<category>/<id>.glb with category indexes.
 Usage:
     python pipeline/download_catalog_models.py
 """
+
 import json
 import os
 import sys
@@ -15,9 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS_DIR = ROOT / "assets"
 MODELS_DIR = ASSETS_DIR / "models"
 
-HEADERS = {
-    "User-Agent": "roblox-shorts/1.0"
-}
+HEADERS = {"User-Agent": "roblox-shorts/1.0"}
 
 CATEGORIES = {
     "coroas_e_acessorios": {
@@ -29,8 +28,8 @@ CATEGORIES = {
             "steel-helmet-f5aa7d",
             "flight-helmet-56f390",
             "skate-helmet-cf1e6e",
-            "call-headset-a95887"
-        ]
+            "call-headset-a95887",
+        ],
     },
     "animais": {
         "title": "Animais",
@@ -53,8 +52,8 @@ CATEGORIES = {
             "purple-flame-dragon-base",
             "spectral-stag-base",
             "xoloitzcuintli-1cd7c8",
-            "honey-moth-base"
-        ]
+            "honey-moth-base",
+        ],
     },
     "objetos_comuns": {
         "title": "Objetos Comuns e Props",
@@ -80,8 +79,8 @@ CATEGORIES = {
             "timber-crate-ba0739",
             "campsite-picnic-table-361d51",
             "beehive-2e70bf",
-            "clothes-line-ee47e4"
-        ]
+            "clothes-line-ee47e4",
+        ],
     },
     "comida": {
         "title": "Comidas e Alimentos",
@@ -91,8 +90,8 @@ CATEGORIES = {
             "pizza-slice-ddfb9d",
             "apple-tree-ef0ba0",
             "berry-bush-ee4812",
-            "corn-crop-b71f2f"
-        ]
+            "corn-crop-b71f2f",
+        ],
     },
     "armas_e_tesouros": {
         "title": "Armas, Tesouros e Fantasia",
@@ -118,8 +117,8 @@ CATEGORIES = {
             "cut-sapphire-04ba83",
             "potion-bottle-099ad7",
             "goblet-87c3ba",
-            "chest-key-458007"
-        ]
+            "chest-key-458007",
+        ],
     },
     "veiculos": {
         "title": "Veículos e Transporte",
@@ -129,9 +128,9 @@ CATEGORIES = {
             "ranger-pickup-truck-97057d",
             "wooden-rowboat-916981",
             "mine-cart-94bd76",
-            "wooden-hand-cart-3ae5b5"
-        ]
-    }
+            "wooden-hand-cart-3ae5b5",
+        ],
+    },
 }
 
 
@@ -181,7 +180,7 @@ def main():
             "category": cat_slug,
             "title": cat_info["title"],
             "description": cat_info["description"],
-            "models": []
+            "models": [],
         }
 
         for asset_id in cat_info["assets"]:
@@ -211,17 +210,19 @@ def main():
                 total_failed += 1
                 print(f"  ❌ [{title}] ({asset_id}): FALHOU - {msg}")
 
-            cat_manifest["models"].append({
-                "id": asset_id,
-                "title": title,
-                "class": class_type,
-                "triangles": triangles,
-                "size_m": size_m,
-                "description": description,
-                "file": f"{asset_id}.glb",
-                "cdn_url": glb_url,
-                "polyfork_page": f"https://polyfork.dev/asset/{asset_id}"
-            })
+            cat_manifest["models"].append(
+                {
+                    "id": asset_id,
+                    "title": title,
+                    "class": class_type,
+                    "triangles": triangles,
+                    "size_m": size_m,
+                    "description": description,
+                    "file": f"{asset_id}.glb",
+                    "cdn_url": glb_url,
+                    "polyfork_page": f"https://polyfork.dev/asset/{asset_id}",
+                }
+            )
 
         # Save category manifest
         manifest_path = cat_dir / "manifest.json"

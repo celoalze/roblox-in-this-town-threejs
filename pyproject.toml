@@ -1,0 +1,10 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = [".venv-tts", ".tools", "cache", "out", "node_modules"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.autopep8]
+max_line_length = 120
