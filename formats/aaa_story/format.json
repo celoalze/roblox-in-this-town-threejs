@@ -1,1 +1,1 @@
-{"name": "aaa_story", "length_seconds": [120, 190], "scenes": [40, 180], "maxWords": 16, "defaults": {"narrator": "narrator", "music": "epic", "musicVol": 0.2, "pad": 0.08, "format": {"fps": 60}, "style": {"look": "aaa", "captionWords": 2, "uppercase": false, "emphColor": "#FFE14D", "activeColor": "#FFE14D", "captionY": 0.62, "bloom": 0.45}}}
+{"name": "aaa_story", "maxWords": 24, "defaults": {"narrator": "narrator", "music": "epic", "musicVol": 0.2, "style": {"look": "aaa", "bloom": 0.45}}}
