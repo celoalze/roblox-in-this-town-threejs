@@ -25,6 +25,16 @@ Long-form schema and engine notes: docs/REFERENCE.md. Presets: config/cast.json,
 engine/                    Three.js renderer (runs in headless Chrome)
   render.mjs, page.html    node CLI + page that hosts the renderer
   core/                    world orchestration: scene set-up, actors, camera, frame loop
+    state.js               shared mutable runtime state context (W / state)
+    math.js                pure math helpers, vectors, easing, and sun axes
+    portals.js             portal views, doorway render targets, and underwater BG
+    motion.js              actor travel, facing, easing, and pose resolution
+    camera.js              camera shots, views, framing, and occlusion avoidance
+    living.js              held props, NPC extras, crowds, and ambient motes
+    assets.js              map/kit loading, placement, and scene asset prep
+    scene.js               renderer, composer, lights, sky initialization, scene prep
+    frame.js               frame render loop, 3D rendering, motion blur, staging lint
+    world.js               public facade re-exporting init, shotTimes, lint, frame, grab
   characters/              character facade, R15 rig, animation, IK links, crowd, creatures
     face/                  face atlas textures and procedural face layers
     wear/                  hair, hats, layered clothing, Roblox catalog accessories
@@ -44,6 +54,7 @@ tools/                     everything that is not on the render path
   roblox studio/           Luau export scripts run inside Roblox Studio + build_r15.py
   audio/tts/               local voice stack: virtualenvs and model weights (not in git)
 config/                    data the engine and pipeline read: presets, anims, vocab.json
+  schema/                  JSON Schema contract for story.json authoring
   formats/                 one folder per genre: format.json (lint limits, defaults) + FORMAT.md
 assets/                    audio, fonts, models, textures, skies, VFX (CATALOG.md is the index)
 stories/                   one folder per story (story.json); _template* are the starting points
