@@ -4,6 +4,9 @@ Works with any coding agent (Claude, Gemini, GPT/Codex, Cursor...). This file is
 do not read other stories.** You write ONE file, `stories/<slug>/story.json`; the pipeline does voice, captions, animation, camera, SFX, music, mix.
 Reply to the user in their language; everything inside the video and the publish block is English.
 
+**Story contract:** `config/schema/story.schema.json` is the machine-readable authoring contract, checked before lint and rendering.
+Errors include a JSON path (for example, `scenes[12].actors[1]`); fix that field and rerun `--lint`.
+
 ## Workflow (3 commands, in order)
 ```
 python pipeline/produce.py <slug> --lint       text report, no TTS/images. Fix every line until "lint: OK"

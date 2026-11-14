@@ -1,0 +1,514 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "story.schema.json",
+  "title": "Roblox Shorts story.json",
+  "description": "Authoring contract for stories consumed by pipeline/produce.py.",
+  "$ref": "#/$defs/Story",
+  "$defs": {
+    "Story": {
+      "type": "object",
+      "description": "A complete story document before shorthand expansion.",
+      "required": ["scenes"],
+      "properties": {
+        "title": {"type": "string", "description": "Human-readable story title."},
+        "genre": {"type": "string", "enum": ["in_this_town", "in_this_world", "what_if", "aaa_story"], "description": "Format folder used for defaults and lint rules."},
+        "cast": {"oneOf": [{"type": "array", "items": {"$ref": "#/$defs/CastEntry"}}, {"type": "object", "additionalProperties": {"$ref": "#/$defs/CharacterSpec"}}], "description": "Characters as a name list or a name-to-spec mapping."},
+        "publish": {"$ref": "#/$defs/PublishBlock", "description": "English platform title, description, tags, and caption."},
+        "style": {"$ref": "#/$defs/Style", "description": "Global render and caption presentation options."},
+        "format": {"$ref": "#/$defs/VideoFormat", "description": "Output dimensions and frame rate."},
+        "narrator": {"type": "string", "description": "Voice alias used for narration."},
+        "music": {"type": "string", "description": "Music asset or synthesis mood name."},
+        "musicVol": {"type": "number", "minimum": 0, "description": "Music mix level."},
+        "pad": {"type": "number", "minimum": 0, "description": "Silence after a spoken line, in seconds."},
+        "locations": {"type": "object", "additionalProperties": {"$ref": "#/$defs/Location"}, "description": "Story-local location definitions keyed by location name."},
+        "slug": {"type": "string", "description": "Output folder name override."},
+        "engine": {"type": "string", "description": "Renderer selection; the producer recognizes studio."},
+        "dialogue": {"type": "boolean", "description": "Enables per-character voices for scenes with speakers."},
+        "emotion": {"type": "string", "description": "Fallback narration emotion for TTS."},
+        "scenes": {"type": "array", "items": {"$ref": "#/$defs/Scene"}, "description": "Ordered scenes in the story."}
+      },
+      "additionalProperties": true
+    },
+    "CastEntry": {
+      "oneOf": [
+        {"type": "string", "description": "A cast preset or custom character id."},
+        {"type": "object", "additionalProperties": {"$ref": "#/$defs/CharacterSpec"}, "description": "One or more character ids mapped to character specs."}
+      ]
+    },
+    "CharacterSpec": {
+      "oneOf": [
+        {"type": "string", "description": "A preset name used as the character base."},
+        {"type": "object", "properties": {
+          "like": {"type": "string", "description": "Preset character used as the base appearance."},
+          "model": {"type": "string", "description": "Creature or character model selector."},
+          "shirt": {"oneOf": [{"type": "string"}, {"type": "number"}], "description": "Shirt color or Roblox clothing selector."},
+          "pants": {"oneOf": [{"type": "string"}, {"type": "number"}], "description": "Pants color or Roblox clothing selector."},
+          "skin": {"type": "string", "description": "Skin color override."},
+          "hair": {"oneOf": [{"type": "string"}, {"type": "array"}], "description": "Hair style selector or legacy hair tuple."},
+          "hairColor": {"type": "string", "description": "Hair color override."},
+          "hairTint": {"type": "string", "description": "Hair texture tint override."},
+          "hat": {"type": "string", "description": "Hat selector."},
+          "wear": {"type": "array", "items": {"type": "string"}, "description": "Always-worn accessory selectors."},
+          "scale": {"type": "number", "description": "Character size multiplier."},
+          "voice": {"type": "string", "description": "Voice alias for dialogue lines."},
+          "rig": {"type": "string", "description": "Legacy rig hint, ignored by the current producer."}
+        }, "additionalProperties": true, "description": "Character appearance and behavior overrides."}
+      ]
+    },
+    "PublishBlock": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string", "description": "Platform title written to publish metadata."},
+        "description": {"type": "string", "description": "Platform description written to publish metadata."},
+        "tags": {"type": "array", "items": {"type": "string"}, "description": "Platform tags used to build hashtags."},
+        "caption": {"type": "string", "description": "Short-form social caption."}
+      },
+      "additionalProperties": true
+    },
+    "Style": {
+      "type": "object",
+      "properties": {
+        "captionWords": {"type": "number", "description": "Words shown together in captions."},
+        "captionY": {"type": "number", "description": "Caption vertical placement."},
+        "captionSize": {"type": "number", "description": "Caption text size."},
+        "uppercase": {"type": "boolean", "description": "Uppercase caption text."},
+        "emphColor": {"type": "string", "description": "Caption color for emphasized words."},
+        "activeColor": {"type": "string", "description": "Caption color for the active word."},
+        "look": {"type": "string", "description": "Global visual look preset."},
+        "bloom": {"type": "number", "description": "Bloom strength."},
+        "autoWhoosh": {"type": "boolean", "description": "Automatically add whooshes for camera punches and transitions."},
+        "autoFxSfx": {"type": "boolean", "description": "Automatically add sounds associated with effects."},
+        "worldAudio": {"type": "boolean", "description": "Enable location ambience audio."},
+        "dressing": {"type": "boolean", "description": "Enable or disable automatic location dressing."},
+        "gaze": {"type": "boolean", "description": "Enable automatic character eye targeting."},
+        "saturation": {"type": "number", "description": "Color saturation adjustment."},
+        "ao": {"type": "boolean", "description": "Enable ambient occlusion."},
+        "blur": {"type": "number", "description": "Motion blur sample count."},
+        "shutter": {"type": "number", "description": "Motion blur shutter fraction."},
+        "tone": {"type": "string", "enum": ["neutral", "agx", "aces"], "description": "Tone mapping mode."},
+        "exposure": {"type": "number", "description": "Render exposure adjustment."},
+        "rim": {"type": "number", "description": "Character rim-light strength."},
+        "extras": {"type": "number", "description": "Default ambient background walker count."},
+        "motes": {"type": "boolean", "description": "Enable ambient pollen or fireflies."},
+        "lens": {"oneOf": [{"type": "boolean"}, {"type": "number"}], "description": "Enable the lens treatment or set its field of view."},
+        "handheld": {"type": "number", "description": "Subtle camera operator sway strength."},
+        "dof": {"type": "number", "description": "Depth-of-field strength."}
+      },
+      "additionalProperties": true
+    },
+    "VideoFormat": {
+      "type": "object",
+      "properties": {
+        "width": {"type": "integer", "minimum": 1, "description": "Output width in pixels."},
+        "height": {"type": "integer", "minimum": 1, "description": "Output height in pixels."},
+        "fps": {"type": "number", "minimum": 1, "description": "Output frames per second."}
+      },
+      "additionalProperties": true
+    },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "set": {"type": "string", "description": "Location set or renderer type."},
+        "setOpts": {"$ref": "#/$defs/SetOptions", "description": "Options for the selected location set."},
+        "time": {"type": "string", "enum": ["day", "sunset", "dusk", "night", "spooky"], "description": "Default time of day for this location."},
+        "seed": {"type": "integer", "description": "Deterministic location variation seed."}
+      },
+      "additionalProperties": true
+    },
+    "SetOptions": {
+      "type": "object",
+      "properties": {
+        "kit": {"type": "string", "description": "Connected asset kit name."},
+        "near": {"type": "string", "description": "Named kit part used as the scene anchor."},
+        "index": {"type": "integer", "description": "Indexed set variant."},
+        "dx": {"type": "number", "description": "Horizontal anchor offset."},
+        "dz": {"type": "number", "description": "Depth anchor offset."},
+        "yaw": {"type": "number", "description": "Set rotation in degrees."},
+        "at": {"$ref": "#/$defs/Vector2", "description": "Set anchor position."},
+        "label": {"type": "string", "description": "Location sign or label text."},
+        "poster": {"type": "string", "description": "Location poster text."},
+        "board": {"type": "string", "description": "Board text."},
+        "wall": {"type": "string", "description": "Wall appearance option."},
+        "accent": {"type": "string", "description": "Location accent color."},
+        "color": {"type": "string", "description": "Location color option."},
+        "campfire": {"type": "boolean", "description": "Show the location campfire."}
+      },
+      "additionalProperties": true
+    },
+    "Scene": {
+      "type": "object",
+      "properties": {
+        "loc": {"type": "string", "description": "Named location; omitted locations inherit from the prior scene."},
+        "time": {"type": "string", "enum": ["day", "sunset", "dusk", "night", "spooky"], "description": "Time of day for this scene."},
+        "sky": {"type": "string", "description": "Sky preset or compact mid-scene sky transition."},
+        "grade": {"type": "string", "description": "Color grade or compact mid-scene grade transition."},
+        "weather": {"type": ["string", "null"], "description": "Weather preset or clear/off value."},
+        "bloom": {"type": "number", "minimum": 0, "description": "Bloom strength for this scene (overrides style.bloom)."},
+        "line": {"type": "string", "description": "Narration for this scene; omit for a silent beat."},
+        "dur": {"type": "number", "minimum": 0, "description": "Minimum scene duration in seconds."},
+        "cam": {"type": "string", "description": "Compact camera setup notation."},
+        "camera": {"$ref": "#/$defs/Camera", "description": "Long-form camera setup for the first shot."},
+        "shots": {"type": "array", "items": {"$ref": "#/$defs/CameraShot"}, "description": "Additional camera setups, compact strings or long-form objects."},
+        "actors": {"type": "array", "items": {"$ref": "#/$defs/ActorEntry"}, "description": "Characters visible in the scene, compact strings or long-form objects."},
+        "crowd": {"$ref": "#/$defs/Crowd", "description": "Background crowd behavior in compact or long-form notation."},
+        "props": {"type": "array", "items": {"$ref": "#/$defs/PropEntry"}, "description": "Placed or set-piece props in compact or long-form notation."},
+        "sfx": {"$ref": "#/$defs/SfxList", "description": "Sound effects in compact or long-form cue notation."},
+        "fx": {"$ref": "#/$defs/FxList", "description": "Visual effects in compact or long-form cue notation."},
+        "overlay": {"$ref": "#/$defs/OverlayList", "description": "Screen overlays in compact or long-form notation."},
+        "title": {"type": "string", "description": "On-screen scene title."},
+        "transition": {"type": "string", "enum": ["fade", "white", "wipe"], "description": "Transition into this scene."},
+        "beat": {"type": "string", "enum": ["rule", "example", "hero", "clue", "twist", "choice", "aftermath", "cta"], "description": "Story-arc role used by genre lint."},
+        "extras": {"type": "number", "minimum": 0, "description": "Ambient background walker count for this scene."},
+        "treat": {"$ref": "#/$defs/Treatment", "description": "Surface treatment preset or list of treatments."},
+        "biome": {"type": ["string", "null"], "description": "Biome preset that supplies soft visual defaults."},
+        "medium": {"type": ["string", "null"], "description": "Scene medium preset, such as underwater."},
+        "intent": {"$ref": "#/$defs/Intent", "description": "Visual intent tag or tags for advisory checks."},
+        "allow": {"type": "array", "items": {"type": "string"}, "description": "Intent tags explicitly allowed to be absent."},
+        "dress": {"oneOf": [{"type": "boolean"}, {"type": "number", "minimum": 0}], "description": "Automatic dressing enablement or density."},
+        "actions": {"type": "array", "items": {"$ref": "#/$defs/CharacterKeyframe"}, "description": "Timed scene-level action cues."},
+        "set": {"type": "string", "description": "Direct scene set selector."},
+        "setOpts": {"$ref": "#/$defs/SetOptions", "description": "Options for the direct scene set."},
+        "seed": {"type": "integer", "description": "Deterministic scene variation seed."},
+        "shot": {"type": "string", "description": "Long-form first camera shot name."},
+        "punch": {"type": "boolean", "description": "Snap-zoom the scene camera."},
+        "shakeAt": {"$ref": "#/$defs/TimeValue", "description": "Time at which the camera shake begins."},
+        "gradeTo": {"$ref": "#/$defs/TimedGrade", "description": "Long-form target for a mid-scene grade transition."},
+        "skyTo": {"$ref": "#/$defs/TimedSky", "description": "Long-form target for a mid-scene sky transition."},
+        "fadeOut": {"type": "boolean", "description": "Fade out at the end of this scene."},
+        "titleColor": {"type": "string", "description": "On-screen title color."},
+        "titleSize": {"type": "number", "description": "On-screen title size."},
+        "speaker": {"type": "string", "description": "Cast character speaking when dialogue mode is enabled."},
+        "voice": {"type": "string", "description": "Per-scene voice alias override."},
+        "voiceSettings": {"type": "object", "description": "Per-scene TTS voice settings."},
+        "emotion": {"type": "string", "description": "Per-scene narration emotion override."},
+        "gain": {"type": "number", "description": "Narration clip gain."},
+        "lead": {"type": "number", "minimum": 0, "description": "Silence before the scene narration, in seconds."},
+        "pad": {"type": "number", "minimum": 0, "description": "Silence after this scene narration, in seconds."},
+        "join": {"type": "boolean", "description": "Join narration to the previous spoken scene."}
+      },
+      "additionalProperties": true
+    },
+    "Camera": {
+      "type": "object",
+      "properties": {
+        "target": {"$ref": "#/$defs/CameraTarget", "description": "Camera target character, group, or world position."},
+        "angle": {"type": "number", "description": "Horizontal camera angle in degrees."},
+        "move": {"type": "string", "description": "Camera movement name."},
+        "amount": {"type": "number", "description": "Camera movement amount."},
+        "zoom": {"type": "number", "description": "Camera zoom multiplier."},
+        "height": {"type": "number", "description": "Camera height over the look point."},
+        "shake": {"type": "number", "description": "Camera shake strength."},
+        "fov": {"type": "number", "description": "Camera field of view in degrees."},
+        "roll": {"type": "number", "description": "Camera roll in degrees."},
+        "over": {"type": "string", "description": "Over-the-shoulder character id."},
+        "absolute": {"type": "boolean", "description": "Interpret the camera setup as absolute."},
+        "lens": {"type": "number", "description": "Wide lens that keeps the target's apparent size."},
+        "crash": {"type": "number", "description": "Crash zoom strength."},
+        "whip": {"type": "number", "description": "Whip-pan direction and strength."},
+        "whipOut": {"type": "number", "description": "Whip-pan-out direction and strength."},
+        "pov": {"type": "string", "description": "Character id whose point of view the camera uses."},
+        "tilt": {"type": "number", "description": "Point-of-view camera tilt."},
+        "path": {"type": "array", "items": {"$ref": "#/$defs/Vector3"}, "description": "Camera rail positions."},
+        "lookPath": {"type": "array", "items": {"$ref": "#/$defs/Vector3"}, "description": "Camera rail look targets."},
+        "ease": {"type": "string", "description": "Camera rail easing mode."},
+        "flyTime": {"type": "number", "description": "Duration of the fly-in camera move."},
+        "dof": {"type": "number", "description": "Depth-of-field strength for this camera."}
+      },
+      "additionalProperties": true
+    },
+    "CameraTarget": {
+      "oneOf": [
+        {"type": "string", "description": "Character id or group target."},
+        {"$ref": "#/$defs/Vector3", "description": "World position used as the camera target."}
+      ]
+    },
+    "CameraShot": {
+      "oneOf": [
+        {"type": "string", "description": "Compact shot string beginning with @when."},
+        {"type": "object", "properties": {
+          "at": {"$ref": "#/$defs/TimeValue", "description": "Time when this camera setup cuts in."},
+          "shot": {"type": "string", "description": "Shot framing name."},
+          "camera": {"$ref": "#/$defs/Camera", "description": "Camera setup for this shot."},
+          "punch": {"type": "boolean", "description": "Snap-zoom when this shot begins."}
+        }, "additionalProperties": true, "description": "Long-form camera cut."}
+      ]
+    },
+    "ActorEntry": {
+      "oneOf": [
+        {"type": "string", "description": "Compact actor staging and performance string."},
+        {"$ref": "#/$defs/Actor", "description": "Long-form actor state."}
+      ]
+    },
+    "Actor": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": {"type": "string", "description": "Cast character id shown in the scene."},
+        "at": {"$ref": "#/$defs/Vector2", "description": "Actor ground position."},
+        "face": {"oneOf": [{"type": "number"}, {"type": "string"}], "description": "Facing angle or character/camera target."},
+        "anim": {"type": "string", "description": "Animation name or layered animation expression."},
+        "expr": {"type": "string", "description": "Character expression name."},
+        "to": {"$ref": "#/$defs/Vector2", "description": "Actor movement destination."},
+        "speed": {"type": "number", "description": "Actor movement speed."},
+        "after": {"type": "string", "description": "Animation used after reaching the destination."},
+        "talk": {"type": "boolean", "description": "Animate the mouth while this actor speaks."},
+        "actions": {"type": "array", "items": {"$ref": "#/$defs/CharacterKeyframe"}, "description": "Timed actor action keyframes."},
+        "link": {"$ref": "#/$defs/LinkCue", "description": "Body link to another actor."},
+        "reach": {"$ref": "#/$defs/ReachCue", "description": "Arm reach target and timing."},
+        "y": {"type": "number", "description": "Actor height above the ground."},
+        "toy": {"type": "number", "description": "Actor destination height."},
+        "arc": {"type": "number", "description": "Vertical arc height during movement."},
+        "look": {"type": "string", "description": "Character id or none for head-look behavior."},
+        "gaze": {"type": "string", "description": "Eye gaze direction or target."},
+        "brows": {"type": "string", "description": "Eyebrow expression preset."},
+        "pupils": {"type": "string", "description": "Pupil size preset."},
+        "tears": {"type": "boolean", "description": "Enable or disable streaming tears."},
+        "facev": {"type": "array", "items": {"$ref": "#/$defs/FaceCue"}, "description": "Timed face-v2 cues produced by compact actor notation."}
+      },
+      "additionalProperties": true
+    },
+    "CharacterKeyframe": {
+      "type": "object",
+      "properties": {
+        "at": {"$ref": "#/$defs/TimeValue", "description": "Time when this character action begins."},
+        "frame": {"type": "number", "description": "Keyframe index for frame-based action data."},
+        "position": {"$ref": "#/$defs/Vector3", "description": "World position for frame-based action data."},
+        "to": {"$ref": "#/$defs/Vector2", "description": "Actor movement destination."},
+        "face": {"oneOf": [{"type": "number"}, {"type": "string"}], "description": "Facing angle or character/camera target."},
+        "anim": {"type": "string", "description": "Animation name or layered animation expression."},
+        "expr": {"type": "string", "description": "Character expression name."},
+        "speed": {"type": "number", "description": "Actor movement speed."},
+        "after": {"type": "string", "description": "Animation used after reaching the destination."},
+        "arc": {"type": "number", "description": "Vertical arc height during movement."},
+        "gaze": {"type": "string", "description": "Eye gaze direction or target."},
+        "brows": {"type": "string", "description": "Eyebrow expression preset."},
+        "pupils": {"type": "string", "description": "Pupil size preset."},
+        "tears": {"type": "boolean", "description": "Enable or disable streaming tears."},
+        "rotationY": {"type": "number", "description": "Y-axis rotation for frame-based action data."},
+        "rotationX": {"type": "number", "description": "X-axis rotation for frame-based action data."},
+        "rotationZ": {"type": "number", "description": "Z-axis rotation for frame-based action data."}
+      },
+      "additionalProperties": true
+    },
+    "FaceCue": {
+      "type": "object",
+      "properties": {
+        "at": {"$ref": "#/$defs/TimeValue", "description": "Time when this face cue begins."},
+        "gaze": {"type": "string", "description": "Eye gaze direction or target."},
+        "brows": {"type": "string", "description": "Eyebrow expression preset."},
+        "pupils": {"type": "string", "description": "Pupil size preset."},
+        "tears": {"type": "boolean", "description": "Enable or disable streaming tears."}
+      },
+      "additionalProperties": true
+    },
+    "LinkCue": {
+      "type": "object",
+      "properties": {
+        "to": {"type": "string", "description": "Actor id carrying or linked to this character."},
+        "mode": {"type": "string", "description": "Body link mode."},
+        "side": {"type": "string", "description": "Side used for the link."},
+        "at": {"$ref": "#/$defs/TimeValue", "description": "Time when the link begins."},
+        "until": {"$ref": "#/$defs/TimeValue", "description": "Time when the link ends."}
+      },
+      "additionalProperties": true
+    },
+    "ReachCue": {
+      "type": "object",
+      "properties": {
+        "target": {"$ref": "#/$defs/ReachTarget", "description": "Character, prop, or world-position reach target."},
+        "arm": {"type": "string", "description": "Arm used for the reach."},
+        "at": {"$ref": "#/$defs/TimeValue", "description": "Time when the reach begins."},
+        "until": {"$ref": "#/$defs/TimeValue", "description": "Time when the reach ends."}
+      },
+      "additionalProperties": true
+    },
+    "ReachTarget": {
+      "oneOf": [
+        {"type": "string", "description": "Character id or prop name."},
+        {"$ref": "#/$defs/Vector3", "description": "World position used as the reach target."}
+      ]
+    },
+    "Crowd": {
+      "oneOf": [
+        {"type": "string", "description": "Compact crowd behavior string."},
+        {"type": "object", "properties": {
+          "do": {"type": "string", "description": "Crowd behavior or animation name."},
+          "n": {"type": "integer", "minimum": 0, "description": "Number of crowd members."},
+          "on": {"$ref": "#/$defs/CrowdTarget", "description": "Actor or position the crowd gathers around or avoids."},
+          "at": {"$ref": "#/$defs/TimeValue", "description": "Time when the crowd behavior begins."},
+          "expr": {"type": "string", "description": "Crowd expression name."},
+          "seed": {"type": ["string", "integer"], "description": "Crowd variation seed."}
+        }, "additionalProperties": true, "description": "Long-form crowd behavior."}
+      ]
+    },
+    "CrowdTarget": {
+      "oneOf": [
+        {"type": "string", "description": "Actor id or other named crowd target."},
+        {"$ref": "#/$defs/Vector2", "description": "World position used as the crowd target."}
+      ]
+    },
+    "PropEntry": {
+      "oneOf": [
+        {"type": "string", "description": "Compact prop placement string."},
+        {"$ref": "#/$defs/Prop", "description": "Long-form prop or set-piece object."}
+      ]
+    },
+    "Prop": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string", "description": "Optional identifier for this prop instance."},
+        "type": {"type": "string", "description": "Prop or set-piece type name."},
+        "at": {"oneOf": [{"$ref": "#/$defs/Vector2"}, {"type": "array", "items": {"$ref": "#/$defs/Vector2"}, "minItems": 1}], "description": "Prop ground position or list of positions."},
+        "y": {"type": "number", "description": "Prop height or vertical offset."},
+        "rot": {"type": "number", "description": "Prop rotation in degrees."},
+        "scale": {"type": "number", "description": "Prop size multiplier."},
+        "color": {"type": "string", "description": "Prop color override."},
+        "hand": {"type": "string", "description": "Actor id holding this prop."},
+        "left": {"type": "boolean", "description": "Place a held prop in the left hand."},
+        "from": {"$ref": "#/$defs/TimeValue", "description": "Time when the prop appears."},
+        "until": {"$ref": "#/$defs/TimeValue", "description": "Time when the prop disappears."},
+        "spin": {"oneOf": [{"type": "number"}, {"type": "boolean"}], "description": "Prop spin rate or spin toggle."},
+        "shrink": {"type": "number", "description": "Prop shrink amount."},
+        "bob": {"oneOf": [{"type": "number"}, {"type": "boolean"}], "description": "Prop bob amount or bob toggle."},
+        "pop": {"type": "boolean", "description": "Pop the prop into view at its start time."},
+        "text": {"type": "string", "description": "Text shown on the prop."},
+        "w": {"type": "number", "description": "Prop width."},
+        "h": {"type": "number", "description": "Prop height."},
+        "bg": {"type": "string", "description": "Prop label background color."},
+        "fg": {"type": "string", "description": "Prop label foreground color."},
+        "portal": {"$ref": "#/$defs/PortalTarget", "description": "World shown through a portal prop."},
+        "openAt": {"$ref": "#/$defs/TimeValue", "description": "Time when a set-piece opens."},
+        "closeAt": {"$ref": "#/$defs/TimeValue", "description": "Time when a set-piece closes."},
+        "open": {"type": "boolean", "description": "Start a set-piece portal in its open state."},
+        "count": {"type": "number", "description": "Set-piece countdown value or display count."},
+        "rate": {"type": "number", "description": "Countdown display rate."},
+        "n": {"type": "number", "description": "Number of figures in a set-piece crowd."},
+        "radius": {"type": "number", "description": "Set-piece crowd radius."},
+        "inner": {"type": "number", "description": "Set-piece crowd inner radius."},
+        "mode": {"type": "string", "description": "Set-piece crowd mode."}
+      },
+      "additionalProperties": true
+    },
+    "PortalTarget": {
+      "oneOf": [
+        {"type": "string", "description": "Story location name shown through the portal."},
+        {"type": "object", "properties": {
+          "loc": {"type": "string", "description": "Story location name shown through the portal."},
+          "sky": {"type": "string", "description": "Portal sky preset."},
+          "z": {"type": "number", "description": "Portal depth position."},
+          "y": {"type": "number", "description": "Portal height position."},
+          "time": {"type": "string", "enum": ["day", "sunset", "dusk", "night", "spooky"], "description": "Portal time of day."}
+        }, "additionalProperties": true, "description": "Long-form portal world selection."}
+      ]
+    },
+    "SfxList": {
+      "oneOf": [
+        {"type": "string", "description": "Compact space-separated sound cue notation."},
+        {"type": "array", "items": {"$ref": "#/$defs/SfxCue"}, "description": "List of sound cues."}
+      ]
+    },
+    "SfxCue": {
+      "oneOf": [
+        {"type": "string", "description": "Sound name with optional timing and volume notation."},
+        {"type": "object", "properties": {
+          "name": {"type": "string", "description": "Sound effect name."},
+          "prompt": {"type": "string", "description": "Text prompt for a generated sound effect."},
+          "at": {"$ref": "#/$defs/TimeValue", "description": "Time when this sound plays."},
+          "vol": {"type": "number", "minimum": 0, "description": "Sound effect volume multiplier."}
+        }, "additionalProperties": true, "description": "Long-form sound cue."}
+      ]
+    },
+    "FxList": {
+      "oneOf": [
+        {"type": "string", "description": "Compact space-separated effect cue notation."},
+        {"type": "array", "items": {"$ref": "#/$defs/FxCue"}, "description": "List of visual effect cues."}
+      ]
+    },
+    "FxCue": {
+      "oneOf": [
+        {"type": "string", "description": "Effect name with optional actor and timing notation."},
+        {"type": "object", "properties": {
+          "type": {"type": "string", "description": "Visual effect type name."},
+          "on": {"type": "string", "description": "Actor id receiving the effect."},
+          "pos": {"$ref": "#/$defs/Vector3", "description": "World position for the effect."},
+          "at": {"$ref": "#/$defs/TimeValue", "description": "Time when the effect begins."},
+          "until": {"$ref": "#/$defs/TimeValue", "description": "Time when the effect ends."},
+          "count": {"type": "number", "description": "Particle or effect count."},
+          "mode": {"type": "string", "description": "Effect mode."},
+          "color": {"type": "string", "description": "Effect color override."},
+          "vol": {"type": "number", "description": "Associated effect sound volume multiplier."},
+          "loop": {"type": "boolean", "description": "Keep the effect running as a loop."},
+          "scale": {"type": "number", "description": "Effect size multiplier."},
+          "seed": {"type": "integer", "description": "Deterministic effect variation seed."}
+        }, "additionalProperties": true, "description": "Long-form visual effect cue."}
+      ]
+    },
+    "OverlayList": {
+      "oneOf": [
+        {"type": "string", "description": "Compact space-separated overlay names."},
+        {"type": "array", "items": {"$ref": "#/$defs/OverlayCue"}, "description": "List of overlay names or long-form overlay cues."}
+      ]
+    },
+    "OverlayCue": {
+      "oneOf": [
+        {"type": "string", "description": "Overlay name."},
+        {"type": "object", "properties": {
+          "type": {"type": "string", "description": "Overlay type name."},
+          "text": {"type": "string", "description": "Text shown by a text overlay."},
+          "at": {"$ref": "#/$defs/TimeValue", "description": "Time when this overlay appears."},
+          "until": {"$ref": "#/$defs/TimeValue", "description": "Time when this overlay disappears."},
+          "y": {"type": "number", "description": "Overlay vertical placement."},
+          "size": {"type": "number", "description": "Overlay text size."},
+          "color": {"type": "string", "description": "Overlay color."}
+        }, "additionalProperties": true, "description": "Long-form overlay cue."}
+      ]
+    },
+    "Treatment": {
+      "oneOf": [
+        {"type": "string", "description": "One treatment preset, optionally with strength."},
+        {"type": "array", "items": {"type": "string"}, "description": "Combined treatment presets."},
+        {"type": "null", "description": "Explicitly clear inherited treatments."}
+      ]
+    },
+    "Intent": {
+      "oneOf": [
+        {"type": "string", "description": "One visual intent tag or none."},
+        {"type": "array", "items": {"type": "string"}, "description": "Visual intent tags for advisory checks."}
+      ]
+    },
+    "TimedGrade": {
+      "type": "object",
+      "properties": {
+        "grade": {"type": "string", "description": "Target color grade."},
+        "at": {"$ref": "#/$defs/TimeValue", "description": "Time when the target grade begins."}
+      },
+      "additionalProperties": true
+    },
+    "TimedSky": {
+      "type": "object",
+      "properties": {
+        "sky": {"type": "string", "description": "Target sky preset."},
+        "at": {"$ref": "#/$defs/TimeValue", "description": "Time when the target sky begins."}
+      },
+      "additionalProperties": true
+    },
+    "TimeValue": {
+      "oneOf": [
+        {"type": "number", "description": "Seconds from the beginning of the scene."},
+        {"type": "string", "description": "Percent, word cue, or seconds expressed as text."}
+      ]
+    },
+    "Vector2": {
+      "type": "array",
+      "items": {"type": "number"},
+      "minItems": 2,
+      "description": "Two-number ground-plane position."
+    },
+    "Vector3": {
+      "type": "array",
+      "items": {"type": "number"},
+      "minItems": 3,
+      "description": "Three-number world-space position."
+    }
+  }
+}

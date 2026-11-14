@@ -12,6 +12,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).parent))
 from paths import ROOT, FORMATS, OUT, PUBLISH
 from audio.tts import SR
+from story.schema import unknown_keys, validate
 
 
 def load_env():
@@ -590,7 +591,12 @@ def run_one(a, sp):
         elif (ROOT / "tests" / sp).exists():
             sp = ROOT / "tests" / sp
     story = json.loads(sp.read_text(encoding="utf-8"))
-    slug = story.get("slug") or sp.parent.name
+    slug = (story.get("slug") or sp.parent.name) if isinstance(story, dict) else sp.parent.name
+    shape_errors = validate(story)
+    if shape_errors:
+        print("\n".join(shape_errors))
+        sys.exit(f"{slug}: story.json does not match config/schema/story.schema.json ({len(shape_errors)} problem(s))")
+    key_warnings = unknown_keys(story)
     out = Path(a.out) if a.out else OUT / slug
     out.mkdir(parents=True, exist_ok=True)
     if a.redo:
@@ -608,7 +614,10 @@ def run_one(a, sp):
     from story import lint
 
     if a.lint:
-        return lint.run(expand(story), out)
+        problems = lint.run(expand(story), out)
+        if key_warnings:
+            print("\n".join(f"warning: {warning}" for warning in key_warnings))
+        return problems
     if not a.force:  # free text-only checks before spending TTS/render time
         W = lint.static(expand(json.loads(json.dumps(story))))
         if W:
