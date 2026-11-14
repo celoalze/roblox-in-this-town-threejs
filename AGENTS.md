@@ -66,7 +66,7 @@ Several slugs = batch (`produce.py a b c`). `--redo 12,31` re-voices those scene
 | `fx` | `"type:actor:mode@when ..."` e.g. `"confetti:milo@record rain"` |
 | `overlay` | `"speedlines flash"` · vignette flash red speedlines flashback |
 | when (`@`) | a word of the line (`@loudest`, 2nd occurrence `@loudest#2`) · seconds (`@0.4`) · percent (`@50%`) |
-| other | `title` (top hook text) · `shakeAt` · `transition`: fade white wipe · top level `narrator` `music` (defaults come from the genre) |
+| other | `title` (top hook text) · `shakeAt` · `transition`: fade white wipe · top level `narrator` `music` (defaults come from the genre) · optional `motion: "viral"` or `{snap,talk,life,faceSwap,drift,intensity}` (per-scene override; `false` to disable) |
 
 Anything not expressible above (timers/labels, mid-scene `actions`, text overlays, custom locations): use the long object form for just
 that entry — see docs/REFERENCE.md (grep the key, don't read it whole).
@@ -105,6 +105,26 @@ Always current, straight from the engine: `python pipeline/produce.py --vocab` (
 - **sfx**: boom buzzer cartoon_run crickets crowd_aww crowd_gasp crowd_laugh ding dun_dun_dun glitch heartbeat magic pop record_scratch riser sad_trombone sparkle tada tick whoosh vineboom thunder
 - **music**: curious tension · upbeat funny mystery sad tense spooky epic chill · none
 - **narrator**: narrator narrator_f narrator_deep
+
+## Viral pattern (recommendations, not rules)
+Pacing and staging techniques to keep retention high (advisory guidance, not enforced rules):
+- Hook in the first 2 s (stakes or question in the first sentence).
+- Escalate the stakes every 5-8 s.
+- One clear visual per beat.
+- Reaction close-up after each reveal.
+- Twist or moral flip in the last 10 s.
+- Loopable last line.
+
+### Motion tools (when to use each)
+Granular motion behaviors (`motion: "viral"` shortcut, or `{snap, talk, life, faceSwap, drift, intensity}`; per-scene override replaces story setting, `motion: false` disables all motion for a calm beat):
+
+| Tool | When to turn on | When to turn off |
+|---|---|---|
+| `talk` | Dialogue-heavy scenes, character speaking lines | Silent beats, quiet emotional moments, background/crowd shots |
+| `life` | Dialogue-heavy or static scenes with stationary characters | Fast action or chase scenes where actors are actively moving |
+| `drift` | Static wide shots, slow establishing shots where frame feels frozen | Chase/action scenes with explicit camera moves (push, orbit, pan) |
+| `faceSwap` | Punchlines, dramatic turns, keyword emphasis | Quiet emotional beats, subtle drama, non-speaking characters |
+| `snap` | Comedic surprises, quick reactions, startled turns | Slow dramatic acting, tender or fluid emotional transitions |
 
 ## Viral quality bar (all genres)
 Emotional core (a person the hero loves), named hero + family saying, 2-3 clues planted before the twist, a twist that re-reads them, a love-over-reward choice,

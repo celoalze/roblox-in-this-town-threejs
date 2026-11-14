@@ -3,8 +3,8 @@
 // Must not mutate core camera or scene configuration directly.
 
 import * as THREE from 'three';
-import { state } from './state.js';
-import { V, D2R, smooth, clamp01 } from './math.js';
+import { state, motionOf } from './state.js';
+import { V, D2R, smooth, clamp01, uNoise } from './math.js';
 import { resolveAt, facingTo } from './motion.js';
 import { carryHands15 } from '../characters/r15_attach.js';
 import { buildCharacter, setFace, pose, blendPose, applyPose, hairStyles } from '../characters/character.js';
@@ -300,4 +300,67 @@ export function updateLiving(s, t, focus) {
     ),
   );
   pa.needsUpdate = true;
+}
+
+// ---- VIRAL MOTION: TALK NOD & LIFE SWAY (XD Studio SkitKit port) ----
+// P.talk port (Poses.luau lines 149-165): small head/torso nod at ~2.6 Hz, down-stroke accent,
+// amplitude scaled by word stress, faded at interval edges, seeded from name length.
+export function applyTalkNod(p, actorId, t, s, intensity = 1) {
+  const words = s.words || [];
+  const w = words.find((wd) => t >= wd.s && t < wd.e);
+  const from = w ? w.s : s.start;
+  const to = w ? w.e : s.start + s.dur;
+  if (t < from || t >= to) return;
+  // Fade in/out at interval edges (0.08s ramp matching XD Player.luau line 354)
+  const fade = Math.max(0, Math.min(1, (t - from) / 0.08, (to - t) / 0.08));
+  if (fade <= 0) return;
+  // Stressed word amplitude scaling (XD Poses.luau: amp 1 = normal, 1.6 = shouting)
+  const stress = w && w.emph ? 1.6 : 1.0;
+  const amp = stress * fade * intensity;
+  // Seed from name length like XD Player.luau line 355: (#name * 3.1) % 6
+  const seed = (actorId.length * 3.1) % 6;
+  const lt = t - from;
+  const beat = lt * 2.6 * Math.PI * 2 + seed;
+  let nod = Math.sin(beat);
+  nod = (nod > 0 ? nod : nod * 0.45) * (7 * D2R) * amp; // down-stroke is the accent
+  const sway = Math.sin(beat * 0.37 + seed * 2) * (4 * D2R) * amp;
+  const bounce = Math.max(0, Math.sin(beat)) * 0.03 * amp;
+  // Head nod & sway (+hd[0] pitches head down in our rig)
+  p.hd[0] += nod;
+  p.hd[1] += sway;
+  p.hd[2] += sway * 0.4;
+  // Torso follows head nod
+  p.ts[0] += nod * 0.25;
+  p.ts[1] += sway * 0.25;
+  // Arms
+  const armSwing = Math.sin(beat * 0.5) * (3 * D2R) * amp;
+  p.ra[0] += armSwing;
+  p.la[0] -= armSwing;
+  // Lift bounce
+  p.y = (p.y || 0) + bounce;
+}
+
+// P.life port (Poses.luau lines 167-181): continuous low-amplitude Perlin noise idle sway
+// on torso/head/arms for non-moving characters, seeded per character name.
+export function applyLifeSway(p, actorId, t, amp = 1) {
+  // Seed per character name matching XD Player.luau line 359: (#name * 13.7) % 97
+  const seed = (actorId.length * 13.7) % 97;
+  const n = (k, deg) => uNoise(t * (0.55 + 0.1 * k), seed * 7.3 + k) * (deg * D2R) * amp;
+  // Head: n(1, 2.2), n(2, 2.6), n(3, 1.4)
+  p.hd[0] += n(1, 2.2);
+  p.hd[1] += n(2, 2.6);
+  p.hd[2] += n(3, 1.4);
+  // Torso / lean:
+  const leanX = uNoise(t * 0.5, seed + 13) * 0.8 * D2R * amp;
+  const leanZ = uNoise(t * 0.45, seed + 17) * 0.6 * D2R * amp;
+  p.lean = (p.lean || 0) + leanX;
+  p.ts[1] += n(2, 2.6) * 0.25;
+  p.ts[2] += leanZ;
+  // Arms:
+  p.ra[0] += n(4, 2.0);
+  p.ra[2] += n(5, 1.5);
+  p.la[0] += n(6, 2.0);
+  p.la[2] += n(7, 1.5);
+  // Lift:
+  p.y = (p.y || 0) + uNoise(t * 0.9, seed + 11) * 0.025 * amp;
 }

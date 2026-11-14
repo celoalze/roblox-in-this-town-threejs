@@ -4,6 +4,7 @@ import { RIM } from '../shared/materials.js';
 import { loadHairLib, preloadHair, hairStyles } from './wear/headgear.js';
 import { FACE2 } from './face/face2.js';
 import { buildR15, applyPose15, legacyToR15 } from './r15.js';
+import { snap } from '../core/math.js';
 import { prepNative, sampleNative, snapLegacy, natOf, toLegacyKey, blendN, layerN, nativeToPose } from './anim15.js'; // native R15 animation (docs/R15.md section 10)
 export { RIM, preloadHair, hairStyles };
 export async function loadAtlas(url) {
@@ -94,6 +95,7 @@ export const animNames = () => Object.keys(DATA);
 const EASE = {
   linear: (k) => k,
   smooth: ease,
+  snap: (k) => snap(k),
   back: (k) => {
     k -= 1;
     return 1 + 2.3 * k * k * k + 1.3 * k * k;

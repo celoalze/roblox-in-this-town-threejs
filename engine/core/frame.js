@@ -3,14 +3,14 @@
 // Coordinates subsystems for deterministic frame evaluation at time t.
 
 import * as THREE from 'three';
-import { state } from './state.js';
+import { state, motionOf } from './state.js';
 import { V, smooth, clamp01, wrapA, SUN_OFF, LX, LY, LZ } from './math.js';
 import { actorAt, facingTo, resolveAt, LK, NOLOOK } from './motion.js';
 import { cameraAt, viewOf, DOF } from './camera.js';
 import { prepAssets, placeMap, placeKit } from './assets.js';
 import { drawPortal, underwaterBG, skyTexture, SKY } from './portals.js';
 import { skyName, skyLight, AAA } from './scene.js';
-import { holdProp, updateExtras, updateLiving } from './living.js';
+import { holdProp, updateExtras, updateLiving, applyTalkNod, applyLifeSway } from './living.js';
 import { drawCaptions, drawOverlays } from '../hud/overlay.js';
 import { weatherOf, weatherSky, updateWeather, drawWeather2D } from '../environments/weather.js';
 import { skyCfg, setSky, updateSky, setGrade, GRADES } from '../environments/sky.js';
@@ -202,10 +202,13 @@ export function render3D(t) {
       ch.update({ anim: baseAnim(st.anim), d: st.d, f: st.f, tl: st.tl }, t, A.ph);
       return;
     }
+    const m = motionOf(s);
+    const talking = s.speaker === A.a.id || A.a.talk === true;
+    if (m.life && st.f === 0) applyLifeSway(st.p, A.a.id, t, m.intensity);
+    if (m.talk && talking) applyTalkNod(st.p, A.a.id, t, s, m.intensity);
     applyPose(ch, st.p);
     // mouth: talking when this actor is the scene speaker and a word is active
     let mouth = 0;
-    const talking = s.speaker === A.a.id || A.a.talk === true;
     if (talking) {
       const w = (s.words || []).find((w) => t >= w.s && t < w.e);
       if (w || A.a.talk === true) {
@@ -215,11 +218,20 @@ export function render3D(t) {
     }
     const bp = 2.9 + (A.ph % 1) * 1.6,
       bt = (t + A.ph * 3) % bp; // own blink rhythm per character; every 3rd blink is a double; a blink also covers every expression change (hides the face swap)
-    const blink = bt < 0.11 || (Math.floor((t + A.ph * 3) / bp) % 3 === 0 && bt > 0.26 && bt < 0.36) || st.xt < 0.1;
+    let blink = bt < 0.11 || (Math.floor((t + A.ph * 3) / bp) % 3 === 0 && bt > 0.26 && bt < 0.36) || st.xt < 0.1;
     const wd = mouth > 0 ? (s.words || []).find((w) => t >= w.s && t < w.e) : null; // face v2: eye gaze, brows, tears, vowel mouth (engine/characters/face/face2.js); undefined = plain atlas face
+    let faceExpr = st.expr;
+    if (m.faceSwap) {
+      const hasEmph = (s.words || []).some((w) => w.emph);
+      if (hasEmph) {
+        const activeEmph = (s.words || []).find((w) => w.emph && t >= w.s && t < w.e);
+        faceExpr = activeEmph ? (st.expr || 'happy') : (A.a.baseExpr || 'neutral');
+        if (activeEmph) blink = false;
+      }
+    }
     setFace(
       ch,
-      st.expr,
+      faceExpr,
       mouth,
       blink,
       faceOptions({
@@ -234,7 +246,7 @@ export function render3D(t) {
         style: state.TL.style,
         mouth,
         word: wd,
-        expr: st.expr,
+        expr: faceExpr,
       }),
     );
   });

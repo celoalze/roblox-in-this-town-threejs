@@ -69,3 +69,31 @@ export const state = {
 };
 
 export const W = state;
+
+export function motionOf(sceneOrNull) {
+  let m;
+  if (sceneOrNull != null) {
+    m = sceneOrNull.motion !== undefined ? sceneOrNull.motion : (state.TL?.motion ?? state.TL?.style?.motion);
+  } else {
+    m = state.curScene?.motion !== undefined ? state.curScene.motion : (state.TL?.motion ?? state.TL?.style?.motion);
+  }
+  if (!m || m === false) {
+    return { snap: false, talk: false, life: false, faceSwap: false, drift: false, intensity: 0 };
+  }
+  if (m === 'viral') {
+    return { snap: true, talk: true, life: true, faceSwap: true, drift: true, intensity: 1 };
+  }
+  if (typeof m === 'object') {
+    const intensity = typeof m.intensity === 'number' ? Math.max(0, Math.min(2, m.intensity)) : 1;
+    return {
+      snap: !!m.snap,
+      talk: !!m.talk,
+      life: !!m.life,
+      faceSwap: !!m.faceSwap,
+      drift: !!m.drift,
+      intensity,
+    };
+  }
+  return { snap: false, talk: false, life: false, faceSwap: false, drift: false, intensity: 0 };
+}
+

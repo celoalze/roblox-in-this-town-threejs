@@ -2,12 +2,12 @@
 // Closed-form actor motion, facing, easing, and pose resolution at time t.
 // Must not touch rendering or postprocessing state.
 
-import { state } from './state.js';
-import { V, D2R, smooth, clamp01, backOut, wrapA } from './math.js';
+import { state, motionOf } from './state.js';
+import { V, D2R, smooth, clamp01, backOut, wrapA, snap } from './math.js';
 import { pose, blendPose, blendPoseLag, baseAnim } from '../characters/character.js';
 import { headY } from '../characters/links.js';
 
-export { wrapA, backOut } from './math.js';
+export { wrapA, backOut, snap } from './math.js';
 
 // ---- resolve "at" values: seconds | "50%" | "w:word" | "w:word#2"
 export function resolveAt(v, s) {
@@ -85,7 +85,7 @@ export function motion(ac, tl) {
 }
 
 // Pose of one action at scene time lt (also valid past its end, so the next action can crossfade out of it while it keeps moving).
-export function actPose(ac, lt, ph) {
+export function actPose(ac, lt, ph, s = null) {
   const tl = lt - ac.t;
   if (!ac.p1) return pose(ac.anim, tl, ph);
   const ta = tl - ac.mdur,
@@ -115,7 +115,8 @@ export function actPose(ac, lt, ph) {
   } else p = pose(ac.anim, tl, ph);
   if (ta > 0 && !(nom && after === 'idle')) {
     const q = pose(after, ta, ph);
-    p = ta < BL ? blendPose(p, q, backOut(ta / BL)) : q;
+    const easeFn = motionOf(s).snap ? snap : backOut;
+    p = ta < BL ? blendPose(p, q, easeFn(ta / BL)) : q;
   }
   return p;
 }
@@ -183,11 +184,12 @@ export function actorAt(A, lt, s) {
     }
   }
   // pose: crossfade out of the previous action (still running), settling with a slight overshoot
-  let p = actPose(ac, lt, ph);
+  let p = actPose(ac, lt, ph, s);
   if (i > 0 && tl < BL + LAG) {
-    const q = actPose(acts[i - 1], lt, ph);
+    const q = actPose(acts[i - 1], lt, ph, s);
+    const easeFn = motionOf(s).snap ? snap : backOut;
     p = blendPoseLag(q, p, (key) =>
-      backOut((tl + (key === 'hd' ? -LAG : key === 'la' || key === 'ra' ? -LAG * 0.35 : LAG * 0.4)) / BL),
+      easeFn((tl + (key === 'hd' ? -LAG : key === 'la' || key === 'ra' ? -LAG * 0.35 : LAG * 0.4)) / BL),
     ); // overlap: body first, arms, head last
     if (ANTIC.has(baseAnim(ac.anim)) && tl < 0.14) p.sq *= 1 - 0.08 * Math.sin((Math.PI * tl) / 0.14);
   } // anticipation: a quick crouch before the big move

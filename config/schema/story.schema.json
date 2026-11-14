@@ -25,6 +25,7 @@
         "engine": {"type": "string", "description": "Renderer selection; the producer recognizes studio."},
         "dialogue": {"type": "boolean", "description": "Enables per-character voices for scenes with speakers."},
         "emotion": {"type": "string", "description": "Fallback narration emotion for TTS."},
+        "motion": {"$ref": "#/$defs/Motion", "description": "Viral Roblox motion style (shortcut 'viral' or object with snap, talk, life, faceSwap, drift, intensity)."},
         "scenes": {"type": "array", "items": {"$ref": "#/$defs/Scene"}, "description": "Ordered scenes in the story."}
       },
       "additionalProperties": true
@@ -92,7 +93,8 @@
         "motes": {"type": "boolean", "description": "Enable ambient pollen or fireflies."},
         "lens": {"oneOf": [{"type": "boolean"}, {"type": "number"}], "description": "Enable the lens treatment or set its field of view."},
         "handheld": {"type": "number", "description": "Subtle camera operator sway strength."},
-        "dof": {"type": "number", "description": "Depth-of-field strength."}
+        "dof": {"type": "number", "description": "Depth-of-field strength."},
+        "motion": {"$ref": "#/$defs/Motion", "description": "Viral Roblox motion style."}
       },
       "additionalProperties": true
     },
@@ -104,6 +106,31 @@
         "fps": {"type": "number", "minimum": 1, "description": "Output frames per second."}
       },
       "additionalProperties": true
+    },
+    "MotionObject": {
+      "type": "object",
+      "properties": {
+        "snap": {"type": "boolean", "description": "Quartic snap curve for reaction and pose transitions."},
+        "talk": {"type": "boolean", "description": "Head and torso nod synchronized with character speech."},
+        "life": {"type": "boolean", "description": "Continuous subtle idle sway on idle characters."},
+        "faceSwap": {"type": "boolean", "description": "Expression swap during emphasized spoken words."},
+        "drift": {"type": "boolean", "description": "Perpetual subtle camera drift on static shots."},
+        "intensity": {"type": "number", "minimum": 0, "maximum": 2, "description": "Motion amplitude scale factor (0 to 2)."}
+      },
+      "additionalProperties": false
+    },
+    "Motion": {
+      "oneOf": [
+        {"type": "string", "enum": ["viral"], "description": "Shortcut activating all five viral motion dynamics at intensity 1."},
+        {"$ref": "#/$defs/MotionObject"}
+      ]
+    },
+    "SceneMotion": {
+      "oneOf": [
+        {"type": "string", "enum": ["viral"], "description": "Shortcut activating all five viral motion dynamics at intensity 1 for this scene."},
+        {"type": "boolean", "enum": [false], "description": "Disable all motion dynamics for this scene."},
+        {"$ref": "#/$defs/MotionObject"}
+      ]
     },
     "Location": {
       "type": "object",
@@ -184,7 +211,8 @@
         "gain": {"type": "number", "description": "Narration clip gain."},
         "lead": {"type": "number", "minimum": 0, "description": "Silence before the scene narration, in seconds."},
         "pad": {"type": "number", "minimum": 0, "description": "Silence after this scene narration, in seconds."},
-        "join": {"type": "boolean", "description": "Join narration to the previous spoken scene."}
+        "join": {"type": "boolean", "description": "Join narration to the previous spoken scene."},
+        "motion": {"$ref": "#/$defs/SceneMotion", "description": "Per-scene motion style override (shortcut 'viral', object config, or false to disable)."}
       },
       "additionalProperties": true
     },

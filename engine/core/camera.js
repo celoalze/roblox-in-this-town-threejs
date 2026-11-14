@@ -3,7 +3,7 @@
 // Must not perform frame rendering or mutate actor timelines.
 
 import * as THREE from 'three';
-import { state } from './state.js';
+import { state, motionOf } from './state.js';
 import { V, D2R, smooth, clamp01, easeOut } from './math.js';
 import { resolveAt, actorAt, headPos } from './motion.js';
 import { headY } from '../characters/links.js';
@@ -241,6 +241,17 @@ export function cameraAt(s, lt, v = viewOf(s, lt)) {
           .sub(pos)
           .applyAxisAngle(V(0, 1, 0), wi),
       );
+  }
+  const m = motionOf(s);
+  if (m.drift && (!c.move || c.move === 'static')) {
+    const driftT = lt * 0.45 + (s.start || 0);
+    const dAmp = dist * 0.012 * m.intensity; // < 1.5% amplitude
+    pos.x += nz(driftT * 0.8, 31) * dAmp;
+    pos.y += nz(driftT * 0.7, 47) * dAmp * 0.6;
+    pos.z += nz(driftT * 0.9, 59) * dAmp;
+    look.x += nz(driftT * 0.6, 71) * 0.03 * m.intensity;
+    look.y += nz(driftT * 0.5, 83) * 0.02 * m.intensity;
+    fov *= 1 + nz(driftT * 0.5, 97) * 0.012 * m.intensity; // < 1.5% amplitude
   }
   state.camera.position.copy(pos);
   state.camera.fov = fov;

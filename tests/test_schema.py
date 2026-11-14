@@ -39,6 +39,9 @@ def negative_cases():
         ({"scenes": [{"props": {"type": "trophy"}}]}, "$.scenes[0].props"),
         ({"scenes": [{"sfx": 1}]}, "$.scenes[0].sfx"),
         ({"scenes": [{"transition": "spin"}]}, "$.scenes[0].transition"),
+        ({"motion": "unknown_motion", "scenes": []}, "$.motion"),
+        ({"motion": {"intensity": 5}, "scenes": []}, "$.motion.intensity"),
+        ({"scenes": [{"motion": True}]}, "$.scenes[0].motion"),
     ]
 
 

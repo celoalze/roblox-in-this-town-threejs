@@ -18,6 +18,7 @@ GPU is always used (Chrome ANGLE/D3D11 on Windows); the log prints the GPU name 
 {
   "title": "In This Town, ...",        // metadata
   "genre": "in_this_town",            // config/formats/<genre>/ defaults + guide
+  "motion": "viral",                   // optional: "viral" shortcut or object {snap,talk,life,faceSwap,drift,intensity}; per-scene override (false to disable)
   "narrator": "narrator",              // voice alias (config/voices.json): narrator, narrator_f, narrator_deep, boy, girl, man, woman, old_man, villain
   "music": "curious",                  // file in assets/audio/music (curious, tension) or synth mood: upbeat funny mystery sad tense spooky epic chill | none
   "musicVol": 0.16, "pad": 0.12,       // optional: music level, silence after each line
@@ -27,6 +28,20 @@ GPU is always used (Chrome ANGLE/D3D11 on Windows); the log prints the GPU name 
   "scenes": [ SCENE, ... ]
 }
 ```
+
+### Motion
+Top-level `"motion": "viral"` (or `"style": {"motion": "viral"}`) activates viral Roblox motion dynamics:
+- **Snap ease**: reaction and pose blends use the quartic snap curve ($1 - (1 - x)^4$) for fast starts and soft landings.
+- **Talk nod**: speech triggers a natural 2.6 Hz head/torso nod with down-stroke accent, scaled by word stress and faded at interval edges.
+- **Life sway**: continuous low-amplitude deterministic Perlin idle noise on torso, head, and arms keeps non-moving characters alive.
+- **Stressed-word face swap**: emphasized words trigger an expression swap timed to every stressed word beat, returning to the base expression afterwards.
+- **Camera perpetual motion**: shots without explicit movement get subtle position and FOV drift (< 1.5% amplitude) so frames never feel frozen.
+
+Optional granular configuration: authors can specify an object instead of `"viral"`:
+`"motion": { "snap": true, "talk": true, "life": false, "faceSwap": true, "drift": false, "intensity": 1.0 }`
+(missing booleans default to `false`; `intensity` scales nod, sway, and drift amplitudes between `0` and `2`).
+
+Per-scene override: any scene can specify `motion` in the same forms, or `motion: false` to disable all motion dynamics for that beat (e.g. calm or serious moments). Scene motion replaces (does not merge with) the story-level setting.
 
 ### CHARACTER (Roblox R15 rig, engine/characters/r15.js: classic R15 head with decal faces, strand / Roblox hair, classic clothing templates; docs/R15.md)
 | key | values |
