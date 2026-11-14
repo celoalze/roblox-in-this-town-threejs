@@ -9,72 +9,27 @@ Fix everything it reports, then look at --preview once.
 """
 
 import json, re, subprocess
-from pathlib import Path
 from tts import ROOT
+from vocab import (
+    ANIMS,
+    BEHAVIOURS,
+    BROWS,
+    CLOTHES,
+    CREATURE_ANIMS,
+    EXPRS,
+    FX,
+    GAZES,
+    LINK_MODES,
+    MODEL_PROPS,
+    NO_HOLD,
+    PROPS,
+    PUPILS,
+    SHOTS,
+    SFX,
+    WEARABLES,
+)
 
 ENG = ROOT / "engine"
-ANIMS = set(re.findall(r"case '([a-z0-9]+)'", (ENG / "character.js").read_text(encoding="utf-8"))) | {"idle"}
-ANIMS |= {
-    k
-    for f in (ROOT / "config").glob("anims*.json")
-    for k in json.loads(f.read_text(encoding="utf-8"))
-    if not k.startswith("_")
-}  # keyframed anims (data, no engine edit)
-EXPRS = set(re.findall(r"(\w+): \['", (ENG / "face.js").read_text(encoding="utf-8")))
-_f2 = (ENG / "face2.js").read_text(
-    encoding="utf-8"
-)  # face v2: new expressions (between the EXPR-LIST markers), brow styles, gaze words, pupil sizes
-EXPRS |= set(re.findall(r"^  (\w+): \{", _f2.split("EXPR-LIST BEGIN")[1].split("EXPR-LIST END")[0], re.M))
-BROWS = set(re.findall(r"^  (\w+): \{ l:", _f2, re.M))
-PUPILS = set(re.findall(r"(\w+): [\d.]+", re.search(r"PUPIL_MUL = \{(.*?)\}", _f2)[1]))
-GAZES = set(re.search(r"GAZE_WORDS = \[(.*?)\]", _f2)[1].replace("'", "").replace(",", " ").split()) | {"auto"}
-_pj = (ENG / "props.js").read_text(encoding="utf-8")
-PROPS = set(re.findall(r"case '([a-z0-9]+)'", _pj[: _pj.index("// ---------- FX")]))
-NO_HOLD = set(re.findall(r"'(\w+)'", re.search(r"NO_HOLD = \[(.*?)\]", _pj)[1]))
-_mp = {
-    k: v
-    for k, v in json.loads((ROOT / "config" / "model_props.json").read_text(encoding="utf-8")).items()
-    if not k.startswith("_")
-}  # GLB models usable as props
-_wr = {
-    k for k in json.loads((ROOT / "config" / "wearables.json").read_text(encoding="utf-8")) if not k.startswith("_")
-}  # Roblox accessories: worn only
-_cl = json.loads((ROOT / "config" / "roblox_clothes.json").read_text(encoding="utf-8"))
-PROPS |= set(_mp) | _wr
-NO_HOLD = (NO_HOLD - {k for k, v in _mp.items() if v.get("hold")}) | {k for k, v in _mp.items() if not v.get("hold")}
-SFX = {p.stem for p in (ROOT / "assets" / "audio" / "sfx").glob("*")} | set(
-    "whoosh swoosh pop click coin ding sparkle boom vineboom thud thunder rain wind riser heartbeat scratch glitch bell step cash fail tada gasp suspense".split()
-)
-FX = set(
-    "coins cash confetti petals hearts sparkles stars rain snow raincloud lightning puff glow timer label dust shockwave impact sweat anger question exclaim zzz".split()
-)
-FX |= {
-    f.stem for f in (ROOT / "assets" / "vfx" / "fx").glob("*.json") if not f.stem.startswith("_")
-}  # assets/vfx/fx/<name>.json = fx type <name>
-FX |= {
-    k for k in json.loads((ROOT / "config" / "fx_combos.json").read_text(encoding="utf-8")) if not k.startswith("_")
-}  # composite fx (config/fx_combos.json)
-FX |= set(
-    re.findall(r"case '([a-z0-9]+)'", _pj[_pj.index("// ---------- FX") :])
-)  # fx that still have a case label in makeFX (props.js)
-CREATURE_ANIMS = set(
-    re.search(r"CREATURE_ANIMS = \[(.*?)\]", (ENG / "creatures.js").read_text(encoding="utf-8"))[1]
-    .replace("'", "")
-    .replace(",", " ")
-    .split()
-)
-LINK_MODES = set(
-    re.search(r"LINK_MODES = \[(.*?)\]", (ENG / "links.js").read_text(encoding="utf-8"))[1]
-    .replace("'", "")
-    .replace(",", " ")
-    .split()
-)  # engine/links.js
-BEHAVIOURS = set(
-    re.search(r"BEHAVIOURS = \[(.*?)\]", (ENG / "crowd.js").read_text(encoding="utf-8"))[1]
-    .replace("'", "")
-    .replace(",", " ")
-    .split()
-)
 
 
 def hint(word, options):
@@ -85,7 +40,6 @@ def hint(word, options):
     return f" (did you mean {' / '.join(m)}?)" if m else ""
 
 
-SHOTS = set("establishing wide full medium close extreme low high top ots".split())
 norm = lambda w: re.sub(r"[^a-z0-9']", "", w.lower())
 
 
@@ -160,16 +114,18 @@ def static(story):
         h = str(c.get("hair", ""))
         for kind in ("shirt", "pants"):
             v = str(c.get(kind, ""))
-            if v.startswith("rbx:") and v[4:] not in _cl[kind + ("s" if kind == "shirt" else "")]:
+            if v.startswith("rbx:") and v[4:] not in CLOTHES[kind + ("s" if kind == "shirt" else "")]:
                 W.append(
                     f"cast {cid}: {kind} {v} unknown"
-                    + hint(v[4:], _cl[kind + ("s" if kind == "shirt" else "")])
+                    + hint(v[4:], CLOTHES[kind + ("s" if kind == "shirt" else "")])
                     + f" (python pipeline/produce.py --vocab {kind})"
                 )
         for wn in c.get("wear", []):
-            if wn not in _wr:
+            if wn not in WEARABLES:
                 W.append(
-                    f"cast {cid}: wear '{wn}' unknown" + hint(wn, _wr) + " (python pipeline/produce.py --vocab wear)"
+                    f"cast {cid}: wear '{wn}' unknown"
+                    + hint(wn, WEARABLES)
+                    + " (python pipeline/produce.py --vocab wear)"
                 )
         if h.startswith("rbx:") and h[4:] not in hair:
             W.append(f"cast {cid}: hair {h} unknown" + hint(h[4:], hair) + " (python pipeline/produce.py --vocab hair)")
@@ -391,9 +347,9 @@ def vocab(topic=None):
         "gaze": sorted(GAZES) + ["<actor id>", "x,y"],
         "brows": sorted(BROWS),
         "pupils": sorted(PUPILS),
-        "shirt": ["rbx:" + k for k in _cl["shirts"]],
-        "pants": ["rbx:" + k for k in _cl["pants"]],
-        "wear": sorted(_wr | {k for k, v in _mp.items() if v.get("wear")}),
+        "shirt": ["rbx:" + k for k in CLOTHES["shirts"]],
+        "pants": ["rbx:" + k for k in CLOTHES["pants"]],
+        "wear": sorted(WEARABLES | {k for k, v in MODEL_PROPS.items() if v.get("wear")}),
         "hair": [
             "rbx:" + k
             for k in json.loads((ROOT / "config" / "roblox_hair.json").read_text(encoding="utf-8")).get("styles", {})

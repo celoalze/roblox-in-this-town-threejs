@@ -20,10 +20,9 @@ Everything here is optional sugar: the long object form documented in docs/REFER
 
 import json, re
 from pathlib import Path
+from vocab import MOVES, SHOTS
 
 ROOT = Path(__file__).resolve().parents[1]
-SHOTS = {"establishing", "wide", "full", "medium", "close", "extreme", "low", "high", "top", "ots"}
-MOVES = {"push", "pull", "orbit", "pan", "rise", "drift", "static", "fly", "track"}
 NUM = re.compile(r"^-?\d+(\.\d+)?$")
 XZ = re.compile(r"^(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)$")
 
