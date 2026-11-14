@@ -18,9 +18,7 @@ def _json(name):
     return json.loads((ROOT / "config" / name).read_text(encoding="utf-8"))
 
 
-MODEL_PROPS = {
-    key: value for key, value in _json("model_props.json").items() if not key.startswith("_")
-}
+MODEL_PROPS = {key: value for key, value in _json("model_props.json").items() if not key.startswith("_")}
 WEARABLES = _visible_keys(_json("wearables.json"))
 CLOTHES = _json("roblox_clothes.json")
 
@@ -44,16 +42,10 @@ NO_HOLD = (NO_HOLD - {key for key, value in MODEL_PROPS.items() if value.get("ho
     key for key, value in MODEL_PROPS.items() if not value.get("hold")
 }
 
-SFX = {path.stem for path in (ROOT / "assets" / "audio" / "sfx").glob("*")} | set(
-    VOCAB_DATA["synth_sfx"]
-)
+SFX = {path.stem for path in (ROOT / "assets" / "audio" / "sfx").glob("*")} | set(VOCAB_DATA["synth_sfx"])
 
 FX = set(VOCAB_DATA["builtin_fx"])
-FX |= {
-    path.stem
-    for path in (ROOT / "assets" / "vfx" / "fx").glob("*.json")
-    if not path.stem.startswith("_")
-}
+FX |= {path.stem for path in (ROOT / "assets" / "vfx" / "fx").glob("*.json") if not path.stem.startswith("_")}
 FX |= _visible_keys(_json("fx_combos.json"))
 FX |= set(VOCAB_DATA["engine_fx_cases"])
 

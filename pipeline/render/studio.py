@@ -9,7 +9,9 @@ import numpy as np
 import sys
 from paths import ROOT, TOOLS
 
-sys.path.insert(0, str(TOOLS / "assets"))  # studio_mcp.py (Roblox Studio MCP client) lives with the other stand-alone tools
+sys.path.insert(
+    0, str(TOOLS / "assets")
+)  # studio_mcp.py (Roblox Studio MCP client) lives with the other stand-alone tools
 from studio_mcp import Studio  # noqa: E402
 
 TITLE = "Roblox Studio"

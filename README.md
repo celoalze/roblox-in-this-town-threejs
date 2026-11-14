@@ -46,8 +46,14 @@ engine/                    Three.js renderer (runs in headless Chrome)
 pipeline/                  Python production pipeline
   produce.py               the CLI: story.json -> lint / preview / render / publish
   paths.py                 the one place that knows this folder layout
+  stages/                  production stages (no eager imports)
+    build.py               voice resolution, TTS generation, mixes, timeline.json
+    publish.py             package MP4s with audio muxing and distribution text
+    run.py                 end-to-end story runner: schema, lint, preview, QA, render
   story/                   shorthand expansion, lint, intent checks, vocabulary
+    expand.py              story shorthand normalization, dress, looks, combos
   audio/                   narration TTS, local voice worker, SFX/music synthesis and mix
+    beds.py                ambient weather and world audio beds
   render/                  frame QA, Roblox Studio capture path
 tools/                     everything that is not on the render path
   assets/                  stand-alone asset importers/converters (catalog, Roblox hair/wear/sky/anims, Polyfork)

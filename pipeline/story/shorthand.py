@@ -22,6 +22,7 @@ import json, re
 from pathlib import Path
 from paths import ROOT
 from story.vocab import MOVES, SHOTS
+
 NUM = re.compile(r"^-?\d+(\.\d+)?$")
 XZ = re.compile(r"^(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)$")
 

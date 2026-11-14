@@ -312,7 +312,10 @@ def prefetch(items):
             if not part:
                 continue
             jf.write_text(json.dumps(part), encoding="utf8")
-            ok &= subprocess.run([str(LOCAL_PY), str(ROOT / "pipeline" / "audio" / "tts_local.py"), str(jf)]).returncode == 0
+            ok &= (
+                subprocess.run([str(LOCAL_PY), str(ROOT / "pipeline" / "audio" / "tts_local.py"), str(jf)]).returncode
+                == 0
+            )
         if ok:
             break
         print(f"  ! local TTS worker crashed, resuming ({len(todo)} lines left)")

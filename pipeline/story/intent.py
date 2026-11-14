@@ -11,6 +11,7 @@ from pathlib import Path
 from paths import ROOT
 import numpy as np
 from PIL import Image
+
 _load = lambda n: {
     k: v for k, v in json.loads((ROOT / "config" / n).read_text(encoding="utf-8")).items() if not k.startswith("_")
 }
