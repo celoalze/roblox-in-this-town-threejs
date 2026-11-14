@@ -6,8 +6,11 @@ Called by produce.py when story["engine"] == "studio" (or --studio).
 import json, re, subprocess, threading, time
 from pathlib import Path
 import numpy as np
-from paths import ROOT
-from tools.studio_mcp import Studio
+import sys
+from paths import ROOT, TOOLS
+
+sys.path.insert(0, str(TOOLS / "assets"))  # studio_mcp.py (Roblox Studio MCP client) lives with the other stand-alone tools
+from studio_mcp import Studio  # noqa: E402
 
 TITLE = "Roblox Studio"
 

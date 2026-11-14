@@ -8,10 +8,10 @@
 | `textures/pbr/<name>/` | tileable PBR surfaces (`diff nor rough .jpg`) + `index.json` (tile size) | `engine/environments/pbr.js` `pbrMat(name, w, h)` |
 | `textures/faces/` | character face atlas | `engine/characters/face/face.js` |
 | `sky/panoramas/` | equirect sky images (2:1) | `config/skies.json` `file` |
-| `sky/cubemaps/<name>/` | six-face Roblox skyboxes (`rt lf up dn bk ft .png`) | `config/skies.json` `faces`; import with `pipeline/tools/roblox_sky.py` |
+| `sky/cubemaps/<name>/` | six-face Roblox skyboxes (`rt lf up dn bk ft .png`) | `config/skies.json` `faces`; import with `tools/assets/roblox_sky.py` |
 | `roblox/` | Roblox catalog hair, accessories, clothes templates, cast OBJs | `config/roblox_*.json`, `wearables.json` |
 | `vfx/fx/` `vfx/textures/` | particle effects as JSON (three.quarks; the file name is the `fx` type) and their sprite textures (`kenney/` = CC0 particle pack) | `engine/fx/quarks.js`, see `vfx/fx/README.md` |
 | `fonts/` | caption fonts | engine + studio render |
 
-Adding something: put the file in its category, register it where the table says, record source + licence in `CATALOG.md` (regenerate the index with `python pipeline/tools/catalog.py`).
+Adding something: put the file in its category, register it where the table says, record source + licence in `CATALOG.md` (regenerate the index with `python tools/assets/catalog.py`).
 Sky names live in `config/skies.json` (`python pipeline/produce.py --vocab sky`). Never store the same asset twice: models and textures are shared by every story.

@@ -1,6 +1,6 @@
 > **Superseded (2026-11-13):** o rig R6 foi removido; R15 e o unico rig de personagem (ver docs/R15.md e docs/R6_REMOVAL_AUDIT.md, secao Done). As referencias a R6 abaixo sao historicas.
 
-# Plano AAA — levar a engine ao nível de `.references/AAA/1.mp4`
+# Plano AAA — levar a engine ao nível de `docs/references/AAA/1.mp4`
 
 ## 1. O que o vídeo de referência faz (análise)
 
@@ -10,7 +10,7 @@
 a cada ano a porta abre para um mundo diferente por 60 min; o pai some lá dentro; Ryan entra, acha o pai acorrentado numa ilha flutuante,
 fogem de uma criatura colossal e saem no último segundo. Fecha com "happy birthday".
 Roteiro: ~640 palavras (~3,7 palavras/s), 14 falas de diálogo citadas, contagem regressiva falada (47 s, 20, 10, 5) como motor de tensão,
-sem CTA de inscrição. Transcrição com tempos: `.references/AAA/1.transcript.txt`; lista de cortes: `.references/AAA/1.shots.tsv`.
+sem CTA de inscrição. Transcrição com tempos: `docs/references/AAA/1.transcript.txt`; lista de cortes: `docs/references/AAA/1.shots.tsv`.
 
 **Legenda**: 1-2 palavras, minúsculas, amarelo com contorno preto grosso, fixa em ~62% da altura. Sem título no topo.
 
@@ -87,14 +87,14 @@ Ao fim de cada fase: render + folha de contato lado a lado com a referência. É
 6. Criaturas colossais: importar/gerar GLB com rig (Studio `generate_mesh`, Sketchfab CC, Polyfork) + anims idle/walk/attack.
 
 ### Fase 4 — Atuação
-1. Importador `studio/export_anim.luau` -> `config/anims.json`: KeyframeSequence R6 (Motor6D CFrames) para nossas 6 juntas + root.
+1. Importador `tools/roblox studio/export_anim.luau` -> `config/anims.json`: KeyframeSequence R6 (Motor6D CFrames) para nossas 6 juntas + root.
    Baixar pacote base pelo Studio: run inclinado, climb, dig, pull, push, crawl, fall, roll, swim, carry, hug, kneel, reach.
 2. Vínculos: `attach:<id>:<ponto>` (carregar no ombro, mãos dadas, abraço), `chained`, IK simples de mão para alvo (maçaneta, corrente, pulso).
 3. Rosto v2: camadas separadas (olhos brancos + pupila com `gaze`, sobrancelha, boca), 12 bocas, lágrima escorrendo, estilo "big-eye" como opção de cast.
-4. Acessórios 3D que faltam (mochila com saco de dormir, barba, relógio) pelo pipeline `pipeline/tools/roblox_wear.py`.
+4. Acessórios 3D que faltam (mochila com saco de dormir, barba, relógio) pelo pipeline `tools/assets/roblox_wear.py`.
 
 ### Fase 5 — Formato e produção
-1. `formats/aaa_story/` (3ª pessoa, falas citadas, sem CTA forçado, 130-175 s, 120-150 planos) + estilo de legenda `lower_yellow`.
+1. `config/formats/aaa_story/` (3ª pessoa, falas citadas, sem CTA forçado, 130-175 s, 120-150 planos) + estilo de legenda `lower_yellow`.
 2. Atualizar AGENTS.md, REFERENCE.md, `--vocab`, lint e a skill `/short` com `shots`, `sky`, `world`, `portal`, `clock`, `attach`, `grade`.
 3. Render final do benchmark completo (172 s) e comparação.
 

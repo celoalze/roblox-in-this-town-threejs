@@ -1,4 +1,4 @@
-"""Local expressive TTS worker (runs in .venv-tts, Python 3.11).
+"""Local expressive TTS worker (runs in tools/audio/tts/.venv-tts, Python 3.11).
 Chatterbox (Resemble AI, MIT): zero-shot voice clone from a reference wav + emotion control,
 Turbo model supports paralinguistic tags: [laugh] [chuckle] [sigh] [gasp] [cough] ...
 Word timings: torchaudio MMS forced aligner on the known text.

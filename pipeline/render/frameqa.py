@@ -1,7 +1,7 @@
 """Automatic frame QA: renders 3 stills per scene and flags frames a viewer would call broken.
 
   python pipeline/produce.py <slug> --qa            (builds the timeline from cached TTS, then runs this)
-  python pipeline/frameqa.py out/<slug>/timeline.json [scale]
+  python pipeline/render/frameqa.py cache/out/<slug>/timeline.json [scale]
 
 Flags (per scene, when >= 2 of 3 samples agree or one is severe):
   dark      mean brightness too low (hidden / murky)

@@ -1,19 +1,18 @@
 # dependencies and local environments
 node_modules/
-.venv-tts/
-.tools/
 __pycache__/
+tools/audio/tts/.venv-tts/
+tools/audio/tts/.venv-rocm/
+tools/audio/tts/models/
 
-# generated output and caches
+# generated output and caches (cache/out = per-story work folders)
 cache/
-out/
 publish/
 tmp/
 tests/golden/
 
-# large binaries (models, reference videos, downloaded assets)
-models/
-.references/
+# large binaries (reference videos, downloaded assets)
+docs/references/
 assets/models/
 assets/sky/
 assets/textures/

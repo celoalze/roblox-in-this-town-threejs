@@ -1,7 +1,7 @@
 """Regenerate assets/CATALOG.md: every asset already downloaded/usable in this project, one line each.
 Agents read CATALOG.md BEFORE searching or downloading anything (token rule, see AGENTS.md).
 
-  python pipeline/tools/catalog.py
+  python tools/assets/catalog.py
 """
 
 import json
@@ -9,7 +9,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 A = ROOT / "assets"
 L = [

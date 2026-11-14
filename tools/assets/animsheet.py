@@ -1,14 +1,14 @@
-"""contact sheet: python pipeline/tools/animsheet.py <scene index>[,<idx>...] [n=6] [scale 0.4]  (needs out/_animtest/timeline.json from --preview)"""
+"""contact sheet: python tools/assets/animsheet.py <scene index>[,<idx>...] [n=6] [scale 0.4]  (needs cache/out/_animtest/timeline.json from --preview)"""
 
 import json, subprocess, sys, os
 from pathlib import Path
 from PIL import Image, ImageDraw
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 
 os.chdir(ROOT)
-T = json.load(open("out/_animtest/timeline.json"))
+T = json.load(open("cache/out/_animtest/timeline.json"))
 A = {}
 for f in os.listdir("config"):
     if f.startswith("anims") and f.endswith(".json"):
@@ -31,8 +31,8 @@ subprocess.run(
     [
         "node",
         "engine/render.mjs",
-        "out/_animtest/timeline.json",
-        "out/_animtest/st",
+        "cache/out/_animtest/timeline.json",
+        "cache/out/_animtest/st",
         "--stills",
         ",".join(map(str, ts)),
         "--scale",
@@ -41,7 +41,7 @@ subprocess.run(
     capture_output=True,
 )
 for i in idx:
-    row = [Image.open(f"out/_animtest/st/t{t:.2f}.jpg") for (j, nm, k, t) in meta if j == i]
+    row = [Image.open(f"cache/out/_animtest/st/t{t:.2f}.jpg") for (j, nm, k, t) in meta if j == i]
     w, h = row[0].size
     cw = int(w * 0.6)
     x0 = int(w * 0.2)
@@ -50,5 +50,5 @@ for i in idx:
         sheet.paste(im.crop((x0, 0, x0 + cw, h)), (c * cw, 0))
         ImageDraw.Draw(sheet).text((c * cw + 4, 4), f"{c}", fill="white")
     ImageDraw.Draw(sheet).text((4, h - 14), [m[1] for m in meta if m[0] == i][0], fill="white")
-    sheet.save(f"out/_animtest/sheet_{i}.jpg")
+    sheet.save(f"cache/out/_animtest/sheet_{i}.jpg")
     print("sheet", i, sheet.size)

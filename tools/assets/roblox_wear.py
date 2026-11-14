@@ -1,6 +1,6 @@
 """Roblox catalog accessories -> assets/roblox/wear/<name>.json (+ .png). Same idea as roblox_hair.py: meshes / textures download by id.
 
-  python pipeline/tools/roblox_wear.py [--force]
+  python tools/assets/roblox_wear.py [--force]
 
 Output space: studs, origin = centre of the R6 part the accessory is attached to (head / torso), +Z = front (engine convention)."""
 
@@ -10,7 +10,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 import rbxmesh
 

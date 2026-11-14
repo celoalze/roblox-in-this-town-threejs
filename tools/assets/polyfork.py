@@ -1,16 +1,16 @@
 """Tiny client for the Polyfork MCP (https://polyfork.dev/mcp, Streamable HTTP). Key: POLYFORK_API_KEY in .env.
 Results are written to files so large JSON never has to be read whole.
 
-  python pipeline/tools/polyfork.py tools
-  python pipeline/tools/polyfork.py call search_assets '{"query": "house"}' [out.json]
-  python pipeline/tools/polyfork.py get <url> <dest>          # download an asset file (GLB etc.)
+  python tools/assets/polyfork.py tools
+  python tools/assets/polyfork.py call search_assets '{"query": "house"}' [out.json]
+  python tools/assets/polyfork.py get <url> <dest>          # download an asset file (GLB etc.)
 """
 
 import json, os, sys, urllib.request
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 for ln in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
     if "=" in ln and not ln.startswith("#"):

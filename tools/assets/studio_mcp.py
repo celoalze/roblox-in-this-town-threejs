@@ -1,16 +1,16 @@
 """Minimal stdio client for the built-in Roblox Studio MCP server (StudioMCP.exe via %LOCALAPPDATA%/Roblox/mcp.bat).
 Studio must be open with the MCP server enabled.
 
-  python pipeline/tools/studio_mcp.py tools                       # list tools + schemas
-  python pipeline/tools/studio_mcp.py call <tool> '<json args>'   # call one tool
-  python pipeline/tools/studio_mcp.py lua <file.luau>             # run a Luau file via the code-run tool
+  python tools/assets/studio_mcp.py tools                       # list tools + schemas
+  python tools/assets/studio_mcp.py call <tool> '<json args>'   # call one tool
+  python tools/assets/studio_mcp.py lua <file.luau>             # run a Luau file via the code-run tool
 """
 
 import json, os, subprocess, sys
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 
 BAT = Path(os.environ["LOCALAPPDATA"]) / "Roblox" / "mcp.bat"

@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
-from paths import ROOT
+from paths import ROOT, FORMATS, OUT, PUBLISH
 from audio.tts import SR
 
 
@@ -55,9 +55,9 @@ def expand(story):
 
     shorthand.expand(story)
     g = story.get("genre")
-    if g and (ROOT / "formats" / g / "format.json").exists():  # genre defaults fill anything the story leaves unset
+    if g and (FORMATS / g / "format.json").exists():  # genre defaults fill anything the story leaves unset
         for k, v in (
-            json.loads((ROOT / "formats" / g / "format.json").read_text(encoding="utf-8")).get("defaults", {}).items()
+            json.loads((FORMATS / g / "format.json").read_text(encoding="utf-8")).get("defaults", {}).items()
         ):
             if k not in story:
                 story[k] = v
@@ -523,7 +523,7 @@ def build(story, out):
 
 def publish_package(story, out, slug):
     """publish/<slug>/: <slug>.mp4 (with music), <slug>_nomusic.mp4, youtube.txt, tiktok.txt. No thumbnail (made manually)."""
-    pub = ROOT / "publish" / slug
+    pub = PUBLISH / slug
     pub.mkdir(parents=True, exist_ok=True)
     for src, name in (("mix.wav", f"{slug}.mp4"), ("mix_nomusic.wav", f"{slug}_nomusic.mp4")):
         if (out / src).exists():
@@ -591,7 +591,7 @@ def run_one(a, sp):
             sp = ROOT / "tests" / sp
     story = json.loads(sp.read_text(encoding="utf-8"))
     slug = story.get("slug") or sp.parent.name
-    out = Path(a.out) if a.out else ROOT / "out" / slug
+    out = Path(a.out) if a.out else OUT / slug
     out.mkdir(parents=True, exist_ok=True)
     if a.redo:
         from audio import tts

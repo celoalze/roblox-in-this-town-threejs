@@ -1,7 +1,7 @@
 -- Exports the default Roblox R15 rig (skeleton, attachments, mesh geometry) as one compact JSON string.
 -- Run through the Roblox_Studio MCP (execute_luau, datamodel "Edit"); the tool saves a result this large to a file under
 --   ...\.claude\projects\<project>\<session>\tool-results\mcp-Roblox_Studio-execute_luau-*.txt  -> copy it to cache/r15/raw.json
--- then:  python studio/build_r15.py   (writes assets/models/rigs/r15/rig.json + <part>.json)
+-- then:  python tools/roblox studio/build_r15.py   (writes assets/models/rigs/r15/rig.json + <part>.json)
 -- The result is ~240 KB but the MCP tool truncates a returned string at ~100 KB: this script as run through the tool therefore ends with
 --   store the JSON in ServerStorage.R15Export as StringValues of 90000 chars ("01","02","03"; a StringValue holds at most 200000) and return #js,
 -- and each part is then read with  return game.ServerStorage.R15Export["01"].Value  (one call each; every >100 KB-token result is saved to a file by the tool).

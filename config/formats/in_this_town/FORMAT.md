@@ -17,7 +17,7 @@ Writing: mark 1 key word per line with *asterisks*; punctuation drives voice emo
 Silent acting beats: reaction close-up, shrug, facepalm, `hold`. Reveals = `punch` + one SFX on the key word. Absurd yes, mean no. Kid-friendly.
 Recurring cast keeps a channel recognisable: milo (hero), zoe (best friend), jay (goofy), max (little brother, scale 0.85).
 
-Viral upgrade (lessons from 8 videos with 1M+ views, see formats/in_this_world/FORMAT.md)
+Viral upgrade (lessons from 8 videos with 1M+ views, see config/formats/in_this_world/FORMAT.md)
 - Emotion first: give the hero a person they love (mom, dad, brother, true friend) and let the ending hit that bond; absurd premise, sincere heart.
 - Name the hero ("My name is X") and give the family a one-line saying; pay it off at the end with a new meaning.
 - Plant 2-3 `clue` scenes BEFORE the twist (a hat, an unused eraser, a bully suddenly nice); never explain them. The twist re-reads every clue.

@@ -1,5 +1,5 @@
 -- Dumps the geometry of a model (a whole map) as compact JSON: parts, shapes, colours, materials, mesh ids. UI, scripts, sounds are skipped.
--- Used by pipeline/tools/map_export.py (replaces __MODEL__ with the workspace child name). Returns one JSON string.
+-- Used by tools/assets/map_export.py (replaces __MODEL__ with the workspace child name). Returns one JSON string.
 local H = game:GetService("HttpService")
 local root = workspace:FindFirstChild("__MODEL__")
 if not root then return H:JSONEncode({ error = "model not found" }) end

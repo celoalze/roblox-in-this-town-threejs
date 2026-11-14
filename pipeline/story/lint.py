@@ -9,7 +9,7 @@ Fix everything it reports, then look at --preview once.
 """
 
 import json, re, subprocess
-from paths import ROOT
+from paths import ROOT, FORMATS
 from story.vocab import (
     ANIMS,
     BEHAVIOURS,
@@ -44,7 +44,7 @@ norm = lambda w: re.sub(r"[^a-z0-9']", "", w.lower())
 
 
 def _fmt(story):
-    f = ROOT / "formats" / str(story.get("genre")) / "format.json"
+    f = FORMATS / str(story.get("genre")) / "format.json"
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
 
 

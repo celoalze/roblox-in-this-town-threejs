@@ -1,14 +1,14 @@
 """Dump a model that is already in the open Studio place (workspace.<name>) to cache/maps_raw/<name>.json via the project's own
 Studio MCP client (the result goes to the file, never into the chat).
 
-  python pipeline/tools/map_export.py <workspace child name>
+  python tools/assets/map_export.py <workspace child name>
 """
 
 import json, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 from studio_mcp import Studio
 

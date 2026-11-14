@@ -1,5 +1,5 @@
 {
- "_doc": "Roblox catalog accessories worn on a body part (free Roblox-made items; asset = catalog id). Use: cast spec \"wear\": [\"cap\", \"aviators\"] (always on) or on an actor `+cap` / `+cap@word` (timed). part = R6 part the accessory's attachment lives on; pos = handle position in that part's space; scale = SpecialMesh scale (all from a read-only Studio probe). Files: assets/roblox/wear/<name>.json/.png, built by `python pipeline/tools/roblox_wear.py`. slot = Roblox accessory type (layer order: face < neck < front < back < shoulder < hat).",
+ "_doc": "Roblox catalog accessories worn on a body part (free Roblox-made items; asset = catalog id). Use: cast spec \"wear\": [\"cap\", \"aviators\"] (always on) or on an actor `+cap` / `+cap@word` (timed). part = R6 part the accessory's attachment lives on; pos = handle position in that part's space; scale = SpecialMesh scale (all from a read-only Studio probe). Files: assets/roblox/wear/<name>.json/.png, built by `python tools/assets/roblox_wear.py`. slot = Roblox accessory type (layer order: face < neck < front < back < shoulder < hat).",
  "cap": {
   "asset": 607702162,
   "slot": "hat",

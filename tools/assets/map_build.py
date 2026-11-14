@@ -1,8 +1,8 @@
-"""cache/maps_raw/<name>.json (pipeline/tools/map_export.py dump of a Studio map) -> assets/maps/<out>.glb, ONE vertex-coloured mesh.
+"""cache/maps_raw/<name>.json (tools/assets/map_export.py dump of a Studio map) -> assets/maps/<out>.glb, ONE vertex-coloured mesh.
 
-  python pipeline/tools/map_build.py <name> [out_name] [--sub model]   # --sub: stand-in GLB (assets/models/cenario/<model>.glb) for meshes that cannot be downloaded
+  python tools/assets/map_build.py <name> [out_name] [--sub model]   # --sub: stand-in GLB (assets/models/cenario/<model>.glb) for meshes that cannot be downloaded
 
-Roblox primitives (block, ball, cylinder, wedge) are rebuilt, MeshParts come from the downloaded .mesh files (pipeline/tools/rbxmesh.py),
+Roblox primitives (block, ball, cylinder, wedge) are rebuilt, MeshParts come from the downloaded .mesh files (tools/assets/rbxmesh.py),
 meshes that Roblox will not serve (private assets) are replaced by the --sub model scaled to the part size, unions become boxes.
 Units stay studs / Roblox world coordinates, which is what engine `set: "map"` expects. Transparent parts (> 5 %) are dropped.
 """
@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np, trimesh
 
 sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 import rbxmesh
 MATTINT = {

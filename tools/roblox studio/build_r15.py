@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""cache/r15/raw.json (output of studio/export_r15.luau) -> assets/models/rigs/r15/rig.json + one geometry json per part.
+"""cache/r15/raw.json (output of tools/roblox studio/export_r15.luau) -> assets/models/rigs/r15/rig.json + one geometry json per part.
 
-  python studio/build_r15.py            # reads cache/r15/raw.json, writes assets/models/rigs/r15/
+  python tools/roblox studio/build_r15.py            # reads cache/r15/raw.json, writes assets/models/rigs/r15/
 Everything stays in the Roblox convention of the export (studs, +Y up, front = -Z, character's right = +X, coordinates relative to
 HumanoidRootPart); engine/characters/skeleton.js converts to the engine frame (front +Z) once, when it builds the Object3D tree.
 """
 
 import json, math, os, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # tools/roblox studio/ -> repo root
 RAW = os.path.join(ROOT, "cache", "r15", "raw.json")
 OUT = os.path.join(ROOT, "assets", "models", "rigs", "r15")
 
@@ -95,7 +95,7 @@ def main():
         "name": "r15",
         "units": "studs",
         "frame": "roblox: +Y up, front -Z, character right +X, positions relative to HumanoidRootPart",
-        "source": "Players:CreateHumanoidModelFromDescription(HumanoidDescription, R15) via studio/export_r15.luau",
+        "source": "Players:CreateHumanoidModelFromDescription(HumanoidDescription, R15) via tools/roblox studio/export_r15.luau",
         "hipHeight": round(raw["hipHeight"], 4),
         "rootHeight": rootHeight,
         "soleY": round(minY, 4),

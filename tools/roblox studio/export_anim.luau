@@ -1,4 +1,4 @@
--- Exports Roblox KeyframeSequence animations (R6 or R15) as compact JSON for pipeline/tools/rbx_anim.py. Run through execute_luau (datamodel Edit).
+-- Exports Roblox KeyframeSequence animations (R6 or R15) as compact JSON for tools/assets/rbx_anim.py. Run through execute_luau (datamodel Edit).
 -- Edit IDS (animation asset ids) and/or MODELS (model/pack asset ids to scan for Animation instances) below, then run.
 --   IDS only    -> returns {"<id>": {id, rig, order, looped, priority, length, kfs:[{t, e, p:[...]}]}}; p[i] is the pose named order[i]: [rx,ry,rz(,px,py,pz)] or 0 = absent.
 --                  R6 order: HumanoidRootPart Torso "Right Arm" "Left Arm" "Right Leg" "Left Leg" Head. R15 order: see ORDER15 (rig = "R15").

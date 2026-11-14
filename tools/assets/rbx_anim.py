@@ -2,10 +2,10 @@
 """Roblox KeyframeSequence (R15 or classic R6 clip) -> native R15 animation entry in config/anims_r15.json (engine format: docs/R15.md section 10).
 
 WORKFLOW (two steps, because Python cannot reach Studio):
-  1. In Roblox Studio (MCP: Roblox_Studio list_roblox_studios -> execute_luau, datamodel "Edit") run studio/export_anim.luau with IDS = {assetId, ...}
+  1. In Roblox Studio (MCP: Roblox_Studio list_roblox_studios -> execute_luau, datamodel "Edit") run tools/roblox studio/export_anim.luau with IDS = {assetId, ...}
      (to find ids inside a model/pack put the model id in MODELS: it returns every Animation's AnimationId). Save the returned JSON string
      (an object {"<id>": {...}}) to cache/rbx_anim/<assetId>.json. One file per animation; the file may hold several ids, all are read.
-  2. python pipeline/tools/rbx_anim.py native <name> <assetId> [--loop N] [--held] [--ground] [--speed X] [--lean R]
+  2. python tools/assets/rbx_anim.py native <name> <assetId> [--loop N] [--held] [--ground] [--speed X] [--lean R]
   Names are lower snake_case; a name that already exists in the vocabulary (python pipeline/produce.py --vocab anim) should be prefixed rbx_.
   Options: --loop N retimes the cycle to N seconds (0 = play once and hold). --held adds breathing while holding a pose. --ground lowers the body
   so the lowest foot touches the floor (locomotion). --speed X plays X times faster. --lean R adds R radians of forward lean (run/sprint tuning).
@@ -15,7 +15,7 @@ WORKFLOW (two steps, because Python cannot reach Studio):
 import json, math, os, sys, argparse
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 
 ROOT = str(ROOT)
@@ -162,7 +162,7 @@ def expand(d):
 def load(aid):
     p = os.path.join(CACHE, f"{aid}.json")
     if not os.path.exists(p):
-        raise SystemExit(f"missing {p}: run studio/export_anim.luau in Studio and save its output there")
+        raise SystemExit(f"missing {p}: run tools/roblox studio/export_anim.luau in Studio and save its output there")
     d = json.load(open(p, encoding="utf8"))
     if (
         isinstance(d, dict) and str(aid) not in d and "kfs" not in d

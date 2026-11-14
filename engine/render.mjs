@@ -78,7 +78,7 @@ const sha = (x) => crypto.createHash('sha1').update(x).digest('hex');
 
 // Cache signature that invalidates cached scene segments when:
 // - Any source/data file in engine/ or config/ changes content (.js, .mjs, .html, .json recursively)
-// - Any asset or format file in assets/ or formats/ is added/removed/modified (stat walk: rel path, size, mtimeMs; skipping *.md)
+// - Any asset or format file in assets/ is added/removed/modified (stat walk: rel path, size, mtimeMs; skipping *.md)
 // - Installed versions of three, three.quarks, or puppeteer-core change in node_modules
 function engineSignature() {
   const parts = [];
@@ -119,7 +119,6 @@ function engineSignature() {
     }
   }
   walkMeta('assets');
-  walkMeta('formats');
 
   for (const pkg of ['three', 'three.quarks', 'puppeteer-core']) {
     try {

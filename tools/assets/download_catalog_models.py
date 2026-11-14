@@ -2,7 +2,7 @@
 Saves .glb files into assets/models/<category>/<id>.glb with category indexes.
 
 Usage:
-    python pipeline/tools/download_catalog_models.py
+    python tools/assets/download_catalog_models.py
 """
 
 import json
@@ -12,7 +12,7 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 ASSETS_DIR = ROOT / "assets"
 MODELS_DIR = ASSETS_DIR / "models"

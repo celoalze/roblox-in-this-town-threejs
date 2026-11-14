@@ -1,1 +1,1 @@
-from . import intent, lint, shorthand, vocab
+"""story.json -> expanded scenes: shorthand notation, lint, intent checks, vocabulary."""

@@ -1,7 +1,7 @@
 """Roblox skybox -> assets/sky/<name>/{rt,lf,up,dn,bk,ft}.png + an entry in config/skies.json (engine/environments/sky.js reads the six faces as they are).
 
-  python pipeline/tools/roblox_sky.py <name> <model asset id>                      a Toolbox / Creator Store model that contains a Sky
-  python pipeline/tools/roblox_sky.py <name> bk=ID dn=ID ft=ID lf=ID rt=ID up=ID   the six SkyboxXx texture ids (copy them from the Sky's properties in Studio)
+  python tools/assets/roblox_sky.py <name> <model asset id>                      a Toolbox / Creator Store model that contains a Sky
+  python tools/assets/roblox_sky.py <name> bk=ID dn=ID ft=ID lf=ID rt=ID up=ID   the six SkyboxXx texture ids (copy them from the Sky's properties in Studio)
   options: --size 1024 (face size)  --time day|sunset|night|spooky  --force
 
 The light that goes with the sky (sun, hemi, fog in config/skies.json) is estimated from the picture; tune it by hand afterwards."""
@@ -11,7 +11,7 @@ from pathlib import Path
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 import rbxmesh
 

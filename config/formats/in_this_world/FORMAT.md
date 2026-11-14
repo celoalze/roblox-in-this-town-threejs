@@ -1,6 +1,6 @@
 # Format: in_this_world (world rule + named hero + planted clues + emotional twist)
 
-Reference: 8 videos in `.references/new` (1M+ views each): The Timer, The Exam, The Price Tag, Aliens Invade Every Friday, New Planet, World Plays Tag...
+Reference: 8 videos in `docs/references/new` (1M+ views each): The Timer, The Exam, The Price Tag, Aliens Invade Every Friday, New Planet, World Plays Tag...
 One first-person narrator tells everything; characters act silently. Standalone, ends warm.
 
 Length 120-155 s, 60-110 scenes, one line per scene, up to 24 words (a cut every 2-3 s, longer sentences than other genres).

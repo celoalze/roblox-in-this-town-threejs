@@ -1,6 +1,6 @@
 """R15 animation check. python tests/stories/_r15anim/gen.py story            -> writes story.json (one scene per animation, R15 milo, 3/4 side view)
-                       python pipeline/produce.py _r15anim --preview   -> out/_r15anim/timeline.json
-                       python tests/stories/_r15anim/gen.py sheet [name,name..] [n=4] [scale 0.4] -> stills at n moments of the cycle + contact sheets out/_r15anim/sheet_<name>.jpg (+ all.jpg)"""
+                       python pipeline/produce.py _r15anim --preview   -> cache/out/_r15anim/timeline.json
+                       python tests/stories/_r15anim/gen.py sheet [name,name..] [n=4] [scale 0.4] -> stills at n moments of the cycle + contact sheets cache/out/_r15anim/sheet_<name>.jpg (+ all.jpg)"""
 import json, os, subprocess, sys
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))); os.chdir(R)
 FAM = {
@@ -28,22 +28,22 @@ def story(names):
     json.dump({"title": "r15 anim", "music": "none", "cast": ["milo"], "publish": {"title": "r15 anim", "description": "x", "tags": ["a", "b", "c", "d", "e"]}, "scenes": sc}, open('tests/stories/_r15anim/story.json', 'w'), indent=1)
 def sheet(names, n=4, scale='0.4'):
     from PIL import Image, ImageDraw
-    T = json.load(open('out/_r15anim/timeline.json')); idx = {s['title']: s for s in T['scenes']}; ts = []; meta = []
+    T = json.load(open('cache/out/_r15anim/timeline.json')); idx = {s['title']: s for s in T['scenes']}; ts = []; meta = []
     for nm in names:
         s = idx[nm]; L = loopof(nm); span = L if L < 1.6 else 1.8
         for k in range(n): t = round(s['start'] + 0.05 + k * span / n, 2); ts.append(t); meta.append((nm, t))
-    subprocess.run(['node', 'engine/render.mjs', 'out/_r15anim/timeline.json', 'out/_r15anim/st', '--stills', ','.join(map(str, ts)), '--scale', scale], capture_output=True)
+    subprocess.run(['node', 'engine/render.mjs', 'cache/out/_r15anim/timeline.json', 'cache/out/_r15anim/st', '--stills', ','.join(map(str, ts)), '--scale', scale], capture_output=True)
     rows = []
     for nm in names:
-        row = [Image.open(f'out/_r15anim/st/t{t:.2f}.jpg') for (m, t) in meta if m == nm]; w, h = row[0].size; cw = int(w * .62); x0 = int(w * .1); y0 = int(h * .33); y1 = int(h * .72)
+        row = [Image.open(f'cache/out/_r15anim/st/t{t:.2f}.jpg') for (m, t) in meta if m == nm]; w, h = row[0].size; cw = int(w * .62); x0 = int(w * .1); y0 = int(h * .33); y1 = int(h * .72)
         sh = Image.new('RGB', (cw * len(row), y1 - y0))
         for c, im in enumerate(row): sh.paste(im.crop((x0, y0, x0 + cw, y1)), (c * cw, 0))
-        ImageDraw.Draw(sh).text((4, 4), nm, fill='white'); sh.save(f'out/_r15anim/sheet_{nm.replace("+", "_")}.jpg'); rows.append(sh)
+        ImageDraw.Draw(sh).text((4, 4), nm, fill='white'); sh.save(f'cache/out/_r15anim/sheet_{nm.replace("+", "_")}.jpg'); rows.append(sh)
     if len(rows) > 1:
         g = Image.new('RGB', (rows[0].width, sum(r.height for r in rows)))
         y = 0
         for r in rows: g.paste(r, (0, y)); y += r.height
-        g.save('out/_r15anim/all.jpg')
+        g.save('cache/out/_r15anim/all.jpg')
     print('sheets', len(rows))
 if __name__ == '__main__':
     if sys.argv[1] == 'story': story(NAMES)

@@ -1,15 +1,15 @@
-"""Narration TTS with word timings. Providers: local (Chatterbox, default when .venv-tts exists) | elevenlabs | kokoro."""
+"""Narration TTS with word timings. Providers: local (Chatterbox, default when tools/audio/tts/.venv-tts exists) | elevenlabs | kokoro."""
 
 import base64, hashlib, json, os, re, subprocess, urllib.request
 import numpy as np
 from pathlib import Path
-from paths import ROOT
+from paths import ROOT, TTS_MODELS, TTS_VENV_PYTHON
 
 SR = 44100
 CACHE = ROOT / "cache" / "tts"
 VOICES = json.loads((ROOT / "config" / "voices.json").read_text())
-LOCAL_PY = ROOT / ".venv-tts" / "Scripts" / "python.exe"
-os.environ.setdefault("HF_HOME", str(ROOT / "cache" / "hf"))
+LOCAL_PY = TTS_VENV_PYTHON
+os.environ.setdefault("HF_HOME", str(TTS_MODELS / "hf"))
 # emotion presets for the local Chatterbox model (exaggeration = intensity, cfg lower = faster/more dramatic pacing)
 EMO = {
     "neutral": (0.5, 0.5, 0.75),
@@ -166,7 +166,7 @@ def _kokoro(text, voice, settings):
     if _kok is None:
         from kokoro_onnx import Kokoro
 
-        m = ROOT / "models"
+        m = TTS_MODELS
         _kok = Kokoro(str(m / "kokoro-v1.0.int8.onnx"), str(m / "voices-v1.0.bin"))
     samples, sr = _kok.create(text, voice=voice, speed=settings.get("speed", 1.1), lang="en-us")
     a = np.asarray(samples, dtype=np.float32)
@@ -297,6 +297,7 @@ def prefetch(items):
             jobs.append(_local_job(st, v, settings, stem))
     if not jobs:
         return
+    require_online(len(jobs))
     (CACHE / "local").mkdir(parents=True, exist_ok=True)
     jf = CACHE / "local" / "_jobs.json"
     jf.write_text(json.dumps(jobs), encoding="utf8")
@@ -317,6 +318,12 @@ def prefetch(items):
         print(f"  ! local TTS worker crashed, resuming ({len(todo)} lines left)")
     else:
         raise SystemExit("local TTS failed 3 times")
+
+
+def require_online(missing):
+    """RS_TTS_OFFLINE=1 (regression runs) forbids synthesis: only narration already in cache/tts may be used."""
+    if os.environ.get("RS_TTS_OFFLINE") == "1":
+        raise SystemExit(f"RS_TTS_OFFLINE: {missing} line(s) not in the voice cache")
 
 
 def synth(text, voice_alias="narrator", settings=None):
@@ -345,6 +352,7 @@ def synth(text, voice_alias="narrator", settings=None):
     if f.exists():
         d = np.load(f, allow_pickle=True)
         return d["a"], d["w"].tolist()
+    require_online(1)
     try:
         a, w = (_eleven if prov == "elevenlabs" else _kokoro)(TAG.sub("", text).strip(), vid, settings)
     except Exception as e:

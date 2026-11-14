@@ -17,7 +17,7 @@ GPU is always used (Chrome ANGLE/D3D11 on Windows); the log prints the GPU name 
 ```jsonc
 {
   "title": "In This Town, ...",        // metadata
-  "genre": "in_this_town",            // formats/<genre>/ defaults + guide
+  "genre": "in_this_town",            // config/formats/<genre>/ defaults + guide
   "narrator": "narrator",              // voice alias (config/voices.json): narrator, narrator_f, narrator_deep, boy, girl, man, woman, old_man, villain
   "music": "curious",                  // file in assets/audio/music (curious, tension) or synth mood: upbeat funny mystery sad tense spooky epic chill | none
   "musicVol": 0.16, "pad": 0.12,       // optional: music level, silence after each line
@@ -33,7 +33,7 @@ GPU is always used (Chrome ANGLE/D3D11 on Windows); the log prints the GPU name 
 |---|---|
 | colors | `skin shirt pants shoes accent emblem hairColor hatColor beardColor` |
 | `hair` | messy short swept spiky long bob ponytail bun pigtails afro buzz none (auto-tucks under hats) · `fringe`: 1 / -1 sweep side |
-| `hair` (Roblox) | `"rbx:<id>"` = real Roblox hair mesh+texture from assets/roblox/hair.obj (preferred). Available: 7259123616 black messy (covers eyes) · 6501746646 blonde/brown long girl · 376524487 blonde spiked · 376548738 brown charmer · 376527350 black ponytail · 2956239660 long red · 63690008 pal hair · 451221329 true blue · 376526888 straight blonde · 1103003368 orange beanie+black hair · 16630147 beautiful hair. `hairTint`, `hairScale` optional. Add more: ids in config/roblox_hair.json → run studio/export_hair.luau via pipeline/tools/studio_mcp.py → user exports ExportHair as assets/roblox/hair.obj |
+| `hair` (Roblox) | `"rbx:<id>"` = real Roblox hair mesh+texture from assets/roblox/hair.obj (preferred). Available: 7259123616 black messy (covers eyes) · 6501746646 blonde/brown long girl · 376524487 blonde spiked · 376548738 brown charmer · 376527350 black ponytail · 2956239660 long red · 63690008 pal hair · 451221329 true blue · 376526888 straight blonde · 1103003368 orange beanie+black hair · 16630147 beautiful hair. `hairTint`, `hairScale` optional. Add more: ids in config/roblox_hair.json → run tools/roblox studio/export_hair.luau via tools/assets/studio_mcp.py → user exports ExportHair as assets/roblox/hair.obj |
 | `hat` | cap police crown beanie tophat hardhat headphones halo horns bow |
 | `details` | crewneck collar buttons tie badge belt pocket kangaroo hood stripes heart star cuffs (list) · `tie`: color · `jacket`: color · `logo`: shirt text |
 | `sleeves` / `bottom` | long short none / pants shorts skirt · `hands`: true = skin hands on long sleeves |
@@ -97,9 +97,9 @@ GPU is always used (Chrome ANGLE/D3D11 on Windows); the log prints the GPU name 
 - Put SFX on the emphasized word (`"at":"w:word"`). Reveal = `punch` + vineboom/boom/tada.
 
 ## Output
-`out/<slug>/`: `timeline.json` · `mix.wav` / `mix_nomusic.wav` · `video.mp4` (silent) · `preview.jpg`; final package in `publish/<slug>/` (see Publish block).
+`cache/out/<slug>/`: `timeline.json` · `mix.wav` / `mix_nomusic.wav` · `video.mp4` (silent) · `preview.jpg`; final package in `publish/<slug>/` (see Publish block).
 
-## Imported Roblox animations (config/anims_r15.json, pipeline/tools/rbx_anim.py, docs/ROBLOX_ANIMATIONS.md)
+## Imported Roblox animations (config/anims_r15.json, tools/assets/rbx_anim.py, docs/ROBLOX_ANIMATIONS.md)
 - Same format as config/anims.json (`loop`, `held`, `keys`) plus `hip: true` on imported entries: `lean` then pivots at the hips (y=2) like a Roblox torso instead of at the feet (applyPose keeps the hip fixed), and the optional key `bz` (body forward / back offset, + = forward) fixes climbs. Entries carry their source asset id in `_sources`. The pipeline merges every config/anims*.json into `tl.anims`.
 - Only Roblox-owned / public animations can be read (third-party pack animations fail); R15 clips map joint for joint (native entries, `rig: "r15"`).
 
@@ -117,7 +117,7 @@ GPU is always used (Chrome ANGLE/D3D11 on Windows); the log prints the GPU name 
 - A sky is a cubemap in the Roblox Sky model: six faces `rt lf up dn bk ft` in `assets/sky/<name>/` (`faces`). Equirect panoramas (`file`, Poly Haven CC0) and procedural skies (`gen`) are converted to the same cubemap at load. `tests/stories/_facetest` checks the face orientation (Ft is seen looking -Z, Rt looking +X); `upRot` / `dnRot` = quarter turns if an imported sky has its top/bottom turned.
 - Per sky in `config/skies.json`: `sunU` (where the sun is in a panorama, so it lines up with the sun light), `sat` `con` `exp` (picture), `sun: [color, intensity]`, `hemi: [color, intensity]`, `fog: [color, near, far]` (also the colour below the horizon), `rays` (light shafts + flare, only while the sun is in or near the frame), `time`.
 - Scene keys: `sky` (inherited; `none`), `skyTo: {sky, at, dur}` (compact `"a>b@when"`), `grade`, `gradeTo: {grade, at, dur}`, `rays` (multiplier). `style.look: "aaa"` picks a sky from the time of day and the `vivid` grade; `style.grade`, `style.rays` set story-wide defaults. Weather still adds its particles, light scaling and fog on top of a sky.
-- Import a Roblox skybox: `python pipeline/tools/roblox_sky.py <name> <model id>` or with the six texture ids (read them in Studio from the Sky's SkyboxXx properties). Roblox no longer serves assets anonymously: the download needs `ROBLOX_OPENCLOUD_API_KEY` in `.env` with the `legacy-asset:manage` scope.
+- Import a Roblox skybox: `python tools/assets/roblox_sky.py <name> <model id>` or with the six texture ids (read them in Studio from the Sky's SkyboxXx properties). Roblox no longer serves assets anonymously: the download needs `ROBLOX_OPENCLOUD_API_KEY` in `.env` with the `legacy-asset:manage` scope.
 - Grade pass (last in the chain): saturation, contrast, tint, lift, vignette, chromatic aberration, sun shafts. Presets in `GRADES` (engine/environments/sky.js). Stories without `sky` / `grade` / `look` render exactly as before (pass disabled).
 
 ## Data-driven particle effects (engine/fx/quarks.js, three.quarks 0.16 + quarks.core, MIT)
@@ -171,11 +171,11 @@ Long form: `"crowd": {"do": "flee", "n": 12, "on": "rex", "at": "w:roars", "expr
 stays put across cuts (change `seed` for different people). In kit locations spots avoid walls and follow the ground; `extras` (ambient walkers) can be used together.
 Pool limit: 24 crowd + 8 extras. Regression story: `tests/stories/_crowdtest` (render it).
 
-## Roblox hair styles (pipeline/tools/roblox_hair.py, config/roblox_hair.json "styles")
+## Roblox hair styles (tools/assets/roblox_hair.py, config/roblox_hair.json "styles")
 `"hair": "rbx:<name>"` + `hairColor`. Files: assets/roblox/hair/<name>.json/.png (greyscale texture, tinted by hairColor; `"gray": false` keeps the original colours).
 Adding one needs no Studio export and never touches the open place: (1) read-only Luau probe in Studio (CreateHumanoidModelFromDescription, unparented) gives the
 accessory's mesh id, texture id and, for 2021+ layered hairs, the WrapLayer ReferenceMeshId + ReferenceOrigin; classic hairs give SpecialMesh scale + `HeadAttachment * HandleAttachment^-1`
-position; (2) add the entry to "styles" (`kind`: classic | layered); (3) `python pipeline/tools/roblox_hair.py`. Meshes / textures download by id (formats 1.x-4.x parsed by pipeline/tools/rbxmesh.py).
+position; (2) add the entry to "styles" (`kind`: classic | layered); (3) `python tools/assets/roblox_hair.py`. Meshes / textures download by id (formats 1.x-4.x parsed by tools/assets/rbxmesh.py).
 Layered hairs are made for a small realistic head: the converter remaps them onto the flat-topped cylinder head (`fit` = extra scale, `nudge` = [x,y,z] offset per style).
 Only free Roblox-made hairs are used. Check with `tests/stories/_hairtest` (--preview).
 
@@ -195,7 +195,7 @@ New wearable = `"wear": {"w": width, "y": base height above head centre}` in con
   Torso, arms and legs use separate sheets (arms and legs share the same template area). `shirt` / `pants` can be mixed with the procedural outfit (only one of them `rbx:`).
 - Rigid accessories (config/wearables.json, engine/characters/wear/wear.js): mesh + texture by id, placed at `partAttachment * handleAttachment^-1` on the character's part (Head: Hat / Hair / FaceFront / FaceCenter;
   Torso: Neck, BodyFront, BodyBack, Left/RightCollar, WaistFront/Center/Back; arms: Left/RightShoulder). Hats made for the classic head keep their exact size and press hair to the scalp (layers.js, `exact`).
-- Adding items: read-only Studio probe (see the Luau in this session's history: CreateHumanoidModelFromDescription, unparented) -> add the entry -> `python pipeline/tools/roblox_wear.py`.
+- Adding items: read-only Studio probe (see the Luau in this session's history: CreateHumanoidModelFromDescription, unparented) -> add the entry -> `python tools/assets/roblox_wear.py`.
   Not convertible today: assets whose download needs a login (HTTP 401) and mesh format 7 (Draco).
 - 3D layered clothing (jackets, sweaters, 3D pants) is NOT part of the framework: classic 2D clothing covers the need. A working prototype (converter, engine module, notes) is parked in `future/layered3d/`.
 Regression stories: `_clothestest`, `_rbxweartest` (--preview).

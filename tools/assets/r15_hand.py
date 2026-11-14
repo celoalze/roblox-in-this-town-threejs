@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hand-authored NATIVE R15 acting anims -> config/anims_r15_hand.json  (python pipeline/tools/r15_hand.py).  Names are plain anim names (a legacy 6-joint entry of the same name in another config/anims*.json is overridden).
+"""Hand-authored NATIVE R15 acting anims -> config/anims_r15_hand.json  (python tools/assets/r15_hand.py).  Names are plain anim names (a legacy 6-joint entry of the same name in another config/anims*.json is overridden).
 Joints are written in real angles (real knees / elbows); `y` of every key is SOLVED with a small FK of the R15 rig (constants of docs/R15.md) so the contact points of the pose
 (soles, knees, hands, or the whole body for rolls) rest on the floor: kneeling puts the knee on the ground, crawling is on hands and knees, crouching keeps the feet planted.
 Conventions (engine frame, docs/R15.md): shoulder / hip x<0 = forward, knee x>0 flexes, elbow x<0 flexes, Waist / lean x>0 = forward, Neck x>0 = look down,
@@ -9,7 +9,7 @@ import json, math, os, sys
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 from rbx_anim import euler_to_m, mm, mv, rx, wr15, OUT15 as _O
 import rbx_anim

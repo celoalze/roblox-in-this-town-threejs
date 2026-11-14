@@ -1,7 +1,8 @@
 [tool.ruff]
 line-length = 120
 target-version = "py312"
-extend-exclude = [".venv-tts", ".tools", "cache", "out", "node_modules"]
+extend-exclude = ["tools/audio", "cache", "node_modules"]
+cache-dir = "cache/.ruff_cache"
 
 [tool.ruff.format]
 quote-style = "double"

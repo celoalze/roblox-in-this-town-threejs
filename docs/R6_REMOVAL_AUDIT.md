@@ -133,17 +133,17 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 | pipeline/story/shorthand.py | L175 `rig` default: `story.style.rig` then `"r15"`; cast `"rig"` override | the `style.rig: "r6"` switch and per-cast `rig` keys (`milo15` pattern) | delete the `style.rig` path and the `rig` override; always set `rig: "r15"` (or drop the key, engine default is then R15) | silent: a story with `style.rig: "r6"` would still build R15 once the engine branch is gone. None in the 60 stories today |
 | pipeline/story/lint.py | L16 `@r15` strip in anim names | suffix | keep until finalize, then delete | harmless |
 | pipeline/story/lint.py | L17 `EXPRS = set(re.findall(r"(\w+): \['", rig.js))` | regex on rig.js for expression names | migrate the path to the new face module | if `EXPR` moves and this line is not updated, expression lint silently checks nothing |
-| pipeline/tools/rbx_anim.py | L18-19, L21-23 header docs (R15 retargeted to R6, ELBOW/KNEE sharing) | describes legacy R6 conversion | update docs | |
-| pipeline/tools/rbx_anim.py | L39 `OUT = config/anims_roblox.json`, L208-226 `rd()` / `wr()` | legacy file writer | delete after finalize | |
-| pipeline/tools/rbx_anim.py | L94 `ELBOW = 0.4`, L98-120 `key_state` default `rig='R6'` and its R6 folding (arm / leg with ELBOW / KNEE) | legacy R6 retarget of R15 clips | delete the legacy branch; keep the R15 path | |
-| pipeline/tools/rbx_anim.py | L132-183 `convert()`, L184-197 `expand()`, legacy `add` / `remove` / `preview` / `show` / `list` commands (L368-375) | write legacy R6 entries | delete | keep `native`, `native-all`, `finalize` |
-| pipeline/tools/rbx_anim.py | L239 `R6MAP`, L242-255 `key_state15` (`R6` source clips mapped to joints) | used by native conversion of R6 clips inside `anims_r15.json` ("src": "R6") | keep | these are provenance labels, the conversion is still needed to regenerate |
-| pipeline/tools/rbx_anim.py | L338-355 `finalize()` | deletes legacy twins of every `@r15` entry and strips the suffix (119 in anims_roblox.json, 12 in anims_hand.json) | run once, after backup | irreversible in the repo; regenerate needs `cache/rbx_anim/`. Dry run first |
-| pipeline/tools/_animgen_check.py L6, pipeline/tools/_animtest_gen.py L3 | open `config/anims_roblox.json` directly | scratch checks | delete | |
-| pipeline/tools/animsheet.py | not checked in detail | scratch | check, probably delete | |
-| pipeline/tools/r15_hand.py | whole file | writes native R15 anims (`@r15`) | keep | |
-| pipeline/tools/roblox_wear.py L5 | docstring "centre of the R6 part" | wearables data is R6-space on purpose | keep; reword docstring | |
-| pipeline/tools/roblox_hair.py, catalog.py L50 | hair styles / docs | shared | keep | |
+| tools/assets/rbx_anim.py | L18-19, L21-23 header docs (R15 retargeted to R6, ELBOW/KNEE sharing) | describes legacy R6 conversion | update docs | |
+| tools/assets/rbx_anim.py | L39 `OUT = config/anims_roblox.json`, L208-226 `rd()` / `wr()` | legacy file writer | delete after finalize | |
+| tools/assets/rbx_anim.py | L94 `ELBOW = 0.4`, L98-120 `key_state` default `rig='R6'` and its R6 folding (arm / leg with ELBOW / KNEE) | legacy R6 retarget of R15 clips | delete the legacy branch; keep the R15 path | |
+| tools/assets/rbx_anim.py | L132-183 `convert()`, L184-197 `expand()`, legacy `add` / `remove` / `preview` / `show` / `list` commands (L368-375) | write legacy R6 entries | delete | keep `native`, `native-all`, `finalize` |
+| tools/assets/rbx_anim.py | L239 `R6MAP`, L242-255 `key_state15` (`R6` source clips mapped to joints) | used by native conversion of R6 clips inside `anims_r15.json` ("src": "R6") | keep | these are provenance labels, the conversion is still needed to regenerate |
+| tools/assets/rbx_anim.py | L338-355 `finalize()` | deletes legacy twins of every `@r15` entry and strips the suffix (119 in anims_roblox.json, 12 in anims_hand.json) | run once, after backup | irreversible in the repo; regenerate needs `cache/rbx_anim/`. Dry run first |
+| tools/assets/_animgen_check.py L6, tools/assets/_animtest_gen.py L3 | open `config/anims_roblox.json` directly | scratch checks | delete | |
+| tools/assets/animsheet.py | not checked in detail | scratch | check, probably delete | |
+| tools/assets/r15_hand.py | whole file | writes native R15 anims (`@r15`) | keep | |
+| tools/assets/roblox_wear.py L5 | docstring "centre of the R6 part" | wearables data is R6-space on purpose | keep; reword docstring | |
+| tools/assets/roblox_hair.py, catalog.py L50 | hair styles / docs | shared | keep | |
 | pipeline/produce.py, tts*.py, audio.py, studio*.py, catalog.py, polyfork.py, rbxmesh.py, download_catalog_models.py | none | no R6 references | keep | |
 
 ## 8. config/ (JSON)
@@ -157,7 +157,7 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 | config/anims_r15.json | 119 `@r15` native entries, `"src": "R6"` labels on several (provenance only) | native | keep | `_sources` records the origin |
 | config/anims_r15_hand.json | 12 native `@r15` | native | keep | |
 | config/cast.json | cast presets, no `rig` key | none (presets are rig-agnostic) | keep | |
-| config/roblox_cast.json | `milo`, `zoe`, `jay` with 4 catalog ids each | input of studio/export_cast.luau (R6 dressed exports) | delete | |
+| config/roblox_cast.json | `milo`, `zoe`, `jay` with 4 catalog ids each | input of tools/roblox studio/export_cast.luau (R6 dressed exports) | delete | |
 | config/roblox_hair.json | `hair` (11 ids, slot index into hair.obj), `styles` (18) | `_note` L15 refers to hair.obj coordinates (R6 head) | keep | shared |
 | config/roblox_clothes.json | `shirts` (13), `pants` (9) | classic clothing, used by r15_skin | keep | not R6-only |
 | config/wearables.json | 11+ items, slots hat/face/neck/back, data relative to R6 parts | R6 attachment space baked in | keep | see r15_attach.js `R6_ATT` |
@@ -167,11 +167,11 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| studio/export_cast.luau | L1, L16 `HumanoidRigType.R6` | builds R6 dressed rigs for .obj export (milo, zoe, jay) | delete (with config/roblox_cast.json and the three .obj) | |
-| studio/sandbox.luau | L1, L13 `HumanoidRigType.R6` | R6 sandbox test scene | delete | |
-| studio/export_hair.luau | L1-12 builds hair on a classic R6 head, exports `assets/roblox/hair.obj` | R6 head fit | keep | hair.obj feeds `loadHairLib` for the current cast. Only remove once every `rbx:` hair id has a style in `assets/roblox/hair/` |
-| studio/export_anim.luau L4, L29 and studio/export_anim_module.luau L15 | default label `rig = "R6"`; ORDER15 for R15 | both rigs supported | keep | the R6 branch is input for R6 source clips only |
-| studio/cast_test.luau L20, runtime.luau L66, export_r15.luau, build_r15.py | R15 | R15 | keep | |
+| tools/roblox studio/export_cast.luau | L1, L16 `HumanoidRigType.R6` | builds R6 dressed rigs for .obj export (milo, zoe, jay) | delete (with config/roblox_cast.json and the three .obj) | |
+| tools/roblox studio/sandbox.luau | L1, L13 `HumanoidRigType.R6` | R6 sandbox test scene | delete | |
+| tools/roblox studio/export_hair.luau | L1-12 builds hair on a classic R6 head, exports `assets/roblox/hair.obj` | R6 head fit | keep | hair.obj feeds `loadHairLib` for the current cast. Only remove once every `rbx:` hair id has a style in `assets/roblox/hair/` |
+| tools/roblox studio/export_anim.luau L4, L29 and tools/roblox studio/export_anim_module.luau L15 | default label `rig = "R6"`; ORDER15 for R15 | both rigs supported | keep | the R6 branch is input for R6 source clips only |
+| tools/roblox studio/cast_test.luau L20, runtime.luau L66, export_r15.luau, build_r15.py | R15 | R15 | keep | |
 | assets/roblox/milo.obj (546 KB), milo.mtl, jay.obj (182 KB), jay.mtl, zoe.obj (572 KB), zoe.mtl | R6 character exports | not referenced by engine, pipeline or config (grep found only the self `mtllib` line in milo.obj). publish/ and docs were not fully searched (grep timed out) | delete after a quick check of publish/ and docs | |
 | assets/roblox/hair.obj (2.2 MB), hair.mtl, Hair*_diff.png (11), Handle1_diff.png | Roblox hair library | loaded by `loadHairLib` (rig.js L69) for `rbx:<id>` hair of R15 characters too | keep until hair styles cover all ids | biggest asset of the R6 path, but shared |
 | assets/roblox/hair/ (36 files) | per-style hair (roblox_hair.py) | shared, both rigs | keep | |
@@ -202,7 +202,7 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 
 ## 12. Cleanup plan (ordered)
 
-Each step ends with the same verification: `python pipeline/story/lint.py` on every story (no new warnings, and the expression check still lists the 40+ expressions), `python pipeline/produce.py <story> --preview` on `_r15attach`, `_r15skin`, `_r15links`, `_r15anim`, plus one production story with crowd extras, and a diff of `python pipeline/tools/rbx_anim.py --vocab anim` (names must not change).
+Each step ends with the same verification: `python pipeline/story/lint.py` on every story (no new warnings, and the expression check still lists the 40+ expressions), `python pipeline/produce.py <story> --preview` on `_r15attach`, `_r15skin`, `_r15links`, `_r15anim`, plus one production story with crowd extras, and a diff of `python tools/assets/rbx_anim.py --vocab anim` (names must not change).
 
 1. **Fix the R15 gaze bug first (face2.js L133, L146; world.js L320, L343; links.js L21).** Replace the hard-coded 4.6 with `headY(ch)`. Verify: `_r15links` gaze looks at the camera and at other actors. This changes R15 output on purpose, so compare before and after.
 2. **Create a shared head / face module.** Move RIM / rimify, HEAD_R / HEAD_H, plastic / fabric / gold / mesh, `buildHeadgear` and its hair / hat / extras helpers, `faceTexture`, `faceTexture2`, `loadAtlas`, `loadHairLib`, `preloadHair`, `hairStyles`. Update the imports in character.js, layers.js, r15.js, r15_attach.js, r15_skin.js, world.js. Update lint.py L17 to the new path. Verify: all `_r15*` stories identical (frame compare), lint EXPRS count unchanged.
@@ -210,7 +210,7 @@ Each step ends with the same verification: `python pipeline/story/lint.py` on ev
 4. **Make R15 the engine default.** character.js L9: `buildR15(spec)` only. Remove the `'r6'` option in world.js `npcR15` and the `rig` gate in `buildExtras`. Verify: a crowd story (`crowd` key) and a story with `extras`.
 5. **Delete the R6 branches in engine code.** character.js L106-114 (`applyPose` R6 path); links.js `MODES`, R6 sides of `armToward`, `tp`, `shoulderW`, `resetIK`, `hipOf` / `headY` fallbacks; world.js `carryArm`, `armTip`, holdProp R6 branches; wear.js `partSpace` R6 branch. Verify: `_r15links`, `_r15attach` (held props, wearables on torso and head).
 6. **Pipeline cleanup.** shorthand.py L175: drop `style.rig` and the cast `rig` override. rbx_anim.py: back up `config/anims_roblox.json`, run `finalize` (dry run first), then delete the legacy `convert`, `add`, `remove`, `preview`, `show`, `list`, `rd`, `wr` branches. Delete `_animgen_check.py` and `_animtest_gen.py`. Verify: `--vocab anim` names unchanged, every `@r15` name still resolves.
-7. **Delete R6 data and assets.** `studio/export_cast.luau`, `studio/sandbox.luau`, `config/roblox_cast.json`, `assets/roblox/{milo,jay,zoe}.{obj,mtl}` (after a grep of `publish/` and `docs/`). Verify: grep of the repo for the names returns nothing.
+7. **Delete R6 data and assets.** `tools/roblox studio/export_cast.luau`, `tools/roblox studio/sandbox.luau`, `config/roblox_cast.json`, `assets/roblox/{milo,jay,zoe}.{obj,mtl}` (after a grep of `publish/` and `docs/`). Verify: grep of the repo for the names returns nothing.
 8. **Delete the R6 comparison stories** `_r15test` and the R6 twins in `_r15skin` (cl6, tpl6, scenes "R6 vs R15 classic" and "close milo R6"). Verify: `_r15skin` still lints.
 9. **Docs.** REFERENCE.md, R15.md, ROBLOX_ANIMATIONS.md, AGENTS.md L80; mark AAA_PLAN.md superseded.
 10. **Keep for later (separate tasks):** the legacy 6-joint `pose()` switch and the `legacyToR15` adapter (about 45 procedural anims and 25 legacy-only JSON anims: anims.json 5, anims_hand 11, anims_interact 9); `armL/armR/legL/legR/torso/body` aliases on R15 characters (used by links, wear, crowd, world); `hair.obj` and `export_hair.luau` until every `rbx:` hair id has a style; `config/wearables.json` and `R6_ATT` (R6-space data); `roblox_clothes` and `assets/roblox/clothes/` (used by R15 too).
@@ -225,7 +225,7 @@ Each step ends with the same verification: `python pipeline/story/lint.py` on ev
 
 ## Done (2026-11-13): R6 rig removed, R15 is the only character rig
 
-Verification: baselines `out/<story>/baseline_r15.jpg` taken before any edit, SSIM re-checked after every step (all >= 0.99 except the two intentional changes below). Backups: `cache/backup_engine_pre_r6/` (engine/*.js, pipeline/*.py, rig.js.orig, R15.md.orig), `cache/backup_anims_20261113/` (anims json files).
+Verification: baselines `cache/out/<story>/baseline_r15.jpg` taken before any edit, SSIM re-checked after every step (all >= 0.99 except the two intentional changes below). Backups: `cache/backup_engine_pre_r6/` (engine/*.js, pipeline/*.py, rig.js.orig, R15.md.orig), `cache/backup_anims_20261113/` (anims json files).
 
 **Moved** (engine/rig.js split, every import updated; rig.js deleted):
 - `engine/shared/materials.js`: RIM, rimify, fabric, plastic, gold, shade, rbox, mesh.
@@ -234,7 +234,7 @@ Verification: baselines `out/<story>/baseline_r15.jpg` taken before any edit, SS
 - `character.js` exports `loadAtlas()` = hair library + face atlas (same behaviour as before).
 
 **Deleted**: `buildR6`, `headGeometry`, `faceGeometry`, `dressRbx`, `clothBox`, `T_*`, `CLOTH`, `preloadClothes` (+ its call in world.js), `HEAD_C`; R6 branch of `buildCharacter` and `applyPose`; `spec.rig`, `style.rig`, `style.npcRig` (NPC pool always R15, `shareMats` always on); `is15` and every `ch.rig === 'r15'` branch in links.js / wear.js / world.js; R6 `MODES` table of links.js (the R15 table is now the only `MODES`), R6 `armToward`, `footTo` guard; `carryArm`, `armTip` and the R6 branches of `holdProp` in world.js; R6 `partSpace` branch of wear.js; `@r15` suffix handling (character.js, lint.py, r15_hand.py).
-- Pipeline: `rbx_anim.py finalize` was run (131 legacy twins removed, suffix stripped); then `config/anims_roblox.json` (now empty), `pipeline/tools/_animgen_check.py`, `pipeline/tools/_animtest_gen.py` and the legacy parts of `rbx_anim.py` (`convert`, `key_state`, `add/list/show/remove/preview/native-all/finalize`, `rd/wr`, `vocab`, `CAL`, `infer`) were deleted. Only `rbx_anim.py native` remains. `--vocab anim` output identical before/after.
+- Pipeline: `rbx_anim.py finalize` was run (131 legacy twins removed, suffix stripped); then `config/anims_roblox.json` (now empty), `tools/assets/_animgen_check.py`, `tools/assets/_animtest_gen.py` and the legacy parts of `rbx_anim.py` (`convert`, `key_state`, `add/list/show/remove/preview/native-all/finalize`, `rd/wr`, `vocab`, `CAL`, `infer`) were deleted. Only `rbx_anim.py native` remains. `--vocab anim` output identical before/after.
 - `shorthand.py`: no longer sets `rig` (a `rig` key in a cast spec is dropped).
 - studio: `export_cast.luau`, `sandbox.luau`. config: `roblox_cast.json`. assets: `roblox/{milo,jay,zoe}.{obj,mtl}`. All grep-proven unreferenced (engine, pipeline, config, docs, stories, studio, formats, publish).
 - Stories: `_r15test` and `_r15skin` converted to plain R15 tests (R6 twins and the R6 scenes removed); `"rig": "r15"` keys removed from `_r15anim`, `_r15attach`, `_r15links`, `_r15skin`, `_r15test` and `_r15anim/gen.py`. No story used `style.rig` or `npcRig`.

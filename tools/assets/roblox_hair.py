@@ -1,7 +1,7 @@
 """Roblox catalog hairs -> assets/roblox/hair/<name>.json (+ .png). No Studio export step: meshes and textures download by id.
 
-  python pipeline/tools/roblox_hair.py            convert every style in config/roblox_hair.json "styles" that is missing
-  python pipeline/tools/roblox_hair.py --force    redo all
+  python tools/assets/roblox_hair.py            convert every style in config/roblox_hair.json "styles" that is missing
+  python tools/assets/roblox_hair.py --force    redo all
 
 Two kinds of source (ids come from a read-only Studio probe, see docs/REFERENCE.md "Roblox hair"):
 - classic  (SpecialMesh accessory): vertex * scale + pos = head-centre space.
@@ -17,7 +17,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 from paths import ROOT
 import rbxmesh
 
