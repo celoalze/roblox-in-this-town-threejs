@@ -271,7 +271,20 @@ export function makeFX(type, o = {}, anchor = new THREE.Vector3()) {
     update = (t) => {
       let txt = o.text != null ? o.text : fmtv((o.from ?? 0) - t * (o.rate ?? 1));
       if (o.to != null && o.text == null) txt = fmtv(Math.max(o.to, (o.from ?? 0) - t * (o.rate ?? 1)));
-      const glitch = o.glitch && Math.floor(t * 14) % 3 === 0; if (glitch) txt = txt.replace(/[0-9]/g, () => '0123456789#?'[Math.floor(Math.random() * 12)]);
+      const glitch = o.glitch && Math.floor(t * 14) % 3 === 0;
+      if (glitch) {
+        const step = Math.floor(t * 14);
+        const seed = o.seed ?? 11;
+        let charIndex = 0;
+        txt = txt.replace(/[0-9]/g, () => {
+          charIndex += 1;
+          let h = (step * 0x9e3779b9 + seed * 0x85ebca6b + charIndex * 0xc2b2ae35) | 0;
+          h = Math.imul(h ^ (h >>> 16), 0x45d9f3b);
+          h = Math.imul(h ^ (h >>> 16), 0x45d9f3b);
+          h = (h ^ (h >>> 16)) >>> 0;
+          return '0123456789#?'[h % 12];
+        });
+      }
       const col = (o.redBelow != null && parseFloat(txt.replace(/[^0-9]/g, '')) <= o.redBelow) ? '#ff3b3b' : (o.color || '#7dff9a');
       const key = txt + col + glitch; if (key === last) return; last = key;
       cg.clearRect(0, 0, 512, 160); cg.fillStyle = 'rgba(10,14,24,.78)'; cg.beginPath(); cg.roundRect(8, 16, 496, 128, 40); cg.fill(); cg.lineWidth = 6; cg.strokeStyle = col; cg.stroke();
