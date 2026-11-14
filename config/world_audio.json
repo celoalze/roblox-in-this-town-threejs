@@ -1,5 +1,5 @@
 {
- "_doc": "Ambience bed per world `set` (procedural loops from pipeline/audio.py SYN, or assets/audio/sfx). [name, volume]. Disable per story with style.worldAudio=false.",
+ "_doc": "Ambience bed per world `set` (procedural loops from pipeline/audio/mix.py SYN, or assets/audio/sfx). [name, volume]. Disable per story with style.worldAudio=false.",
  "jungle": [
   [
    "birds",

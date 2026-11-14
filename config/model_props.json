@@ -642,7 +642,7 @@
   "hold": false,
   "height": 15.56
  },
- "_wear": "wear = worn on the head when given to an actor (+crown): w = width in studs (head is 1.28), y = height of the model's base above the head centre. Hair settles under it automatically (engine/layers.js). Long form {\"type\":\"crown\",\"hand\":\"milo\",\"wear\":false} holds it instead.",
+ "_wear": "wear = worn on the head when given to an actor (+crown): w = width in studs (head is 1.28), y = height of the model's base above the head centre. Hair settles under it automatically (engine/characters/wear/layers.js). Long form {\"type\":\"crown\",\"hand\":\"milo\",\"wear\":false} holds it instead.",
  "palm_tree": {
   "model": "cenario/palm_tree",
   "hold": false,

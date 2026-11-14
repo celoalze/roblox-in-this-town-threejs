@@ -248,5 +248,5 @@
    ]
   }
  },
- "_styles_note": "named styles: \"hair\": \"rbx:<name>\" + hairColor. Source: free Roblox-made catalog hairs (asset = catalog id). Files: assets/roblox/hair/<name>.json/.png, built by pipeline/roblox_hair.py"
+ "_styles_note": "named styles: \"hair\": \"rbx:<name>\" + hairColor. Source: free Roblox-made catalog hairs (asset = catalog id). Files: assets/roblox/hair/<name>.json/.png, built by pipeline/tools/roblox_hair.py"
 }

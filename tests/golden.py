@@ -1,9 +1,10 @@
 """Golden-master regression harness for refactors that must not change behaviour.
 
-    python tests/golden.py capture [engine|pipeline]   record the current behaviour into tests/golden/
-    python tests/golden.py check   [engine|pipeline|all] [slug,slug]   re-run and compare against the recording (exit 1 on any difference)
+    python tests/golden.py capture [engine|pipeline|build]   record the current behaviour into tests/golden/
+    python tests/golden.py check   [engine|pipeline|build|all] [slug,slug]   re-run and compare against the recording (exit 1 on any difference)
 
 engine    frozen timelines (tests/golden/timelines/<slug>.json) -> stills at fixed times, compared pixel-wise.
+build     every story whose narration is cached -> `produce.py --audio-only`: timeline.json + mixes, compared by hash.
 pipeline  every stories/<slug>/story.json -> `produce.py --lint` (no TTS): stdout, lint.json and lint_timeline.json, compared exactly.
 
 Update the two ENTRY constants below if the entry points move.
@@ -138,7 +139,10 @@ def pipeline(mode, only=None):
     """Stories are independent, so they are linted a few at a time (each one launches its own headless browser)."""
     from concurrent.futures import ThreadPoolExecutor
 
-    slugs = sorted(p.parent.name for p in (ROOT / "stories").glob("*/story.json"))
+    slugs = sorted(
+        {p.parent.name for p in (ROOT / "stories").glob("*/story.json")}
+        | {p.parent.name for p in (ROOT / "tests" / "stories").glob("*/story.json")}
+    )
     if only:
         slugs = [s for s in slugs if s in only]
 
@@ -170,6 +174,61 @@ def pipeline(mode, only=None):
     return [f for found in results for f in found]
 
 
+def run_build(slug, out_dir):
+    """Full pipeline build without rendering (voice from the cache only): hashes of the timeline and both mixes."""
+    import hashlib
+    import os
+    out_dir.mkdir(parents=True, exist_ok=True)
+    env = {**os.environ, "RS_TTS_OFFLINE": "1"}  # never synthesize during a regression run: a cache miss = story skipped
+    cmd = [*PRODUCE_ENTRY, slug, "--audio-only", "--force", "--out", str(out_dir)]
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=ROOT, env=env)
+    if r.returncode:
+        return {"skipped": (r.stderr or r.stdout).strip().splitlines()[-1][:200] if (r.stderr or r.stdout).strip() else "failed"}
+    return {name: hashlib.sha256((out_dir / name).read_bytes()).hexdigest() for name in BUILD_FILES}
+
+
+BUILD_FILES = ("timeline.json", "mix.wav", "mix_nomusic.wav")
+
+
+def build(mode, only=None):
+    """Stories whose narration is fully in cache/tts: timeline.json and the audio mixes must stay byte-identical."""
+    from concurrent.futures import ThreadPoolExecutor
+    slugs = story_slugs(only)
+    record_path = GOLDEN / "build.json"
+    record = json.loads(record_path.read_text(encoding="utf-8")) if record_path.exists() else {}
+
+    def one(slug):
+        with tempfile.TemporaryDirectory() as tmp:
+            return slug, run_build(slug, Path(tmp))
+
+    with ThreadPoolExecutor(max_workers=PIPELINE_WORKERS) as pool:
+        results = dict(pool.map(one, slugs))
+    if mode == "capture":
+        record.update(results)
+        record_path.write_text(json.dumps(record, indent=1, sort_keys=True), encoding="utf-8")
+        skipped = [s for s, v in results.items() if "skipped" in v]
+        print(f"build capture: {len(results) - len(skipped)} stories recorded, {len(skipped)} skipped (voice not cached or build error)", flush=True)
+        return []
+    failures = []
+    for slug, got in results.items():
+        want = record.get(slug)
+        if want is None or "skipped" in want:
+            continue
+        if got != want:
+            diff = [n for n in BUILD_FILES if got.get(n) != want.get(n)] or [got.get("skipped", "?")]
+            failures.append(f"build {slug}: differs in {', '.join(diff)}")
+    print(f"build check: {sum(1 for s in results if 'skipped' not in record.get(s, {'skipped': 1}))} stories", flush=True)
+    return failures
+
+
+def story_slugs(only=None):
+    slugs = sorted(
+        {p.parent.name for p in (ROOT / "stories").glob("*/story.json")}
+        | {p.parent.name for p in (ROOT / "tests" / "stories").glob("*/story.json")}
+    )
+    return [s for s in slugs if not only or s in only]
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
     part = sys.argv[2] if len(sys.argv) > 2 else "all"
@@ -183,6 +242,8 @@ def main():
     failures = []
     if part in ("all", "pipeline"):
         failures += pipeline(mode, only)
+    if part in ("all", "build"):
+        failures += build(mode, only)
     if part in ("all", "engine"):
         failures += engine(mode)
     if mode == "check":

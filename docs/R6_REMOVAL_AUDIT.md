@@ -1,6 +1,6 @@
 # R6 removal audit
 
-Read-only audit (2026-11-13). Scope: everything that is specific to the legacy Roblox R6 rig. The R15 rig is the default (`pipeline/shorthand.py` sets `rig: "r15"` on every cast member without `rig`; `style.rig: "r6"` is the only way back). Line numbers refer to the files as they are now.
+Read-only audit (2026-11-13). Scope: everything that is specific to the legacy Roblox R6 rig. The R15 rig is the default (`pipeline/story/shorthand.py` sets `rig: "r15"` on every cast member without `rig`; `style.rig: "r6"` is the only way back). Line numbers refer to the files as they are now.
 
 Action legend: **delete** = dead once R6 is gone; **migrate** = code is R6-named but used by R15 too, move it to a shared module first; **keep** = shared or still needed by R15 (legacy 6-joint data format, adapter), do not touch in the R6 cleanup.
 
@@ -10,19 +10,19 @@ Action legend: **delete** = dead once R6 is gone; **migrate** = code is R6-named
 
 | export | used by |
 |---|---|
-| `RIM`, `rimify` (via RIM) | `engine/r15.js` L7, `engine/r15_skin.js` L8, `engine/character.js` L2/L6 -> `engine/world.js` L3, L547 |
-| `HEAD_R`, `HEAD_H` | `engine/layers.js` L8, `engine/r15_attach.js` L7 |
-| `buildHeadgear` | `engine/r15_attach.js` L7, L24 (R15 hair / hats / glasses) |
-| `faceTexture` (atlas v1) | `engine/character.js` L15 `setFace` (both rigs) |
-| `faceTexture2` | `engine/character.js` L13 (both rigs) |
-| `loadAtlas` | `engine/world.js` L134 (both rigs) |
+| `RIM`, `rimify` (via RIM) | `engine/characters/r15.js` L7, `engine/characters/r15_skin.js` L8, `engine/characters/character.js` L2/L6 -> `engine/core/world.js` L3, L547 |
+| `HEAD_R`, `HEAD_H` | `engine/characters/wear/layers.js` L8, `engine/characters/r15_attach.js` L7 |
+| `buildHeadgear` | `engine/characters/r15_attach.js` L7, L24 (R15 hair / hats / glasses) |
+| `faceTexture` (atlas v1) | `engine/characters/character.js` L15 `setFace` (both rigs) |
+| `faceTexture2` | `engine/characters/character.js` L13 (both rigs) |
+| `loadAtlas` | `engine/core/world.js` L134 (both rigs) |
 | `loadHairLib` (inside `loadAtlas`) | `buildHeadgear` -> `rbxHair` fallback `HAIR[id]` (both rigs) |
-| `preloadHair`, `hairStyles` | `engine/world.js` L156, L464 (both rigs) |
-| `preloadClothes` | `engine/world.js` L152 only (R6 path; R15 has its own loader, see below) |
-| `buildR6` | `engine/character.js` L9 only |
+| `preloadHair`, `hairStyles` | `engine/core/world.js` L156, L464 (both rigs) |
+| `preloadClothes` | `engine/core/world.js` L152 only (R6 path; R15 has its own loader, see below) |
+| `buildR6` | `engine/characters/character.js` L9 only |
 | `headRadius`, `HEAD_C` | internal (`headGeometry`, `faceGeometry`, `buildExtras`, `buildR6`) |
 
-Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, plastic / fabric / gold / mesh helpers, buildHeadgear and everything it calls, face atlas functions, hair library loader) into a new module (for example `engine/headgear.js` and `engine/face.js`), update the 6 importers, verify, and only then delete R6 code from `rig.js`.
+Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, plastic / fabric / gold / mesh helpers, buildHeadgear and everything it calls, face atlas functions, hair library loader) into a new module (for example `engine/characters/wear/headgear.js` and `engine/characters/face/face.js`), update the 6 importers, verify, and only then delete R6 code from `rig.js`.
 
 ## 1. engine/rig.js (331 lines)
 
@@ -31,7 +31,7 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 | engine/rig.js | L9-10 `HEAD_R, HEAD_H, HEAD_C, BEV` | R6 head proportions (0.64 / 1.24), `HEAD_C` only used by `buildR6` L325 | migrate `HEAD_R/HEAD_H` (shared), delete `HEAD_C` with buildR6 | layers.js and r15_attach.js import HEAD_R/HEAD_H; removing them breaks R15 |
 | engine/rig.js | L26-31 `RIM`, `rimCompile`, `rimify` | none (shared shader) | migrate | used by R15 materials and world.js L547 |
 | engine/rig.js | L33-36 `fabric`, `plastic`, `gold`, `shade`, `mesh` | none (shared helpers, caches MC/GC) | migrate with buildHeadgear | used by hair, hats, extras |
-| engine/rig.js | L43-62 `headRadius`, `headGeometry`, `faceGeometry` | R6 rounded-cylinder head and decal patch | delete `headGeometry`, `faceGeometry`; keep `headRadius` if buildExtras (L243 `onFace`) stays | R15 has its own face patch in engine/r15.js L56 (same idea, R15 fit) |
+| engine/rig.js | L43-62 `headRadius`, `headGeometry`, `faceGeometry` | R6 rounded-cylinder head and decal patch | delete `headGeometry`, `faceGeometry`; keep `headRadius` if buildExtras (L243 `onFace`) stays | R15 has its own face patch in engine/characters/r15.js L56 (same idea, R15 fit) |
 | engine/rig.js | L65-79 `HAIR`, `loadHairLib` (`/assets/roblox/hair.obj`) | loads the Roblox hair OBJ library (2.2 MB) | keep (shared), migrate with hair code | **not R6-only**: `rbx:<id>` hair of the current cast (milo, zoe, jay, mia, mom, dad ...) resolves through `HAIR[id]` for R15 too. `loadAtlas` (L100) calls it, so it runs on every render |
 | engine/rig.js | L82-99 `STYLE`, `STYLE_CFG`, `preloadHair`, `hairStyles`, `rbxHair` | none (new per-style hair from `assets/roblox/hair/`) | keep | shared |
 | engine/rig.js | L100 `loadAtlas` | calls `loadHairLib()` | keep, but split the hair call out if the library is later removed | removing the hair call silently breaks rbx hair on R15 |
@@ -41,109 +41,109 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 | engine/rig.js | L171-224 `strand`, `hairCap`, `VOL`, `buildHair` (`B()` uses `cz = 4.62`) | hair authored in R6 head-centre coordinates | keep (shared); R15 maps it through `fitSpace` | coordinates are R6 head space on purpose: changing them shifts all hair |
 | engine/rig.js | L227-239 `buildHat` | hats in R6 head space | keep (shared) | R15 hats go through `fitSpace` |
 | engine/rig.js | L241-250 `buildExtras` (glasses, shades, mustache, beard) | uses `headRadius`, `FACE_SPAN` | keep (shared) | not the same as world.js `buildExtras` (NPC pool), do not confuse them in grep |
-| engine/rig.js | L254-258 `CLOTH`, `isRbx`, `preloadClothes` | classic clothing loader for R6 | delete | R15 loads its own clothing (engine/r15_skin.js L81-90 `clothImage`, own cache). Only caller: world.js L152 |
-| engine/rig.js | L259-262 `T_TORSO`, `T_RIGHT`, `T_LEFT` | R6 box face regions of the 585x559 template | delete | duplicated in engine/r15_skin.js L36-44 (`TPL`, `remapGeometry`), which is the R15 copy |
+| engine/rig.js | L254-258 `CLOTH`, `isRbx`, `preloadClothes` | classic clothing loader for R6 | delete | R15 loads its own clothing (engine/characters/r15_skin.js L81-90 `clothImage`, own cache). Only caller: world.js L152 |
+| engine/rig.js | L259-262 `T_TORSO`, `T_RIGHT`, `T_LEFT` | R6 box face regions of the 585x559 template | delete | duplicated in engine/characters/r15_skin.js L36-44 (`TPL`, `remapGeometry`), which is the R15 copy |
 | engine/rig.js | L263-266 `clothBox` | R6 box UVs | delete | none |
 | engine/rig.js | L267-277 `dressRbx` | wraps classic clothing on R6 boxes | delete | called only from buildR6 L330 |
 | engine/rig.js | L278-282 `buildHeadgear` | hair + hat + extras into a head-centre group, shared | keep (move) | used by r15_attach.js L24 |
-| engine/rig.js | L283-331 `buildR6` | the whole R6 character: torso, arms, legs, head, details, skirt/shorts/pants bottom, outfit details | delete | R15 details were already ported in engine/r15_skin.js L112-175 (`buildSkin`), so buildR6 is not the reference anymore. Check `stories/_r15skin` after deletion |
+| engine/rig.js | L283-331 `buildR6` | the whole R6 character: torso, arms, legs, head, details, skirt/shorts/pants bottom, outfit details | delete | R15 details were already ported in engine/characters/r15_skin.js L112-175 (`buildSkin`), so buildR6 is not the reference anymore. Check `tests/stories/_r15skin` after deletion |
 
-## 2. engine/character.js (115 lines)
-
-| file | symbol or lines | R6-specific what | action | risk note |
-|---|---|---|---|---|
-| engine/character.js | L2 import of `buildR6`, `preloadClothes` | R6 builder and clothing loader | delete the two names | |
-| engine/character.js | L6 `export { ..., preloadClothes }` | re-export used by world.js L3 / L152 | delete `preloadClothes` | |
-| engine/character.js | L9 `spec.rig === 'r15' ? buildR15 : buildR6` | R6 is the fallback when `spec.rig` is missing | delete the R6 branch: `buildR15(spec)` | **behaviour change for every caller that passes no `rig`** (crowd/NPC code and direct engine calls). Today those are R6. The pipeline already sets r15 (shorthand.py L175) |
-| engine/character.js | L11-16 `setFace` | shared; `ch.face` on both rigs | keep | |
-| engine/character.js | L20-42 `S, PI, spr, ease, LEG=2, HELD, DATA, J, sample` | legacy 6-joint pose format (`la ra ll rl hd ts`), `LEG = 2` (R6 leg length) | keep | the legacy format is the input of `legacyToR15` for every anim without a native twin |
-| engine/character.js | L44-92 `pose()` (switch of ~45 procedural anims: walk, run, talk, wave, cheer, sit, glide, swim...) | authored in the 6-joint R6 format | keep | **must stay**: ~45 anims are authored in this dict. R15 characters get them through `legacyToR15` (r15.js L131). Migrating them is an authoring task, not a deletion |
-| engine/character.js | L27-33 `registerAnims` / `NATIVE` / `DATA` | loads `config/anims*.json`; `rig: 'r15'` native entries and `@r15` twins | keep; the `@r15` suffix branch can go after `rbx_anim.py finalize` | |
-| engine/character.js | L95-103 `blendPose`, `blendPoseLag` | shared | keep | |
-| engine/character.js | L104 `applyPose` R15 line | `applyPose15` / `legacyToR15` | keep | |
-| engine/character.js | L106-114 `applyPose` R6 path (armL/armR/legL/legR/head/torso/body rotations, body lean/squash) | writes R6 block rotations | delete after every character is R15 | the R15 path needs no R6 fields |
-
-## 3. engine/r15.js, r15_skin.js, r15_attach.js, anim15.js, skeleton.js (R15 side)
+## 2. engine/characters/character.js (115 lines)
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| engine/r15.js | L7 `import { RIM } from './rig.js'` | depends on rig.js for the shader | migrate (import from shared module) | |
-| engine/r15.js | L56-80 own face patch | same idea as rig.js `faceGeometry` for R6 | keep (becomes the only face) | |
-| engine/r15.js | L81-82 legacy aliases `armL: J.RightShoulder, armR: J.LeftShoulder, legL: J.RightHip, legR: J.LeftHip` | names kept for R6 code | keep for now | links, wear, crowd, world still read `armL/armR/legL/legR/torso/body` on R15. Renaming them is a separate task |
-| engine/r15.js | L131 `legacyToR15` | adapter from the R6 6-joint format | keep | needed until every anim has a native twin |
-| engine/r15_skin.js | L8 `import { RIM } from './rig.js'` | | migrate | |
-| engine/r15_skin.js | L36-44 `T_TORSO`, `T_LEFT`, `T_RIGHT`, `TPL`, `GROUP` (maps to `armL/legL` names) | copy of R6 template tables; `GROUP` uses legacy aliases | keep | after rig.js cleanup this is the only copy: point the comment at it |
-| engine/r15_skin.js | L81-90 `clothImage` | own loader for `rbx:` clothes | keep | this is why `preloadClothes` (rig.js) is not needed for R15 |
-| engine/r15_skin.js | L112-175 details (collar, buttons, tie, hood...) | ported from `buildR6` (comment L112) | keep | update the comment after buildR6 is deleted |
-| engine/r15_skin.js | L99 `HEAD_SCALE = 1.1` | R15 head vs R6 head, not R6 code | keep | |
-| engine/r15_attach.js | L7 imports `buildHeadgear, HEAD_R, HEAD_H` | R6 head box used to fit the R15 head (`fitSpace`) | migrate the imports | R15 hair / hats depend on the R6 head proportions by design (`fitSpace`, L13-24) |
-| engine/r15_attach.js | L32 `R6_ATT` (R6 attachment points) and L28-36 `slotSpace15` | wearables.json data is stored relative to the R6 part with the R6 attachment baked in | keep | deleting it means re-baking `config/wearables.json`. Large, separate task |
-| engine/anim15.js | L5 `legacyToR15, R15_JOINTS`; L33-45 `snapLegacy`, `natOf`, `toLegacyKey` | legacy bridge | keep | `toLegacyKey` gives the R6 fallback for native-only entries (crowd, links) |
-| engine/skeleton.js | comments L7 "like the legacy rig's armL" | comment only | keep | |
+| engine/characters/character.js | L2 import of `buildR6`, `preloadClothes` | R6 builder and clothing loader | delete the two names | |
+| engine/characters/character.js | L6 `export { ..., preloadClothes }` | re-export used by world.js L3 / L152 | delete `preloadClothes` | |
+| engine/characters/character.js | L9 `spec.rig === 'r15' ? buildR15 : buildR6` | R6 is the fallback when `spec.rig` is missing | delete the R6 branch: `buildR15(spec)` | **behaviour change for every caller that passes no `rig`** (crowd/NPC code and direct engine calls). Today those are R6. The pipeline already sets r15 (shorthand.py L175) |
+| engine/characters/character.js | L11-16 `setFace` | shared; `ch.face` on both rigs | keep | |
+| engine/characters/character.js | L20-42 `S, PI, spr, ease, LEG=2, HELD, DATA, J, sample` | legacy 6-joint pose format (`la ra ll rl hd ts`), `LEG = 2` (R6 leg length) | keep | the legacy format is the input of `legacyToR15` for every anim without a native twin |
+| engine/characters/character.js | L44-92 `pose()` (switch of ~45 procedural anims: walk, run, talk, wave, cheer, sit, glide, swim...) | authored in the 6-joint R6 format | keep | **must stay**: ~45 anims are authored in this dict. R15 characters get them through `legacyToR15` (r15.js L131). Migrating them is an authoring task, not a deletion |
+| engine/characters/character.js | L27-33 `registerAnims` / `NATIVE` / `DATA` | loads `config/anims*.json`; `rig: 'r15'` native entries and `@r15` twins | keep; the `@r15` suffix branch can go after `rbx_anim.py finalize` | |
+| engine/characters/character.js | L95-103 `blendPose`, `blendPoseLag` | shared | keep | |
+| engine/characters/character.js | L104 `applyPose` R15 line | `applyPose15` / `legacyToR15` | keep | |
+| engine/characters/character.js | L106-114 `applyPose` R6 path (armL/armR/legL/legR/head/torso/body rotations, body lean/squash) | writes R6 block rotations | delete after every character is R15 | the R15 path needs no R6 fields |
 
-## 4. engine/links.js (223 lines)
+## 3. engine/characters/r15.js, r15_skin.js, r15_attach.js, anim15.js, skeleton.js (R15 side)
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| engine/links.js | L20 `is15` | gate for R15 branches | keep, becomes always true; then simplify | |
-| engine/links.js | L21 `headY` fallback `: 4.6` | R6 head centre | delete the R6 branch | R15 4.87 is the only value needed |
-| engine/links.js | L22 `hipOf` fallback `: 2` | R6 hip height | delete the R6 branch | |
-| engine/links.js | L35-60 `limbOf`, `solve2` | R15 2-bone IK (already R15-only) | keep | |
-| engine/links.js | L64-67 `armToward` R6 path (box arm turned and stretched: `ch.armL`, `ch.body.worldToLocal`, `arm.scale.y`) | R6 arm block | delete | |
-| engine/links.js | L71 `shoulderW` R6 side (`ch.armL/armR`) | R6 | simplify to the joint world position | |
-| engine/links.js | L83 `tp()` R6 side `ch.torso.localToWorld` | R6 torso frame | delete the R6 branch | |
-| engine/links.js | L91-123 `MODES` (R6 table) and L158 `M0 = MODES[l.mode]` / `is15 ? MODES15 : M0` | R6 link anchors (shoulders, hips tuned for R6) | delete `MODES`; keep `MODES15` as the only table | pairs of R6 actors are gone with the rig |
-| engine/links.js | L184 `C.ch.torso.getWorldQuaternion` (torso kind) | on R15, `ch.torso` is the UpperTorso node, not the R6 hip pivot | keep, verify | semantic change already happened; check `stories/_r15links` |
-| engine/links.js | L209 `resetIK` (`armL.scale.y`, `_armS`) | R6 stretch of the box arm | delete | only R6 `armToward` sets `_armS` |
-| engine/links.js | L198 `ks.head = headSpace...` | shared | keep | |
+| engine/characters/r15.js | L7 `import { RIM } from './rig.js'` | depends on rig.js for the shader | migrate (import from shared module) | |
+| engine/characters/r15.js | L56-80 own face patch | same idea as rig.js `faceGeometry` for R6 | keep (becomes the only face) | |
+| engine/characters/r15.js | L81-82 legacy aliases `armL: J.RightShoulder, armR: J.LeftShoulder, legL: J.RightHip, legR: J.LeftHip` | names kept for R6 code | keep for now | links, wear, crowd, world still read `armL/armR/legL/legR/torso/body` on R15. Renaming them is a separate task |
+| engine/characters/r15.js | L131 `legacyToR15` | adapter from the R6 6-joint format | keep | needed until every anim has a native twin |
+| engine/characters/r15_skin.js | L8 `import { RIM } from './rig.js'` | | migrate | |
+| engine/characters/r15_skin.js | L36-44 `T_TORSO`, `T_LEFT`, `T_RIGHT`, `TPL`, `GROUP` (maps to `armL/legL` names) | copy of R6 template tables; `GROUP` uses legacy aliases | keep | after rig.js cleanup this is the only copy: point the comment at it |
+| engine/characters/r15_skin.js | L81-90 `clothImage` | own loader for `rbx:` clothes | keep | this is why `preloadClothes` (rig.js) is not needed for R15 |
+| engine/characters/r15_skin.js | L112-175 details (collar, buttons, tie, hood...) | ported from `buildR6` (comment L112) | keep | update the comment after buildR6 is deleted |
+| engine/characters/r15_skin.js | L99 `HEAD_SCALE = 1.1` | R15 head vs R6 head, not R6 code | keep | |
+| engine/characters/r15_attach.js | L7 imports `buildHeadgear, HEAD_R, HEAD_H` | R6 head box used to fit the R15 head (`fitSpace`) | migrate the imports | R15 hair / hats depend on the R6 head proportions by design (`fitSpace`, L13-24) |
+| engine/characters/r15_attach.js | L32 `R6_ATT` (R6 attachment points) and L28-36 `slotSpace15` | wearables.json data is stored relative to the R6 part with the R6 attachment baked in | keep | deleting it means re-baking `config/wearables.json`. Large, separate task |
+| engine/characters/anim15.js | L5 `legacyToR15, R15_JOINTS`; L33-45 `snapLegacy`, `natOf`, `toLegacyKey` | legacy bridge | keep | `toLegacyKey` gives the R6 fallback for native-only entries (crowd, links) |
+| engine/characters/skeleton.js | comments L7 "like the legacy rig's armL" | comment only | keep | |
 
-## 5. engine/world.js (647 lines)
+## 4. engine/characters/links.js (223 lines)
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| engine/world.js | L3 imports `preloadClothes` | R6 clothing loader | delete the name | |
-| engine/world.js | L152 `await preloadClothes(...)` for `rbx:` shirts and pants | only the R6 path used it | delete | R15 clothing loads lazily and repaints (r15_skin `clothImage`). Check `stories/_r15skin` clothing still shows |
-| engine/world.js | L156 `preloadHair` / L464 `hairStyles` | shared | keep | |
-| engine/world.js | L320 `headPos` fallback `V(0, 4.6, 0)` | R6 head height | migrate to `headY` / R15 value | only when the actor is missing; still a hard-coded R6 number |
-| engine/world.js | L343 shot look `headY(A.ch) : 4.6` | R6 fallback | delete the fallback | |
-| engine/world.js | L426-434 `carryArm`, `armTip` | R6 arm block: rotates `arm.rotation`, reads tip from `localToWorld(0,-1.5,0)` | delete | |
-| engine/world.js | L436-441 `holdProp` | L439 R15 branch (`carryHands15`) is kept; L440-441 R6 branches (`two`, single arm via `ch.armL/armR`) | delete L440-441 | `P.G.two`, `inward`, `grip` stay (shared GRIP data) |
-| engine/world.js | L456-457 `npcR15()` / `style.npcRig` ('r6' forces legacy) | R6 NPC option | delete the `'r6'` option; default always R15 | `style.npcRig` in any story JSON would stop meaning anything (none found in 60 stories) |
-| engine/world.js | L460-465 `buildExtras` (`rig: 'r15'` only if `npcR15()`) | R6 NPC pool when not R15 | pass `rig: 'r15'` unconditionally, drop `shareMats` gate | `shareMats` (L457-458) stays, it is generic |
-| engine/world.js | L547 `RIM.k.value`, `RIM.color` | shared rim uniforms | keep (import from new module) | |
-| engine/world.js | L587-589 layers (`layerHair`) | shared | keep | |
+| engine/characters/links.js | L20 `is15` | gate for R15 branches | keep, becomes always true; then simplify | |
+| engine/characters/links.js | L21 `headY` fallback `: 4.6` | R6 head centre | delete the R6 branch | R15 4.87 is the only value needed |
+| engine/characters/links.js | L22 `hipOf` fallback `: 2` | R6 hip height | delete the R6 branch | |
+| engine/characters/links.js | L35-60 `limbOf`, `solve2` | R15 2-bone IK (already R15-only) | keep | |
+| engine/characters/links.js | L64-67 `armToward` R6 path (box arm turned and stretched: `ch.armL`, `ch.body.worldToLocal`, `arm.scale.y`) | R6 arm block | delete | |
+| engine/characters/links.js | L71 `shoulderW` R6 side (`ch.armL/armR`) | R6 | simplify to the joint world position | |
+| engine/characters/links.js | L83 `tp()` R6 side `ch.torso.localToWorld` | R6 torso frame | delete the R6 branch | |
+| engine/characters/links.js | L91-123 `MODES` (R6 table) and L158 `M0 = MODES[l.mode]` / `is15 ? MODES15 : M0` | R6 link anchors (shoulders, hips tuned for R6) | delete `MODES`; keep `MODES15` as the only table | pairs of R6 actors are gone with the rig |
+| engine/characters/links.js | L184 `C.ch.torso.getWorldQuaternion` (torso kind) | on R15, `ch.torso` is the UpperTorso node, not the R6 hip pivot | keep, verify | semantic change already happened; check `tests/stories/_r15links` |
+| engine/characters/links.js | L209 `resetIK` (`armL.scale.y`, `_armS`) | R6 stretch of the box arm | delete | only R6 `armToward` sets `_armS` |
+| engine/characters/links.js | L198 `ks.head = headSpace...` | shared | keep | |
+
+## 5. engine/core/world.js (647 lines)
+
+| file | symbol or lines | R6-specific what | action | risk note |
+|---|---|---|---|---|
+| engine/core/world.js | L3 imports `preloadClothes` | R6 clothing loader | delete the name | |
+| engine/core/world.js | L152 `await preloadClothes(...)` for `rbx:` shirts and pants | only the R6 path used it | delete | R15 clothing loads lazily and repaints (r15_skin `clothImage`). Check `tests/stories/_r15skin` clothing still shows |
+| engine/core/world.js | L156 `preloadHair` / L464 `hairStyles` | shared | keep | |
+| engine/core/world.js | L320 `headPos` fallback `V(0, 4.6, 0)` | R6 head height | migrate to `headY` / R15 value | only when the actor is missing; still a hard-coded R6 number |
+| engine/core/world.js | L343 shot look `headY(A.ch) : 4.6` | R6 fallback | delete the fallback | |
+| engine/core/world.js | L426-434 `carryArm`, `armTip` | R6 arm block: rotates `arm.rotation`, reads tip from `localToWorld(0,-1.5,0)` | delete | |
+| engine/core/world.js | L436-441 `holdProp` | L439 R15 branch (`carryHands15`) is kept; L440-441 R6 branches (`two`, single arm via `ch.armL/armR`) | delete L440-441 | `P.G.two`, `inward`, `grip` stay (shared GRIP data) |
+| engine/core/world.js | L456-457 `npcR15()` / `style.npcRig` ('r6' forces legacy) | R6 NPC option | delete the `'r6'` option; default always R15 | `style.npcRig` in any story JSON would stop meaning anything (none found in 60 stories) |
+| engine/core/world.js | L460-465 `buildExtras` (`rig: 'r15'` only if `npcR15()`) | R6 NPC pool when not R15 | pass `rig: 'r15'` unconditionally, drop `shareMats` gate | `shareMats` (L457-458) stays, it is generic |
+| engine/core/world.js | L547 `RIM.k.value`, `RIM.color` | shared rim uniforms | keep (import from new module) | |
+| engine/core/world.js | L587-589 layers (`layerHair`) | shared | keep | |
 
 ## 6. Other engine files
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| engine/wear.js | L20 `partSpace`, R6 branch: `ch.torsoSpace` at y = 1 under `ch.torso` | R6 torso box centre | delete the branch; keep the `ch.rig === 'r15'` branch (L19) | the R15 branch is the only one left. Update the comment at L1-2 ("R6 rig") |
-| engine/wear.js | L14-19 wear loader, `wearInfo`, `makeWear` | shared | keep | |
-| engine/layers.js | L8 `import { HEAD_R, HEAD_H } from './rig.js'` | R6 head size used for the cover map | migrate the import | hair layering is head-space, shared with R15 (fitSpace) |
-| engine/face2.js | L133 `toward()` `hy = st.pos.y + ((st.p.y || 0) + 4.6) * scaleA` | **hard-coded R6 head height in the gaze code** | migrate: pass `headY(ch)` | **live R15 bug today**: R15 head centre is 4.87, so auto-gaze aims ~0.27 units low on R15. Fix before deleting R6 so outputs do not shift silently |
-| engine/face2.js | L146 `headPos` `(B._st.p.y + 4.6)` | same R6 constant | migrate | same as above |
-| engine/props.js | L74-80 `mob` (instanced boxes, watch / flee / gather / cheer) | generic blocks, no rig dependency | keep | not R6 code; only the name suggests it |
-| engine/crowd.js | whole file | no R6 code; calls `pose()` / `blendPose()` | keep | the NPC rig choice is in world.js |
-| engine/creatures.js, sets.js, worlds.js, modelprops.js, overlay.js, quarks.js, weather.js, sky.js | none | no R6 references found | keep | |
+| engine/characters/wear/wear.js | L20 `partSpace`, R6 branch: `ch.torsoSpace` at y = 1 under `ch.torso` | R6 torso box centre | delete the branch; keep the `ch.rig === 'r15'` branch (L19) | the R15 branch is the only one left. Update the comment at L1-2 ("R6 rig") |
+| engine/characters/wear/wear.js | L14-19 wear loader, `wearInfo`, `makeWear` | shared | keep | |
+| engine/characters/wear/layers.js | L8 `import { HEAD_R, HEAD_H } from './rig.js'` | R6 head size used for the cover map | migrate the import | hair layering is head-space, shared with R15 (fitSpace) |
+| engine/characters/face/face2.js | L133 `toward()` `hy = st.pos.y + ((st.p.y || 0) + 4.6) * scaleA` | **hard-coded R6 head height in the gaze code** | migrate: pass `headY(ch)` | **live R15 bug today**: R15 head centre is 4.87, so auto-gaze aims ~0.27 units low on R15. Fix before deleting R6 so outputs do not shift silently |
+| engine/characters/face/face2.js | L146 `headPos` `(B._st.p.y + 4.6)` | same R6 constant | migrate | same as above |
+| engine/props/props.js | L74-80 `mob` (instanced boxes, watch / flee / gather / cheer) | generic blocks, no rig dependency | keep | not R6 code; only the name suggests it |
+| engine/characters/crowd.js | whole file | no R6 code; calls `pose()` / `blendPose()` | keep | the NPC rig choice is in world.js |
+| engine/characters/creatures.js, sets.js, worlds.js, modelprops.js, overlay.js, quarks.js, weather.js, sky.js | none | no R6 references found | keep | |
 
 ## 7. pipeline/ (Python)
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| pipeline/shorthand.py | L175 `rig` default: `story.style.rig` then `"r15"`; cast `"rig"` override | the `style.rig: "r6"` switch and per-cast `rig` keys (`milo15` pattern) | delete the `style.rig` path and the `rig` override; always set `rig: "r15"` (or drop the key, engine default is then R15) | silent: a story with `style.rig: "r6"` would still build R15 once the engine branch is gone. None in the 60 stories today |
-| pipeline/lint.py | L16 `@r15` strip in anim names | suffix | keep until finalize, then delete | harmless |
-| pipeline/lint.py | L17 `EXPRS = set(re.findall(r"(\w+): \['", rig.js))` | regex on rig.js for expression names | migrate the path to the new face module | if `EXPR` moves and this line is not updated, expression lint silently checks nothing |
-| pipeline/rbx_anim.py | L18-19, L21-23 header docs (R15 retargeted to R6, ELBOW/KNEE sharing) | describes legacy R6 conversion | update docs | |
-| pipeline/rbx_anim.py | L39 `OUT = config/anims_roblox.json`, L208-226 `rd()` / `wr()` | legacy file writer | delete after finalize | |
-| pipeline/rbx_anim.py | L94 `ELBOW = 0.4`, L98-120 `key_state` default `rig='R6'` and its R6 folding (arm / leg with ELBOW / KNEE) | legacy R6 retarget of R15 clips | delete the legacy branch; keep the R15 path | |
-| pipeline/rbx_anim.py | L132-183 `convert()`, L184-197 `expand()`, legacy `add` / `remove` / `preview` / `show` / `list` commands (L368-375) | write legacy R6 entries | delete | keep `native`, `native-all`, `finalize` |
-| pipeline/rbx_anim.py | L239 `R6MAP`, L242-255 `key_state15` (`R6` source clips mapped to joints) | used by native conversion of R6 clips inside `anims_r15.json` ("src": "R6") | keep | these are provenance labels, the conversion is still needed to regenerate |
-| pipeline/rbx_anim.py | L338-355 `finalize()` | deletes legacy twins of every `@r15` entry and strips the suffix (119 in anims_roblox.json, 12 in anims_hand.json) | run once, after backup | irreversible in the repo; regenerate needs `cache/rbx_anim/`. Dry run first |
-| pipeline/_animgen_check.py L6, pipeline/_animtest_gen.py L3 | open `config/anims_roblox.json` directly | scratch checks | delete | |
-| pipeline/_animsheet.py | not checked in detail | scratch | check, probably delete | |
-| pipeline/r15_hand.py | whole file | writes native R15 anims (`@r15`) | keep | |
-| pipeline/roblox_wear.py L5 | docstring "centre of the R6 part" | wearables data is R6-space on purpose | keep; reword docstring | |
-| pipeline/roblox_hair.py, catalog.py L50 | hair styles / docs | shared | keep | |
+| pipeline/story/shorthand.py | L175 `rig` default: `story.style.rig` then `"r15"`; cast `"rig"` override | the `style.rig: "r6"` switch and per-cast `rig` keys (`milo15` pattern) | delete the `style.rig` path and the `rig` override; always set `rig: "r15"` (or drop the key, engine default is then R15) | silent: a story with `style.rig: "r6"` would still build R15 once the engine branch is gone. None in the 60 stories today |
+| pipeline/story/lint.py | L16 `@r15` strip in anim names | suffix | keep until finalize, then delete | harmless |
+| pipeline/story/lint.py | L17 `EXPRS = set(re.findall(r"(\w+): \['", rig.js))` | regex on rig.js for expression names | migrate the path to the new face module | if `EXPR` moves and this line is not updated, expression lint silently checks nothing |
+| pipeline/tools/rbx_anim.py | L18-19, L21-23 header docs (R15 retargeted to R6, ELBOW/KNEE sharing) | describes legacy R6 conversion | update docs | |
+| pipeline/tools/rbx_anim.py | L39 `OUT = config/anims_roblox.json`, L208-226 `rd()` / `wr()` | legacy file writer | delete after finalize | |
+| pipeline/tools/rbx_anim.py | L94 `ELBOW = 0.4`, L98-120 `key_state` default `rig='R6'` and its R6 folding (arm / leg with ELBOW / KNEE) | legacy R6 retarget of R15 clips | delete the legacy branch; keep the R15 path | |
+| pipeline/tools/rbx_anim.py | L132-183 `convert()`, L184-197 `expand()`, legacy `add` / `remove` / `preview` / `show` / `list` commands (L368-375) | write legacy R6 entries | delete | keep `native`, `native-all`, `finalize` |
+| pipeline/tools/rbx_anim.py | L239 `R6MAP`, L242-255 `key_state15` (`R6` source clips mapped to joints) | used by native conversion of R6 clips inside `anims_r15.json` ("src": "R6") | keep | these are provenance labels, the conversion is still needed to regenerate |
+| pipeline/tools/rbx_anim.py | L338-355 `finalize()` | deletes legacy twins of every `@r15` entry and strips the suffix (119 in anims_roblox.json, 12 in anims_hand.json) | run once, after backup | irreversible in the repo; regenerate needs `cache/rbx_anim/`. Dry run first |
+| pipeline/tools/_animgen_check.py L6, pipeline/tools/_animtest_gen.py L3 | open `config/anims_roblox.json` directly | scratch checks | delete | |
+| pipeline/tools/animsheet.py | not checked in detail | scratch | check, probably delete | |
+| pipeline/tools/r15_hand.py | whole file | writes native R15 anims (`@r15`) | keep | |
+| pipeline/tools/roblox_wear.py L5 | docstring "centre of the R6 part" | wearables data is R6-space on purpose | keep; reword docstring | |
+| pipeline/tools/roblox_hair.py, catalog.py L50 | hair styles / docs | shared | keep | |
 | pipeline/produce.py, tts*.py, audio.py, studio*.py, catalog.py, polyfork.py, rbxmesh.py, download_catalog_models.py | none | no R6 references | keep | |
 
 ## 8. config/ (JSON)
@@ -183,10 +183,10 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 
 | file | symbol or lines | R6-specific what | action | risk note |
 |---|---|---|---|---|
-| stories/_r15test/story.json | cast `["milo", {"milo15": {"like": "milo", "rig": "r15"}}]` | meant as legacy milo vs R15 milo; milo has no `rig` key, so **both are R15 now** (shorthand default) | delete the test (or make it R15-only) | the comparison is silently broken today |
-| stories/_r15skin/story.json | cast `cl6` and `tpl6` (no `rig`, so R15 now), scene titles L95 "R6 vs R15 classic" and L182 "close milo R6" | R6 twins were the comparison | delete the R6 twins and those scenes | same silent problem |
-| stories/_r15attach/story.json | cast entries with `"rig": "r15"`; docs say "R6 on the left" | comparison | check: any entry without `rig` is now R15 | |
-| stories/_r15links, _r15anim (gen.py) | `rig: "r15"` entries | R15 tests | keep | `_r15anim/gen.py` may still reference anims_roblox, check |
+| tests/stories/_r15test/story.json | cast `["milo", {"milo15": {"like": "milo", "rig": "r15"}}]` | meant as legacy milo vs R15 milo; milo has no `rig` key, so **both are R15 now** (shorthand default) | delete the test (or make it R15-only) | the comparison is silently broken today |
+| tests/stories/_r15skin/story.json | cast `cl6` and `tpl6` (no `rig`, so R15 now), scene titles L95 "R6 vs R15 classic" and L182 "close milo R6" | R6 twins were the comparison | delete the R6 twins and those scenes | same silent problem |
+| tests/stories/_r15attach/story.json | cast entries with `"rig": "r15"`; docs say "R6 on the left" | comparison | check: any entry without `rig` is now R15 | |
+| tests/stories/_r15links, _r15anim (gen.py) | `rig: "r15"` entries | R15 tests | keep | `_r15anim/gen.py` may still reference anims_roblox, check |
 | other stories (about 55) | no `style.rig: "r6"` and no `npcRig: "r6"` found | production stories already render R15 | keep | nothing to change |
 
 ## 11. docs/ and AGENTS.md (text)
@@ -202,7 +202,7 @@ Recommended first step: move the shared parts (RIM / rimify, HEAD_* constants, p
 
 ## 12. Cleanup plan (ordered)
 
-Each step ends with the same verification: `python pipeline/lint.py` on every story (no new warnings, and the expression check still lists the 40+ expressions), `python pipeline/produce.py <story> --preview` on `_r15attach`, `_r15skin`, `_r15links`, `_r15anim`, plus one production story with crowd extras, and a diff of `python pipeline/rbx_anim.py --vocab anim` (names must not change).
+Each step ends with the same verification: `python pipeline/story/lint.py` on every story (no new warnings, and the expression check still lists the 40+ expressions), `python pipeline/produce.py <story> --preview` on `_r15attach`, `_r15skin`, `_r15links`, `_r15anim`, plus one production story with crowd extras, and a diff of `python pipeline/tools/rbx_anim.py --vocab anim` (names must not change).
 
 1. **Fix the R15 gaze bug first (face2.js L133, L146; world.js L320, L343; links.js L21).** Replace the hard-coded 4.6 with `headY(ch)`. Verify: `_r15links` gaze looks at the camera and at other actors. This changes R15 output on purpose, so compare before and after.
 2. **Create a shared head / face module.** Move RIM / rimify, HEAD_R / HEAD_H, plastic / fabric / gold / mesh, `buildHeadgear` and its hair / hat / extras helpers, `faceTexture`, `faceTexture2`, `loadAtlas`, `loadHairLib`, `preloadHair`, `hairStyles`. Update the imports in character.js, layers.js, r15.js, r15_attach.js, r15_skin.js, world.js. Update lint.py L17 to the new path. Verify: all `_r15*` stories identical (frame compare), lint EXPRS count unchanged.
@@ -228,13 +228,13 @@ Each step ends with the same verification: `python pipeline/lint.py` on every st
 Verification: baselines `out/<story>/baseline_r15.jpg` taken before any edit, SSIM re-checked after every step (all >= 0.99 except the two intentional changes below). Backups: `cache/backup_engine_pre_r6/` (engine/*.js, pipeline/*.py, rig.js.orig, R15.md.orig), `cache/backup_anims_20261113/` (anims json files).
 
 **Moved** (engine/rig.js split, every import updated; rig.js deleted):
-- `engine/materials.js`: RIM, rimify, fabric, plastic, gold, shade, rbox, mesh.
-- `engine/face.js`: face atlas (`loadFaceAtlas`), CELL, EXPR, paintAtlas, faceTexture, faceTexture2. `pipeline/lint.py` L17 now reads EXPR from face.js (same 51 names as before + face2 = 61 expressions; `--vocab expr` unchanged).
-- `engine/headgear.js`: HEAD_R/HEAD_H, headRadius, Roblox hair library (`loadHairLib`, HAIR), `preloadHair`, `hairStyles`, rbxHair, procedural hair / hats / glasses / beard, `buildHeadgear`. Hair data stays authored in the classic head box (fitSpace maps it onto the R15 head).
+- `engine/shared/materials.js`: RIM, rimify, fabric, plastic, gold, shade, rbox, mesh.
+- `engine/characters/face/face.js`: face atlas (`loadFaceAtlas`), CELL, EXPR, paintAtlas, faceTexture, faceTexture2. `pipeline/story/lint.py` L17 now reads EXPR from face.js (same 51 names as before + face2 = 61 expressions; `--vocab expr` unchanged).
+- `engine/characters/wear/headgear.js`: HEAD_R/HEAD_H, headRadius, Roblox hair library (`loadHairLib`, HAIR), `preloadHair`, `hairStyles`, rbxHair, procedural hair / hats / glasses / beard, `buildHeadgear`. Hair data stays authored in the classic head box (fitSpace maps it onto the R15 head).
 - `character.js` exports `loadAtlas()` = hair library + face atlas (same behaviour as before).
 
 **Deleted**: `buildR6`, `headGeometry`, `faceGeometry`, `dressRbx`, `clothBox`, `T_*`, `CLOTH`, `preloadClothes` (+ its call in world.js), `HEAD_C`; R6 branch of `buildCharacter` and `applyPose`; `spec.rig`, `style.rig`, `style.npcRig` (NPC pool always R15, `shareMats` always on); `is15` and every `ch.rig === 'r15'` branch in links.js / wear.js / world.js; R6 `MODES` table of links.js (the R15 table is now the only `MODES`), R6 `armToward`, `footTo` guard; `carryArm`, `armTip` and the R6 branches of `holdProp` in world.js; R6 `partSpace` branch of wear.js; `@r15` suffix handling (character.js, lint.py, r15_hand.py).
-- Pipeline: `rbx_anim.py finalize` was run (131 legacy twins removed, suffix stripped); then `config/anims_roblox.json` (now empty), `pipeline/_animgen_check.py`, `pipeline/_animtest_gen.py` and the legacy parts of `rbx_anim.py` (`convert`, `key_state`, `add/list/show/remove/preview/native-all/finalize`, `rd/wr`, `vocab`, `CAL`, `infer`) were deleted. Only `rbx_anim.py native` remains. `--vocab anim` output identical before/after.
+- Pipeline: `rbx_anim.py finalize` was run (131 legacy twins removed, suffix stripped); then `config/anims_roblox.json` (now empty), `pipeline/tools/_animgen_check.py`, `pipeline/tools/_animtest_gen.py` and the legacy parts of `rbx_anim.py` (`convert`, `key_state`, `add/list/show/remove/preview/native-all/finalize`, `rd/wr`, `vocab`, `CAL`, `infer`) were deleted. Only `rbx_anim.py native` remains. `--vocab anim` output identical before/after.
 - `shorthand.py`: no longer sets `rig` (a `rig` key in a cast spec is dropped).
 - studio: `export_cast.luau`, `sandbox.luau`. config: `roblox_cast.json`. assets: `roblox/{milo,jay,zoe}.{obj,mtl}`. All grep-proven unreferenced (engine, pipeline, config, docs, stories, studio, formats, publish).
 - Stories: `_r15test` and `_r15skin` converted to plain R15 tests (R6 twins and the R6 scenes removed); `"rig": "r15"` keys removed from `_r15anim`, `_r15attach`, `_r15links`, `_r15skin`, `_r15test` and `_r15anim/gen.py`. No story used `style.rig` or `npcRig`.

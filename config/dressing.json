@@ -1,5 +1,5 @@
 {
- "_doc": "Auto set-dressing: scenes whose `set` is a key here get these `scatter` props (engine/modelprops.js) unless the scene has its own scatter props or `\"dress\": false`. `\"dress\": 0.5` scales every n (sparser), 2 = denser. `dressLevel` on a scene is not used. Add models via config/model_props.json (assets/models/cenario/).",
+ "_doc": "Auto set-dressing: scenes whose `set` is a key here get these `scatter` props (engine/props/modelprops.js) unless the scene has its own scatter props or `\"dress\": false`. `\"dress\": 0.5` scales every n (sparser), 2 = denser. `dressLevel` on a scene is not used. Add models via config/model_props.json (assets/models/cenario/).",
  "jungle": [
   {
    "type": "scatter",

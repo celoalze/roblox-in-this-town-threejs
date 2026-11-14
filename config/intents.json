@@ -1,5 +1,5 @@
 {
- "_doc": "Intent concepts for the SOFT scene check (pipeline/intent.py). `words`: story text that suggests it (scene title, line, `intent`); `tags`/`biomes`/`media`/`treats`: what a scene setup can use to deliver it; `expect`: minimum fraction of the rendered frame that should look like it (colour classes from pipeline/intent.py: water snow foliage sand fire). Advisory only: silence per scene with \"intent\": \"none\" or \"allow\": [\"ocean\"].",
+ "_doc": "Intent concepts for the SOFT scene check (pipeline/story/intent.py). `words`: story text that suggests it (scene title, line, `intent`); `tags`/`biomes`/`media`/`treats`: what a scene setup can use to deliver it; `expect`: minimum fraction of the rendered frame that should look like it (colour classes from pipeline/story/intent.py: water snow foliage sand fire). Advisory only: silence per scene with \"intent\": \"none\" or \"allow\": [\"ocean\"].",
  "ocean": {
   "words": [
    "ocean",

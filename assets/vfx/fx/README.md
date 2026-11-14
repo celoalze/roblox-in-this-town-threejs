@@ -2,7 +2,7 @@
 
 File name = fx type. Use in a story as `"fx": "dust_cloud:milo@land"` or long form `{"type": "dust_cloud", "pos": [x,y,z], "at": 0.3, "scale": 1, "seed": 3, "color": "#fff"}`.
 `scale` scales size, speed and gravity; `color` recolours every emitter (colour ranges collapse to that colour); `seed` changes the randomness; `loop: true` makes every emitter loop.
-Format reference: header of `engine/quarks.js`. Everything is deterministic (same seed + time = same pixels).
+Format reference: header of `engine/fx/quarks.js`. Everything is deterministic (same seed + time = same pixels).
 `pos` is the effect origin. Ground effects: put y at the floor. Air effects: y at the centre. Characters are ~5 units tall, a "wide" portrait frame shows ~15-25 units.
 
 | fx | what | notes / key options | typical use |
@@ -38,6 +38,6 @@ Format reference: header of `engine/quarks.js`. Everything is deterministic (sam
 4. Orientation: shapes lie in the XY plane and fire along +Z. `rot: [-90,0,0]` = cone/circle/rectangle fire UP / lie flat; `rot: [90,0,0]` = fire DOWN. `mode: "flat"` lays the sprites on the ground (rings). `mode: "stretch"` = streaks along velocity.
 5. Rectangles and circles give position only (speed 0); give motion with `over.gravity` + `over.drag` (terminal speed = gravity / (20 * drag)) or a cone shape with `speed`.
 6. Timing: `looping: true` + `prewarm: true` for ambience; `start: s` delays an emitter; `move` + `moveTime` travels the emitter (rocket); `at: [x,y,z]` offsets it.
-7. Do NOT set `alpha` for fades, use the `over.color` alpha (the `alpha` key is applied twice by the engine). Test: add a scene to `stories/_quarkstest/story.json`, `python pipeline/produce.py _quarkstest --preview`, then `node engine/render.mjs out/_quarkstest/timeline.json out/_quarkstest/st --stills t1,t2,t3 --scale 0.4` (effect time = still time - scene start - fx `at`; re-run produce after editing a fx JSON so the timeline carries the new spec).
+7. Do NOT set `alpha` for fades, use the `over.color` alpha (the `alpha` key is applied twice by the engine). Test: add a scene to `tests/stories/_quarkstest/story.json`, `python pipeline/produce.py _quarkstest --preview`, then `node engine/render.mjs out/_quarkstest/timeline.json out/_quarkstest/st --stills t1,t2,t3 --scale 0.4` (effect time = still time - scene start - fx `at`; re-run produce after editing a fx JSON so the timeline carries the new spec).
 
 Texture notes: Kenney Particle Pack (CC0) sprites are black-background; the engine transparently loads the white + luminance-alpha copies in `assets/vfx/textures/kenney_a/` (same file names), so they work with both blends. Re-generate a copy with the same recipe if you add a sprite to `kenney/`.

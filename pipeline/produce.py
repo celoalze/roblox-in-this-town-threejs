@@ -10,7 +10,8 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
-from tts import ROOT, SR
+from paths import ROOT
+from audio.tts import SR
 
 
 def load_env():
@@ -50,7 +51,7 @@ def resolve_at(v, sc):
 
 def expand(story):
     """Shorthand -> full scenes. `locations: {name: {set, setOpts, time}}` + scene `loc`; loc/set/setOpts/time inherit from the previous scene."""
-    import shorthand
+    from story import shorthand
 
     shorthand.expand(story)
     g = story.get("genre")
@@ -156,7 +157,7 @@ def expand(story):
 def looks(story):
     """Scene look = story first, then biome, then SOFT world defaults (config/biomes.json, config/world_profile.json).
     `biome`/`treat`/`medium` inherit until changed; "none" switches off (also the world default). Nothing here ever blocks a scene."""
-    import shorthand
+    from story import shorthand
 
     B = shorthand._load("biomes.json")
     P = shorthand._load("world_profile.json")
@@ -220,7 +221,7 @@ def looks(story):
 
 def dress(story):
     """config/dressing.json: scenes in a known world get its scatter props automatically (richer sets with zero author effort)."""
-    import shorthand
+    from story import shorthand
 
     D = shorthand._load("dressing.json")
     if story.get("style", {}).get("dressing") is False:
@@ -243,7 +244,7 @@ def dress(story):
 
 def combos(story):
     """config/fx_combos.json: composite fx (impact_big, blast, ...) -> their parts + automatic sound."""
-    import shorthand
+    from story import shorthand
 
     C = shorthand._load("fx_combos.json")
     for sc in story["scenes"]:
@@ -280,7 +281,7 @@ def combos(story):
 
 def weather_audio(scenes, audio):
     """Ambience loops (one continuous bed per run of scenes sharing a weather) + a thunder clap on every lightning strike."""
-    import shorthand
+    from story import shorthand
 
     WX = shorthand._load("weather.json")
     clips = []
@@ -317,7 +318,7 @@ def weather_audio(scenes, audio):
 
 def world_audio(scenes, audio):
     """config/world_audio.json: one continuous ambience bed per run of scenes in the same world."""
-    import shorthand
+    from story import shorthand
 
     WA = shorthand._load("world_audio.json")
     clips = []
@@ -359,14 +360,14 @@ def voice_of(story, sc):
 
 
 def tts_mod():
-    import tts
+    from audio import tts
 
     return tts
 
 
 def build(story, out):
     story = expand(story)
-    import tts, audio
+    from audio import tts, mix as audio
 
     fmt = {"width": 1080, "height": 1920, "fps": 30, **story.get("format", {})}
     narrator = story.get("narrator", "narrator")
@@ -459,7 +460,7 @@ def build(story, out):
             s = {"name": s} if isinstance(s, str) else s
             sfx_clips.append((audio.get_sfx(s), t + resolve_at(s.get("at"), sc), s.get("vol", 1.0)))
         if story.get("style", {}).get("autoFxSfx", True):  # config/fx_sfx.json: the sound that belongs to an effect
-            import shorthand
+            from story import shorthand
 
             FS = shorthand._load("fx_sfx.json")
             have = [(x.get("name"), resolve_at(x.get("at"), sc)) for x in sc.get("sfx", []) if isinstance(x, dict)]
@@ -577,13 +578,23 @@ def node(*a):
 
 def run_one(a, sp):
     if not sp.suffix:
-        sp = ROOT / "stories" / sp.name / "story.json"  # slug or path
+        cand = ROOT / "stories" / sp.name / "story.json"
+        if not cand.exists():
+            test_cand = ROOT / "tests" / "stories" / sp.name / "story.json"
+            if test_cand.exists():
+                cand = test_cand
+        sp = cand
+    elif not sp.exists():
+        if (ROOT / sp).exists():
+            sp = ROOT / sp
+        elif (ROOT / "tests" / sp).exists():
+            sp = ROOT / "tests" / sp
     story = json.loads(sp.read_text(encoding="utf-8"))
     slug = story.get("slug") or sp.parent.name
     out = Path(a.out) if a.out else ROOT / "out" / slug
     out.mkdir(parents=True, exist_ok=True)
     if a.redo:
-        import tts
+        from audio import tts
 
         st = expand(json.loads(json.dumps(story)))
         for i in map(int, a.redo.split(",")):
@@ -594,7 +605,7 @@ def run_one(a, sp):
             for ext in (".wav", ".json"):
                 stem.with_suffix(ext).unlink(missing_ok=True)
             print(f"  redo #{i}: {sc['line'][:50]}")
-    import lint
+    from story import lint
 
     if a.lint:
         return lint.run(expand(story), out)
@@ -605,7 +616,7 @@ def run_one(a, sp):
             sys.exit(f"{slug}: {len(W)} problem(s) - fix them (see --lint) or pass --force")
     only = [int(x) for x in a.only.split(",")] if a.only else None
     try:
-        import intent
+        from story import intent
 
         adv = intent.advise(expand(json.loads(json.dumps(story))))
         if adv:
@@ -617,13 +628,13 @@ def run_one(a, sp):
     if a.audio_only:
         return
     if a.studio or story.get("engine") == "studio":
-        import studio
+        from render import studio
 
         final = studio.render(story, tl, out, resolve_at, slug)
         print(f"DONE -> {final}")
         return
     if a.qa:
-        import frameqa
+        from render import frameqa
 
         frameqa.run(out / "timeline.json")
         return
@@ -711,7 +722,7 @@ def main():
     load_env()
     bad = 0
     if a.vocab:
-        import lint
+        from story import lint
 
         return lint.vocab(a.vocab)
     for s in a.story:

@@ -60,7 +60,7 @@ O rig R6 não precisa virar R15: a referência é R6. O ganho está em câmera, 
 
 ## 3. Fases (cada uma termina com render do benchmark)
 
-**Benchmark**: `stories/_aaa_bench` = os primeiros 25 s da referência (queda da caixa, porta, mundos, relógio), refeitos plano a plano.
+**Benchmark**: `tests/stories/_aaa_bench` = os primeiros 25 s da referência (queda da caixa, porta, mundos, relógio), refeitos plano a plano.
 Ao fim de cada fase: render + folha de contato lado a lado com a referência. É o critério de pronto.
 
 ### Fase 1 — Câmera e montagem (maior retorno)
@@ -91,7 +91,7 @@ Ao fim de cada fase: render + folha de contato lado a lado com a referência. É
    Baixar pacote base pelo Studio: run inclinado, climb, dig, pull, push, crawl, fall, roll, swim, carry, hug, kneel, reach.
 2. Vínculos: `attach:<id>:<ponto>` (carregar no ombro, mãos dadas, abraço), `chained`, IK simples de mão para alvo (maçaneta, corrente, pulso).
 3. Rosto v2: camadas separadas (olhos brancos + pupila com `gaze`, sobrancelha, boca), 12 bocas, lágrima escorrendo, estilo "big-eye" como opção de cast.
-4. Acessórios 3D que faltam (mochila com saco de dormir, barba, relógio) pelo pipeline `roblox_wear.py`.
+4. Acessórios 3D que faltam (mochila com saco de dormir, barba, relógio) pelo pipeline `pipeline/tools/roblox_wear.py`.
 
 ### Fase 5 — Formato e produção
 1. `formats/aaa_story/` (3ª pessoa, falas citadas, sem CTA forçado, 130-175 s, 120-150 planos) + estilo de legenda `lower_yellow`.

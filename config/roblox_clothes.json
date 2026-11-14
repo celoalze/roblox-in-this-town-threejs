@@ -1,5 +1,5 @@
 {
- "_doc": "Classic Roblox clothing (2D templates, the clothing an R6 character wears natively). Cast spec: \"shirt\": \"rbx:<name>\", \"pants\": \"rbx:<name>\". asset = catalog id, template = image id (read-only Studio probe: Shirt.ShirtTemplate / Pants.PantsTemplate). Files: assets/roblox/clothes/<name>.png via `python pipeline/roblox_wear.py`. Free Roblox-made items only.",
+ "_doc": "Classic Roblox clothing (2D templates, the clothing an R6 character wears natively). Cast spec: \"shirt\": \"rbx:<name>\", \"pants\": \"rbx:<name>\". asset = catalog id, template = image id (read-only Studio probe: Shirt.ShirtTemplate / Pants.PantsTemplate). Files: assets/roblox/clothes/<name>.png via `python pipeline/tools/roblox_wear.py`. Free Roblox-made items only.",
  "shirts": {
   "denimhoodie": {
    "asset": 398633584,

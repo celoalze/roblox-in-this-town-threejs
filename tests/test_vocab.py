@@ -142,10 +142,10 @@ def _case_labels(source):
 
 def _engine_vocab():
     """Re-derive the vocabulary that is declared by the engine."""
-    character = (ENGINE / "character.js").read_text(encoding="utf-8")
-    face = (ENGINE / "face.js").read_text(encoding="utf-8")
-    face2 = (ENGINE / "face2.js").read_text(encoding="utf-8")
-    props = (ENGINE / "props.js").read_text(encoding="utf-8")
+    character = (ENGINE / "characters" / "character.js").read_text(encoding="utf-8")
+    face = (ENGINE / "characters" / "face" / "face.js").read_text(encoding="utf-8")
+    face2 = (ENGINE / "characters" / "face" / "face2.js").read_text(encoding="utf-8")
+    props = (ENGINE / "props" / "props.js").read_text(encoding="utf-8")
     fx_marker = re.search(r"//\s*-+\s*FX\b", props)
     if not fx_marker:
         raise AssertionError("Could not find the FX section marker in props.js.")
@@ -161,15 +161,15 @@ def _engine_vocab():
         "no_hold_props": set(_array_assignment(props, "NO_HOLD")),
         "engine_fx_cases": _case_labels(props[fx_marker.end() :]),
         "creature_anims": set(_array_assignment(
-            (ENGINE / "creatures.js").read_text(encoding="utf-8"),
+            (ENGINE / "characters" / "creatures.js").read_text(encoding="utf-8"),
             "CREATURE_ANIMS",
         )),
         "link_modes": set(_array_assignment(
-            (ENGINE / "links.js").read_text(encoding="utf-8"),
+            (ENGINE / "characters" / "links.js").read_text(encoding="utf-8"),
             "LINK_MODES",
         )),
         "crowd_behaviours": set(_array_assignment(
-            (ENGINE / "crowd.js").read_text(encoding="utf-8"),
+            (ENGINE / "characters" / "crowd.js").read_text(encoding="utf-8"),
             "BEHAVIOURS",
         )),
     }

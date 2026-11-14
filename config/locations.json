@@ -1,5 +1,5 @@
 {
- "_comment": "Location presets (checked with stories/_loctest). Use as \"loc\": \"<name>\". Story-level \"locations\" override/extend these. Actors stand near [0,0]; 1 m = 3.4 units.",
+ "_comment": "Location presets (checked with tests/stories/_loctest). Use as \"loc\": \"<name>\". Story-level \"locations\" override/extend these. Actors stand near [0,0]; 1 m = 3.4 units.",
  "home": {
   "setOpts": {
    "kit": "neighborhood-pathways-kit-a992cf",

@@ -1,5 +1,5 @@
 {
- "_doc": "Material treatments: re-skin ANY model or world without new assets (engine/treatments.js). Scene field `treat`: \"frost\", \"frost:.6\" (strength), or [\"moss\",\"wet\"]. Fields: tint [color, amount], desat, dark, cap {color, amount, thresh (0-1, lower = covers steeper faces), noise (patchiness), scale, dir [x,y,z]}, rough [target, amount]. Add a treatment = add an entry here, no engine edit.",
+ "_doc": "Material treatments: re-skin ANY model or world without new assets (engine/environments/treatments.js). Scene field `treat`: \"frost\", \"frost:.6\" (strength), or [\"moss\",\"wet\"]. Fields: tint [color, amount], desat, dark, cap {color, amount, thresh (0-1, lower = covers steeper faces), noise (patchiness), scale, dir [x,y,z]}, rough [target, amount]. Add a treatment = add an entry here, no engine edit.",
  "frost": {
   "tint": [
    "#cfe6ff",
