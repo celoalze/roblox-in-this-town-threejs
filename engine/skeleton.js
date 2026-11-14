@@ -14,46 +14,108 @@ import * as THREE from 'three';
 
 export const SKELETONS = { r15: { url: '/assets/models/rigs/r15/', rig: null, geo: {} } };
 
-const Q = (q) => new THREE.Quaternion(-q[0], q[1], -q[2], q[3]);   // roblox quaternion -> engine
-const P = (p) => new THREE.Vector3(-p[0], p[1], -p[2]);             // roblox position -> engine
+const Q = (q) => new THREE.Quaternion(-q[0], q[1], -q[2], q[3]); // roblox quaternion -> engine
+const P = (p) => new THREE.Vector3(-p[0], p[1], -p[2]); // roblox position -> engine
 
 export async function loadSkeleton(name = 'r15') {
-  const S = SKELETONS[name]; if (!S) throw new Error('unknown skeleton ' + name); if (S.rig) return S;
+  const S = SKELETONS[name];
+  if (!S) throw new Error('unknown skeleton ' + name);
+  if (S.rig) return S;
   const rig = await (await fetch(S.url + 'rig.json')).json();
-  await Promise.all(rig.parts.filter(p => p.mesh).map(async p => {
-    const d = await (await fetch(S.url + p.mesh)).json(), g = new THREE.BufferGeometry(), n = d.p.length / 3, pos = new Float32Array(n * 3), nor = new Float32Array(n * 3);
-    for (let i = 0; i < n; i++) { pos[i * 3] = -d.p[i * 3]; pos[i * 3 + 1] = d.p[i * 3 + 1]; pos[i * 3 + 2] = -d.p[i * 3 + 2]; nor[i * 3] = -d.n[i * 3]; nor[i * 3 + 1] = d.n[i * 3 + 1]; nor[i * 3 + 2] = -d.n[i * 3 + 2]; }
-    g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('normal', new THREE.BufferAttribute(nor, 3)); g.setAttribute('uv', new THREE.Float32BufferAttribute(d.uv, 2)); g.setIndex(d.i);
-    g.computeBoundingBox(); g.computeBoundingSphere(); S.geo[p.name] = g;
-  }));
-  S.rig = rig; S.byName = Object.fromEntries(rig.parts.map(p => [p.name, p])); S.jointByName = Object.fromEntries(rig.joints.map(j => [j.name, j]));
+  await Promise.all(
+    rig.parts
+      .filter((p) => p.mesh)
+      .map(async (p) => {
+        const d = await (await fetch(S.url + p.mesh)).json(),
+          g = new THREE.BufferGeometry(),
+          n = d.p.length / 3,
+          pos = new Float32Array(n * 3),
+          nor = new Float32Array(n * 3);
+        for (let i = 0; i < n; i++) {
+          pos[i * 3] = -d.p[i * 3];
+          pos[i * 3 + 1] = d.p[i * 3 + 1];
+          pos[i * 3 + 2] = -d.p[i * 3 + 2];
+          nor[i * 3] = -d.n[i * 3];
+          nor[i * 3 + 1] = d.n[i * 3 + 1];
+          nor[i * 3 + 2] = -d.n[i * 3 + 2];
+        }
+        g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+        g.setAttribute('normal', new THREE.BufferAttribute(nor, 3));
+        g.setAttribute('uv', new THREE.Float32BufferAttribute(d.uv, 2));
+        g.setIndex(d.i);
+        g.computeBoundingBox();
+        g.computeBoundingSphere();
+        S.geo[p.name] = g;
+      }),
+  );
+  S.rig = rig;
+  S.byName = Object.fromEntries(rig.parts.map((p) => [p.name, p]));
+  S.jointByName = Object.fromEntries(rig.joints.map((j) => [j.name, j]));
   return S;
 }
-export function getSkeleton(name = 'r15') { const S = SKELETONS[name]; if (!S || !S.rig) throw new Error(`skeleton "${name}" not loaded (await loadSkeleton)`); return S; }
+export function getSkeleton(name = 'r15') {
+  const S = SKELETONS[name];
+  if (!S || !S.rig) throw new Error(`skeleton "${name}" not loaded (await loadSkeleton)`);
+  return S;
+}
 
 // Builds one instance. makeMaterial(partName) -> THREE.Material (one per part, the caller decides sharing); parts without a mesh (HumanoidRootPart) get no Mesh.
 // Returns { hrp, parts: {name: {node, mesh}}, joints: {name: pivot}, attach: {name: Object3D}, rest: {height, soleY, hipY, rootHeight} }.
 // `hrp` is positioned so the soles are at y = 0 when it is added to a group sitting on the floor.
 export function buildSkeleton(name, makeMaterial) {
-  const S = getSkeleton(name), rig = S.rig, parts = {}, joints = {}, attach = {};
+  const S = getSkeleton(name),
+    rig = S.rig,
+    parts = {},
+    joints = {},
+    attach = {};
   for (const p of rig.parts) {
-    const node = new THREE.Object3D(); node.name = p.name; let mesh = null;
-    if (p.mesh) { mesh = new THREE.Mesh(S.geo[p.name], makeMaterial(p.name)); mesh.name = p.name + 'Mesh'; mesh.castShadow = mesh.receiveShadow = true; node.add(mesh); }
+    const node = new THREE.Object3D();
+    node.name = p.name;
+    let mesh = null;
+    if (p.mesh) {
+      mesh = new THREE.Mesh(S.geo[p.name], makeMaterial(p.name));
+      mesh.name = p.name + 'Mesh';
+      mesh.castShadow = mesh.receiveShadow = true;
+      node.add(mesh);
+    }
     parts[p.name] = { node, mesh, size: p.size };
     for (const [an, c] of Object.entries(rig.attachments[p.name] || {})) {
       if (an.endsWith('RigAttachment')) continue; // joint anchors: they ARE the joint pivots
-      const o = new THREE.Object3D(); o.name = an; o.position.copy(P(c.p)); o.quaternion.copy(Q(c.q)); node.add(o);
-      attach[an] = o; if (an.endsWith('Attachment')) attach[an.slice(0, -10)] = o; // RightGripAttachment and RightGrip are the same Object3D
+      const o = new THREE.Object3D();
+      o.name = an;
+      o.position.copy(P(c.p));
+      o.quaternion.copy(Q(c.q));
+      node.add(o);
+      attach[an] = o;
+      if (an.endsWith('Attachment')) attach[an.slice(0, -10)] = o; // RightGripAttachment and RightGrip are the same Object3D
     }
   }
   for (const j of rig.joints) {
-    const pivot = new THREE.Object3D(); pivot.name = j.name; pivot.position.copy(P(j.c0.p)); parts[j.parent].node.add(pivot); joints[j.name] = pivot;
-    const c1q = Q(j.c1.q), restQ = Q(j.c0.q).multiply(c1q.clone().invert()), c = parts[j.child].node;
-    c.quaternion.copy(restQ); c.position.copy(P(j.c1.p).applyQuaternion(restQ).negate()); pivot.add(c);
+    const pivot = new THREE.Object3D();
+    pivot.name = j.name;
+    pivot.position.copy(P(j.c0.p));
+    parts[j.parent].node.add(pivot);
+    joints[j.name] = pivot;
+    const c1q = Q(j.c1.q),
+      restQ = Q(j.c0.q).multiply(c1q.clone().invert()),
+      c = parts[j.child].node;
+    c.quaternion.copy(restQ);
+    c.position.copy(P(j.c1.p).applyQuaternion(restQ).negate());
+    pivot.add(c);
   }
-  const hrp = parts[rig.order[0]].node; hrp.position.y = -rig.soleY; // soles on the floor
-  return { hrp, parts, joints, attach, rest: { height: rig.height, soleY: rig.soleY, hipY: rig.hipHeight, rootHeight: -rig.soleY } };
+  const hrp = parts[rig.order[0]].node;
+  hrp.position.y = -rig.soleY; // soles on the floor
+  return {
+    hrp,
+    parts,
+    joints,
+    attach,
+    rest: { height: rig.height, soleY: rig.soleY, hipY: rig.hipHeight, rootHeight: -rig.soleY },
+  };
 }
 
 // joint rotation [x, y, z] radians, three.js Euler 'XYZ', relative to the rest pose (zero = rest).
-export function setJoint(sk, name, r) { const j = sk.joints[name]; if (j) j.rotation.set(r[0], r[1], r[2]); }
+export function setJoint(sk, name, r) {
+  const j = sk.joints[name];
+  if (j) j.rotation.set(r[0], r[1], r[2]);
+}
